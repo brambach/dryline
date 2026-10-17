@@ -180,3 +180,41 @@ entry 0: Fri Oct 16: 18 dry, 2 unknown | https://brambach.github.io/dryline/arch
 `tests/test_site.py::test_feed_parses` asserts the same thing offline. Mobile is 390×844 at 2×, desktop
 1280×900. Screenshots are taken with reduced motion, so the one "Today" arrival animation doesn't blur them.
 The fonts (Fraunces, Hanken Grotesk, IBM Plex Mono, all SIL OFL) are self-hosted.
+
+## M6: Eval harness
+
+`labels/trail-days.csv` holds the real labels and is empty, waiting for your 50 trail-days.
+`labels/SYNTHETIC-sample.csv` has 5 made-up rows, each with a note saying "SYNTHETIC", and
+`dryline eval` prints a warning banner when it sees them.
+
+```
+$ uv run dryline eval --labels labels/SYNTHETIC-sample.csv
+NOTE: these labels are SYNTHETIC. The numbers below test the harness only.
+
+labels: 5   scored: 5   no prediction: 0
+
+truth     correct  total  accuracy
+dry             2      3       67%
+muddy           0      1        0%
+snow            0      1        0%
+
+unknown rate: 40%
+accuracy when not unknown: 2/3 = 67%
+
+truth \ predicted       dry    muddy     snow   closed  unknown
+dry                       2        0        0        0        1
+muddy                     1        0        0        0        0
+snow                      0        0        0        0        1
+
+$ uv run dryline eval
+labels/trail-days.csv: no labels yet. Run `dryline label` to add some.
+```
+
+Labeling page smoke test: `uv run dryline label --labels <tmp>.csv --port 8799`.
+
+- `GET /` rendered 20 trail rows for 2026-10-16.
+- `POST /label {"date":"2026-10-16","trail":"castle-peak","truth":"dry"}` returned `{"ok": true}` and
+  wrote the row.
+
+dryline's own call is hidden behind a "dryline said" disclosure, so it doesn't anchor the labeler.
+`tests/test_eval.py` covers scoring, upserts, and the page.
