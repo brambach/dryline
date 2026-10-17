@@ -154,5 +154,5 @@ test_end_to_end.py::test_every_page_every_line_linked PASSED
 test_end_to_end.py::test_missing_source_shows_up PASSED
 test_end_to_end.py::test_renderer_rejects_non_lines PASSED
 $ uv run pytest -q
-
+73 passed, 1 warning in 0.95s
 ```
