@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import datetime as dt
+import gzip
 import hashlib
 import json
 import urllib.robotparser
@@ -49,11 +50,17 @@ def day_dir(root: Path, day: dt.date) -> Path:
 
 
 def raw_path(root: Path, day: dt.date, source: str, name: str) -> Path:
-    return day_dir(root, day) / source / f"{name}.json"
+    return day_dir(root, day) / source / f"{name}.json.gz"
 
 
 def load_raw(path: Path) -> RawResponse:
-    return RawResponse.model_validate_json(path.read_text())
+    return RawResponse.model_validate_json(gzip.decompress(path.read_bytes()))
+
+
+def save_raw(path: Path, raw: RawResponse) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    # mtime=0 keeps the bytes stable, so re-saving the same response makes no git diff
+    path.write_bytes(gzip.compress(raw.model_dump_json(indent=1).encode(), mtime=0))
 
 
 class Fetcher:
@@ -129,8 +136,7 @@ class Fetcher:
                 content_type="",
                 body=f"{type(exc).__name__}: {exc}",
             )
-        path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text(raw.model_dump_json(indent=1))
+        save_raw(path, raw)
         self.log.append(f"{raw.status_code} {target}")
         return raw
 

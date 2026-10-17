@@ -8,7 +8,7 @@ from typing import Literal
 
 from pydantic import AwareDatetime, Field, HttpUrl
 
-from dryline.models import Claim, LatLon, Missing, Strict
+from dryline.models import Claim, LatLon, Missing, PageSource, Strict
 
 
 class Cited(Strict):
@@ -57,7 +57,9 @@ class PrecipObs(Cited):
 class ClosureObs(Cited):
     """An official alert whose title names a closure."""
 
+    page: PageSource
     title: str
+    summary: str = ""
     link: HttpUrl
     published: dt.date | None = None
 
@@ -68,7 +70,7 @@ class ConditionsObs(Cited):
     segment: str
     text: str
     last_updated: dt.date
-    hint: Literal["closed", "snow", "muddy", "dry"] | None = None
+    hint: Literal["closed", "snow", "muddy", "snow_free"] | None = None
 
 
 class ForecastObs(Cited):
@@ -80,7 +82,7 @@ class ForecastObs(Cited):
 class Gap(Strict):
     """A source we tried and could not use today."""
 
-    source: str
+    source: PageSource
     what: str
     tried_url: HttpUrl
 

@@ -23,7 +23,8 @@ TRAIL = Trail(
     official_status_url="https://www.fs.usda.gov/example",
     activities=("hike",),
     closure_keywords=("test trail",),
-    trta_segment="Test Segment",
+    trta_segment="TestSeg",
+    status_sources=("usfs-ltbmu", "trta"),
     sources=("https://www.fs.usda.gov/example",),
 )
 
@@ -99,7 +100,7 @@ def test_muddy_after_rain():
 
 def test_closed_beats_everything():
     closure = ClosureObs(
-        **CITE, title="Test Trail Closure Order", link="https://example.gov/alert/1"
+        **CITE, page="usfs-ltbmu", title="Test Trail Closure Order", link="https://example.gov/a/1"
     )
     line = run(snow=(snow(7500, 6),), precip=(rain(1.0),), closures=(closure,))
     assert line.status == "closed"
@@ -107,8 +108,26 @@ def test_closed_beats_everything():
 
 
 def test_unrelated_closure_ignored():
-    closure = ClosureObs(**CITE, title="Other Road Closure", link="https://example.gov/alert/2")
-    assert run(snow=(snow(7800, 0),), precip=(rain(0.0),), closures=(closure,)).status == "dry"
+    other = ClosureObs(
+        **CITE, page="usfs-ltbmu", title="Other Road Closure", link="https://example.gov/a/2"
+    )
+    # Right name, but posted by a forest that doesn't manage this trail.
+    elsewhere = ClosureObs(
+        **CITE, page="usfs-tnf", title="Test Trail Closure", link="https://example.gov/a/3"
+    )
+    line = run(snow=(snow(7800, 0),), precip=(rain(0.0),), closures=(other, elsewhere))
+    assert line.status == "dry"
+
+
+def test_closure_keyword_in_summary():
+    closure = ClosureObs(
+        **CITE,
+        page="usfs-ltbmu",
+        title="Area Closure Order",
+        summary="Closes the Test Trail and nearby roads.",
+        link="https://example.gov/a/4",
+    )
+    assert run(closures=(closure,)).status == "closed"
 
 
 def test_unknown_when_no_snow_station():
@@ -144,7 +163,7 @@ def test_old_nws_window_counts_as_missing():
     assert line.status == "unknown"
 
 
-def cond(text, hint, days_ago=1, segment="Test Segment"):
+def cond(text, hint, days_ago=1, segment="TestSeg"):
     return ConditionsObs(
         **CITE,
         segment=segment,
@@ -166,8 +185,16 @@ def test_stale_conditions_page_is_missing_not_used():
     assert any("last updated" in m.what for m in line.missing)
 
 
+def test_snow_free_conditions_entry_is_not_dry_without_rain_data():
+    line = run(conditions=(cond("Clear of snow", "snow_free"),))
+    assert line.status == "unknown"
+    assert line.context[0].kind == "conditions"
+
+
 def test_source_gap_is_reported():
-    gap = Gap(source="usfs", what="LTBMU alerts page unavailable", tried_url="https://x.gov/a")
+    gap = Gap(
+        source="usfs-ltbmu", what="LTBMU alerts page unavailable", tried_url="https://x.gov/a"
+    )
     line = run(snow=(snow(7800, 0),), precip=(rain(0.0),), gaps=(gap,))
     assert line.status == "dry"
     assert line.missing[0].what == "LTBMU alerts page unavailable"
@@ -207,3 +234,9 @@ def test_claim_requires_citation(bad):
     fields = dict(kind="snow", statement="s", **CITE) | bad
     with pytest.raises(ValidationError):
         Claim(**fields)
+
+
+def test_gap_for_unrelated_source_not_shown():
+    gap = Gap(source="usfs-htnf", what="HTNF alerts unavailable", tried_url="https://x.gov/b")
+    line = run(snow=(snow(7800, 0),), precip=(rain(0.0),), gaps=(gap,))
+    assert line.missing == ()

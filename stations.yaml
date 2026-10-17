@@ -1,0 +1,30 @@
+# SNOTEL stations in and around the Lake Tahoe basin and Truckee.
+# Generated from NRCS AWDB station metadata, fetched 2026-10-17:
+#   https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/stations?stationTriplets=*:CA:SNTL,*:NV:SNTL&activeOnly=true
+# Filtered to lat 38.6-39.6, lon -120.5 to -119.7. huc 16050101 = Lake Tahoe, 16050102 = Truckee.
+source_url: https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/stations?stationTriplets=*:CA:SNTL,*:NV:SNTL&activeOnly=true
+snotel:
+  - {triplet: "540:CA:SNTL", name: "Independence Creek", lat: 39.49001, lon: -120.28226, elevation_ft: 6440, huc: "160501020102"}
+  - {triplet: "340:NV:SNTL", name: "Big Meadow", lat: 39.455, lon: -119.9422, elevation_ft: 8240, huc: "160501020505"}
+  - {triplet: "539:CA:SNTL", name: "Independence Camp", lat: 39.45269, lon: -120.29367, elevation_ft: 6970, huc: "160501020102"}
+  - {triplet: "541:CA:SNTL", name: "Independence Lake", lat: 39.42752, lon: -120.31342, elevation_ft: 8340, huc: "160501020104"}
+  - {triplet: "428:CA:SNTL", name: "Css Lab", lat: 39.32565, lon: -120.36807, elevation_ft: 6890, huc: "180201250602"}
+  - {triplet: "652:NV:SNTL", name: "Mt Rose Ski Area", lat: 39.31573, lon: -119.89473, elevation_ft: 8810, huc: "160501020304"}
+  - {triplet: "834:CA:SNTL", name: "Truckee #2", lat: 39.30087, lon: -120.18407, elevation_ft: 6500, huc: "160501020204"}
+  - {triplet: "1242:NV:SNTL", name: "Little Valley", lat: 39.25259, lon: -119.8771, elevation_ft: 6500, huc: "160501020301"}
+  - {triplet: "784:CA:SNTL", name: "Palisades Tahoe", lat: 39.18986, lon: -120.26576, elevation_ft: 8010, huc: "160501020202"}
+  - {triplet: "809:CA:SNTL", name: "Tahoe City Cross", lat: 39.17162, lon: -120.15362, elevation_ft: 6760, huc: "160501010101"}
+  - {triplet: "615:NV:SNTL", name: "Marlette Lake", lat: 39.16395, lon: -119.89672, elevation_ft: 7860, huc: "160501010201"}
+  - {triplet: "848:CA:SNTL", name: "Ward Creek #3", lat: 39.13545, lon: -120.21865, elevation_ft: 6750, huc: "160501010403"}
+  - {triplet: "724:CA:SNTL", name: "Rubicon #2", lat: 38.99927, lon: -120.13139, elevation_ft: 7560, huc: "160501010402"}
+  - {triplet: "473:CA:SNTL", name: "Fallen Leaf", lat: 38.93403, lon: -120.0545, elevation_ft: 6250, huc: "160501010401"}
+  - {triplet: "518:CA:SNTL", name: "Heavenly Valley", lat: 38.92431, lon: -119.91641, elevation_ft: 8540, huc: "160501010302"}
+  - {triplet: "508:CA:SNTL", name: "Hagans Meadow", lat: 38.8519, lon: -119.9374, elevation_ft: 7740, huc: "160501010302"}
+  - {triplet: "463:CA:SNTL", name: "Echo Peak", lat: 38.849, lon: -120.0795, elevation_ft: 7650, huc: "160501010303"}
+  - {triplet: "1050:CA:SNTL", name: "Horse Meadow", lat: 38.83652, lon: -119.88732, elevation_ft: 8580, huc: "160502010302"}
+  - {triplet: "1051:CA:SNTL", name: "Burnside Lake", lat: 38.71943, lon: -119.8942, elevation_ft: 8180, huc: "160502010107"}
+  - {triplet: "1067:CA:SNTL", name: "Carson Pass", lat: 38.6927, lon: -120.0022, elevation_ft: 8360, huc: "180201290101"}
+  - {triplet: "1049:CA:SNTL", name: "Forestdale Creek", lat: 38.68245, lon: -119.9597, elevation_ft: 8050, huc: "160502010301"}
+  - {triplet: "778:CA:SNTL", name: "Spratt Creek", lat: 38.66627, lon: -119.81741, elevation_ft: 6060, huc: "160502010107"}
+  - {triplet: "1331:CA:SNTL", name: "Lost Lakes", lat: 38.64745, lon: -119.95141, elevation_ft: 8640, huc: "160502010301"}
+  - {triplet: "356:CA:SNTL", name: "Blue Lakes", lat: 38.60801, lon: -119.92455, elevation_ft: 8060, huc: "180400120101"}

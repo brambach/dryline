@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import datetime as dt
 from dataclasses import dataclass
+from zoneinfo import ZoneInfo
 
 from dryline.models import Claim, Missing, Trail, TrailLine
 from dryline.obs import (
@@ -25,13 +26,14 @@ class Thresholds:
     elevation_band_ft: int = 1000
     snow_depth_in: float = 2.0  # SNOTEL depth sensors read 0-1 in of noise on bare ground
     muddy_precip_in: float = 0.25
-    precip_min_coverage: float = 0.75
+    precip_min_coverage: float = 0.6  # ASOS skips hours; KTVL had 34 of 48 hourly METARs
     snotel_max_age_days: int = 2
     nws_max_age_hours: int = 6
     conditions_max_age_days: int = 14
 
 
 DEFAULT = Thresholds()
+LOCAL = ZoneInfo("America/Los_Angeles")
 SNOTEL_URL = "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
 NWS_URL = "https://api.weather.gov/"
 
@@ -193,7 +195,7 @@ def conditions_for(
 ) -> tuple[list[ConditionsObs], list[Missing]]:
     if not trail.trta_segment:
         return [], []
-    matches = [c for c in conditions if c.segment.lower() == trail.trta_segment.lower()]
+    matches = [c for c in conditions if c.segment == trail.trta_segment]
     fresh = [c for c in matches if (today - c.last_updated).days <= t.conditions_max_age_days]
     missing = []
     if matches and not fresh:
@@ -213,8 +215,10 @@ def conditions_for(
 def closure_claims(trail: Trail, obs: Observations) -> list[Claim]:
     claims = []
     for c in obs.closures:
-        title = c.title.lower()
-        hit = next((k for k in trail.closure_keywords if k in title), None)
+        if c.page not in trail.status_sources:
+            continue
+        text = f"{c.title} {c.summary}".lower()
+        hit = next((k for k in trail.closure_keywords if k in text), None)
         if hit:
             claims.append(
                 c.claim("closure", f"Closed per official alert: “{c.title}” (matched “{hit}”).")
@@ -225,8 +229,8 @@ def closure_claims(trail: Trail, obs: Observations) -> list[Claim]:
 def evaluate(
     trail: Trail, obs: Observations, now: dt.datetime, t: Thresholds = DEFAULT
 ) -> TrailLine:
-    today = now.date()
-    missing: list[Missing] = [g.missing() for g in obs.gaps]
+    today = now.astimezone(LOCAL).date()
+    missing: list[Missing] = [g.missing() for g in obs.gaps if g.source in trail.status_sources]
 
     closed = closure_claims(trail, obs)
     snow, snow_free, m = snow_evidence(trail, obs.snow, today, t)
@@ -235,11 +239,12 @@ def evaluate(
     missing += m
     cond, m = conditions_for(trail, obs.conditions, today, t)
     missing += m
-    clear: list[Claim] = []
     notes: list[Claim] = []
     for c in cond:
         statement = f"{c.source_name}, {c.segment} (updated {c.last_updated:%b %-d}): “{c.text}”"
-        bucket = {"closed": closed, "snow": snow, "muddy": wet, "dry": clear}.get(c.hint, notes)
+        bucket = {"closed": closed, "snow": snow, "muddy": wet, "snow_free": snow_free}.get(
+            c.hint, notes
+        )
         bucket.append(c.claim("conditions", statement))
 
     forecast = None
@@ -252,11 +257,11 @@ def evaluate(
         status, reasons = "snow", snow
     elif wet:
         status, reasons = "muddy", wet
-    elif clear or (snow_free and dry):
-        status, reasons = "dry", clear + snow_free + dry
+    elif snow_free and dry:
+        status, reasons = "dry", snow_free + dry
     else:
         status, reasons = "unknown", []
-    context = [c for c in closed + snow + wet + clear + snow_free + dry + notes if c not in reasons]
+    context = [c for c in closed + snow + wet + snow_free + dry + notes if c not in reasons]
     if status == "unknown" and not missing:
         missing.append(
             Missing(

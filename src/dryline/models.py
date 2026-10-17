@@ -18,6 +18,8 @@ Status = Literal["dry", "muddy", "snow", "closed", "unknown"]
 STATUSES: tuple[Status, ...] = ("dry", "muddy", "snow", "closed", "unknown")
 Aspect = Literal["N", "NE", "E", "SE", "S", "SW", "W", "NW", "mixed"]
 Activity = Literal["hike", "run", "ride"]
+# Official pages a trail's closures and conditions are read from (see sources.yaml).
+PageSource = Literal["usfs-ltbmu", "usfs-tnf", "usfs-htnf", "nvparks-tahoe", "trta"]
 
 # Lake Tahoe basin plus Truckee. Anything outside is out of scope.
 TAHOE_BBOX = {"lat_min": 38.6, "lat_max": 39.5, "lon_min": -120.45, "lon_max": -119.75}
@@ -48,7 +50,8 @@ class Trail(Strict):
     official_status_url: HttpUrl
     activities: tuple[Activity, ...] = Field(min_length=1)
     closure_keywords: tuple[str, ...] = Field(min_length=1)
-    trta_segment: str | None = None
+    trta_segment: str | None = None  # div id on the TRTA conditions page, e.g. "TCtoBrockway"
+    status_sources: tuple[PageSource, ...] = ()
     sources: tuple[HttpUrl, ...] = Field(min_length=1)
     notes: str | None = None
     confirmed: bool = False
@@ -60,6 +63,8 @@ class Trail(Strict):
         for point in (self.trailhead, self.high_point):
             if point is not None and not point.in_tahoe():
                 raise ValueError(f"{self.id}: {point} is outside the Tahoe bounding box")
+        if self.trta_segment and "trta" not in self.status_sources:
+            raise ValueError(f"{self.id}: has trta_segment but 'trta' is not in status_sources")
         if any(k != k.lower() or not k.strip() for k in self.closure_keywords):
             raise ValueError(f"{self.id}: closure_keywords must be non-empty lowercase")
         return self
