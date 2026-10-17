@@ -14,7 +14,10 @@ from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "docs" / "screenshots"
-VIEWPORTS = {"mobile": (390, 844), "desktop": (1280, 900)}
+OPTIONS = OUT / "options"
+# Bryce's preview pane is about 1052x854 at 2x (design-taste APPLY.md §8), plus a phone.
+VIEWPORTS = {"mobile": (390, 844), "desktop": (1052, 854)}
+SCENES = ("ridge", "wash", "none")
 
 
 def chromium_path() -> str | None:
@@ -36,7 +39,7 @@ def main() -> int:
         for vname, (w, h) in VIEWPORTS.items():
             ctx = browser.new_context(
                 viewport={"width": w, "height": h},
-                device_scale_factor=2 if vname == "mobile" else 1,
+                device_scale_factor=2,
                 reduced_motion="reduce",  # skip the arrival animation for stable shots
             )
             page = ctx.new_page()
@@ -50,6 +53,14 @@ def main() -> int:
                     "document.documentElement.scrollWidth > document.documentElement.clientWidth"
                 )
                 print(f"{target.relative_to(ROOT)}  horizontal-overflow={overflow}")
+            # Side-by-side options for the one background scene, today page only.
+            OPTIONS.mkdir(parents=True, exist_ok=True)
+            page.goto(pages["today"].resolve().as_uri())
+            for scene in SCENES:
+                page.evaluate(f"document.body.dataset.scene = '{scene}'")
+                target = OPTIONS / f"scene-{scene}-{vname}.png"
+                page.screenshot(path=str(target))
+                print(f"{target.relative_to(ROOT)}")
             ctx.close()
         browser.close()
     return 0

@@ -276,3 +276,26 @@ $ uv run pytest -q
 SNOTEL now has Oct 16 values. The NWS "Today" period is selected (for example "Sunny, high 58°F" at Eagle
 Lake), and KTVL's precipitation window ends at 5:53am. The archive now holds Oct 16 and Oct 17, and the
 screenshots were re-taken from this build.
+
+## Design pass: design-taste
+
+The site was rebuilt to github.com/brambach/design-taste (`APPLY.md`, `built/dervo.md`, starter tokens).
+`docs/DESIGN.md` records how each rule was applied and the two deliberate deviations.
+
+- **Type:** Instrument Serif, Instrument Sans and JetBrains Mono, all self-hosted under OFL. This replaces
+  Fraunces, Hanken Grotesk and IBM Plex Mono.
+- **Ground:** warm paper, with the warm-charcoal dark theme.
+- **Status:** drawn glyphs plus a word, and lines grouped by status so the word is said once.
+- **Rows:** no rule lines; hovering one dims the others.
+- **Accent:** rust appears only on "closed".
+- **Motion:** the "Today" arrival animation is gone (nothing animates on load).
+- **Scene:** one halftone ridgeline behind the title. Ridge, wash and none options are rendered side by
+  side in `docs/screenshots/options/`.
+
+```
+$ uv run python scripts/screenshots.py      # 1052x854 @2x and 390x844 @2x
+docs/screenshots/{today,archive,trail}-{mobile,desktop}.png  horizontal-overflow=False (6/6)
+docs/screenshots/options/scene-{ridge,wash,none}-{mobile,desktop}.png
+$ uv run pytest -q
+90 passed
+```

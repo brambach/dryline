@@ -1,3 +1,4 @@
+{% from "_glyph.html" import glyph %}
 {% macro cite(url, fetched_at, full=false) -%}
 <a class="cite" data-source href="{{ url }}" rel="noopener">{{ url|host }} · {% if full %}fetched {{ fetched_at|stamp }}{% else %}{{ fetched_at|time }}{% endif %}</a>
 {%- endmacro %}
@@ -7,19 +8,19 @@
 {% macro trail_line(line, trail, root) %}
 <li class="line s-{{ line.status }}" data-line="{{ line.trail_id }}">
   <div class="line-head">
-    <span class="status"><i class="dot" aria-hidden="true"></i>{{ LABEL[line.status] }}</span>
+    {{ glyph(line.status) }}<span class="sr">{{ LABEL[line.status] }}:</span>
     <a class="name" href="{{ root }}trails/{{ line.trail_id }}/">{{ line.trail_name }}</a>
-    {% if trail %}<span class="elev mono">{{ trail.elevation_min_ft|ft }}–{{ trail.elevation_max_ft|ft }} ft</span>{% endif %}
+    {% if trail %}<span class="elev">{{ trail.elevation_min_ft|ft }}–{{ trail.elevation_max_ft|ft }} ft</span>{% endif %}
   </div>
-  <p class="why">
+  <div class="why">
   {% if line.status == "unknown" %}
-    {{ missing_item(line.missing[0]) }}
+    <p>{{ missing_item(line.missing[0]) }}</p>
   {% else %}
-    {% for c in line.claims[:2] %}{{ c.statement }} {{ cite(c.source_url, c.fetched_at) }}{% if not loop.last %}<br>{% endif %}{% endfor %}
+    {% for c in line.claims[:2] %}<p>{{ c.statement }} {{ cite(c.source_url, c.fetched_at) }}</p>{% endfor %}
   {% endif %}
-  </p>
   {% if line.forecast %}
-  <p class="fx">{{ line.forecast.statement }} {{ cite(line.forecast.source_url, line.forecast.fetched_at) }}</p>
+    <p class="fx">{{ line.forecast.statement }} {{ cite(line.forecast.source_url, line.forecast.fetched_at) }}</p>
   {% endif %}
+  </div>
 </li>
 {% endmacro %}

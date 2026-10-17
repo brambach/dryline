@@ -1,18 +1,25 @@
 {% extends "base.html" %}
 {% from "_line.html" import trail_line %}
+{% from "_glyph.html" import glyph %}
 {% block title %}{% if is_today %}Today{% else %}{{ day.strftime("%b %-d, %Y") }}{% endif %} · dryline{% endblock %}
+{% block scene %}{% include "_scene.html" %}{% endblock %}
 {% block main %}
 <section class="hero">
-  <h1 class="display arrive">{% if is_today %}Today{% else %}{{ day.strftime("%b %-d") }}{% endif %}</h1>
-  <p class="date">{{ day.strftime("%A, %B %-d, %Y") }} · Lake Tahoe &amp; Truckee</p>
+  <h1 class="display">{% if is_today %}Today{% else %}{{ day.strftime("%A") }}{% endif %}</h1>
+  <p class="date">{{ day.strftime("%A, %B %-d, %Y") }} · Lake Tahoe and Truckee</p>
   {% if root == "" and not is_today %}<p class="stale">No update yet today. This is the latest digest.</p>{% endif %}
-  <ul class="summary mono">
-  {% for status, n in summary %}<li class="s-{{ status }}"><i class="dot" aria-hidden="true"></i>{{ n }} {{ status }}</li>{% endfor %}
+  <ul class="summary">
+  {% for status, n in summary %}<li class="s-{{ status }}"><a href="#{{ status }}">{{ glyph(status) }}<span class="n">{{ n }}</span> {{ LABEL[status]|lower }}</a></li>{% endfor %}
   </ul>
 </section>
-<ol class="lines">
-{% for line in lines %}
-{{ trail_line(line, trails.get(line.trail_id), root) }}
+{% for status, n in summary %}
+<section class="group" id="{{ status }}">
+  <h2 class="label">{{ LABEL[status] }}</h2>
+  <ol class="lines">
+  {% for line in lines if line.status == status %}
+  {{ trail_line(line, trails.get(line.trail_id), root) }}
+  {% endfor %}
+  </ol>
+</section>
 {% endfor %}
-</ol>
 {% endblock %}
