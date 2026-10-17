@@ -103,6 +103,10 @@ def build_site(
 ) -> list[Path]:
     if not days:
         raise ValueError("no lines to render")
+    for lines in days.values():
+        for line in lines:
+            if not isinstance(line, TrailLine):
+                raise TypeError(f"renderer accepts TrailLine only, got {type(line).__name__}")
     env = _env()
     if out.exists():
         shutil.rmtree(out)

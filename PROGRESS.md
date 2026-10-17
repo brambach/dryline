@@ -103,3 +103,56 @@ Live parse of the 2026-10-16 snapshot:
 - **TRTA:** 9 segments, last updated Jun 24 to Jul 7. All are older than 14 days, so they're missing.
 - **USFS:** closure alerts LTBMU 1, Tahoe NF 13, Humboldt-Toiyabe 17. None matches a trail's keywords.
 - **NV State Parks:** banner only, no closures.
+
+## M4: Rules and claims
+
+`rules.evaluate` is deterministic. Precedence is closed > snow > muddy > dry > unknown, and "dry" needs
+positive snow-free and low-rain evidence. The type wall:
+
+- `Claim` requires an `HttpUrl` source, a timezone-aware `fetched_at`, and a non-empty quote.
+- `TrailLine` refuses a non-unknown status without claims, and an unknown status without `Missing`
+  entries, each of which carries the URL that was tried.
+- `build_site` raises `TypeError` for anything that isn't a `TrailLine`.
+- Each page is run through `check_every_line_linked` at build time. It raises `UncitedLine` if a rendered
+  line lacks an `a[data-source][href^=http]`.
+
+```
+$ uv run pytest -v tests/test_rules.py tests/test_site.py tests/test_end_to_end.py
+test_rules.py::test_dry_needs_snow_free_and_low_rain PASSED
+test_rules.py::test_snow_at_similar_elevation_below_high_point PASSED
+test_rules.py::test_snow_only_above_trail_is_not_snow PASSED
+test_rules.py::test_snow_depth_noise_below_threshold_is_not_snow PASSED
+test_rules.py::test_muddy_after_rain PASSED
+test_rules.py::test_closed_beats_everything PASSED
+test_rules.py::test_unrelated_closure_ignored PASSED
+test_rules.py::test_closure_keyword_in_summary PASSED
+test_rules.py::test_unknown_when_no_snow_station PASSED
+test_rules.py::test_stale_snotel_counts_as_missing PASSED
+test_rules.py::test_far_station_ignored PASSED
+test_rules.py::test_station_outside_elevation_band_ignored PASSED
+test_rules.py::test_patchy_precip_counts_as_missing PASSED
+test_rules.py::test_old_nws_window_counts_as_missing PASSED
+test_rules.py::test_fresh_conditions_page_muddy PASSED
+test_rules.py::test_stale_conditions_page_is_missing_not_used PASSED
+test_rules.py::test_snow_free_conditions_entry_is_not_dry_without_rain_data PASSED
+test_rules.py::test_source_gap_is_reported PASSED
+test_rules.py::test_line_without_claims_cannot_say_dry PASSED
+test_rules.py::test_unknown_must_say_what_is_missing PASSED
+test_rules.py::test_claim_requires_citation[bad0] PASSED
+test_rules.py::test_claim_requires_citation[bad1] PASSED
+test_rules.py::test_claim_requires_citation[bad2] PASSED
+test_rules.py::test_claim_requires_citation[bad3] PASSED
+test_rules.py::test_claim_requires_citation[bad4] PASSED
+test_rules.py::test_gap_for_unrelated_source_not_shown PASSED
+test_rules.py::test_snow_free_witness_prefers_near_station_above_high_point PASSED
+test_site.py::test_builds_all_pages PASSED
+test_site.py::test_every_rendered_line_has_a_source_link PASSED
+test_site.py::test_uncited_line_is_rejected PASSED
+test_site.py::test_feed_parses PASSED
+test_end_to_end.py::test_one_line_per_trail PASSED
+test_end_to_end.py::test_every_page_every_line_linked PASSED
+test_end_to_end.py::test_missing_source_shows_up PASSED
+test_end_to_end.py::test_renderer_rejects_non_lines PASSED
+$ uv run pytest -q
+
+```
