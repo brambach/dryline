@@ -169,8 +169,9 @@ def build_site(
             built_at=format_datetime(built_at),
         ),
     )
-    css = Path(__file__).parent / "templates" / "style.css"
-    shutil.copy(css, out / "style.css")
+    templates = Path(__file__).parent / "templates"
+    shutil.copy(templates / "style.css", out / "style.css")
+    shutil.copytree(templates / "fonts", out / "fonts")
     written.append(out / "style.css")
     (out / ".nojekyll").write_text("")
     (out / "manifest.json").write_text(
