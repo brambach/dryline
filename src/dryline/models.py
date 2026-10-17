@@ -32,6 +32,7 @@ class Strict(BaseModel):
 class LatLon(Strict):
     lat: float
     lon: float
+    name: str | None = None
 
     def in_tahoe(self) -> bool:
         b = TAHOE_BBOX
@@ -48,6 +49,7 @@ class Trail(Strict):
     aspect: Aspect
     land_manager: str = Field(min_length=1)
     official_status_url: HttpUrl
+    official_info_url: HttpUrl | None = None
     activities: tuple[Activity, ...] = Field(min_length=1)
     closure_keywords: tuple[str, ...] = Field(min_length=1)
     trta_segment: str | None = None  # div id on the TRTA conditions page, e.g. "TCtoBrockway"

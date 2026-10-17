@@ -1,0 +1,935 @@
+# dryline trails: 20 Lake Tahoe basin and Truckee trails.
+# DRAFT, researched 2026-10-17 from the cited public sources. Every entry is `confirmed: false`
+# until a human reviews it (see REVIEW notes in each `notes` field and docs/TRAILS_REVIEW.md).
+#
+# Fields:
+#   trailhead/high_point   WGS84 decimal degrees. Must sit inside the Tahoe bbox (tests enforce it).
+#   elevation_*_ft         Mostly sampled from USGS 3DEP along the OSM trail line; see notes.
+#   closure_keywords       Lowercase; matched against official alert titles and summaries from
+#                          this trail's status_sources only. Keep them specific (trail names, not roads).
+#   trta_segment           Section id on tahoerimtrail.org/current-trail-conditions/.
+#   status_sources         Official pages read daily for this trail (registry in src/dryline/config.py).
+#   sources                Where the coordinates, elevations, and manager came from.
+trails:
+- id: mount-tallac
+  name: Mount Tallac (via Mt. Tallac Trailhead)
+  trailhead:
+    name: Mt. Tallac Trailhead (parking)
+    lat: 38.92167
+    lon: -120.06817
+  high_point:
+    name: Mount Tallac summit
+    lat: 38.90598
+    lon: -120.09898
+  elevation_min_ft: 6427
+  elevation_max_ft: 9739
+  aspect: mixed
+  land_manager: USFS Lake Tahoe Basin Management Unit
+  official_status_url: https://www.fs.usda.gov/r05/laketahoebasin/alerts
+  official_info_url: https://www.fs.usda.gov/r05/laketahoebasin/recreation/mt-tallac-trailhead
+  activities:
+  - hike
+  - run
+  closure_keywords:
+  - tallac
+  - floating island
+  - cathedral lake
+  trta_segment: null
+  status_sources:
+  - usfs-ltbmu
+  sources:
+  - https://www.fs.usda.gov/r05/laketahoebasin/recreation/mt-tallac-trailhead
+  - https://www.ngs.noaa.gov/cgi-bin/ds_mark.prl?PidBox=JS3922
+  - https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/5/query?where=gaz_name%3D%27Mount+Tallac%27+AND+state_alpha+IN+%28%27CA%27%2C%27NV%27%29&outFields=gaz_id%2Cgaz_name%2Ccounty_name&outSR=4326&f=json
+  - https://epqs.nationalmap.gov/v1/json?x=-120.06817&y=38.92167&units=Feet&wkid=4326&includeDate=false
+  - https://www.openstreetmap.org/way/236147880
+  - https://www.openstreetmap.org/way/32880969
+  - https://www.openstreetmap.org/way/344631277
+  - https://www.openstreetmap.org/way/457800550
+  - https://www.openstreetmap.org/way/1213889953
+  notes: 'Trailhead coords from OSM parking area "Tallac Trailhead Parking" (USFS page gives no lat/lon). Summit
+    9,739 ft = NGS NAVD88 benchmark JS3922; USFS page lists 9,735 ft (older datum). Trailhead elevation from USGS
+    EPQS. Aspect mixed: route climbs NE/E-facing ridge, final ~1,000 ft is on the S/SW-facing back side. Desolation
+    Wilderness: no bikes; wilderness permit required. Min/max and aspect derived by sampling USGS 3DEP elevations
+    (EPQS) along the OpenStreetMap trail geometry (cited OSM ways); DEM values are NAVD88 and can differ from signed/published
+    figures by roughly 5-30 ft. Aspect = dominant downslope direction of terrain along the sampled route (circular
+    mean; "mixed" when no direction dominates).'
+  confirmed: false
+- id: eagle-lake-desolation
+  name: Eagle Lake (Desolation Wilderness) via Eagle Falls
+  trailhead:
+    name: Eagle Falls Picnic Area and Trailhead
+    lat: 38.95189
+    lon: -120.11296
+  high_point:
+    name: Eagle Lake (trail end at shoreline)
+    lat: 38.94212
+    lon: -120.12222
+  elevation_min_ft: 6574
+  elevation_max_ft: 7023
+  aspect: NW
+  land_manager: USFS Lake Tahoe Basin Management Unit
+  official_status_url: https://www.fs.usda.gov/r05/laketahoebasin/alerts
+  official_info_url: https://www.fs.usda.gov/r05/laketahoebasin/recreation/eagle-falls-picnic-area-and-trailhead
+  activities:
+  - hike
+  - run
+  closure_keywords:
+  - eagle falls
+  - eagle lake
+  trta_segment: null
+  status_sources:
+  - usfs-ltbmu
+  sources:
+  - https://www.fs.usda.gov/r05/laketahoebasin/recreation/eagle-falls-picnic-area-and-trailhead
+  - https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/7/query?where=gaz_name%3D%27Eagle+Lake%27+AND+state_alpha+IN+%28%27CA%27%2C%27NV%27%29&outFields=gaz_id%2Cgaz_name%2Ccounty_name&outSR=4326&f=json
+  - https://epqs.nationalmap.gov/v1/json?x=-120.11296&y=38.95189&units=Feet&wkid=4326&includeDate=false
+  - https://epqs.nationalmap.gov/v1/json?x=-120.12222&y=38.94212&units=Feet&wkid=4326&includeDate=false
+  - https://www.openstreetmap.org/way/174505961
+  - https://www.openstreetmap.org/way/456504487
+  - https://www.openstreetmap.org/way/288423399
+  - https://www.openstreetmap.org/relation/17028226
+  notes: Trailhead lat/lon from USFS page. USFS page text says trailhead is "approximately 7,100 feet", but USGS
+    DEM at the USFS coordinates gives ~6,574 ft and the lake surface is ~6,980-7,000 ft (GNIS/EPQS; OSM ele 2133
+    m), so the USFS 7,100 figure appears to be copied from the Bayview page; used DEM values. Out-and-back ~1 mi
+    each way. Min/max and aspect derived by sampling USGS 3DEP elevations (EPQS) along the OpenStreetMap trail geometry
+    (cited OSM ways); DEM values are NAVD88 and can differ from signed/published figures by roughly 5-30 ft. Aspect
+    = dominant downslope direction of terrain along the sampled route (circular mean; "mixed" when no direction
+    dominates).
+  confirmed: false
+- id: rubicon-trail-dl-bliss
+  name: Rubicon Trail (D.L. Bliss to Emerald Bay)
+  trailhead:
+    name: Rubicon Trailhead North (D.L. Bliss SP)
+    lat: 38.9986
+    lon: -120.0975
+  high_point:
+    name: High point on bluff above Rubicon Point (DEM)
+    lat: 38.98766
+    lon: -120.0977
+  elevation_min_ft: 6232
+  elevation_max_ft: 6602
+  aspect: E
+  land_manager: California State Parks
+  official_status_url: https://www.parks.ca.gov/?page_id=505
+  official_info_url: https://www.parks.ca.gov/?page_id=506
+  activities:
+  - hike
+  - run
+  closure_keywords:
+  - rubicon
+  - d.l. bliss
+  - dl bliss
+  - vikingsholm
+  trta_segment: null
+  status_sources: []
+  sources:
+  - https://www.parks.ca.gov/?page_id=505
+  - https://www.parks.ca.gov/?page_id=506
+  - https://epqs.nationalmap.gov/v1/json?x=-120.0975&y=38.9986&units=Feet&wkid=4326&includeDate=false
+  - https://epqs.nationalmap.gov/v1/json?x=-120.08388&y=38.955&units=Feet&wkid=4326&includeDate=false
+  - https://www.openstreetmap.org/way/252387786
+  - https://www.openstreetmap.org/way/855153538
+  - https://www.openstreetmap.org/way/855153535
+  - https://www.openstreetmap.org/way/439762372
+  - https://www.openstreetmap.org/way/1315533454
+  - https://www.openstreetmap.org/way/1315533455
+  notes: 'Trailhead coords are the "Rubicon Trailhead North" map link on the D.L. Bliss SP page; south end is "Rubicon
+    Trailhead South" near Eagle Point (38.95500, -120.08388, per Emerald Bay SP page). Lakeshore trail, east-facing,
+    lowest-snow trail in the set. As of Oct 1 2026 D.L. Bliss is closed to vehicles (walk in ~1 mi from the Visitor
+    Center lot, sunrise-sunset); Emerald Bay SP page lists "Rubicon Trail hiking - OPEN". Bikes/dogs not allowed
+    on dirt trails (state park rules; OSM bicycle=no). Keyword "rubicon" will also match alerts about the separate
+    Rubicon OHV/jeep trail (Eldorado NF) and Rubicon Peak; consider requiring a second keyword. Two park pages:
+    505 = D.L. Bliss, 506 = Emerald Bay. Min/max and aspect derived by sampling USGS 3DEP elevations (EPQS) along
+    the OpenStreetMap trail geometry (cited OSM ways); DEM values are NAVD88 and can differ from signed/published
+    figures by roughly 5-30 ft. Aspect = dominant downslope direction of terrain along the sampled route (circular
+    mean; "mixed" when no direction dominates).'
+  confirmed: false
+- id: cascade-falls
+  name: Cascade Falls (Bayview Trailhead)
+  trailhead:
+    name: Bayview Trailhead and Day-Use Area
+    lat: 38.94527
+    lon: -120.09904
+  high_point:
+    name: Trail high point (DEM)
+    lat: 38.9403
+    lon: -120.10038
+  elevation_min_ft: 6789
+  elevation_max_ft: 6927
+  aspect: E
+  land_manager: USFS Lake Tahoe Basin Management Unit
+  official_status_url: https://www.fs.usda.gov/r05/laketahoebasin/alerts
+  official_info_url: https://www.fs.usda.gov/r05/laketahoebasin/recreation/trails/cascade-falls
+  activities:
+  - hike
+  closure_keywords:
+  - cascade falls
+  - bayview
+  - cascade lake
+  trta_segment: null
+  status_sources:
+  - usfs-ltbmu
+  sources:
+  - https://www.fs.usda.gov/r05/laketahoebasin/recreation/trails/cascade-falls
+  - https://www.fs.usda.gov/r05/laketahoebasin/recreation/bayview-trailhead-and-day-use-area
+  - https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/7/query?where=gaz_name%3D%27Cascade+Lake%27+AND+state_alpha+IN+%28%27CA%27%2C%27NV%27%29&outFields=gaz_id%2Cgaz_name%2Ccounty_name&outSR=4326&f=json
+  - https://epqs.nationalmap.gov/v1/json?x=-120.09904&y=38.94527&units=Feet&wkid=4326&includeDate=false
+  - https://www.openstreetmap.org/way/132186631
+  - https://www.openstreetmap.org/way/527421733
+  notes: Trailhead lat/lon from USFS Bayview page. USFS says Bayview is "approximately 7,100 feet", but USGS DEM
+    gives ~6,836 ft at the USFS point and OSM tags the parking at 2,102 m (~6,896 ft); used DEM values for the trail
+    line. ~1 mi each way, rocky granite slabs above Cascade Lake. Bayview is typically open mid-May to mid-October
+    (USFS) and TRTA (7/7/26) reported the lot closed to vehicles with roadside parking on Hwy 89. Min/max and aspect
+    derived by sampling USGS 3DEP elevations (EPQS) along the OpenStreetMap trail geometry (cited OSM ways); DEM
+    values are NAVD88 and can differ from signed/published figures by roughly 5-30 ft. Aspect = dominant downslope
+    direction of terrain along the sampled route (circular mean; "mixed" when no direction dominates).
+  confirmed: false
+- id: echo-lakes-to-lake-aloha
+  name: Echo Lakes to Lake Aloha (PCT/TRT)
+  trailhead:
+    name: Echo Lakes Trailhead (PCT access)
+    lat: 38.83393
+    lon: -120.04372
+  high_point:
+    name: PCT high point near Haypress Meadows (DEM)
+    lat: 38.85605
+    lon: -120.11173
+  elevation_min_ft: 7412
+  elevation_max_ft: 8337
+  aspect: S
+  land_manager: USFS Lake Tahoe Basin Management Unit
+  official_status_url: https://www.fs.usda.gov/r05/laketahoebasin/alerts
+  official_info_url: https://www.fs.usda.gov/r05/laketahoebasin/recreation/echo-lakes-trailhead-pct-access
+  activities:
+  - hike
+  - run
+  closure_keywords:
+  - echo lake
+  - lake aloha
+  trta_segment: EchotoBP
+  status_sources:
+  - trta
+  - usfs-ltbmu
+  sources:
+  - https://www.fs.usda.gov/r05/laketahoebasin/recreation/echo-lakes-trailhead-pct-access
+  - https://en.wikipedia.org/wiki/Lake_Aloha
+  - https://tahoerimtrail.org/current-trail-conditions/
+  - https://epqs.nationalmap.gov/v1/json?x=-120.04372&y=38.83393&units=Feet&wkid=4326&includeDate=false
+  - https://epqs.nationalmap.gov/v1/json?x=-120.14527&y=38.86654&units=Feet&wkid=4326&includeDate=false
+  - https://www.openstreetmap.org/way/439973666
+  - https://www.openstreetmap.org/way/439973667
+  - https://www.openstreetmap.org/way/439973668
+  - https://www.openstreetmap.org/way/439973669
+  - https://www.openstreetmap.org/way/439973670
+  - https://www.openstreetmap.org/way/439973671
+  - https://www.openstreetmap.org/way/439973672
+  - https://www.openstreetmap.org/way/439973673
+  - https://www.openstreetmap.org/way/439973674
+  - https://www.openstreetmap.org/way/405055917
+  - https://www.openstreetmap.org/way/405055922
+  - https://www.openstreetmap.org/relation/2209408
+  notes: 'Trailhead lat/lon from USFS page. Lake Aloha surface 8,116 ft (Wikipedia; USGS EPQS ~8,112); lake centroid
+    ~38.86654, -120.14527 (OSM). Max 8,337 ft is a DEM value on the PCT just before the lake basin. ~6 mi one way
+    (no water taxi after season). Route is mostly on south-facing slopes above Echo Lakes. Desolation Wilderness:
+    permit required, no bikes on PCT. Min/max and aspect derived by sampling USGS 3DEP elevations (EPQS) along the
+    OpenStreetMap trail geometry (cited OSM ways); DEM values are NAVD88 and can differ from signed/published figures
+    by roughly 5-30 ft. Aspect = dominant downslope direction of terrain along the sampled route (circular mean;
+    "mixed" when no direction dominates).'
+  confirmed: false
+- id: ellis-peak
+  name: Ellis Peak
+  trailhead:
+    name: Ellis Peak Trailhead (Barker Pass Rd)
+    lat: 39.07195
+    lon: -120.23097
+  high_point:
+    name: Ellis Peak summit
+    lat: 39.06862
+    lon: -120.1981
+  elevation_min_ft: 7776
+  elevation_max_ft: 8730
+  aspect: mixed
+  land_manager: USFS Lake Tahoe Basin Management Unit
+  official_status_url: https://www.fs.usda.gov/r05/laketahoebasin/alerts
+  official_info_url: https://www.fs.usda.gov/r05/laketahoebasin/recreation/barker-pass-trailhead-pacific-crest-trail
+  activities:
+  - hike
+  - run
+  - ride
+  closure_keywords:
+  - ellis peak
+  - ellis lake
+  trta_segment: null
+  status_sources:
+  - usfs-ltbmu
+  sources:
+  - https://www.fs.usda.gov/r05/laketahoebasin/recreation/barker-pass-trailhead-pacific-crest-trail
+  - https://www.fs.usda.gov/r05/tahoe/recreation/barker-pass-pacific-crest-trailhead
+  - https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/5/query?where=gaz_name%3D%27Ellis+Peak%27+AND+state_alpha+IN+%28%27CA%27%2C%27NV%27%29&outFields=gaz_id%2Cgaz_name%2Ccounty_name&outSR=4326&f=json
+  - https://epqs.nationalmap.gov/v1/json?x=-120.23097&y=39.07195&units=Feet&wkid=4326&includeDate=false
+  - https://epqs.nationalmap.gov/v1/json?x=-120.1981&y=39.06862&units=Feet&wkid=4326&includeDate=false
+  - https://www.openstreetmap.org/way/304913854
+  - https://www.openstreetmap.org/way/446940164
+  - https://www.openstreetmap.org/node/12453670848
+  notes: 'Trailhead coords from OSM node "Ellis Peak Trailhead" (no official lat/lon found; USFS Barker Pass PCT
+    TH is 39.076922, -120.23514 per TNF page). Summit coords from USGS GNIS; summit elevation 8,730 ft is USGS DEM
+    at the GNIS point (commonly published as ~8,740 ft) - ESTIMATE. OSM trail ends ~8,500 ft just below the summit.
+    Bike use: OSM tags bicycle=designated and the USFS Barker Pass pages mention cyclists/motorcycles on the access
+    road - verify trail bike status. Barker Pass Rd is gated in winter/spring; TNF page (as of May 31 2026) reported
+    gates locked from Hwy 89. Manager: likely LTBMU (basin side of Barker Pass) but Barker Pass pages appear on
+    both LTBMU and Tahoe NF sites - flag for review. Separate 2026 Talbot Fire closure (TNF) covers PCT/TRT north
+    of Barker Pass, not this trail. Min/max and aspect derived by sampling USGS 3DEP elevations (EPQS) along the
+    OpenStreetMap trail geometry (cited OSM ways); DEM values are NAVD88 and can differ from signed/published figures
+    by roughly 5-30 ft. Aspect = dominant downslope direction of terrain along the sampled route (circular mean;
+    "mixed" when no direction dominates).'
+  confirmed: false
+- id: mr-toads-wild-ride
+  name: Mr. Toad's Wild Ride (Saxon Creek Trail) via Big Meadow/TRT
+  trailhead:
+    name: Big Meadow Trailhead (Hwy 89)
+    lat: 38.78915
+    lon: -120.0004
+  high_point:
+    name: TRT near Tucker Flat / top of Saxon Creek Trail (DEM)
+    lat: 38.81463
+    lon: -119.96865
+  elevation_min_ft: 6497
+  elevation_max_ft: 8954
+  aspect: mixed
+  land_manager: USFS Lake Tahoe Basin Management Unit
+  official_status_url: https://www.fs.usda.gov/r05/laketahoebasin/alerts
+  official_info_url: https://tamba.org/trails/trail-conditions/
+  activities:
+  - ride
+  - hike
+  - run
+  closure_keywords:
+  - mr. toad
+  - toad's
+  - saxon creek trail
+  - tucker flat
+  trta_segment: KBStoBM
+  status_sources:
+  - trta
+  - usfs-ltbmu
+  sources:
+  - https://www.fs.usda.gov/r05/laketahoebasin/recreation/big-meadow-trailhead
+  - https://tamba.org/trails/trail-conditions/
+  - https://tahoerimtrail.org/current-trail-conditions/
+  - https://epqs.nationalmap.gov/v1/json?x=-120.0004&y=38.78915&units=Feet&wkid=4326&includeDate=false
+  - https://epqs.nationalmap.gov/v1/json?x=-119.9862&y=38.8612&units=Feet&wkid=4326&includeDate=false
+  - https://www.openstreetmap.org/way/28639243
+  - https://www.openstreetmap.org/way/439972454
+  - https://www.openstreetmap.org/way/1564954327
+  - https://www.openstreetmap.org/way/1564954331
+  - https://www.openstreetmap.org/way/37023133
+  - https://www.openstreetmap.org/way/1564954319
+  notes: 'Point-to-point/shuttle route: Big Meadow TH (USFS coords) -> TRT north to Tucker Flat -> Saxon Creek Trail
+    (Mr. Toad''s) down to the lower Saxon Creek terminus near Meyers (~38.8612, -119.9862 per OSM). trc_segment
+    applies only to the TRT climb from Big Meadow. Max 8,954 ft is a DEM value near the Tucker Flat junction - ESTIMATE,
+    not a published figure. Upper climb is mostly SW/W-facing, Saxon Creek descent mostly N/NE-facing, hence ''mixed''.
+    TAMBA (2026) lists Mr. Toad''s, Saxon Creek, Corral and others in an active forest-operations area with possible
+    temporary closures. Big Meadow gate closes in winter (TRTA). Min/max and aspect derived by sampling USGS 3DEP
+    elevations (EPQS) along the OpenStreetMap trail geometry (cited OSM ways); DEM values are NAVD88 and can differ
+    from signed/published figures by roughly 5-30 ft. Aspect = dominant downslope direction of terrain along the
+    sampled route (circular mean; "mixed" when no direction dominates).'
+  confirmed: false
+- id: corral-trail
+  name: Corral Trail (South Lake Tahoe)
+  trailhead:
+    name: Corral Trail lower end (OSM)
+    lat: 38.8813
+    lon: -119.9776
+  high_point:
+    name: Corral Trail upper end near Fountain Place Rd (OSM/DEM)
+    lat: 38.86677
+    lon: -119.9564
+  elevation_min_ft: 6387
+  elevation_max_ft: 7054
+  aspect: W
+  land_manager: USFS Lake Tahoe Basin Management Unit
+  official_status_url: https://www.fs.usda.gov/r05/laketahoebasin/alerts
+  official_info_url: https://tamba.org/trails/trail-conditions/
+  activities:
+  - ride
+  - hike
+  - run
+  closure_keywords:
+  - corral trail
+  - corral loop
+  - sidewinder
+  trta_segment: null
+  status_sources:
+  - usfs-ltbmu
+  sources:
+  - https://tamba.org/trails/trail-conditions/
+  - https://epqs.nationalmap.gov/v1/json?x=-119.9776&y=38.8813&units=Feet&wkid=4326&includeDate=false
+  - https://epqs.nationalmap.gov/v1/json?x=-119.9564&y=38.8668&units=Feet&wkid=4326&includeDate=false
+  - https://www.openstreetmap.org/way/446937811
+  - https://www.openstreetmap.org/way/499794677
+  - https://www.openstreetmap.org/way/513762939
+  - https://www.openstreetmap.org/way/1291939845
+  notes: No official USFS page or coordinates found for Corral; trailhead = lower end of the OSM "Corral Trail"
+    way and high point = upper end near Fountain Place Rd - ESTIMATED access points; riders often climb Fountain
+    Place Rd and descend Corral. Land manager inferred as LTBMU (South Lake Tahoe NFS lands, TAMBA-maintained) -
+    flag for review. Keyword "corral" can also match "Camp Richardson Corral" alerts. TAMBA (2026) notes active
+    forest operations with possible temporary closures on Corral, Sidewinder and Fountain Place. Min/max and aspect
+    derived by sampling USGS 3DEP elevations (EPQS) along the OpenStreetMap trail geometry (cited OSM ways); DEM
+    values are NAVD88 and can differ from signed/published figures by roughly 5-30 ft. Aspect = dominant downslope
+    direction of terrain along the sampled route (circular mean; "mixed" when no direction dominates).
+  confirmed: false
+- id: van-sickle-bi-state-park
+  name: Van Sickle Trail (Van Sickle Bi-State Park to TRT)
+  trailhead:
+    name: Van Sickle Trail start near park parking (OSM)
+    lat: 38.95658
+    lon: -119.93437
+  high_point:
+    name: Junction with Tahoe Rim Trail (DEM)
+    lat: 38.95875
+    lon: -119.89532
+  elevation_min_ft: 6438
+  elevation_max_ft: 7792
+  aspect: NW
+  land_manager: Nevada Division of State Parks
+  official_status_url: https://parks.nv.gov/parks/lake-tahoe-nevada-state-park-3
+  official_info_url: https://tahoerimtrail.org/current-trail-conditions/
+  activities:
+  - hike
+  - run
+  - ride
+  closure_keywords:
+  - van sickle
+  - rim trail connector
+  trta_segment: KBNtoKBS
+  status_sources:
+  - nvparks-tahoe
+  - trta
+  - usfs-ltbmu
+  sources:
+  - https://parks.nv.gov/parks/lake-tahoe-nevada-state-park-3
+  - https://tahoerimtrail.org/current-trail-conditions/
+  - https://epqs.nationalmap.gov/v1/json?x=-119.94039&y=38.95495&units=Feet&wkid=4326&includeDate=false
+  - https://epqs.nationalmap.gov/v1/json?x=-119.93437&y=38.95658&units=Feet&wkid=4326&includeDate=false
+  - https://www.openstreetmap.org/way/230779745
+  - https://www.openstreetmap.org/way/440907809
+  - https://www.openstreetmap.org/way/440907808
+  notes: NV State Parks map pin for the park is 38.95495, -119.94039 (park entrance, ~6,319 ft DEM); the trailhead
+    used here is the OSM start of the Van Sickle Trail ~550 m east near the parking area. Park co-managed with the
+    California Tahoe Conservancy. Open to vehicles May 1 - Oct 31, pedestrians year-round (NV Parks); NV Parks also
+    posts "Construction Begins at Van Sickle Bi-State Park". The Rim Trail Connector ties into the TRT between the
+    Kingsbury trailheads. NV Parks status URL slug is the odd but live "lake-tahoe-nevada-state-park-3" (page title
+    "Van Sickle - Lake Tahoe Nevada State Park"). Min/max and aspect derived by sampling USGS 3DEP elevations (EPQS)
+    along the OpenStreetMap trail geometry (cited OSM ways); DEM values are NAVD88 and can differ from signed/published
+    figures by roughly 5-30 ft. Aspect = dominant downslope direction of terrain along the sampled route (circular
+    mean; "mixed" when no direction dominates).
+  confirmed: false
+- id: mount-rose-summit
+  name: Mount Rose Summit Trail
+  trailhead:
+    name: Mt. Rose Welcome Plaza / Summit Trailhead (NV-431)
+    lat: 39.31346
+    lon: -119.89745
+  high_point:
+    name: Mount Rose summit
+    lat: 39.34378
+    lon: -119.91789
+  elevation_min_ft: 8913
+  elevation_max_ft: 10785
+  aspect: mixed
+  land_manager: Humboldt-Toiyabe National Forest
+  official_status_url: https://www.fs.usda.gov/r04/humboldt-toiyabe/alerts
+  official_info_url: https://www.fs.usda.gov/r04/humboldt-toiyabe/recreation/mt-rose-welcome-plaza
+  activities:
+  - hike
+  - run
+  closure_keywords:
+  - mt. rose summit trail
+  - mount rose summit trail
+  - mt. rose trail
+  - mount rose trail
+  - relay peak
+  trta_segment: BrockwaytoRose
+  status_sources:
+  - trta
+  - usfs-htnf
+  sources:
+  - https://www.fs.usda.gov/r04/humboldt-toiyabe/recreation/mt-rose-welcome-plaza
+  - https://www.fs.usda.gov/wildflowers/regions/intermountain/MtRoseMeadows/index.shtml
+  - https://www.fs.usda.gov/r05/laketahoebasin/recreation/mt-rose-wilderness
+  - https://www.ngs.noaa.gov/cgi-bin/ds_mark.prl?PidBox=KR1728
+  - https://tahoerimtrail.org/current-trail-conditions/
+  - https://epqs.nationalmap.gov/v1/json?x=-119.89745&y=39.31346&units=Feet&wkid=4326&includeDate=false
+  - https://www.openstreetmap.org/way/32877800
+  - https://www.openstreetmap.org/way/864869446
+  - https://www.openstreetmap.org/way/439969239
+  - https://www.openstreetmap.org/way/235017275
+  - https://www.openstreetmap.org/way/439969241
+  notes: 'Trailhead lat/lon from HTNF Welcome Plaza page; elevation is USGS DEM (~8,913 ft; signed as ~8,900+).
+    Summit 10,785 ft = NGS NAVD88 benchmark KR1728; USFS LTBMU page lists 10,776 ft (older datum). First ~2.4 mi
+    to Galena Falls is on the TRT, then Mount Rose Wilderness. TRTA: hikers only on the waterfall trail, bikes prohibited
+    in the wilderness. Summit sits just north of the Tahoe basin divide (trailhead is on the rim). Keyword "mount
+    rose" will also match Mt. Rose Highway / ski area items. Min/max and aspect derived by sampling USGS 3DEP elevations
+    (EPQS) along the OpenStreetMap trail geometry (cited OSM ways); DEM values are NAVD88 and can differ from signed/published
+    figures by roughly 5-30 ft. Aspect = dominant downslope direction of terrain along the sampled route (circular
+    mean; "mixed" when no direction dominates).'
+  confirmed: false
+- id: flume-trail
+  name: Flume Trail (Spooner Lake to Tunnel Creek)
+  trailhead:
+    name: Spooner Lake (Lake Tahoe Nevada State Park)
+    lat: 39.1076
+    lon: -119.909
+  high_point:
+    name: North Canyon saddle above Marlette Lake (DEM)
+    lat: 39.15593
+    lon: -119.8962
+  elevation_min_ft: 6311
+  elevation_max_ft: 8143
+  aspect: W
+  land_manager: Nevada Division of State Parks
+  official_status_url: https://parks.nv.gov/parks/spooner-lake
+  official_info_url: https://tahoerimtrail.org/current-trail-conditions/
+  activities:
+  - ride
+  - hike
+  - run
+  closure_keywords:
+  - flume
+  - tunnel creek
+  - marlette
+  - north canyon
+  trta_segment: null
+  status_sources:
+  - nvparks-tahoe
+  sources:
+  - https://parks.nv.gov/parks/spooner-lake
+  - https://tahoerimtrail.org/current-trail-conditions/
+  - https://epqs.nationalmap.gov/v1/json?x=-119.909&y=39.1076&units=Feet&wkid=4326&includeDate=false
+  - https://epqs.nationalmap.gov/v1/json?x=-119.92964&y=39.23496&units=Feet&wkid=4326&includeDate=false
+  - https://www.openstreetmap.org/way/14401111
+  - https://www.openstreetmap.org/way/38783373
+  - https://www.openstreetmap.org/way/1190215747
+  - https://www.openstreetmap.org/way/14399270
+  notes: 'Trailhead = NV State Parks map pin for Spooner Lake. Point-to-point: North Canyon Rd to Marlette Lake,
+    Marlette Flume Trail (4.4 mi per NV Parks), descend Tunnel Creek Rd to Hwy 28 (min 6,311 ft at the bottom; Incline-side
+    shuttles). Flume section traverses W-facing slopes above Lake Tahoe. TRTA conditions page (Tahoe Meadows to
+    Spooner Summit section) reports 2026 weekday construction closures in Spooner backcountry affecting North Canyon
+    Rd and the Marlette Flume Trail south from Rock Slide; NV Parks page also shows a "Hobart Closure and Construction
+    Project" alert. Not on the TRT. Min/max and aspect derived by sampling USGS 3DEP elevations (EPQS) along the
+    OpenStreetMap trail geometry (cited OSM ways); DEM values are NAVD88 and can differ from signed/published figures
+    by roughly 5-30 ft. Aspect = dominant downslope direction of terrain along the sampled route (circular mean;
+    "mixed" when no direction dominates).'
+  confirmed: false
+- id: marlette-lake
+  name: Marlette Lake via North Canyon (Spooner)
+  trailhead:
+    name: Spooner Lake (Lake Tahoe Nevada State Park)
+    lat: 39.1076
+    lon: -119.909
+  high_point:
+    name: North Canyon saddle (DEM)
+    lat: 39.15432
+    lon: -119.8959
+  elevation_min_ft: 6953
+  elevation_max_ft: 8168
+  aspect: mixed
+  land_manager: Nevada Division of State Parks
+  official_status_url: https://parks.nv.gov/parks/spooner-lake
+  official_info_url: https://tahoerimtrail.org/current-trail-conditions/
+  activities:
+  - hike
+  - run
+  - ride
+  closure_keywords:
+  - marlette
+  trta_segment: null
+  status_sources:
+  - nvparks-tahoe
+  sources:
+  - https://parks.nv.gov/parks/spooner-lake
+  - https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/7/query?where=gaz_name%3D%27Marlette+Lake%27+AND+state_alpha+IN+%28%27CA%27%2C%27NV%27%29&outFields=gaz_id%2Cgaz_name%2Ccounty_name&outSR=4326&f=json
+  - https://epqs.nationalmap.gov/v1/json?x=-119.909&y=39.1076&units=Feet&wkid=4326&includeDate=false
+  - https://epqs.nationalmap.gov/v1/json?x=-119.90166&y=39.17369&units=Feet&wkid=4326&includeDate=false
+  - https://www.openstreetmap.org/way/14401111
+  - https://www.openstreetmap.org/way/174550080
+  - https://www.openstreetmap.org/way/659744633
+  notes: 'NV Parks: ~5 mi to Marlette Lake via North Canyon Road, with a parallel hiker/horse trail for 4 mi. Lake
+    surface ~7,839 ft (USGS DEM at GNIS point 39.17369, -119.90166); route tops out at the ~8,150 ft saddle before
+    dropping to the lake. Canyon-bottom route with no dominant aspect. 2026 weekday construction closures affect
+    North Canyon Rd and Marlette Lake Trail (TRTA conditions page citing NV State Parks). Min/max and aspect derived
+    by sampling USGS 3DEP elevations (EPQS) along the OpenStreetMap trail geometry (cited OSM ways); DEM values
+    are NAVD88 and can differ from signed/published figures by roughly 5-30 ft. Aspect = dominant downslope direction
+    of terrain along the sampled route (circular mean; "mixed" when no direction dominates).'
+  confirmed: false
+- id: page-meadows
+  name: Page Meadows (TRT from Ward Creek)
+  trailhead:
+    name: Paige Meadows trailhead (OSM)
+    lat: 39.14627
+    lon: -120.1732
+  high_point:
+    name: TRT high point at north edge of Page Meadows (DEM)
+    lat: 39.15452
+    lon: -120.18613
+  elevation_min_ft: 6532
+  elevation_max_ft: 7002
+  aspect: S
+  land_manager: USFS Lake Tahoe Basin Management Unit
+  official_status_url: https://www.fs.usda.gov/r05/laketahoebasin/alerts
+  official_info_url: https://tahoerimtrail.org/current-trail-conditions/
+  activities:
+  - hike
+  - run
+  - ride
+  closure_keywords:
+  - page meadow
+  - paige meadow
+  - 64 acres
+  trta_segment: BPtoTC
+  status_sources:
+  - trta
+  - usfs-ltbmu
+  sources:
+  - https://tahoerimtrail.org/current-trail-conditions/
+  - https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/5/query?where=gaz_name%3D%27Page+Meadows%27+AND+state_alpha+IN+%28%27CA%27%2C%27NV%27%29&outFields=gaz_id%2Cgaz_name%2Ccounty_name&outSR=4326&f=json
+  - https://epqs.nationalmap.gov/v1/json?x=-120.1732&y=39.14627&units=Feet&wkid=4326&includeDate=false
+  - https://epqs.nationalmap.gov/v1/json?x=-120.19258&y=39.14053&units=Feet&wkid=4326&includeDate=false
+  - https://www.openstreetmap.org/node/90184880
+  - https://www.openstreetmap.org/way/439955974
+  - https://www.openstreetmap.org/way/439955975
+  - https://www.openstreetmap.org/way/1116930550
+  - https://www.openstreetmap.org/way/1116930551
+  - https://www.openstreetmap.org/way/1116930552
+  - https://www.openstreetmap.org/way/437529002
+  - https://www.openstreetmap.org/way/898074737
+  notes: Trailhead = OSM trailhead node "Paige Meadows" (neighborhood access east of the meadows); TRTA lists Ward
+    Canyon (Ward Creek Blvd) and Tahoe City South (64 Acres) as TRT access. Meadow centroid per GNIS 39.14991, -120.18854.
+    Min 6,532 ft is the Ward Creek TRT access; meadows sit ~6,900-7,000 ft. Bikes allowed on this TRT stretch (TRTA
+    prohibits bikes only on PCT/Granite Chief in this section). Land manager presumed LTBMU (meadows are NFS land
+    on the west shore) - no dedicated USFS page found. Min/max and aspect derived by sampling USGS 3DEP elevations
+    (EPQS) along the OpenStreetMap trail geometry (cited OSM ways); DEM values are NAVD88 and can differ from signed/published
+    figures by roughly 5-30 ft. Aspect = dominant downslope direction of terrain along the sampled route (circular
+    mean; "mixed" when no direction dominates).
+  confirmed: false
+- id: five-lakes
+  name: Five Lakes Trail (Alpine Meadows)
+  trailhead:
+    name: Five Lakes Trailhead (Alpine Meadows Rd)
+    lat: 39.1793
+    lon: -120.2296
+  high_point:
+    name: Crest above Five Lakes (DEM)
+    lat: 39.17841
+    lon: -120.25189
+  elevation_min_ft: 6542
+  elevation_max_ft: 7579
+  aspect: SE
+  land_manager: Tahoe National Forest
+  official_status_url: https://www.fs.usda.gov/r05/tahoe/alerts
+  official_info_url: https://www.fs.usda.gov/r05/tahoe/recreation/trails/five-lakes-trail
+  activities:
+  - hike
+  - run
+  closure_keywords:
+  - five lakes
+  - granite chief wilderness
+  trta_segment: null
+  status_sources:
+  - usfs-tnf
+  sources:
+  - https://www.fs.usda.gov/r05/tahoe/recreation/trails/five-lakes-trail
+  - https://www.fs.usda.gov/r05/tahoe/alerts/alpine-meadows-stewardship-agreement-closure
+  - https://epqs.nationalmap.gov/v1/json?x=-120.2296&y=39.1793&units=Feet&wkid=4326&includeDate=false
+  - https://epqs.nationalmap.gov/v1/json?x=-120.25189&y=39.17841&units=Feet&wkid=4326&includeDate=false
+  - https://www.openstreetmap.org/way/172088721
+  notes: 'TNF: trail 16E13, 2.5 mi, "climbs the open south-facing slope" to Five Lakes just inside Granite Chief
+    Wilderness; crosses private land on an easement; no bikes. Trailhead coords = OSM trail start on Alpine Meadows
+    Rd (no official lat/lon). FLAG: TNF "Alpine Meadows Stewardship Agreement Closure" (effective May 1 2026 - Jan
+    31 2027) closes NFS lands/trails in a project area around Alpine Meadows/Olympic Valley; boundary is legal-description
+    only - check the map for overlap with 16E13. Truckee/North Lake area (outside the Tahoe basin proper, Truckee
+    River drainage). Min/max and aspect derived by sampling USGS 3DEP elevations (EPQS) along the OpenStreetMap
+    trail geometry (cited OSM ways); DEM values are NAVD88 and can differ from signed/published figures by roughly
+    5-30 ft. Aspect = dominant downslope direction of terrain along the sampled route (circular mean; "mixed" when
+    no direction dominates).'
+  confirmed: false
+- id: castle-peak
+  name: Castle Peak (Donner Summit)
+  trailhead:
+    name: Castle Valley Rd trailhead (north of I-80, Boreal/Castle Peak exit)
+    lat: 39.341
+    lon: -120.3476
+  high_point:
+    name: Castle Peak summit
+    lat: 39.36549
+    lon: -120.34918
+  elevation_min_ft: 7274
+  elevation_max_ft: 9109
+  aspect: mixed
+  land_manager: Tahoe National Forest
+  official_status_url: https://www.fs.usda.gov/r05/tahoe/alerts
+  official_info_url: https://www.fs.usda.gov/r05/tahoe/projects/158225
+  activities:
+  - hike
+  - run
+  closure_keywords:
+  - castle peak
+  - castle valley
+  - castle pass
+  trta_segment: null
+  status_sources:
+  - usfs-tnf
+  sources:
+  - https://www.ngs.noaa.gov/cgi-bin/ds_mark.prl?PidBox=KS2001
+  - https://www.truckeedonnerlandtrust.org/donner-lake-rim-trail
+  - https://www.fs.usda.gov/r05/tahoe/projects/158225
+  - https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/5/query?where=gaz_name%3D%27Castle+Peak%27+AND+state_alpha+IN+%28%27CA%27%2C%27NV%27%29&outFields=gaz_id%2Cgaz_name%2Ccounty_name&outSR=4326&f=json
+  - https://epqs.nationalmap.gov/v1/json?x=-120.3476&y=39.341&units=Feet&wkid=4326&includeDate=false
+  - https://www.openstreetmap.org/way/534096615
+  - https://www.openstreetmap.org/way/226199725
+  - https://www.openstreetmap.org/way/822623652
+  - https://www.openstreetmap.org/way/299527716
+  notes: 'Summit 9,109 ft and coords = NGS NAVD88 benchmark KS2001 (often published as 9,103 ft). Trailhead = start
+    of Castle Valley Rd on OSM; TDLT describes the Castle Valley Rd gate parking at ~7,300 ft (DEM 7,274). Route:
+    Castle Valley Rd -> Castle Pass (~7,924 ft DEM, GNIS 39.35824, -120.36522) -> Castle Peak Trail to summit; final
+    section is a scramble. TNF "Castle Trailhead Development Project" (decision 12/18/2025, status Completed) creates
+    a new year-round trailhead facility north of I-80 - trailhead location/parking may have changed; re-verify.
+    PCT segments: no bikes. Min/max and aspect derived by sampling USGS 3DEP elevations (EPQS) along the OpenStreetMap
+    trail geometry (cited OSM ways); DEM values are NAVD88 and can differ from signed/published figures by roughly
+    5-30 ft. Aspect = dominant downslope direction of terrain along the sampled route (circular mean; "mixed" when
+    no direction dominates).'
+  confirmed: false
+- id: mount-judah-loop
+  name: Mount Judah Loop (PCT, Donner Summit)
+  trailhead:
+    name: Donner Peak / Mt. Judah trailhead (Old Hwy 40 / Sugar Bowl Rd)
+    lat: 39.31466
+    lon: -120.3272
+  high_point:
+    name: Mount Judah summit
+    lat: 39.29853
+    lon: -120.31559
+  elevation_min_ft: 7061
+  elevation_max_ft: 8243
+  aspect: NW
+  land_manager: Tahoe National Forest
+  official_status_url: https://www.fs.usda.gov/r05/tahoe/alerts
+  official_info_url: null
+  activities:
+  - hike
+  - run
+  closure_keywords:
+  - judah
+  - donner peak
+  trta_segment: null
+  status_sources:
+  - usfs-tnf
+  sources:
+  - https://en.wikipedia.org/wiki/Mount_Judah
+  - https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/5/query?where=gaz_name%3D%27Mount+Judah%27+AND+state_alpha+IN+%28%27CA%27%2C%27NV%27%29&outFields=gaz_id%2Cgaz_name%2Ccounty_name&outSR=4326&f=json
+  - https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/5/query?where=gaz_name%3D%27Donner+Peak%27+AND+state_alpha+IN+%28%27CA%27%2C%27NV%27%29&outFields=gaz_id%2Cgaz_name%2Ccounty_name&outSR=4326&f=json
+  - https://epqs.nationalmap.gov/v1/json?x=-120.3272&y=39.31466&units=Feet&wkid=4326&includeDate=false
+  - https://epqs.nationalmap.gov/v1/json?x=-120.31559&y=39.29853&units=Feet&wkid=4326&includeDate=false
+  - https://www.openstreetmap.org/node/12351643715
+  - https://www.openstreetmap.org/way/299516119
+  - https://www.openstreetmap.org/way/1215473589
+  - https://www.openstreetmap.org/way/299566013
+  notes: Trailhead = OSM node "Donner Peak Trailhead"; no official TNF page found for the loop (searched). Summit
+    8,243 ft per USGS Norden quad (via Wikipedia), USGS DEM 8,240. Loop is mostly PCT (no bikes) and passes through/near
+    Sugar Bowl ski area lands (mixed private/NFS ownership) - land manager flagged for review. Donner Peak (GNIS
+    39.30874, -120.31249, ~7,989 ft DEM) is a common side trip. Min/max and aspect derived by sampling USGS 3DEP
+    elevations (EPQS) along the OpenStreetMap trail geometry (cited OSM ways); DEM values are NAVD88 and can differ
+    from signed/published figures by roughly 5-30 ft. Aspect = dominant downslope direction of terrain along the
+    sampled route (circular mean; "mixed" when no direction dominates).
+  confirmed: false
+- id: donner-lake-rim-trail
+  name: Donner Lake Rim Trail
+  trailhead:
+    name: DLRT east terminus (Northwoods Blvd, opposite Trout Creek trail parking)
+    lat: 39.3368
+    lon: -120.217
+  high_point:
+    name: Ridge high point above Johnson Canyon (DEM)
+    lat: 39.34915
+    lon: -120.28595
+  elevation_min_ft: 6356
+  elevation_max_ft: 7689
+  aspect: S
+  land_manager: Truckee Donner Land Trust
+  official_status_url: https://www.truckeedonnerlandtrust.org/donner-lake-rim-trail
+  official_info_url: https://www.fs.usda.gov/r05/tahoe/recreation/trails/donner-lake-rim-trail
+  activities:
+  - hike
+  - run
+  - ride
+  closure_keywords:
+  - donner lake rim
+  - dlrt
+  - johnson canyon
+  - summit lake
+  trta_segment: null
+  status_sources: []
+  sources:
+  - https://www.truckeedonnerlandtrust.org/donner-lake-rim-trail
+  - https://www.fs.usda.gov/r05/tahoe/recreation/trails/donner-lake-rim-trail
+  - https://epqs.nationalmap.gov/v1/json?x=-120.217&y=39.3368&units=Feet&wkid=4326&includeDate=false
+  - https://www.openstreetmap.org/way/689277459
+  - https://www.openstreetmap.org/way/693114797
+  - https://www.openstreetmap.org/way/600949907
+  - https://www.openstreetmap.org/way/10463838
+  - https://www.openstreetmap.org/way/299536544
+  - https://www.openstreetmap.org/way/303846618
+  notes: 'TDLT: 12 of a planned 23 mi built, multi-use (hike/bike/equestrian); access points at Northwoods Blvd,
+    Glacier Way (Tahoe Donner property), Wendin Way off the Donner Lake I-80 interchange (~6,500 ft), and Castle
+    Valley Rd (~7,300 ft). Trailhead coords = east end of the OSM DLRT way at Northwoods Blvd (no official lat/lon).
+    OSM geometry has a gap around Summit Lake, so max 7,689 ft may understate the high point near the "rocky staircase"
+    west of the Warren Lake junction - ESTIMATE. Also TNF trail 17E10 (segments on Tahoe NF); TDLT page has no live-conditions
+    feed, so TNF alerts (https://www.fs.usda.gov/r05/tahoe/alerts) should also be watched. Min/max and aspect derived
+    by sampling USGS 3DEP elevations (EPQS) along the OpenStreetMap trail geometry (cited OSM ways); DEM values
+    are NAVD88 and can differ from signed/published figures by roughly 5-30 ft. Aspect = dominant downslope direction
+    of terrain along the sampled route (circular mean; "mixed" when no direction dominates).'
+  confirmed: false
+- id: sawtooth-trail
+  name: Sawtooth Trail (Truckee)
+  trailhead:
+    name: Sawtooth Trailhead (Thelin Dr / FR 06)
+    lat: 39.31005
+    lon: -120.19175
+  high_point:
+    name: Loop high point (DEM)
+    lat: 39.28352
+    lon: -120.19443
+  elevation_min_ft: 6208
+  elevation_max_ft: 6469
+  aspect: W
+  land_manager: Tahoe National Forest
+  official_status_url: https://www.fs.usda.gov/r05/tahoe/alerts
+  official_info_url: https://www.fs.usda.gov/r05/tahoe/recreation/trails/sawtooth-trail
+  activities:
+  - ride
+  - hike
+  - run
+  closure_keywords:
+  - sawtooth
+  trta_segment: null
+  status_sources:
+  - usfs-tnf
+  sources:
+  - https://www.fs.usda.gov/r05/tahoe/recreation/trails/sawtooth-trail
+  - https://www.fs.usda.gov/r05/tahoe/recreation/sawtooth-trailhead
+  - https://www.fs.usda.gov/r05/tahoe/alerts/big-chief-sale-closure
+  - https://epqs.nationalmap.gov/v1/json?x=-120.19175&y=39.31005&units=Feet&wkid=4326&includeDate=false
+  - https://www.openstreetmap.org/relation/14311454
+  - https://www.openstreetmap.org/way/300399861
+  - https://www.openstreetmap.org/way/300399863
+  - https://www.openstreetmap.org/way/443121773
+  - https://www.openstreetmap.org/way/1385457385
+  notes: 'TNF: 8.5 mi lollipop from Sawtooth Trailhead (trail 55880), open to hikers, runners, equestrians, class
+    1 e-bikes; trailhead season Apr 24 - Dec 31. Trailhead coords = OSM "Lower Sawtooth Trailhead" (matches TNF
+    directions via Thelin Dr/FR 06; TNF page has no lat/lon). Low, flat-ish loop above the Truckee River canyon
+    - early to melt. TNF "Big Chief Sale Closure" (May 1 2026 - Jan 31 2027) closes trails in the adjacent Big Chief
+    project area (connecting Big Chief Trail 16E85) - verify overlap. Min/max and aspect derived by sampling USGS
+    3DEP elevations (EPQS) along the OpenStreetMap trail geometry (cited OSM ways); DEM values are NAVD88 and can
+    differ from signed/published figures by roughly 5-30 ft. Aspect = dominant downslope direction of terrain along
+    the sampled route (circular mean; "mixed" when no direction dominates).'
+  confirmed: false
+- id: trt-brockway-to-martis-peak
+  name: 'Tahoe Rim Trail: Brockway Summit to Martis Peak'
+  trailhead:
+    name: Brockway Summit TRT trailhead (Hwy 267)
+    lat: 39.25896
+    lon: -120.06344
+  high_point:
+    name: Martis Peak (lookout)
+    lat: 39.29139
+    lon: -120.03295
+  elevation_min_ft: 7046
+  elevation_max_ft: 8736
+  aspect: S
+  land_manager: Tahoe Rim Trail Association (on USFS land)
+  official_status_url: https://www.fs.usda.gov/r05/laketahoebasin/alerts
+  official_info_url: https://tahoerimtrail.org/current-trail-conditions/
+  activities:
+  - hike
+  - run
+  - ride
+  closure_keywords:
+  - martis peak
+  - watson lake
+  trta_segment: BrockwaytoRose
+  status_sources:
+  - trta
+  - usfs-ltbmu
+  - usfs-tnf
+  sources:
+  - https://tahoerimtrail.org/current-trail-conditions/
+  - https://tahoerimtrail.org/wp-content/uploads/2017/03/How-to-Break-the-Tahoe-Rim-Trail-into-14-Day-Hikes-updated.pdf
+  - https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/5/query?where=gaz_name%3D%27Martis+Peak%27+AND+state_alpha+IN+%28%27CA%27%2C%27NV%27%29&outFields=gaz_id%2Cgaz_name%2Ccounty_name&outSR=4326&f=json
+  - https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/5/query?where=gaz_name%3D%27Brockway+Summit%27+AND+state_alpha+IN+%28%27CA%27%2C%27NV%27%29&outFields=gaz_id%2Cgaz_name%2Ccounty_name&outSR=4326&f=json
+  - https://epqs.nationalmap.gov/v1/json?x=-120.06344&y=39.25896&units=Feet&wkid=4326&includeDate=false
+  - https://epqs.nationalmap.gov/v1/json?x=-120.03295&y=39.29139&units=Feet&wkid=4326&includeDate=false
+  - https://www.openstreetmap.org/way/229899213
+  - https://www.openstreetmap.org/way/513179803
+  - https://www.openstreetmap.org/way/513179799
+  - https://www.openstreetmap.org/way/499533436
+  - https://www.openstreetmap.org/way/513179801
+  - https://www.openstreetmap.org/way/647539678
+  - https://www.openstreetmap.org/way/647539679
+  - https://www.openstreetmap.org/way/421710732
+  notes: 'Trailhead = point where the OSM TRT ways meet Hwy 267 (~0.4 mi SE of the GNIS Brockway Summit gap at 39.26102,
+    -120.07132), consistent with TRTA "large dirt parking area 0.5 miles from summit". Martis Peak elevation 8,736
+    ft is USGS DEM at the GNIS point (commonly published 8,742 ft) - ESTIMATE. Route follows TRT then Martis Peak
+    Rd/summit path to the lookout. Underlying land: LTBMU (basin side) and Tahoe NF Truckee RD (Martis Peak lookout
+    area) - also watch https://www.fs.usda.gov/r05/tahoe/alerts. Bikes allowed on this stretch (TRTA prohibits only
+    in Mt. Rose Wilderness further east). Min/max and aspect derived by sampling USGS 3DEP elevations (EPQS) along
+    the OpenStreetMap trail geometry (cited OSM ways); DEM values are NAVD88 and can differ from signed/published
+    figures by roughly 5-30 ft. Aspect = dominant downslope direction of terrain along the sampled route (circular
+    mean; "mixed" when no direction dominates).'
+  confirmed: false
+- id: big-meadow-to-round-lake
+  name: Big Meadow to Round Lake (TRT)
+  trailhead:
+    name: Big Meadow Trailhead (Hwy 89)
+    lat: 38.78915
+    lon: -120.0004
+  high_point:
+    name: Rise just above Round Lake (DEM)
+    lat: 38.74807
+    lon: -120.00389
+  elevation_min_ft: 7243
+  elevation_max_ft: 8117
+  aspect: NW
+  land_manager: USFS Lake Tahoe Basin Management Unit
+  official_status_url: https://www.fs.usda.gov/r05/laketahoebasin/alerts
+  official_info_url: https://www.fs.usda.gov/r05/laketahoebasin/recreation/big-meadow-trailhead
+  activities:
+  - hike
+  - run
+  - ride
+  closure_keywords:
+  - big meadow
+  - round lake
+  - meiss
+  - dardanelles
+  trta_segment: BMtoEcho
+  status_sources:
+  - trta
+  - usfs-ltbmu
+  sources:
+  - https://www.fs.usda.gov/r05/laketahoebasin/recreation/big-meadow-trailhead
+  - https://tahoerimtrail.org/current-trail-conditions/
+  - https://epqs.nationalmap.gov/v1/json?x=-120.0004&y=38.78915&units=Feet&wkid=4326&includeDate=false
+  - https://epqs.nationalmap.gov/v1/json?x=-120.0059&y=38.74979&units=Feet&wkid=4326&includeDate=false
+  - https://www.openstreetmap.org/way/28639246
+  - https://www.openstreetmap.org/way/439972458
+  - https://www.openstreetmap.org/way/439972459
+  - https://www.openstreetmap.org/way/28639270
+  notes: 'Trailhead lat/lon from USFS Big Meadow page. Round Lake ~38.74979, -120.0059 (OSM water), surface ~8,043
+    ft (USGS DEM). ~2.5-3 mi one way. Bikes: TRT here is open to bikes (TRTA prohibits bikes only where TRT joins
+    the PCT from Meiss Meadow to Echo Lake; OSM bicycle=designated). Big Meadow gate closes in winter with snow/ice
+    (TRTA). Min/max and aspect derived by sampling USGS 3DEP elevations (EPQS) along the OpenStreetMap trail geometry
+    (cited OSM ways); DEM values are NAVD88 and can differ from signed/published figures by roughly 5-30 ft. Aspect
+    = dominant downslope direction of terrain along the sampled route (circular mean; "mixed" when no direction
+    dominates).'
+  confirmed: false

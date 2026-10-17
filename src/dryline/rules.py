@@ -269,6 +269,13 @@ def evaluate(
                 tried_url=trail.official_status_url,
             )
         )
+    if not trail.status_sources:
+        missing.append(
+            Missing(
+                what=f"No official closure source dryline can read for {trail.land_manager}",
+                tried_url=trail.official_status_url,
+            )
+        )
     return TrailLine(
         trail_id=trail.id,
         trail_name=trail.name,
