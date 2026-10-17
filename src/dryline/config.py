@@ -75,6 +75,10 @@ PAGES: dict[PageSource, PageSpec] = {
     ),
 }
 
+# METAR stations verified as ASOS: routine hourly reports at :53 with SLP and 6-hour groups, so a
+# missing Prrrr group means no measurable precipitation. KTRK and KCXP report every 20 minutes
+# without SLP (AWOS); their reports can show rain but not its absence. Verify before adding.
+ASOS_STATIONS = frozenset({"KTVL"})
 AWDB_DATA_URL = "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
 NWS_API = "https://api.weather.gov"
 

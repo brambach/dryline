@@ -114,6 +114,10 @@ def serve(lines_dir: Path, labels_path: Path, port: int = 8765) -> None:
             if self.path != "/label":
                 self.send_error(404)
                 return
+            # JSON only: a cross-site form post can't set this content type without CORS.
+            if self.headers.get("Content-Type", "").split(";")[0] != "application/json":
+                self.send_error(415)
+                return
             data = json.loads(self.rfile.read(int(self.headers["Content-Length"])))
             truth = data.get("truth")
             if truth not in TRUTHS:

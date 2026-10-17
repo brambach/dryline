@@ -13,7 +13,7 @@
 <link>{{ site_url }}archive/{{ day }}/</link>
 <guid isPermaLink="true">{{ site_url }}archive/{{ day }}/</guid>
 <pubDate>{{ rfc822(day) }}</pubDate>
-<description>{% filter e %}<ul>{% for line in lines %}<li><strong>{{ line.trail_name }}: {{ LABEL[line.status] }}.</strong> {% if line.status == "unknown" %}Missing: {{ line.missing[0].what }}. <a href="{{ line.missing[0].tried_url }}">source</a>{% else %}{{ line.claims[0].statement }} <a href="{{ line.claims[0].source_url }}">source</a>{% endif %}</li>{% endfor %}</ul>{% endfilter %}</description>
+<description><![CDATA[<ul>{% for line in lines %}<li><strong>{{ line.trail_name }}: {{ LABEL[line.status] }}.</strong> {% if line.status == "unknown" %}Missing: {{ line.missing[0].what }}. <a href="{{ line.missing[0].tried_url }}">checked {{ line.missing[0].tried_url|host }}</a>{% else %}{% set c = line.claims[0] %}{{ c.statement }} <a href="{{ c.source_url }}">{{ c.source_url|host }}, fetched {{ c.fetched_at|stamp }}</a>{% endif %}</li>{% endfor %}</ul>]]></description>
 </item>
 {% endfor %}
 </channel>

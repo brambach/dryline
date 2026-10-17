@@ -6,8 +6,8 @@ import datetime as dt
 from pathlib import Path
 
 from dryline.collect import forecast_name
-from dryline.config import PAGES, GridFile, StationsFile
-from dryline.fetch import load_raw, raw_path
+from dryline.config import ASOS_STATIONS, PAGES, GridFile, StationsFile
+from dryline.fetch import day_dir, load_raw, raw_path
 from dryline.models import Trail, TrailLine
 from dryline.obs import Gap, Observations
 from dryline.parse import (
@@ -20,6 +20,15 @@ from dryline.parse import (
     parse_usfs_alerts,
 )
 from dryline.rules import Thresholds, evaluate
+
+# A malformed response must become a gap or a note, never a crashed build.
+PARSE_ERRORS = (ParseError, ValueError, KeyError, TypeError, AttributeError)
+
+
+def snapshot_time(raw_root: Path, day: dt.date) -> dt.datetime | None:
+    """Latest fetched_at among a day's raw files: the right 'now' for rebuilding a past day."""
+    times = [load_raw(p).fetched_at for p in day_dir(raw_root, day).glob("*/*.json.gz")]
+    return max(times) if times else None
 
 
 def observations_for_day(
@@ -41,7 +50,7 @@ def observations_for_day(
             s, p = parse_snotel(load_raw(path), {st.triplet: st for st in stations.snotel})
             snow += s
             precip += p
-        except ParseError as e:
+        except PARSE_ERRORS as e:
             notes.append(f"snotel: {e}")
 
     seen_obs = {}
@@ -53,7 +62,7 @@ def observations_for_day(
         if fpath.exists():
             try:
                 forecasts[trail.id] = parse_nws_forecast(load_raw(fpath), now)
-            except (ParseError, KeyError, ValueError) as e:
+            except PARSE_ERRORS as e:
                 notes.append(f"forecast {trail.id}: {e}")
         st = entry.obs_station
         if st and st.id not in seen_obs:
@@ -61,8 +70,11 @@ def observations_for_day(
             opath = raw_path(raw_root, day, "nws", f"obs-{st.id}")
             if opath.exists():
                 try:
-                    precip.append(parse_nws_observations(load_raw(opath), st, now))
-                except (ParseError, KeyError, ValueError) as e:
+                    obs = parse_nws_observations(
+                        load_raw(opath), st, now, asos=st.id in ASOS_STATIONS
+                    )
+                    precip.append(obs)
+                except PARSE_ERRORS as e:
                     notes.append(f"nws obs {st.id}: {e}")
 
     used = sorted({s for t in trails for s in t.status_sources})
@@ -77,16 +89,26 @@ def observations_for_day(
                 )
             )
             continue
-        raw = load_raw(ppath)
-        if source == "trta":
-            c, g = parse_trta(raw)
-            conditions += c
-        elif source == "nvparks-tahoe":
-            c, g = parse_nvparks(raw)
-            closures += c
-        else:
-            c, g = parse_usfs_alerts(raw, source)
-            closures += c
+        try:
+            raw = load_raw(ppath)
+            if source == "trta":
+                c, g = parse_trta(raw)
+                conditions += c
+            elif source == "nvparks-tahoe":
+                c, g = parse_nvparks(raw)
+                closures += c
+            else:
+                c, g = parse_usfs_alerts(raw, source)
+                closures += c
+        except PARSE_ERRORS as e:
+            notes.append(f"{source}: {e}")
+            g = [
+                Gap(
+                    source=source,
+                    what=f"{PAGES[source].name} could not be parsed",
+                    tried_url=PAGES[source].url,
+                )
+            ]
         gaps += g
 
     return Observations(
@@ -111,4 +133,4 @@ def lines_for_day(
 ) -> list[TrailLine]:
     obs = observations_for_day(raw_root, day, trails, stations, grid, now, notes)
     t = thresholds or Thresholds()
-    return [evaluate(trail, obs, now, t) for trail in trails]
+    return [evaluate(trail, obs, now, t, today=day) for trail in trails]

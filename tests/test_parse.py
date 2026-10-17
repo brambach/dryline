@@ -84,7 +84,8 @@ def test_snotel_error_shape_raises():
 
 
 def test_nws_obs_counts_metar_hours():
-    p = parse_nws_observations(fixture("nws-obs-KTVL"), KTVL, RECORDED)
+    p = parse_nws_observations(fixture("nws-obs-KTVL"), KTVL, RECORDED, asos=True)
+    assert p.dry_capable
     assert p.total_in == 0.0
     assert p.periods_reported == 34 and p.periods_expected == 48
     assert "precipitation groups: none" in p.quote
@@ -103,9 +104,37 @@ def test_nws_obs_sums_p_groups_and_skips_pno():
         ]
     }
     raw = fixture("nws-obs-KTVL").model_copy(update={"body": json.dumps(body)})
-    p = parse_nws_observations(raw, KTVL, RECORDED)
+    p = parse_nws_observations(raw, KTVL, RECORDED, asos=True)
     assert p.total_in == pytest.approx(0.42)
     assert p.periods_reported == 3  # the PNO hour is not counted as dry
+
+
+def _obs_raw(*feats):
+    body = {"features": [{"properties": {"timestamp": t, "rawMessage": m}} for t, m in feats]}
+    return fixture("nws-obs-KTVL").model_copy(update={"body": json.dumps(body)})
+
+
+def test_nws_speci_after_routine_does_not_replace_hour():
+    raw = _obs_raw(
+        ("2026-10-17T04:58:00+00:00", "KTVL 170458Z AUTO RA RMK AO2 P0001"),
+        ("2026-10-17T04:53:00+00:00", "KTVL 170453Z AUTO RA RMK AO2 P0010"),
+    )
+    assert parse_nws_observations(raw, KTVL, RECORDED, asos=True).total_in == pytest.approx(0.10)
+
+
+def test_nws_window_ends_at_last_counted_report():
+    raw = _obs_raw(
+        ("2026-10-17T04:53:00+00:00", "KTVL 170453Z AUTO +RA RMK AO2 PNO"),
+        ("2026-10-16T20:53:00+00:00", "KTVL 162053Z AUTO RMK AO2"),
+    )
+    p = parse_nws_observations(raw, KTVL, RECORDED, asos=True)
+    assert p.window_end == dt.datetime(2026, 10, 16, 20, 53, tzinfo=dt.UTC)
+
+
+def test_nws_off_hour_awos_reports_ignored():
+    raw = _obs_raw(("2026-10-17T04:15:00+00:00", "KTRK 170415Z AUTO RMK AO2"))
+    with pytest.raises(ParseError):
+        parse_nws_observations(raw, KTVL, RECORDED)
 
 
 def test_nws_forecast_current_period():
@@ -199,6 +228,10 @@ def test_http_error_is_a_gap():
         ("Patchy snow above 8,500 ft; otherwise clear of snow.", "snow"),
         ("Trail closed for construction.", "closed"),
         ("Expect mosquitos.", None),
+        ("No closures on this section; trail is free of snow.", "snow_free"),
+        ("No mud, free of snow.", "snow_free"),
+        ("Reopened after the closure.", None),
+        ("Trail closed for construction. No snow.", "closed"),
     ],
 )
 def test_conditions_hint(text, hint):
@@ -235,6 +268,17 @@ def test_nvparks_closure_banner_and_changed_layout():
         raw.model_copy(update={"body": raw.body.replace("<body", banner + "<body", 1)})
     )
     assert [o.title for o in obs] == ["Spooner Lake Backcountry Closed"]
+    rel = (
+        '<ul id="alert"><li><h3>Marlette Trail Closed</h3><p>Closed.</p>'
+        '<a class="read-more" href="/parks/lake-tahoe/alerts/1">More</a></li></ul>'
+    )
+    obs, _ = parse_nvparks(
+        raw.model_copy(update={"body": raw.body.replace('<ul id="alert">', rel + '<ul id="x">', 1)})
+    )
+    assert str(obs[0].link) == "https://parks.nv.gov/parks/lake-tahoe/alerts/1"
+    no_banner = raw.model_copy(update={"body": raw.body.replace('id="alert"', 'id="banner"')})
+    obs, gaps = parse_nvparks(no_banner)
+    assert obs == [] and "banner not found" in gaps[0].what
     no_title = raw.model_copy(update={"body": raw.body.replace("Lake Tahoe", "Somewhere")})
     obs, gaps = parse_nvparks(no_title)
     assert obs == [] and "layout not recognized" in gaps[0].what

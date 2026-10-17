@@ -136,7 +136,8 @@ def build_site(
             built_at=built_at,
         )
 
-    write("index.html", day_page(latest, "", True), check=True)
+    is_today = latest == built_at.astimezone(LOCAL).date()
+    write("index.html", day_page(latest, "", is_today), check=True)
     for day in ordered_days:
         write(f"archive/{day}/index.html", day_page(day, "../../", False), check=True)
         write(f"archive/{day}.json", Lines.dump_json(days[day], indent=1).decode())

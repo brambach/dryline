@@ -5,6 +5,7 @@
 <section class="hero">
   <h1 class="display arrive">{% if is_today %}Today{% else %}{{ day.strftime("%b %-d") }}{% endif %}</h1>
   <p class="date">{{ day.strftime("%A, %B %-d, %Y") }} · Lake Tahoe &amp; Truckee</p>
+  {% if root == "" and not is_today %}<p class="stale">No update yet today. This is the latest digest.</p>{% endif %}
   <ul class="summary mono">
   {% for status, n in summary %}<li class="s-{{ status }}"><i class="dot" aria-hidden="true"></i>{{ n }} {{ status }}</li>{% endfor %}
   </ul>

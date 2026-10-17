@@ -71,6 +71,7 @@ a:hover { text-decoration-color: currentColor; }
 }
 .trail-title { font-size: clamp(2.6rem, 11vw, 4.8rem); line-height: 1; letter-spacing: -0.025em; }
 .date { color: var(--ink-2); margin: 14px 0 0; }
+.stale { color: var(--closed); margin: 8px 0 0; font-size: 0.9rem; }
 .summary { display: flex; flex-wrap: wrap; gap: 6px 16px; list-style: none; padding: 0; margin: 18px 0 0; }
 
 .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%;

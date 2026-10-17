@@ -57,3 +57,17 @@ def test_network_error_is_recorded_not_raised(tmp_path):
     f, _ = make_fetcher(tmp_path, handler)
     raw = f.get("nws", "y", "https://api.example.gov/y")
     assert raw.status_code == 0 and not raw.ok
+
+
+def test_failed_fetch_is_retried_same_day(tmp_path):
+    responses = iter([503, 200])
+
+    def handler(request):
+        if request.url.path == "/robots.txt":
+            return httpx.Response(404)
+        return httpx.Response(next(responses), text="x")
+
+    f, _ = make_fetcher(tmp_path, handler)
+    assert f.get("nws", "z", "https://api.example.gov/z").status_code == 503
+    f2, _ = make_fetcher(tmp_path, handler)
+    assert f2.get("nws", "z", "https://api.example.gov/z").status_code == 200

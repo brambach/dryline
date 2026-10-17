@@ -52,6 +52,7 @@ class PrecipObs(Cited):
     total_in: float
     periods_reported: int
     periods_expected: int
+    dry_capable: bool = True  # can a missing report group be read as "no precipitation"?
 
 
 class ClosureObs(Cited):

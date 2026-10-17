@@ -8,7 +8,7 @@
   "context": [
    {
     "kind": "precip",
-    "statement": "No measurable rain in the last 48 h at Fallen Leaf (SNOTEL, 2 km away).",
+    "statement": "No measurable rain on Oct 14–15 at Fallen Leaf (SNOTEL, 2 km away).",
     "source_name": "NRCS SNOTEL",
     "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-09&endDate=2026-10-16",
     "fetched_at": "2026-10-17T05:40:24.786911Z",
@@ -17,17 +17,17 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the last 47 h at South Lake Tahoe, Lake Tahoe Airport (NWS, 7 km away).",
+    "statement": "No measurable rain in the 48 h to 10:53pm Oct 16 at South Lake Tahoe, Lake Tahoe Airport (NWS, 7 km away).",
     "source_name": "NWS observations",
     "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-15T05%3A23%3A52Z",
     "fetched_at": "2026-10-17T06:24:00.203337Z",
-    "quote": "KTVL: 34 hourly METARs with AO2 between 1506Z and 1705Z; precipitation groups: none",
+    "quote": "KTVL: 34 routine METARs with AO2 from 150653Z to 170553Z; precipitation groups: none",
     "observed_at": "2026-10-17T05:53:00Z"
    }
   ],
   "missing": [
    {
-    "what": "No SNOTEL station within 40 km sits within 1,000 ft of the 9,739 ft high point, so snow up high can't be ruled out",
+    "what": "No SNOTEL station within 40 km and 1,000 ft of the 9,739 ft high point reported bare ground, so snow up high can't be ruled out",
     "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
    }
   ],
@@ -58,7 +58,7 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the last 48 h at Fallen Leaf (SNOTEL, 5 km away).",
+    "statement": "No measurable rain on Oct 14–15 at Fallen Leaf (SNOTEL, 5 km away).",
     "source_name": "NRCS SNOTEL",
     "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-09&endDate=2026-10-16",
     "fetched_at": "2026-10-17T05:40:24.786911Z",
@@ -67,11 +67,11 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the last 47 h at South Lake Tahoe, Lake Tahoe Airport (NWS, 12 km away).",
+    "statement": "No measurable rain in the 48 h to 10:53pm Oct 16 at South Lake Tahoe, Lake Tahoe Airport (NWS, 12 km away).",
     "source_name": "NWS observations",
     "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-15T05%3A23%3A52Z",
     "fetched_at": "2026-10-17T06:24:00.203337Z",
-    "quote": "KTVL: 34 hourly METARs with AO2 between 1506Z and 1705Z; precipitation groups: none",
+    "quote": "KTVL: 34 routine METARs with AO2 from 150653Z to 170553Z; precipitation groups: none",
     "observed_at": "2026-10-17T05:53:00Z"
    }
   ],
@@ -104,7 +104,7 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the last 48 h at Rubicon #2 (SNOTEL, 3 km away).",
+    "statement": "No measurable rain on Oct 14–15 at Rubicon #2 (SNOTEL, 3 km away).",
     "source_name": "NRCS SNOTEL",
     "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-09&endDate=2026-10-16",
     "fetched_at": "2026-10-17T05:40:24.786911Z",
@@ -113,11 +113,11 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the last 47 h at South Lake Tahoe, Lake Tahoe Airport (NWS, 13 km away).",
+    "statement": "No measurable rain in the 48 h to 10:53pm Oct 16 at South Lake Tahoe, Lake Tahoe Airport (NWS, 13 km away).",
     "source_name": "NWS observations",
     "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-15T05%3A23%3A52Z",
     "fetched_at": "2026-10-17T06:24:00.203337Z",
-    "quote": "KTVL: 34 hourly METARs with AO2 between 1506Z and 1705Z; precipitation groups: none",
+    "quote": "KTVL: 34 routine METARs with AO2 from 150653Z to 170553Z; precipitation groups: none",
     "observed_at": "2026-10-17T05:53:00Z"
    }
   ],
@@ -155,7 +155,7 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the last 48 h at Fallen Leaf (SNOTEL, 4 km away).",
+    "statement": "No measurable rain on Oct 14–15 at Fallen Leaf (SNOTEL, 4 km away).",
     "source_name": "NRCS SNOTEL",
     "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-09&endDate=2026-10-16",
     "fetched_at": "2026-10-17T05:40:24.786911Z",
@@ -164,11 +164,11 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the last 47 h at South Lake Tahoe, Lake Tahoe Airport (NWS, 10 km away).",
+    "statement": "No measurable rain in the 48 h to 10:53pm Oct 16 at South Lake Tahoe, Lake Tahoe Airport (NWS, 10 km away).",
     "source_name": "NWS observations",
     "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-15T05%3A23%3A52Z",
     "fetched_at": "2026-10-17T06:24:00.203337Z",
-    "quote": "KTVL: 34 hourly METARs with AO2 between 1506Z and 1705Z; precipitation groups: none",
+    "quote": "KTVL: 34 routine METARs with AO2 from 150653Z to 170553Z; precipitation groups: none",
     "observed_at": "2026-10-17T05:53:00Z"
    }
   ],
@@ -201,7 +201,7 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the last 48 h at Echo Peak (SNOTEL, 3 km away).",
+    "statement": "No measurable rain on Oct 14–15 at Echo Peak (SNOTEL, 3 km away).",
     "source_name": "NRCS SNOTEL",
     "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-09&endDate=2026-10-16",
     "fetched_at": "2026-10-17T05:40:24.786911Z",
@@ -210,11 +210,11 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the last 47 h at South Lake Tahoe, Lake Tahoe Airport (NWS, 8 km away).",
+    "statement": "No measurable rain in the 48 h to 10:53pm Oct 16 at South Lake Tahoe, Lake Tahoe Airport (NWS, 8 km away).",
     "source_name": "NWS observations",
     "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-15T05%3A23%3A52Z",
     "fetched_at": "2026-10-17T06:24:00.203337Z",
-    "quote": "KTVL: 34 hourly METARs with AO2 between 1506Z and 1705Z; precipitation groups: none",
+    "quote": "KTVL: 34 routine METARs with AO2 from 150653Z to 170553Z; precipitation groups: none",
     "observed_at": "2026-10-17T05:53:00Z"
    }
   ],
@@ -252,7 +252,7 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the last 48 h at Ward Creek #3 (SNOTEL, 7 km away).",
+    "statement": "No measurable rain on Oct 14–15 at Ward Creek #3 (SNOTEL, 7 km away).",
     "source_name": "NRCS SNOTEL",
     "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-09&endDate=2026-10-16",
     "fetched_at": "2026-10-17T05:40:24.786911Z",
@@ -261,11 +261,11 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the last 47 h at South Lake Tahoe, Lake Tahoe Airport (NWS, 26 km away).",
+    "statement": "No measurable rain in the 48 h to 10:53pm Oct 16 at South Lake Tahoe, Lake Tahoe Airport (NWS, 26 km away).",
     "source_name": "NWS observations",
     "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-15T05%3A23%3A52Z",
     "fetched_at": "2026-10-17T06:24:00.203337Z",
-    "quote": "KTVL: 34 hourly METARs with AO2 between 1506Z and 1705Z; precipitation groups: none",
+    "quote": "KTVL: 34 routine METARs with AO2 from 150653Z to 170553Z; precipitation groups: none",
     "observed_at": "2026-10-17T05:53:00Z"
    }
   ],
@@ -298,7 +298,7 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the last 48 h at Hagans Meadow (SNOTEL, 5 km away).",
+    "statement": "No measurable rain on Oct 14–15 at Hagans Meadow (SNOTEL, 5 km away).",
     "source_name": "NRCS SNOTEL",
     "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-09&endDate=2026-10-16",
     "fetched_at": "2026-10-17T05:40:24.786911Z",
@@ -307,11 +307,11 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the last 47 h at South Lake Tahoe, Lake Tahoe Airport (NWS, 10 km away).",
+    "statement": "No measurable rain in the 48 h to 10:53pm Oct 16 at South Lake Tahoe, Lake Tahoe Airport (NWS, 10 km away).",
     "source_name": "NWS observations",
     "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-15T05%3A23%3A52Z",
     "fetched_at": "2026-10-17T06:24:00.203337Z",
-    "quote": "KTVL: 34 hourly METARs with AO2 between 1506Z and 1705Z; precipitation groups: none",
+    "quote": "KTVL: 34 routine METARs with AO2 from 150653Z to 170553Z; precipitation groups: none",
     "observed_at": "2026-10-17T05:53:00Z"
    }
   ],
@@ -349,7 +349,7 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the last 48 h at Hagans Meadow (SNOTEL, 2 km away).",
+    "statement": "No measurable rain on Oct 14–15 at Hagans Meadow (SNOTEL, 2 km away).",
     "source_name": "NRCS SNOTEL",
     "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-09&endDate=2026-10-16",
     "fetched_at": "2026-10-17T05:40:24.786911Z",
@@ -358,11 +358,11 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the last 47 h at South Lake Tahoe, Lake Tahoe Airport (NWS, 2 km away).",
+    "statement": "No measurable rain in the 48 h to 10:53pm Oct 16 at South Lake Tahoe, Lake Tahoe Airport (NWS, 2 km away).",
     "source_name": "NWS observations",
     "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-15T05%3A23%3A52Z",
     "fetched_at": "2026-10-17T06:24:00.203337Z",
-    "quote": "KTVL: 34 hourly METARs with AO2 between 1506Z and 1705Z; precipitation groups: none",
+    "quote": "KTVL: 34 routine METARs with AO2 from 150653Z to 170553Z; precipitation groups: none",
     "observed_at": "2026-10-17T05:53:00Z"
    }
   ],
@@ -395,7 +395,7 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the last 48 h at Heavenly Valley (SNOTEL, 4 km away).",
+    "statement": "No measurable rain on Oct 14–15 at Heavenly Valley (SNOTEL, 4 km away).",
     "source_name": "NRCS SNOTEL",
     "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-09&endDate=2026-10-16",
     "fetched_at": "2026-10-17T05:40:24.786911Z",
@@ -404,11 +404,11 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the last 47 h at South Lake Tahoe, Lake Tahoe Airport (NWS, 8 km away).",
+    "statement": "No measurable rain in the 48 h to 10:53pm Oct 16 at South Lake Tahoe, Lake Tahoe Airport (NWS, 8 km away).",
     "source_name": "NWS observations",
     "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-15T05%3A23%3A52Z",
     "fetched_at": "2026-10-17T06:24:00.203337Z",
-    "quote": "KTVL: 34 hourly METARs with AO2 between 1506Z and 1705Z; precipitation groups: none",
+    "quote": "KTVL: 34 routine METARs with AO2 from 150653Z to 170553Z; precipitation groups: none",
     "observed_at": "2026-10-17T05:53:00Z"
    }
   ],
@@ -438,26 +438,17 @@
   "context": [
    {
     "kind": "precip",
-    "statement": "No measurable rain in the last 48 h at Mt Rose Ski Area (SNOTEL, 0 km away).",
+    "statement": "No measurable rain on Oct 14–15 at Mt Rose Ski Area (SNOTEL, 0 km away).",
     "source_name": "NRCS SNOTEL",
     "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-09&endDate=2026-10-16",
     "fetched_at": "2026-10-17T05:40:24.786911Z",
     "quote": "652:NV:SNTL PRCP 2026-10-14=0 in, 2026-10-15=0 in",
     "observed_at": "2026-10-16T00:00:00-08:00"
-   },
-   {
-    "kind": "precip",
-    "statement": "No measurable rain in the last 48 h at Carson City Airport (NWS, 20 km away).",
-    "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KCXP/observations?start=2026-10-15T05%3A23%3A52Z",
-    "fetched_at": "2026-10-17T06:23:59.096981Z",
-    "quote": "KCXP: 44 hourly METARs with AO2 between 1506Z and 1705Z; precipitation groups: none",
-    "observed_at": "2026-10-17T05:55:00Z"
    }
   ],
   "missing": [
    {
-    "what": "No SNOTEL station within 40 km sits within 1,000 ft of the 10,785 ft high point, so snow up high can't be ruled out",
+    "what": "No SNOTEL station within 40 km and 1,000 ft of the 10,785 ft high point reported bare ground, so snow up high can't be ruled out",
     "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
    },
    {
@@ -492,21 +483,12 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the last 48 h at Marlette Lake (SNOTEL, 1 km away).",
+    "statement": "No measurable rain on Oct 14–15 at Marlette Lake (SNOTEL, 1 km away).",
     "source_name": "NRCS SNOTEL",
     "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-09&endDate=2026-10-16",
     "fetched_at": "2026-10-17T05:40:24.786911Z",
     "quote": "615:NV:SNTL PRCP 2026-10-14=0 in, 2026-10-15=0 in",
     "observed_at": "2026-10-16T00:00:00-08:00"
-   },
-   {
-    "kind": "precip",
-    "statement": "No measurable rain in the last 48 h at Carson City Airport (NWS, 15 km away).",
-    "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KCXP/observations?start=2026-10-15T05%3A23%3A52Z",
-    "fetched_at": "2026-10-17T06:23:59.096981Z",
-    "quote": "KCXP: 44 hourly METARs with AO2 between 1506Z and 1705Z; precipitation groups: none",
-    "observed_at": "2026-10-17T05:55:00Z"
    }
   ],
   "context": [],
@@ -538,21 +520,12 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the last 48 h at Marlette Lake (SNOTEL, 1 km away).",
+    "statement": "No measurable rain on Oct 14–15 at Marlette Lake (SNOTEL, 1 km away).",
     "source_name": "NRCS SNOTEL",
     "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-09&endDate=2026-10-16",
     "fetched_at": "2026-10-17T05:40:24.786911Z",
     "quote": "615:NV:SNTL PRCP 2026-10-14=0 in, 2026-10-15=0 in",
     "observed_at": "2026-10-16T00:00:00-08:00"
-   },
-   {
-    "kind": "precip",
-    "statement": "No measurable rain in the last 48 h at Carson City Airport (NWS, 15 km away).",
-    "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KCXP/observations?start=2026-10-15T05%3A23%3A52Z",
-    "fetched_at": "2026-10-17T06:23:59.096981Z",
-    "quote": "KCXP: 44 hourly METARs with AO2 between 1506Z and 1705Z; precipitation groups: none",
-    "observed_at": "2026-10-17T05:55:00Z"
    }
   ],
   "context": [],
@@ -584,21 +557,12 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the last 48 h at Tahoe City Cross (SNOTEL, 3 km away).",
+    "statement": "No measurable rain on Oct 14–15 at Tahoe City Cross (SNOTEL, 3 km away).",
     "source_name": "NRCS SNOTEL",
     "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-09&endDate=2026-10-16",
     "fetched_at": "2026-10-17T05:40:24.786911Z",
     "quote": "809:CA:SNTL PRCP 2026-10-14=0 in, 2026-10-15=0 in",
     "observed_at": "2026-10-16T00:00:00-08:00"
-   },
-   {
-    "kind": "precip",
-    "statement": "No measurable rain in the last 47 h at South Lake Tahoe, Lake Tahoe Airport (NWS, 32 km away).",
-    "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-15T05%3A23%3A52Z",
-    "fetched_at": "2026-10-17T06:24:00.203337Z",
-    "quote": "KTVL: 34 hourly METARs with AO2 between 1506Z and 1705Z; precipitation groups: none",
-    "observed_at": "2026-10-17T05:53:00Z"
    }
   ],
   "context": [],
@@ -635,21 +599,12 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the last 48 h at Palisades Tahoe (SNOTEL, 2 km away).",
+    "statement": "No measurable rain on Oct 14–15 at Palisades Tahoe (SNOTEL, 2 km away).",
     "source_name": "NRCS SNOTEL",
     "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-09&endDate=2026-10-16",
     "fetched_at": "2026-10-17T05:40:24.786911Z",
     "quote": "784:CA:SNTL PRCP 2026-10-14=0 in, 2026-10-15=0 in",
     "observed_at": "2026-10-16T00:00:00-08:00"
-   },
-   {
-    "kind": "precip",
-    "statement": "No measurable rain in the last 47 h at South Lake Tahoe, Lake Tahoe Airport (NWS, 37 km away).",
-    "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-15T05%3A23%3A52Z",
-    "fetched_at": "2026-10-17T06:24:00.203337Z",
-    "quote": "KTVL: 34 hourly METARs with AO2 between 1506Z and 1705Z; precipitation groups: none",
-    "observed_at": "2026-10-17T05:53:00Z"
    }
   ],
   "context": [],
@@ -681,7 +636,7 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the last 48 h at Css Lab (SNOTEL, 2 km away).",
+    "statement": "No measurable rain on Oct 14–15 at Css Lab (SNOTEL, 2 km away).",
     "source_name": "NRCS SNOTEL",
     "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-09&endDate=2026-10-16",
     "fetched_at": "2026-10-17T05:40:24.786911Z",
@@ -718,7 +673,7 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the last 48 h at Css Lab (SNOTEL, 4 km away).",
+    "statement": "No measurable rain on Oct 14–15 at Css Lab (SNOTEL, 4 km away).",
     "source_name": "NRCS SNOTEL",
     "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-09&endDate=2026-10-16",
     "fetched_at": "2026-10-17T05:40:24.786911Z",
@@ -755,7 +710,7 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the last 48 h at Truckee #2 (SNOTEL, 5 km away).",
+    "statement": "No measurable rain on Oct 14–15 at Truckee #2 (SNOTEL, 5 km away).",
     "source_name": "NRCS SNOTEL",
     "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-09&endDate=2026-10-16",
     "fetched_at": "2026-10-17T05:40:24.786911Z",
@@ -797,7 +752,7 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the last 48 h at Truckee #2 (SNOTEL, 1 km away).",
+    "statement": "No measurable rain on Oct 14–15 at Truckee #2 (SNOTEL, 1 km away).",
     "source_name": "NRCS SNOTEL",
     "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-09&endDate=2026-10-16",
     "fetched_at": "2026-10-17T05:40:24.786911Z",
@@ -834,21 +789,12 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the last 48 h at Truckee #2 (SNOTEL, 11 km away).",
+    "statement": "No measurable rain on Oct 14–15 at Truckee #2 (SNOTEL, 11 km away).",
     "source_name": "NRCS SNOTEL",
     "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-09&endDate=2026-10-16",
     "fetched_at": "2026-10-17T05:40:24.786911Z",
     "quote": "834:CA:SNTL PRCP 2026-10-14=0 in, 2026-10-15=0 in",
     "observed_at": "2026-10-16T00:00:00-08:00"
-   },
-   {
-    "kind": "precip",
-    "statement": "No measurable rain in the last 48 h at Carson City Airport (NWS, 28 km away).",
-    "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KCXP/observations?start=2026-10-15T05%3A23%3A52Z",
-    "fetched_at": "2026-10-17T06:23:59.096981Z",
-    "quote": "KCXP: 44 hourly METARs with AO2 between 1506Z and 1705Z; precipitation groups: none",
-    "observed_at": "2026-10-17T05:55:00Z"
    }
   ],
   "context": [],
@@ -885,7 +831,7 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the last 48 h at Carson Pass (SNOTEL, 6 km away).",
+    "statement": "No measurable rain on Oct 14–15 at Carson Pass (SNOTEL, 6 km away).",
     "source_name": "NRCS SNOTEL",
     "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-09&endDate=2026-10-16",
     "fetched_at": "2026-10-17T05:40:24.786911Z",
@@ -894,11 +840,11 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the last 47 h at South Lake Tahoe, Lake Tahoe Airport (NWS, 12 km away).",
+    "statement": "No measurable rain in the 48 h to 10:53pm Oct 16 at South Lake Tahoe, Lake Tahoe Airport (NWS, 12 km away).",
     "source_name": "NWS observations",
     "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-15T05%3A23%3A52Z",
     "fetched_at": "2026-10-17T06:24:00.203337Z",
-    "quote": "KTVL: 34 hourly METARs with AO2 between 1506Z and 1705Z; precipitation groups: none",
+    "quote": "KTVL: 34 routine METARs with AO2 from 150653Z to 170553Z; precipitation groups: none",
     "observed_at": "2026-10-17T05:53:00Z"
    }
   ],

@@ -94,3 +94,5 @@ def test_feed_parses(site):
     assert len(feed.entries) == 2
     assert feed.entries[0].title.endswith("1 snow, 1 unknown")
     assert "https://wcc.sc.egov.usda.gov/x" in feed.entries[0].description
+    assert "fetched Oct 17" in feed.entries[0].description
+    assert "<![CDATA[" in (site / "feed.xml").read_text()

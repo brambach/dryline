@@ -218,3 +218,39 @@ Labeling page smoke test: `uv run dryline label --labels <tmp>.csv --port 8799`.
 
 dryline's own call is hidden behind a "dryline said" disclosure, so it doesn't anchor the labeler.
 `tests/test_eval.py` covers scoring, upserts, and the page.
+
+## Review fixes (after M6)
+
+An independent review found these problems. Each one now has a regression test.
+
+- **Snow:** snow reported only above the high point produced "dry" with no bare-ground witness.
+  "Dry" now needs a bare station within 1,000 ft of the high point.
+- **SNOTEL precipitation windows:** they could end up to 48 h before the run while the claim said
+  "last 48 h". Windows must now end within 30 h, and the claim names its dates.
+- **NWS observations:**
+  - The window ended at the last report of any kind; it now ends at the last report that counted.
+  - A later SPECI could replace the hour's routine METAR; now only routine reports count.
+  - A missing P-group counted as zero rain at AWOS stations; it now does so only at verified ASOS
+    stations (KTVL).
+- **Conditions text:** "No closures" read as closed and "No mud" as muddy. Negation is now handled.
+- **Rebuild date:** `build --date` used the wall clock for freshness and dated lines by `now`. Lines now
+  take the given day, and freshness uses that day's fetch time.
+- **TRTA:** a missing segment produced no Missing entry, and a "free of snow" entry alone could stand in
+  for SNOTEL. Both are fixed.
+- **NV State Parks:** a missing alert list was silent, and a relative link crashed the build. Both are
+  fixed, and any malformed response now becomes a gap instead of a crash.
+- **RSS:** the description wasn't escaped; it's now CDATA and includes fetch times.
+- **Smaller fixes:**
+  - Closures with a future start date are ignored.
+  - Failed fetches are retried the same day.
+  - The "Overnight" forecast period no longer shows up in a 5:40am run.
+  - The index no longer labels an old day "Today".
+  - The labeling server accepts JSON only.
+  - A `--now` without an offset is read as Pacific time.
+
+```
+$ uv run pytest -q
+90 passed, 1 warning in 1.11s
+$ uv run dryline build --date 2026-10-16
+2026-10-16: 18 dry, 2 unknown
+```

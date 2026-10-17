@@ -14,7 +14,8 @@ LOCAL = ZoneInfo("America/Los_Angeles")
 
 def _now(args) -> dt.datetime:
     if getattr(args, "now", None):
-        return dt.datetime.fromisoformat(args.now).astimezone(dt.UTC)
+        t = dt.datetime.fromisoformat(args.now)
+        return (t if t.tzinfo else t.replace(tzinfo=LOCAL)).astimezone(dt.UTC)
     return dt.datetime.now(dt.UTC)
 
 
@@ -44,11 +45,15 @@ def cmd_collect(args, paths) -> int:
 
 def cmd_build(args, paths) -> int:
     from dryline.config import load_grid, load_stations, load_trails
-    from dryline.pipeline import lines_for_day
+    from dryline.pipeline import lines_for_day, snapshot_time
     from dryline.site import build_site, load_lines, save_lines
 
     now = _now(args)
     day = _day(args, now)
+    if args.date and not args.now:
+        # Rebuilding a past day: judge freshness as of when that day's data was fetched.
+        now = snapshot_time(paths.raw, day) or now
+    built_at = dt.datetime.now(dt.UTC)
     trails = load_trails(paths.trails)
     notes: list[str] = []
     if (paths.raw / day.isoformat()).exists():
@@ -70,7 +75,7 @@ def cmd_build(args, paths) -> int:
         print(f"note: {n}")
     days = load_lines(paths.lines)
     out = Path(args.out) if args.out else paths.site
-    written = build_site(out, days, trails, now)
+    written = build_site(out, days, trails, built_at)
     print(f"wrote {len(written)} files to {out}")
     return 0
 

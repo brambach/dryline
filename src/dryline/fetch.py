@@ -110,8 +110,11 @@ class Fetcher:
         """Fetch once per day. A cached file for today is returned without touching the network."""
         path = raw_path(self.raw_root, self.day, source, name)
         if path.exists():
-            self.log.append(f"cache {url}")
-            return load_raw(path)
+            cached = load_raw(path)
+            # A failed fetch (network error, 429, 5xx) may be retried; a good one never is.
+            if cached.status_code and cached.status_code < 500 and cached.status_code != 429:
+                self.log.append(f"cache {url}")
+                return cached
         target = full_url(url, params)
         if check_robots and not self.allowed(target):
             self.log.append(f"robots-disallowed {target}")

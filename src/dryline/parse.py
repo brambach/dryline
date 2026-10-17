@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import datetime as dt
 import re
+from urllib.parse import urljoin
 from zoneinfo import ZoneInfo
 
 from selectolax.lexbor import LexborHTMLParser as HTMLParser
@@ -46,6 +47,7 @@ def parse_snotel(
     if not isinstance(body, list):
         raise ParseError("SNOTEL response is not a list")
     cite = dict(source_name="NRCS SNOTEL", source_url=raw.url, fetched_at=raw.fetched_at)
+    fetched_day = raw.fetched_at.astimezone(PST).date()
     snow: list[SnowObs] = []
     precip: list[PrecipObs] = []
     for item in body:
@@ -54,14 +56,17 @@ def parse_snotel(
             continue
         series: dict[str, dict[dt.date, float]] = {}
         for d in item.get("data") or []:
-            code = (d.get("stationElement") or {}).get("elementCode")
-            if not code or d.get("error"):
+            element = d.get("stationElement") or {}
+            code = element.get("elementCode")
+            if not code or d.get("error") or element.get("ordinal", 1) != 1:
                 continue
             values = {}
             for v in d.get("values") or []:
                 if v.get("value") is None or not v.get("date"):
                     continue
-                values[dt.date.fromisoformat(v["date"][:10])] = float(v["value"])
+                day = dt.date.fromisoformat(v["date"][:10])
+                if day <= fetched_day:  # never trust a value dated after the fetch
+                    values[day] = float(v["value"])
             series[code] = values
         for day, depth in sorted(series.get("SNWD", {}).items()):
             swe = series.get("WTEQ", {}).get(day)
@@ -110,13 +115,16 @@ _P_GROUP = re.compile(r"\sP(\d{4})(?=\s|$)")
 
 
 def parse_nws_observations(
-    raw: RawResponse, station: ObsStation, now: dt.datetime, hours: int = 48
+    raw: RawResponse, station: ObsStation, now: dt.datetime, hours: int = 48, asos: bool = False
 ) -> PrecipObs:
     """Sum the hourly METAR precipitation groups (Prrrr) over the last `hours`.
 
     The API's precipitationLastHour is null both for "none" and "not reported", so we read the
-    raw METAR instead. Under METAR rules, an AO2 station with no PNO remark and no Prrrr group
-    reported no measurable precipitation that hour.
+    raw METAR instead. Only the routine report in each hour counts (minute 45-59, earliest one):
+    a SPECI later in the hour carries precipitation since the routine report, not the hour's.
+    For ASOS stations (`asos=True`), an AO2 report with no PNO remark and no Prrrr group means
+    no measurable precipitation that hour. Elsewhere we can only add up groups that are present,
+    so the result can show rain but not its absence (dry_capable=False).
     """
     if not raw.ok:
         raise ParseError(f"NWS observations HTTP {raw.status_code}")
@@ -124,35 +132,34 @@ def parse_nws_observations(
     if not isinstance(features, list):
         raise ParseError("NWS observations: no features list")
     start = now - dt.timedelta(hours=hours)
-    by_hour: dict[dt.datetime, tuple[dt.datetime, str]] = {}
+    routine: dict[dt.datetime, tuple[dt.datetime, str]] = {}
     for f in features:
         p = f.get("properties") or {}
         msg = (p.get("rawMessage") or "").strip()
         if not msg or not p.get("timestamp"):
             continue
         t = dt.datetime.fromisoformat(p["timestamp"])
-        if not start < t <= now:
+        if not start < t <= now or t.minute < 45:
             continue
         hour = t.replace(minute=0, second=0, microsecond=0)
-        if hour not in by_hour or t > by_hour[hour][0]:
-            by_hour[hour] = (t, msg)
+        if hour not in routine or t < routine[hour][0]:
+            routine[hour] = (t, msg)
     total = 0.0
-    counted = 0
+    counted: list[dt.datetime] = []
     groups: list[str] = []
-    for _, (t, msg) in sorted(by_hour.items()):
+    for _, (t, msg) in sorted(routine.items()):
         rmk = msg.split(" RMK ", 1)[1] if " RMK " in msg else ""
         if "AO2" not in rmk or re.search(r"\bPNO\b", rmk):
             continue  # no precipitation sensor reading this hour
-        counted += 1
+        counted.append(t)
         if m := _P_GROUP.search(" " + rmk):
             total += int(m.group(1)) / 100
             groups.append(f"P{m.group(1)}@{t:%d%H%M}Z")
-    if not by_hour:
-        raise ParseError(f"NWS {station.id}: no METARs in the last {hours} h")
-    times = sorted(by_hour)
+    if not counted:
+        raise ParseError(f"NWS {station.id}: no routine AO2 METARs in the last {hours} h")
     quote = (
-        f"{station.id}: {counted} hourly METARs with AO2 between {times[0]:%d%H}Z and "
-        f"{times[-1]:%d%H}Z; precipitation groups: {', '.join(groups) or 'none'}"
+        f"{station.id}: {len(counted)} routine METARs with AO2 from {counted[0]:%d%H%M}Z to "
+        f"{counted[-1]:%d%H%M}Z; precipitation groups: {', '.join(groups) or 'none'}"
     )
     return PrecipObs(
         source_name="NWS observations",
@@ -163,11 +170,12 @@ def parse_nws_observations(
         station_id=station.id,
         station_name=station.name,
         location=LatLon(lat=station.lat, lon=station.lon),
-        window_start=start,
-        window_end=by_hour[times[-1]][0],
+        window_start=counted[0] - dt.timedelta(hours=1),  # Prrrr covers the hour before
+        window_end=counted[-1],
         total_in=round(total, 2),
-        periods_reported=counted,
+        periods_reported=len(counted),
         periods_expected=hours,
+        dry_capable=asos,
     )
 
 
@@ -181,7 +189,10 @@ def parse_nws_forecast(raw: RawResponse, now: dt.datetime, max_age_h: int = 18) 
         raise ParseError("NWS forecast: no periods")
     if now - dt.datetime.fromisoformat(updated) > dt.timedelta(hours=max_age_h):
         raise ParseError(f"NWS forecast is stale (updated {updated})")
-    end_ok = [p for p in periods if dt.datetime.fromisoformat(p["endTime"]) > now and p.get("name")]
+    soon = now + dt.timedelta(hours=2)  # skip "Overnight" ending at 6am for a 5:40am run
+    end_ok = [
+        p for p in periods if dt.datetime.fromisoformat(p["endTime"]) > soon and p.get("name")
+    ]
     if not end_ok:
         raise ParseError("NWS forecast: no current period")
     p = end_ok[0]
@@ -203,20 +214,38 @@ _CLOSURE = re.compile(r"\bclos(ed|ure|ures|ing)\b", re.I)
 _SNOW_FREE = re.compile(r"(free|clear) of snow|snow[- ]free|no (remaining )?snow", re.I)
 _MUD = re.compile(r"\bmud(dy)?\b", re.I)
 _SNOW = re.compile(r"\bsnow", re.I)
+_NEGATION = re.compile(
+    r"\b(no|not|without|re-?opened|reopens?|lifted|ended)\b[\w\s,'-]{0,20}$", re.I
+)
 _UPDATED = re.compile(r"Last Updated:?\s*(\d{1,2})/(\d{1,2})/(\d{2,4})", re.I)
+
+
+def _affirmed(pattern: re.Pattern, text: str) -> bool:
+    """True if pattern occurs at least once without a negation in the few words before it."""
+    return any(not _NEGATION.search(text[: m.start()]) for m in pattern.finditer(text))
 
 
 def conditions_hint(text: str) -> str | None:
     """Classify an official conditions sentence. Deterministic and conservative."""
-    if _CLOSURE.search(text):
+    if _affirmed(_CLOSURE, text):
         return "closed"
-    if _MUD.search(text):
+    if _affirmed(_MUD, text):
         return "muddy"
     stripped = _SNOW_FREE.sub("", text)
-    if _SNOW.search(stripped):
+    if _affirmed(_SNOW, stripped):
         return "snow"
     if _SNOW_FREE.search(text):
         return "snow_free"
+    return None
+
+
+def _parse_us_date(text: str) -> dt.date | None:
+    text = re.sub(r"\bSept\b", "Sep", text.strip())
+    for fmt in ("%B %d, %Y", "%b %d, %Y"):
+        try:
+            return dt.datetime.strptime(text, fmt).date()
+        except ValueError:
+            pass
     return None
 
 
@@ -307,7 +336,7 @@ def parse_usfs_alerts(raw: RawResponse, source: PageSource) -> tuple[list[Closur
         if foot is not None and (
             m := re.search(r"Start Date:\s*([A-Z][a-z]+ \d{1,2}, \d{4})", foot.text())
         ):
-            start = dt.datetime.strptime(m.group(1), "%B %d, %Y").date()
+            start = _parse_us_date(m.group(1))
         href = a.attributes["href"]
         out.append(
             ClosureObs(
@@ -318,7 +347,7 @@ def parse_usfs_alerts(raw: RawResponse, source: PageSource) -> tuple[list[Closur
                 page=source,
                 title=_clip(title, 160),
                 summary=_clip(body.text(separator=" ") if body else "", 600),
-                link=href if href.startswith("http") else f"https://www.fs.usda.gov{href}",
+                link=urljoin(raw.url, href),
                 published=start,
             )
         )
@@ -334,6 +363,8 @@ def parse_nvparks(raw: RawResponse) -> tuple[list[ClosureObs], list[Gap]]:
     title = tree.css_first("title")
     if title is None or "lake tahoe" not in title.text().lower():
         return [], [_gap(source, f"{name} page layout not recognized")]
+    if tree.css_first("ul#alert") is None:
+        return [], [_gap(source, f"{name} alert banner not found (layout changed?)")]
     out = []
     for li in tree.css("ul#alert li"):
         h3 = li.css_first("h3")
@@ -354,7 +385,7 @@ def parse_nvparks(raw: RawResponse) -> tuple[list[ClosureObs], list[Gap]]:
                 page=source,
                 title=_clip(heading, 160),
                 summary=_clip(summary, 600),
-                link=(more.attributes.get("href") if more else None) or raw.url,
+                link=urljoin(raw.url, (more.attributes.get("href") if more else None) or ""),
             )
         )
     return out, []

@@ -18,11 +18,13 @@ per day with the User-Agent `dryline (github.com/brambach/dryline)`. Raw respons
 ## Known quirks
 
 - **NWS observation precipitation fields** (`precipitationLastHour` and similar) are null both for "none" and
-  "not reported". dryline reads the raw METAR instead. An AO2 station with no `PNO` remark and no `Prrrr`
-  group reported no measurable precipitation that hour. Hours without a METAR don't count, and less than
-  60% coverage of 48 h counts as missing.
-- **SNOTEL daily values lag** about a day and omit missing days instead of returning nulls. Data older
-  than 2 days counts as missing.
+  "not reported". dryline reads the raw METAR instead, using only the routine report each hour (minute
+  45–59). For verified ASOS stations (KTVL), an AO2 report with no `PNO` remark and no `Prrrr` group
+  counts as zero. KTRK and KCXP are AWOS (reports every 20 minutes, no SLP), so their P-groups count as
+  rain evidence but never as "no rain".
+- **SNOTEL daily values lag** about a day and omit missing days instead of returning nulls. Snow depth
+  older than 2 days counts as missing. A daily precipitation window must end within 30 h, and the claim
+  names its dates.
 - **SNOTEL depth sensors** read 0–1 in of noise on bare ground, so "snow" needs at least 2 in.
 - **The TRTA page** had "Updated August 17, 2026" at the top and segment dates in June and July as of
   October 17. Entries older than 14 days are treated as missing.

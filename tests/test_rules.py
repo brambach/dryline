@@ -48,7 +48,7 @@ def snow(elev, depth, days_ago=0, km_north=0.0, sid=None):
     )
 
 
-def rain(total, network="SNOTEL", reported=2, expected=2, hours_ago=1):
+def rain(total, network="SNOTEL", reported=2, expected=2, hours_ago=1, dry_capable=True):
     end = NOW - dt.timedelta(hours=hours_ago)
     return PrecipObs(
         **CITE,
@@ -61,6 +61,7 @@ def rain(total, network="SNOTEL", reported=2, expected=2, hours_ago=1):
         total_in=total,
         periods_reported=reported,
         periods_expected=expected,
+        dry_capable=dry_capable,
     )
 
 
@@ -84,7 +85,8 @@ def test_snow_at_similar_elevation_below_high_point():
 def test_snow_only_above_trail_is_not_snow():
     line = run(snow=(snow(7900, 0), snow(8800, 10)), precip=(rain(0.0),))
     assert line.status == "dry"
-    assert "only above ~8,800 ft" in line.claims[0].statement
+    assert "No snow at similar elevation: Station 7900" in line.claims[0].statement
+    assert "only above ~8,800 ft" in line.claims[1].statement
 
 
 def test_snow_depth_noise_below_threshold_is_not_snow():
@@ -249,3 +251,60 @@ def test_snow_free_witness_prefers_near_station_above_high_point():
     line = run(snow=(far, near, below), precip=(rain(0.0),))
     assert line.status == "dry"
     assert "Station 8100" in line.claims[0].statement
+
+
+# Regressions from review.
+
+
+def test_snow_just_above_high_point_without_bare_witness_is_unknown():
+    assert run(snow=(snow(8100, 12),), precip=(rain(0.0),)).status == "unknown"
+    line = run(snow=(snow(5600, 0), snow(8900, 20)), precip=(rain(0.0),))
+    assert line.status == "unknown"
+    assert any("bare ground" in m.what for m in line.missing)
+
+
+def test_snotel_precip_window_must_be_recent():
+    assert run(snow=(snow(7800, 0),), precip=(rain(0.0, hours_ago=40),)).status == "unknown"
+    assert run(snow=(snow(7800, 0),), precip=(rain(0.0, hours_ago=20),)).status == "dry"
+
+
+def test_precip_statement_names_the_window():
+    line = run(snow=(snow(7800, 0),), precip=(rain(0.0),))
+    assert "on Oct 15–17" in line.claims[1].statement or "on Oct" in line.claims[1].statement
+
+
+def test_rain_counts_even_from_patchy_or_non_asos_gauge():
+    line = run(snow=(snow(7800, 0),), precip=(rain(0.5, "NWS", 10, 48, dry_capable=False),))
+    assert line.status == "muddy"
+
+
+def test_non_asos_zero_is_not_dry_evidence():
+    line = run(snow=(snow(7800, 0),), precip=(rain(0.0, "NWS", 48, 48, dry_capable=False),))
+    assert line.status == "unknown"
+
+
+def test_future_closure_not_in_effect():
+    closure = ClosureObs(
+        **CITE,
+        page="usfs-ltbmu",
+        title="Test Trail Closure",
+        link="https://example.gov/a/9",
+        published=TODAY + dt.timedelta(days=3),
+    )
+    assert run(snow=(snow(7800, 0),), precip=(rain(0.0),), closures=(closure,)).status == "dry"
+
+
+def test_missing_trta_segment_is_reported():
+    other = cond("Free of snow", "snow_free", segment="SomethingElse")
+    line = run(snow=(snow(7800, 0),), precip=(rain(0.0),), conditions=(other,))
+    assert any("TestSeg not found" in m.what for m in line.missing)
+
+
+def test_trta_snow_free_alone_is_not_enough_for_dry():
+    line = run(precip=(rain(0.0),), conditions=(cond("Free of snow", "snow_free"),))
+    assert line.status == "unknown"
+
+
+def test_digest_date_comes_from_day_not_now():
+    line = evaluate(TRAIL, Observations(), NOW + dt.timedelta(days=1), today=TODAY)
+    assert line.date == TODAY
