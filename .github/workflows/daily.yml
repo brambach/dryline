@@ -1,0 +1,52 @@
+name: daily
+
+# Git scraping: collect public sources each morning, apply the rules, commit the snapshot and the
+# built site, then publish site/ to GitHub Pages.
+on:
+  schedule:
+    - cron: "40 13 * * *" # 6:40am PDT / 5:40am PST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+      - run: uv sync --frozen
+      - name: Tests (offline)
+        run: uv run pytest -q -m "not browser"
+      - name: Collect
+        run: uv run dryline collect
+      - name: Build
+        run: uv run dryline build
+      - name: Commit snapshot
+        run: |
+          git config user.name "dryline-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data site
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "data: $(TZ=America/Los_Angeles date +%Y-%m-%d)"
+            git push
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - uses: actions/deploy-pages@v4
