@@ -156,3 +156,27 @@ test_end_to_end.py::test_renderer_rejects_non_lines PASSED
 $ uv run pytest -q
 73 passed, 1 warning in 0.95s
 ```
+
+## M5: Site and RSS
+
+```
+$ uv run dryline build --date 2026-10-16
+2026-10-16: 18 dry, 2 unknown
+wrote 27 files to site            # index, today.json, feed.xml, archive/, 20 trail pages, fonts
+
+$ uv run python scripts/screenshots.py
+docs/screenshots/today-mobile.png  horizontal-overflow=False
+docs/screenshots/archive-mobile.png  horizontal-overflow=False
+docs/screenshots/trail-mobile.png  horizontal-overflow=False
+docs/screenshots/today-desktop.png  horizontal-overflow=False
+docs/screenshots/archive-desktop.png  horizontal-overflow=False
+docs/screenshots/trail-desktop.png  horizontal-overflow=False
+
+$ uv run python -c "import feedparser; ..."
+bozo: False | title: dryline: Tahoe trail conditions | entries: 1
+entry 0: Fri Oct 16: 18 dry, 2 unknown | https://brambach.github.io/dryline/archive/2026-10-16/
+```
+
+`tests/test_site.py::test_feed_parses` asserts the same thing offline. Mobile is 390×844 at 2×, desktop
+1280×900. Screenshots are taken with reduced motion, so the one "Today" arrival animation doesn't blur them.
+The fonts (Fraunces, Hanken Grotesk, IBM Plex Mono, all SIL OFL) are self-hosted.
