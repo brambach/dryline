@@ -254,3 +254,25 @@ $ uv run pytest -q
 $ uv run dryline build --date 2026-10-16
 2026-10-16: 18 dry, 2 unknown
 ```
+
+## Second live run: Oct 17 morning
+
+At 14:10 UTC there was no workflow commit on `claude/dryline-mvp`, and the GitHub API reports **0 workflow
+runs**. The 13:40 UTC cron hasn't fired yet: new schedules can take a while to activate, or Actions may
+be disabled for the repo. I ran the morning collection locally instead:
+
+```
+$ uv run dryline collect        # 2026-10-17 14:11 UTC = 7:11am PDT
+... 29 requests, all 200 (SNOTEL x1, NWS forecasts x19, NWS observations x3, official pages x5, robots.txt per host)
+$ uv run dryline build
+2026-10-17: 18 dry, 2 unknown
+wrote 29 files to site
+$ feedparser site/feed.xml
+bozo: False | entries: 2 | Sat Oct 17: 18 dry, 2 unknown / Fri Oct 16: 18 dry, 2 unknown
+$ uv run pytest -q
+90 passed, 1 warning in 1.02s
+```
+
+SNOTEL now has Oct 16 values. The NWS "Today" period is selected (for example "Sunny, high 58°F" at Eagle
+Lake), and KTVL's precipitation window ends at 5:53am. The archive now holds Oct 16 and Oct 17, and the
+screenshots were re-taken from this build.
