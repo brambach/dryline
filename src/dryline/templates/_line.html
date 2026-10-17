@@ -1,5 +1,5 @@
-{% macro cite(url, fetched_at) -%}
-<a class="cite" data-source href="{{ url }}" rel="noopener">{{ url|host }} · {{ fetched_at|time }}</a>
+{% macro cite(url, fetched_at, full=false) -%}
+<a class="cite" data-source href="{{ url }}" rel="noopener">{{ url|host }} · {% if full %}fetched {{ fetched_at|stamp }}{% else %}{{ fetched_at|time }}{% endif %}</a>
 {%- endmacro %}
 {% macro missing_item(m) -%}
 <span class="gap">Missing: {{ m.what }}.</span> <a class="cite" data-source href="{{ m.tried_url }}" rel="noopener">checked {{ m.tried_url|host }}</a>

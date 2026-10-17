@@ -115,6 +115,8 @@ a:hover { text-decoration-color: currentColor; }
 .facts { display: grid; grid-template-columns: 9rem 1fr; gap: 8px 12px; margin: 0 0 18px; }
 .facts dt { color: var(--ink-3); }
 .facts dd { margin: 0; }
+.sources summary { cursor: pointer; color: var(--ink-2); }
+.sources ol { margin: 8px 0 0; padding-left: 1.4em; color: var(--ink-3); overflow-wrap: anywhere; }
 .history, .archive { list-style: none; padding: 0; margin: 0 0 18px; }
 .history li { display: flex; justify-content: space-between; padding: 6px 0;
   border-bottom: 1px dashed var(--rule); }

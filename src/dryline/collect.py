@@ -16,7 +16,7 @@ from dryline.config import (
     StationsFile,
 )
 from dryline.fetch import Disallowed, Fetcher
-from dryline.models import Trail
+from dryline.models import LatLon, Trail
 from dryline.obs import km_between
 
 GEOJSON = {"Accept": "application/geo+json"}
@@ -95,8 +95,9 @@ def resolve_grid(f: Fetcher, trails: list[Trail], max_km: float = 40.0) -> GridF
     Run rarely (`dryline resolve`); the result is committed as nws_grid.yaml so daily runs
     don't repeat these lookups.
     """
-    entries: dict[str, GridEntry] = {}
-    station_lists: dict[str, list[dict]] = {}
+    points: dict[str, tuple[str, str]] = {}
+    metar: dict[str, ObsStation] = {}  # every K*** station from every gridpoint's list
+    seen_lists: set[str] = set()
     for t in trails:
         p = t.high_point or t.trailhead
         url = f"{NWS_API}/points/{p.lat:.4f},{p.lon:.4f}"
@@ -104,24 +105,28 @@ def resolve_grid(f: Fetcher, trails: list[Trail], max_km: float = 40.0) -> GridF
         if not raw.ok:
             continue
         props = raw.json_body()["properties"]
+        points[t.id] = (url, props["forecast"])
         stations_url = props["observationStations"]
-        if stations_url not in station_lists:
-            name = f"stations-{props['gridId']}-{props['gridX']}-{props['gridY']}"
-            sraw = f.get("nws-resolve", name, stations_url, headers=GEOJSON, check_robots=False)
-            station_lists[stations_url] = sraw.json_body().get("features", []) if sraw.ok else []
-        best = None
-        for feat in station_lists[stations_url]:
+        if stations_url in seen_lists:
+            continue
+        seen_lists.add(stations_url)
+        name = f"stations-{props['gridId']}-{props['gridX']}-{props['gridY']}"
+        sraw = f.get("nws-resolve", name, stations_url, headers=GEOJSON, check_robots=False)
+        for feat in sraw.json_body().get("features", []) if sraw.ok else []:
             sid = feat["properties"]["stationIdentifier"]
-            if not (len(sid) == 4 and sid.startswith("K") and sid.isalpha()):
-                continue
-            lon, lat = feat["geometry"]["coordinates"][:2]
-            d = km_between(t.trailhead, type(t.trailhead)(lat=lat, lon=lon))
-            if d <= max_km and (best is None or d < best[0]):
-                best = (d, ObsStation(id=sid, name=feat["properties"]["name"], lat=lat, lon=lon))
+            if len(sid) == 4 and sid.startswith("K") and sid.isalpha():
+                lon, lat = feat["geometry"]["coordinates"][:2]
+                metar[sid] = ObsStation(id=sid, name=feat["properties"]["name"], lat=lat, lon=lon)
+    entries: dict[str, GridEntry] = {}
+    for t in trails:
+        if t.id not in points:
+            continue
+        ranked = sorted(
+            (km_between(t.trailhead, LatLon(lat=s.lat, lon=s.lon)), s.id) for s in metar.values()
+        )
+        best = metar[ranked[0][1]] if ranked and ranked[0][0] <= max_km else None
         entries[t.id] = GridEntry(
-            points_url=url,
-            forecast_url=props["forecast"],
-            obs_station=best[1] if best else None,
+            points_url=points[t.id][0], forecast_url=points[t.id][1], obs_station=best
         )
     return GridFile(trails=entries)
 

@@ -109,14 +109,23 @@ def snow_evidence(
             [
                 Missing(
                     what=(
-                        "No SNOTEL station near the trail's high point "
-                        f"({_ft(trail.elevation_max_ft)} ft) reported recently"
+                        f"No SNOTEL station within {t.station_radius_km:.0f} km sits within "
+                        f"{_ft(t.elevation_band_ft)} ft of the {_ft(trail.elevation_max_ft)} ft "
+                        "high point, so snow up high can't be ruled out"
                     ),
                     tried_url=SNOTEL_URL,
                 )
             ],
         )
-    top = max(covering, key=lambda o: o.elevation_ft)
+    # Best witness: a station at or above the high point, else the highest; nearest first.
+    top = min(
+        covering,
+        key=lambda o: (
+            o.elevation_ft < trail.elevation_max_ft,
+            round(_km(trail, o)),
+            -o.elevation_ft,
+        ),
+    )
     if snowy:
         low = snowy[0]
         statement = (
@@ -169,7 +178,9 @@ def precip_evidence(
             dry.append(
                 o.claim(
                     "precip",
-                    f"Little rain: {o.total_in:.2f} in in the last {hours} h at {where}.",
+                    f"No measurable rain in the last {hours} h at {where}."
+                    if o.total_in == 0
+                    else f"Little rain: {o.total_in:.2f} in in the last {hours} h at {where}.",
                     observed_at=o.window_end,
                 )
             )

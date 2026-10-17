@@ -240,3 +240,12 @@ def test_gap_for_unrelated_source_not_shown():
     gap = Gap(source="usfs-htnf", what="HTNF alerts unavailable", tried_url="https://x.gov/b")
     line = run(snow=(snow(7800, 0),), precip=(rain(0.0),), gaps=(gap,))
     assert line.missing == ()
+
+
+def test_snow_free_witness_prefers_near_station_above_high_point():
+    near = snow(8100, 0, km_north=3, sid="near")
+    far = snow(8900, 0, km_north=35, sid="far")
+    below = snow(7600, 0, km_north=1, sid="below")
+    line = run(snow=(far, near, below), precip=(rain(0.0),))
+    assert line.status == "dry"
+    assert "Station 8100" in line.claims[0].statement

@@ -203,3 +203,14 @@ def test_http_error_is_a_gap():
 )
 def test_conditions_hint(text, hint):
     assert conditions_hint(text) == hint
+
+
+def test_snotel_live_recording_with_prcp():
+    """Recorded by the first live run (2026-10-16 22:40 PT): SNWD, WTEQ, PRCP for 24 stations."""
+    stations = {s.triplet: s for s in load_stations(ROOT / "stations.yaml").snotel}
+    raw = fixture("snotel-prcp")
+    assert "elements=SNWD%2CWTEQ%2CPRCP" in raw.url
+    snow, precip = parse_snotel(raw, stations)
+    assert len(precip) == 24
+    assert all(p.periods_reported == 2 and p.total_in == 0 for p in precip)
+    assert max(o.date for o in snow) == dt.date(2026, 10, 15)

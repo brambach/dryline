@@ -12,7 +12,7 @@
   <h2>Why</h2>
   <ul class="claims" data-line="{{ trail.id }}">
   {% for c in line.claims %}
-    <li><p>{{ c.statement }}</p><p class="quote mono">Source value: “{{ c.quote }}” · fetched {{ c.fetched_at|stamp }} · {{ cite(c.source_url, c.fetched_at) }}</p></li>
+    <li><p>{{ c.statement }}</p><p class="quote mono">Source value: “{{ c.quote }}” · {{ cite(c.source_url, c.fetched_at, true) }}</p></li>
   {% endfor %}
   {% for m in line.missing %}
     <li>{{ missing_item(m) }}</li>
@@ -25,10 +25,10 @@
   <h2>Also reported</h2>
   <ul class="claims">
   {% if line.forecast %}
-    <li><p>{{ line.forecast.statement }}</p><p class="quote mono">fetched {{ line.forecast.fetched_at|stamp }} · {{ cite(line.forecast.source_url, line.forecast.fetched_at) }}</p></li>
+    <li><p>{{ line.forecast.statement }}</p><p class="quote mono">{{ cite(line.forecast.source_url, line.forecast.fetched_at, true) }}</p></li>
   {% endif %}
   {% for c in line.context %}
-    <li><p>{{ c.statement }}</p><p class="quote mono">Source value: “{{ c.quote }}” · fetched {{ c.fetched_at|stamp }} · {{ cite(c.source_url, c.fetched_at) }}</p></li>
+    <li><p>{{ c.statement }}</p><p class="quote mono">Source value: “{{ c.quote }}” · {{ cite(c.source_url, c.fetched_at, true) }}</p></li>
   {% endfor %}
   </ul>
 </section>
@@ -42,8 +42,11 @@
     <dt>For</dt><dd>{{ trail.activities|join(", ") }}</dd>
     <dt>Managed by</dt><dd>{{ trail.land_manager }}</dd>
     <dt>Official status</dt><dd><a href="{{ trail.official_status_url }}" rel="noopener">{{ trail.official_status_url|host }}</a></dd>
-    <dt>Trail data</dt><dd>{% if trail.confirmed %}Reviewed{% else %}Draft, not yet reviewed{% endif %} ·
-      {% for s in trail.sources %}<a href="{{ s }}" rel="noopener">{{ s|host }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</dd>
+    {% if trail.official_info_url %}<dt>Trail info</dt><dd><a href="{{ trail.official_info_url }}" rel="noopener">{{ trail.official_info_url|host }}</a></dd>{% endif %}
+    <dt>Trail data</dt><dd>{% if trail.confirmed %}Reviewed{% else %}Draft, not yet reviewed{% endif %}
+      <details class="sources"><summary>{{ trail.sources|length }} sources</summary><ol class="mono">
+      {% for s in trail.sources %}<li><a href="{{ s }}" rel="noopener">{{ s|host }}{{ s.path|truncate(48, true, "…") }}</a></li>{% endfor %}
+      </ol></details></dd>
   </dl>
 </section>
 
