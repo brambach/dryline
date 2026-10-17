@@ -101,7 +101,6 @@ a:hover { text-decoration-color: currentColor; }
   .line-head { grid-template-columns: 1fr auto; }
   .status { grid-column: 1 / -1; }
   .why, .fx { margin-left: 0; }
-  .cite { white-space: normal; }
 }
 
 .block { padding: 26px 0 8px; border-bottom: 1px solid var(--rule); }

@@ -15,7 +15,7 @@
   {% if line.status == "unknown" %}
     {{ missing_item(line.missing[0]) }}
   {% else %}
-    {% set c = line.claims[0] %}{{ c.statement }} {{ cite(c.source_url, c.fetched_at) }}
+    {% for c in line.claims[:2] %}{{ c.statement }} {{ cite(c.source_url, c.fetched_at) }}{% if not loop.last %}<br>{% endif %}{% endfor %}
   {% endif %}
   </p>
   {% if line.forecast %}
