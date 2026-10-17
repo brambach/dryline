@@ -17,11 +17,11 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the 45 h to 5:53am Oct 17 at South Lake Tahoe, Lake Tahoe Airport (NWS, 7 km away).",
+    "statement": "No measurable rain in the 47 h to 5:53am Oct 17 at South Lake Tahoe, Lake Tahoe Airport (NWS, 7 km away).",
     "source_name": "NWS observations",
     "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-15T13%3A11%3A24Z",
     "fetched_at": "2026-10-17T14:11:34.249104Z",
-    "quote": "KTVL: 33 routine METARs with AO2 from 151653Z to 171253Z; precipitation groups: none",
+    "quote": "KTVL: 35 routine METARs with AO2 from 151453Z to 171253Z; precipitation groups: none",
     "observed_at": "2026-10-17T12:53:00Z"
    }
   ],
@@ -67,11 +67,11 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the 45 h to 5:53am Oct 17 at South Lake Tahoe, Lake Tahoe Airport (NWS, 12 km away).",
+    "statement": "No measurable rain in the 47 h to 5:53am Oct 17 at South Lake Tahoe, Lake Tahoe Airport (NWS, 12 km away).",
     "source_name": "NWS observations",
     "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-15T13%3A11%3A24Z",
     "fetched_at": "2026-10-17T14:11:34.249104Z",
-    "quote": "KTVL: 33 routine METARs with AO2 from 151653Z to 171253Z; precipitation groups: none",
+    "quote": "KTVL: 35 routine METARs with AO2 from 151453Z to 171253Z; precipitation groups: none",
     "observed_at": "2026-10-17T12:53:00Z"
    }
   ],
@@ -113,11 +113,11 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the 45 h to 5:53am Oct 17 at South Lake Tahoe, Lake Tahoe Airport (NWS, 13 km away).",
+    "statement": "No measurable rain in the 47 h to 5:53am Oct 17 at South Lake Tahoe, Lake Tahoe Airport (NWS, 13 km away).",
     "source_name": "NWS observations",
     "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-15T13%3A11%3A24Z",
     "fetched_at": "2026-10-17T14:11:34.249104Z",
-    "quote": "KTVL: 33 routine METARs with AO2 from 151653Z to 171253Z; precipitation groups: none",
+    "quote": "KTVL: 35 routine METARs with AO2 from 151453Z to 171253Z; precipitation groups: none",
     "observed_at": "2026-10-17T12:53:00Z"
    }
   ],
@@ -164,11 +164,11 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the 45 h to 5:53am Oct 17 at South Lake Tahoe, Lake Tahoe Airport (NWS, 10 km away).",
+    "statement": "No measurable rain in the 47 h to 5:53am Oct 17 at South Lake Tahoe, Lake Tahoe Airport (NWS, 10 km away).",
     "source_name": "NWS observations",
     "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-15T13%3A11%3A24Z",
     "fetched_at": "2026-10-17T14:11:34.249104Z",
-    "quote": "KTVL: 33 routine METARs with AO2 from 151653Z to 171253Z; precipitation groups: none",
+    "quote": "KTVL: 35 routine METARs with AO2 from 151453Z to 171253Z; precipitation groups: none",
     "observed_at": "2026-10-17T12:53:00Z"
    }
   ],
@@ -210,11 +210,11 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the 45 h to 5:53am Oct 17 at South Lake Tahoe, Lake Tahoe Airport (NWS, 8 km away).",
+    "statement": "No measurable rain in the 47 h to 5:53am Oct 17 at South Lake Tahoe, Lake Tahoe Airport (NWS, 8 km away).",
     "source_name": "NWS observations",
     "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-15T13%3A11%3A24Z",
     "fetched_at": "2026-10-17T14:11:34.249104Z",
-    "quote": "KTVL: 33 routine METARs with AO2 from 151653Z to 171253Z; precipitation groups: none",
+    "quote": "KTVL: 35 routine METARs with AO2 from 151453Z to 171253Z; precipitation groups: none",
     "observed_at": "2026-10-17T12:53:00Z"
    }
   ],
@@ -261,11 +261,11 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the 45 h to 5:53am Oct 17 at South Lake Tahoe, Lake Tahoe Airport (NWS, 26 km away).",
+    "statement": "No measurable rain in the 47 h to 5:53am Oct 17 at South Lake Tahoe, Lake Tahoe Airport (NWS, 26 km away).",
     "source_name": "NWS observations",
     "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-15T13%3A11%3A24Z",
     "fetched_at": "2026-10-17T14:11:34.249104Z",
-    "quote": "KTVL: 33 routine METARs with AO2 from 151653Z to 171253Z; precipitation groups: none",
+    "quote": "KTVL: 35 routine METARs with AO2 from 151453Z to 171253Z; precipitation groups: none",
     "observed_at": "2026-10-17T12:53:00Z"
    }
   ],
@@ -307,11 +307,11 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the 45 h to 5:53am Oct 17 at South Lake Tahoe, Lake Tahoe Airport (NWS, 10 km away).",
+    "statement": "No measurable rain in the 47 h to 5:53am Oct 17 at South Lake Tahoe, Lake Tahoe Airport (NWS, 10 km away).",
     "source_name": "NWS observations",
     "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-15T13%3A11%3A24Z",
     "fetched_at": "2026-10-17T14:11:34.249104Z",
-    "quote": "KTVL: 33 routine METARs with AO2 from 151653Z to 171253Z; precipitation groups: none",
+    "quote": "KTVL: 35 routine METARs with AO2 from 151453Z to 171253Z; precipitation groups: none",
     "observed_at": "2026-10-17T12:53:00Z"
    }
   ],
@@ -358,11 +358,11 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the 45 h to 5:53am Oct 17 at South Lake Tahoe, Lake Tahoe Airport (NWS, 2 km away).",
+    "statement": "No measurable rain in the 47 h to 5:53am Oct 17 at South Lake Tahoe, Lake Tahoe Airport (NWS, 2 km away).",
     "source_name": "NWS observations",
     "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-15T13%3A11%3A24Z",
     "fetched_at": "2026-10-17T14:11:34.249104Z",
-    "quote": "KTVL: 33 routine METARs with AO2 from 151653Z to 171253Z; precipitation groups: none",
+    "quote": "KTVL: 35 routine METARs with AO2 from 151453Z to 171253Z; precipitation groups: none",
     "observed_at": "2026-10-17T12:53:00Z"
    }
   ],
@@ -404,11 +404,11 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the 45 h to 5:53am Oct 17 at South Lake Tahoe, Lake Tahoe Airport (NWS, 8 km away).",
+    "statement": "No measurable rain in the 47 h to 5:53am Oct 17 at South Lake Tahoe, Lake Tahoe Airport (NWS, 8 km away).",
     "source_name": "NWS observations",
     "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-15T13%3A11%3A24Z",
     "fetched_at": "2026-10-17T14:11:34.249104Z",
-    "quote": "KTVL: 33 routine METARs with AO2 from 151653Z to 171253Z; precipitation groups: none",
+    "quote": "KTVL: 35 routine METARs with AO2 from 151453Z to 171253Z; precipitation groups: none",
     "observed_at": "2026-10-17T12:53:00Z"
    }
   ],
@@ -840,11 +840,11 @@
    },
    {
     "kind": "precip",
-    "statement": "No measurable rain in the 45 h to 5:53am Oct 17 at South Lake Tahoe, Lake Tahoe Airport (NWS, 12 km away).",
+    "statement": "No measurable rain in the 47 h to 5:53am Oct 17 at South Lake Tahoe, Lake Tahoe Airport (NWS, 12 km away).",
     "source_name": "NWS observations",
     "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-15T13%3A11%3A24Z",
     "fetched_at": "2026-10-17T14:11:34.249104Z",
-    "quote": "KTVL: 33 routine METARs with AO2 from 151653Z to 171253Z; precipitation groups: none",
+    "quote": "KTVL: 35 routine METARs with AO2 from 151453Z to 171253Z; precipitation groups: none",
     "observed_at": "2026-10-17T12:53:00Z"
    }
   ],

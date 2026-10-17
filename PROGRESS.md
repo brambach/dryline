@@ -299,3 +299,14 @@ docs/screenshots/options/scene-{ridge,wash,none}-{mobile,desktop}.png
 $ uv run pytest -q
 90 passed
 ```
+
+## The daily workflow ran
+
+GitHub Actions fired the 13:40 UTC cron at **16:39 UTC** (scheduled runs often start late) and committed
+`9c1b619 data: 2026-10-17` as dryline-bot. It found today's raw files already committed, so it made **no
+new requests**, which is the per-day cache working as designed, and only rebuilt.
+
+That rebuild exposed drift: it judged freshness against the wall clock, so KTVL's window shrank from 47 h
+to 45 h. `dryline build` now judges freshness as of the snapshot's latest `fetched_at` unless you pass
+`--now`, so rebuilding the same raw data gives byte-identical `data/lines/*.json`. Only the "Built"
+stamp in the site changes.
