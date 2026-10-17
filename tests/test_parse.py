@@ -214,3 +214,27 @@ def test_snotel_live_recording_with_prcp():
     assert len(precip) == 24
     assert all(p.periods_reported == 2 and p.total_in == 0 for p in precip)
     assert max(o.date for o in snow) == dt.date(2026, 10, 15)
+
+
+def test_nvparks_banner_without_closure():
+    from dryline.parse import parse_nvparks
+
+    obs, gaps = parse_nvparks(fixture("nvparks-tahoe"))
+    assert obs == [] and gaps == []
+
+
+def test_nvparks_closure_banner_and_changed_layout():
+    from dryline.parse import parse_nvparks
+
+    raw = fixture("nvparks-tahoe")
+    banner = (
+        '<ul id="alert"><li><h3>Spooner Lake Backcountry Closed</h3>'
+        "<p>Marlette Lake trail closed for construction.</p></li></ul>"
+    )
+    obs, _ = parse_nvparks(
+        raw.model_copy(update={"body": raw.body.replace("<body", banner + "<body", 1)})
+    )
+    assert [o.title for o in obs] == ["Spooner Lake Backcountry Closed"]
+    no_title = raw.model_copy(update={"body": raw.body.replace("Lake Tahoe", "Somewhere")})
+    obs, gaps = parse_nvparks(no_title)
+    assert obs == [] and "layout not recognized" in gaps[0].what

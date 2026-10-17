@@ -12,3 +12,4 @@ gzipped `RawResponse` envelope with url, fetched_at, status, and body.
 - `snotel-prcp.json.gz`: the first live `dryline collect` (2026-10-16 22:40 PT), with SNWD, WTEQ, and PRCP
 
 Changed-layout cases are derived from these inside the tests, so it's explicit what changed.
+- `nvparks-tahoe.json.gz`: Lake Tahoe Nevada State Park page from the first live run (statewide fire-restriction banner only, no closures)
