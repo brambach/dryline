@@ -47,8 +47,8 @@ tests/fixtures/             recorded responses; tests never touch the network
 Precedence: closed > snow > muddy > dry > unknown.
 
 - **closed**: an official alert or conditions entry that matches the trail's `closure_keywords` and says closed or closure. Quoted text and URL.
-- **snow**: a fresh SNOTEL station within 40 km and within ±1,000 ft of the trail's elevation band reports snow depth ≥ 1 in. Claim: "Snow likely above ~X ft: <station> (<elev> ft) reported <n> in." Snow applies if the trail's max elevation ≥ X.
-- **muddy**: 48 h precipitation at the nearest NWS observation station ≥ 0.25 in (sum of reported hourly values), or a fresh official conditions entry that says muddy.
+- **snow**: a fresh SNOTEL station within 40 km and within ±1,000 ft of the trail's elevation band reports snow depth ≥ 2 in (sensors read 0–1 in of noise on bare ground). Claim: "Snow likely above ~X ft: <station> (<elev> ft) reported <n> in." Snow applies if the trail's max elevation ≥ X.
+- **muddy**: 48 h precipitation ≥ 0.25 in at the nearest SNOTEL gauge (daily PRCP) or nearest METAR station (hourly P-groups), or a fresh official conditions entry that says muddy.
 - **dry**: positive evidence only. Similar-elevation SNOTEL shows 0 in depth, *and* 48 h precipitation is below threshold with enough non-null hours. Otherwise unknown.
 - **unknown**: lists what is missing (for example "no SNOTEL station within ±1,000 ft reported in the last 2 days"), each with the URL that was tried.
 - Freshness windows: SNOTEL 2 days, NWS observations 6 h before the run, conditions pages 14 days since "last updated". Anything stale counts as missing.
@@ -61,7 +61,7 @@ Templates get only `TrailLine` objects, and every visible sentence comes from `C
 
 ## Risks
 
-- **NWS precipitation is often null** at ASOS stations, and `precipitationLastHour` gaps are common. Mitigation: require coverage (≥ 36 of 48 hours non-null), otherwise precipitation is missing, and the trail goes unknown instead of dry.
+- **NWS precipitation is often null** at ASOS stations, and `precipitationLastHour` gaps are common. Mitigation: read raw METAR P-groups instead, and require ≥ 60% of 48 hourly reports, otherwise precipitation is missing, and the trail goes unknown instead of dry.
 - **Snow line from a few stations is coarse.** Aspect and shading matter in October. The wording stays "likely". The claim states the station and its elevation so readers can judge.
 - **Page layouts change.** Parsers look for explicit anchors such as "last updated" and segment headings, and return nothing (so the trail is unknown) when the anchors are missing. A fixture test covers this.
 - **USFS site migration.** fs.usda.gov moved to `/r05/...` URLs. URLs live in `trails.yaml` and `sources.yaml` for easy fixing.
@@ -70,6 +70,6 @@ Templates get only `TrailLine` objects, and every visible sentence comes from `C
 
 ## Open questions (defaults chosen, change any)
 
-1. Thresholds: 0.25 in / 48 h for muddy, 1 in depth for snow, ±1,000 ft station band. Reasonable starting points; tune with eval.
+1. Thresholds: 0.25 in / 48 h for muddy, 2 in depth for snow, ±1,000 ft station band, 40 km radius. Reasonable starting points; tune with eval.
 2. Hosting: GitHub Pages from `site/` on the default branch (static, free).
 3. Should "snow" mean any snow on the route (the default) or snow at the trailhead?
