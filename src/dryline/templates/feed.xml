@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>dryline: Tahoe trail conditions</title>
+<link>{{ site_url }}</link>
+<atom:link href="{{ site_url }}feed.xml" rel="self" type="application/rss+xml"/>
+<description>Daily cited trail conditions for Lake Tahoe and Truckee. Not safety advice.</description>
+<language>en-us</language>
+<lastBuildDate>{{ built_at }}</lastBuildDate>
+{% for day, lines, counts in items %}
+<item>
+<title>{{ day.strftime("%a %b %-d") }}: {{ counts }}</title>
+<link>{{ site_url }}archive/{{ day }}/</link>
+<guid isPermaLink="true">{{ site_url }}archive/{{ day }}/</guid>
+<pubDate>{{ rfc822(day) }}</pubDate>
+<description>{% filter e %}<ul>{% for line in lines %}<li><strong>{{ line.trail_name }}: {{ LABEL[line.status] }}.</strong> {% if line.status == "unknown" %}Missing: {{ line.missing[0].what }}. <a href="{{ line.missing[0].tried_url }}">source</a>{% else %}{{ line.claims[0].statement }} <a href="{{ line.claims[0].source_url }}">source</a>{% endif %}</li>{% endfor %}</ul>{% endfilter %}</description>
+</item>
+{% endfor %}
+</channel>
+</rss>

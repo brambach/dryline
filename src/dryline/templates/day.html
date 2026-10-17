@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% from "_line.html" import trail_line %}
+{% block title %}{% if is_today %}Today{% else %}{{ day.strftime("%b %-d, %Y") }}{% endif %} · dryline{% endblock %}
+{% block main %}
+<section class="hero">
+  <h1 class="display arrive">{% if is_today %}Today{% else %}{{ day.strftime("%b %-d") }}{% endif %}</h1>
+  <p class="date">{{ day.strftime("%A, %B %-d, %Y") }} · Lake Tahoe &amp; Truckee</p>
+  <ul class="summary mono">
+  {% for status, n in summary %}<li class="s-{{ status }}"><i class="dot" aria-hidden="true"></i>{{ n }} {{ status }}</li>{% endfor %}
+  </ul>
+</section>
+<ol class="lines">
+{% for line in lines %}
+{{ trail_line(line, trails.get(line.trail_id), root) }}
+{% endfor %}
+</ol>
+{% endblock %}

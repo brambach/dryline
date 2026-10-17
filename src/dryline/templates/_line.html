@@ -1,0 +1,25 @@
+{% macro cite(url, fetched_at) -%}
+<a class="cite" data-source href="{{ url }}" rel="noopener">{{ url|host }} · {{ fetched_at|time }}</a>
+{%- endmacro %}
+{% macro missing_item(m) -%}
+<span class="gap">Missing: {{ m.what }}.</span> <a class="cite" data-source href="{{ m.tried_url }}" rel="noopener">checked {{ m.tried_url|host }}</a>
+{%- endmacro %}
+{% macro trail_line(line, trail, root) %}
+<li class="line s-{{ line.status }}" data-line="{{ line.trail_id }}">
+  <div class="line-head">
+    <span class="status"><i class="dot" aria-hidden="true"></i>{{ LABEL[line.status] }}</span>
+    <a class="name" href="{{ root }}trails/{{ line.trail_id }}/">{{ line.trail_name }}</a>
+    {% if trail %}<span class="elev mono">{{ trail.elevation_min_ft|ft }}–{{ trail.elevation_max_ft|ft }} ft</span>{% endif %}
+  </div>
+  <p class="why">
+  {% if line.status == "unknown" %}
+    {{ missing_item(line.missing[0]) }}
+  {% else %}
+    {% set c = line.claims[0] %}{{ c.statement }} {{ cite(c.source_url, c.fetched_at) }}
+  {% endif %}
+  </p>
+  {% if line.forecast %}
+  <p class="fx">{{ line.forecast.statement }} {{ cite(line.forecast.source_url, line.forecast.fetched_at) }}</p>
+  {% endif %}
+</li>
+{% endmacro %}

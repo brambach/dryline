@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% from "_line.html" import cite, missing_item %}
+{% block title %}{{ trail.name }} · dryline{% endblock %}
+{% block main %}
+<section class="hero">
+  <p class="date">{{ line.date.strftime("%A, %B %-d") }}</p>
+  <h1 class="display trail-title arrive">{{ trail.name }}</h1>
+  <p class="status-big s-{{ line.status }}"><i class="dot" aria-hidden="true"></i>{{ LABEL[line.status] }}</p>
+</section>
+
+<section class="block">
+  <h2>Why</h2>
+  <ul class="claims" data-line="{{ trail.id }}">
+  {% for c in line.claims %}
+    <li><p>{{ c.statement }}</p><p class="quote mono">Source value: “{{ c.quote }}” · fetched {{ c.fetched_at|stamp }} · {{ cite(c.source_url, c.fetched_at) }}</p></li>
+  {% endfor %}
+  {% for m in line.missing %}
+    <li>{{ missing_item(m) }}</li>
+  {% endfor %}
+  </ul>
+</section>
+
+{% if line.context or line.forecast %}
+<section class="block">
+  <h2>Also reported</h2>
+  <ul class="claims">
+  {% if line.forecast %}
+    <li><p>{{ line.forecast.statement }}</p><p class="quote mono">fetched {{ line.forecast.fetched_at|stamp }} · {{ cite(line.forecast.source_url, line.forecast.fetched_at) }}</p></li>
+  {% endif %}
+  {% for c in line.context %}
+    <li><p>{{ c.statement }}</p><p class="quote mono">Source value: “{{ c.quote }}” · fetched {{ c.fetched_at|stamp }} · {{ cite(c.source_url, c.fetched_at) }}</p></li>
+  {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+<section class="block">
+  <h2>Trail</h2>
+  <dl class="facts">
+    <dt>Elevation</dt><dd class="mono">{{ trail.elevation_min_ft|ft }}–{{ trail.elevation_max_ft|ft }} ft</dd>
+    <dt>Aspect</dt><dd class="mono">{{ trail.aspect }}</dd>
+    <dt>For</dt><dd>{{ trail.activities|join(", ") }}</dd>
+    <dt>Managed by</dt><dd>{{ trail.land_manager }}</dd>
+    <dt>Official status</dt><dd><a href="{{ trail.official_status_url }}" rel="noopener">{{ trail.official_status_url|host }}</a></dd>
+    <dt>Trail data</dt><dd>{% if trail.confirmed %}Reviewed{% else %}Draft, not yet reviewed{% endif %} ·
+      {% for s in trail.sources %}<a href="{{ s }}" rel="noopener">{{ s|host }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</dd>
+  </dl>
+</section>
+
+<section class="block">
+  <h2>Recent days</h2>
+  <ol class="history mono">
+  {% for d, l in history %}
+    <li class="s-{{ l.status }}"><a href="{{ root }}archive/{{ d }}/">{{ d.strftime("%a %b %-d") }}</a><span><i class="dot" aria-hidden="true"></i>{{ l.status }}</span></li>
+  {% endfor %}
+  </ol>
+</section>
+{% endblock %}

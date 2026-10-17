@@ -30,6 +30,7 @@ build-backend = "uv_build"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["tests"]
 addopts = "--disable-socket --allow-unix-socket"
 markers = ["browser: launches Chromium (local only, allowed to open sockets on localhost)"]
 

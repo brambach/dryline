@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Archive · dryline{% endblock %}
+{% block main %}
+<section class="hero">
+  <h1 class="display arrive">Archive</h1>
+  <p class="date">Every day's digest, as published.</p>
+</section>
+<ol class="archive">
+{% for d, counts in days %}
+  <li><a href="{{ d }}/">{{ d.strftime("%a, %b %-d, %Y") }}</a>
+    <span class="summary mono">{% for status, n in counts %}<span class="s-{{ status }}"><i class="dot" aria-hidden="true"></i>{{ n }} {{ status }}</span>{% endfor %}</span>
+    <a class="mono json" href="{{ d }}.json">json</a></li>
+{% endfor %}
+</ol>
+{% endblock %}

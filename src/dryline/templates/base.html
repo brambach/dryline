@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}dryline{% endblock %}</title>
+<meta name="description" content="Daily cited trail conditions for Lake Tahoe and Truckee.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="{{ root }}style.css">
+<link rel="alternate" type="application/rss+xml" title="dryline" href="{{ root }}feed.xml">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="{{ root }}">dryline</a>
+  <nav><a href="{{ root }}archive/">Archive</a><a href="{{ root }}feed.xml">RSS</a><a href="{{ root }}today.json">JSON</a></nav>
+</header>
+<main>
+{% block main %}{% endblock %}
+</main>
+<footer>
+  <p>Not safety advice. Statuses come from fixed rules applied to public data, and every reason links to its source and fetch time. Check the land manager before you go.</p>
+  <p class="mono">Built {{ built_at|stamp }} Pacific</p>
+</footer>
+</body>
+</html>
