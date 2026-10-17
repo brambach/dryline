@@ -50,8 +50,9 @@ def cmd_build(args, paths) -> int:
 
     now = _now(args)
     day = _day(args, now)
-    if args.date and not args.now:
-        # Rebuilding a past day: judge freshness as of when that day's data was fetched.
+    if not args.now:
+        # Judge freshness as of when the day's data was fetched, so rebuilding the same
+        # snapshot later (or in CI) gives the same lines.
         now = snapshot_time(paths.raw, day) or now
     built_at = dt.datetime.now(dt.UTC)
     trails = load_trails(paths.trails)
