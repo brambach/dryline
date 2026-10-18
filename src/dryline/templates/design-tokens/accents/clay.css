@@ -1,0 +1,19 @@
+/*
+  Clay: Arro's one warm color (built/arro.md), "only on the main button and
+  the active tab". Import after tokens.css.
+
+  APPLY.md says clay is for the main action, so this sets --primary. It also
+  sets --accent, so a page never shows clay and rust side by side: one accent,
+  one meaning. Arro's pressed clay is #8a4a31 if a component needs it.
+
+  Light only, like Arro. In dark and forest the base values stay, because
+  their selectors outrank plain :root. --accent-wash and the --on-* inks keep
+  the base values; Arro didn't record its own.
+*/
+
+:root {
+  --primary: #a65a3c;
+  --accent: #a65a3c;
+}
+
+

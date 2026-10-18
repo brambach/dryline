@@ -1,0 +1,25 @@
+{
+  "name": "@brambach/design-tokens",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Bryce's design tokens as CSS custom properties and JSON, from github.com/brambach/design-taste.",
+  "license": "UNLICENSED",
+  "style": "./tokens.css",
+  "exports": {
+    ".": "./tokens.css",
+    "./tokens.css": "./tokens.css",
+    "./auto-dark.css": "./auto-dark.css",
+    "./tokens.json": "./tokens.json",
+    "./themes/*": "./themes/*",
+    "./accents/*": "./accents/*",
+    "./type/*": "./type/*",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "node dev/build.mjs",
+    "check": "node dev/build.mjs --check",
+    "test": "node dev/build.mjs --check && sh dev/test-sync.sh"
+  }
+}
+
+

@@ -1,0 +1,16 @@
+/*
+  Personal type: the pair APPLY.md names "for personal or softer work",
+  as built on the portfolio (built/portfolio.md). Import after tokens.css.
+
+  Same three voices, same rules: Sentient at 400 only (italic is how the
+  portfolio uses it), never bold. Fonts are the consumer's job:
+  Sentient from Fontshare, Hanken Grotesk and IBM Plex Mono from Google Fonts.
+*/
+
+:root {
+  --font-display: "Sentient", Georgia, serif;
+  --font-text: "Hanken Grotesk", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+
