@@ -23,6 +23,8 @@ jobs:
         with:
           python-version: "3.12"
       - run: uv sync --frozen
+      - name: Design tokens drift check (offline)
+        run: sh src/dryline/templates/design-tokens/sync.sh --check
       - name: Tests (offline)
         run: uv run pytest -q
       - name: Collect
