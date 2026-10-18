@@ -310,3 +310,31 @@ That rebuild exposed drift: it judged freshness against the wall clock, so KTVL'
 to 45 h. `dryline build` now judges freshness as of the snapshot's latest `fetched_at` unless you pass
 `--now`, so rebuilding the same raw data gives byte-identical `data/lines/*.json`. Only the "Built"
 stamp in the site changes.
+
+## Shared design tokens
+
+The roughly 36 hand-copied variables in `style.css` are gone. dryline now loads the shared
+`@brambach/design-tokens` v0.1.0, vendored at design-taste commit `e8404234a6e8` (not yet merged or
+tagged), from `src/dryline/templates/design-tokens/`. This run couldn't read the private repo, so the
+copy came from an exact tarball of that commit. `VERSION` and `SHA256SUMS` were written in the format
+`sync.sh` uses, so `--check` works, and future bumps can use `sync.sh --ref <tag>`. Every replaced value
+matched the shared tokens exactly. The one exception was dark `--lift`, which nothing in dryline uses.
+`style.css` keeps only `--scene` and the status colors, with `--dry` and `--closed` pointing at the
+shared `--done` and `--accent`.
+
+```
+$ sh src/dryline/templates/design-tokens/sync.sh --check
+design-tokens: src/dryline/templates/design-tokens matches e8404234a6e8570c4c79002aca256b1483e3e95e (e8404234a6e8)
+$ uv run pytest -q && uv run ruff check
+94 passed, 1 warning in 0.82s
+All checks passed!
+$ uv run dryline build
+2026-10-18: no raw data; rendering existing lines only
+wrote 34 files to /workspace/site
+$ uv run python scripts/screenshots.py
+docs/screenshots/{today,archive,trail}-{mobile,desktop}.png  horizontal-overflow=False (6/6)
+```
+
+Before and after screenshots (light, plus dark for the today and trail pages) are pixel-identical,
+except for one digit of the "Built" time in the footer. Rebuilding on Oct 18 before that day's data
+is collected shows "Saturday" and the stale notice instead of "Today", both before and after this change.
