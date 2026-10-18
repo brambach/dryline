@@ -1,5 +1,6 @@
 /* dryline. Built to github.com/brambach/design-taste (APPLY.md), product surface:
-   calm, taste in a few places only. Tokens are the design-taste starter (Dervo's values). */
+   calm, taste in a few places only. The shared tokens (design-tokens/tokens.css, then
+   auto-dark.css) load before this file; only dryline's own tokens are set here. */
 
 /* Self-hosted latin subsets, SIL OFL 1.1 (see fonts/README.md). */
 @font-face { font-family: "Instrument Serif"; font-style: normal; font-weight: 400; font-display: swap;
@@ -10,54 +11,23 @@
   src: url("fonts/jetbrains-mono.woff2") format("woff2"); }
 
 :root {
-  color-scheme: light;
-  /* Serif speaks, sans works, mono labels */
-  --font-display: "Instrument Serif", Georgia, serif;
-  --font-text: "Instrument Sans", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
-  --fs-caption: 0.75rem; --fs-small: 0.8125rem; --fs-body: 0.875rem; --fs-read: 0.9375rem;
-  --fs-title: 1.0625rem;
-  --lh-tight: 1.2; --lh-ui: 1.45; --lh-read: 1.62;
-
-  /* Warm paper; white only for things that rise */
-  --paper: #f7f6f3; --raised: #ffffff; --sunk: #f2f1ed;
-  --ink: #1b1b19; --ink-2: #3c3c38; --muted: #6d6c66; --faint: #777570;
-  --line: #ebeae5; --line-strong: #dcdbd4;
   --scene: rgb(34 56 43 / .11);
 
   /* Status: the glyph's shape carries the meaning, color is secondary and muted.
      Rust is the one accent and only marks "closed", the status that needs you. */
-  --dry: #5e7351;      /* sage, "done" in the starter tokens */
-  --muddy: #85704f;    /* muted earth */
-  --snow: #56708a;     /* muted slate */
-  --closed: #b0461f;   /* rust */
+  --dry: var(--done);      /* sage */
+  --muddy: #85704f;        /* muted earth */
+  --snow: #56708a;         /* muted slate */
+  --closed: var(--accent); /* rust */
   --unknown: #8e8c86;
-  --focus: color-mix(in srgb, var(--ink) 60%, transparent);
-
-  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 24px; --s6: 32px; --s7: 48px; --s8: 64px;
-  --r1: 6px; --r2: 10px; --r3: 14px; --r-pill: 999px;
-  --lift:
-    0 0 0 1px rgb(20 30 24 / .05),
-    0 1px 2px rgb(20 30 24 / .05),
-    0 4px 10px -4px rgb(20 30 24 / .08),
-    0 18px 36px -18px rgb(34 56 43 / .22);
-
-  --ease-out: cubic-bezier(.2, .7, .2, 1);
-  --dur-fast: 140ms;
 }
-/* Dark: the same paper at night, not an inversion. */
+/* Must match the selector in design-tokens/auto-dark.css. */
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    color-scheme: dark;
-    --paper: #141312; --raised: #242220; --sunk: #2e2c29;
-    --ink: #eeece7; --ink-2: #cdc9c1; --muted: #a19d94; --faint: #8f8b82;
-    --line: #2d2b28; --line-strong: #433f3a;
+  :root:not([data-theme]) {
     --scene: rgb(223 232 214 / .09);
-    --dry: #adc19b; --muddy: #c9ad85; --snow: #9db6cf; --closed: #e0845b; --unknown: #8f8b82;
-    --lift: inset 0 1px 0 rgb(255 255 255 / .04), 0 1px 2px rgb(0 0 0 / .35), 0 12px 30px -14px rgb(0 0 0 / .7);
+    --muddy: #c9ad85; --snow: #9db6cf; --unknown: #8f8b82;
   }
 }
-@media (prefers-reduced-motion: reduce) { :root { --dur-fast: 0ms; } }
 
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }

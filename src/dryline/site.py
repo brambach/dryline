@@ -26,6 +26,10 @@ LABEL = {
     "unknown": "Unknown",
 }
 SITE_URL = "https://brambach.github.io/dryline/"
+TEMPLATES = Path(__file__).parent / "templates"
+# Vendored by design-tokens/sync.sh; edit nothing in there, override in style.css.
+TOKENS = TEMPLATES / "design-tokens"
+TOKENS_SKIP = ("*.sh", "*.md", "package.json", "VERSION", "SHA256SUMS")
 
 Lines = TypeAdapter(list[TrailLine])
 
@@ -69,6 +73,7 @@ def _env() -> Environment:
     env.filters["ft"] = lambda n: f"{n:,}"
     env.filters["host"] = lambda u: str(u).split("/")[2].removeprefix("www.")
     env.globals["LABEL"] = LABEL
+    env.globals["MODES"] = json.loads((TOKENS / "tokens.json").read_text())["modes"]
     return env
 
 
@@ -174,10 +179,11 @@ def build_site(
             built_at=format_datetime(built_at),
         ),
     )
-    templates = Path(__file__).parent / "templates"
-    shutil.copy(templates / "style.css", out / "style.css")
-    shutil.copytree(templates / "fonts", out / "fonts")
+    shutil.copy(TEMPLATES / "style.css", out / "style.css")
+    shutil.copytree(TEMPLATES / "fonts", out / "fonts")
+    shutil.copytree(TOKENS, out / "design-tokens", ignore=shutil.ignore_patterns(*TOKENS_SKIP))
     written.append(out / "style.css")
+    written += sorted((out / "design-tokens").rglob("*.css"))
     (out / ".nojekyll").write_text("")
     (out / "manifest.json").write_text(
         json.dumps({"built_at": built_at.isoformat(), "days": [str(d) for d in ordered_days]})

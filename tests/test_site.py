@@ -1,4 +1,7 @@
 import datetime as dt
+import json
+import re
+import subprocess
 
 import feedparser
 import pytest
@@ -6,7 +9,15 @@ from selectolax.lexbor import LexborHTMLParser as HTMLParser
 from test_rules import TRAIL
 
 from dryline.models import Claim, Missing, TrailLine
-from dryline.site import UncitedLine, build_site, check_every_line_linked, load_lines, save_lines
+from dryline.site import (
+    TEMPLATES,
+    TOKENS,
+    UncitedLine,
+    build_site,
+    check_every_line_linked,
+    load_lines,
+    save_lines,
+)
 
 DAY = dt.date(2026, 10, 17)
 BUILT = dt.datetime(2026, 10, 17, 13, 10, tzinfo=dt.UTC)
@@ -81,6 +92,44 @@ def test_every_rendered_line_has_a_source_link(site):
         links = [a.attributes["href"] for a in row.css("a[data-source]")]
         assert links and all(h.startswith("https://") for h in links)
     assert "Other &amp; &lt;Trail&gt;" in html  # escaped
+
+
+def test_shared_tokens_load_before_own_css(site):
+    for rel in ["index.html", f"trails/{TRAIL.id}/index.html", "archive/index.html"]:
+        page = site / rel
+        links = HTMLParser(page.read_text()).css("link[rel=stylesheet]")
+        hrefs = [a.attributes["href"] for a in links]
+        names = [h.replace("../", "") for h in hrefs]
+        assert names == ["design-tokens/tokens.css", "design-tokens/auto-dark.css", "style.css"]
+        for h in hrefs:
+            assert (page.parent / h).resolve().is_file(), h
+    assert not (site / "design-tokens" / "sync.sh").exists()
+    assert not (site / "design-tokens" / "VERSION").exists()
+
+
+def test_theme_color_comes_from_tokens(site):
+    html = (site / "index.html").read_text()
+    assert 'content="#f7f6f3" media="(prefers-color-scheme: light)"' in html
+    assert 'content="#141312" media="(prefers-color-scheme: dark)"' in html
+
+
+def test_own_css_only_sets_project_tokens():
+    css = (TEMPLATES / "style.css").read_text()
+    shared = set(json.loads((TOKENS / "tokens.json").read_text())["tokens"])
+    roots = "".join(re.findall(r":root[^{]*\{([^}]*)\}", css))
+    own = set(re.findall(r"--([\w-]+)\s*:", roots))
+    assert own == {"scene", "dry", "muddy", "snow", "closed", "unknown"}
+    assert not own & shared
+    local = set(re.findall(r"--([\w-]+)\s*:", css))
+    used = set(re.findall(r"var\(--([\w-]+)", css))
+    assert used <= local | shared, used - local - shared
+
+
+def test_vendored_tokens_have_not_drifted():
+    result = subprocess.run(
+        ["sh", str(TOKENS / "sync.sh"), "--check"], capture_output=True, text=True
+    )
+    assert result.returncode == 0, result.stderr
 
 
 def test_uncited_line_is_rejected():
