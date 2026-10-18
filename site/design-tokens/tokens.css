@@ -1,0 +1,152 @@
+/*
+  @brambach/design-tokens v0.1.0
+
+  Starter tokens for a new project with no design system of its own.
+
+  Copied from Dervo's DervoTokens.css (~/dervo/app/frontend/src/local/,
+  Oct 2026), the most refined system Bryce has shipped, with the dv- prefix
+  dropped. Values are Dervo's own, contrast-checked there. If the project
+  already has tokens, use those instead. See ../APPLY.md for when each token
+  should and shouldn't be used.
+
+  Fonts (Google Fonts):
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  Themes: light by default, data-theme="dark", data-theme="forest".
+
+  This file is the source. tokens.json and auto-dark.css are generated from
+  it by dev/build.mjs. Optional layers (themes/, accents/, type/) go after it.
+  See README.md in this folder.
+*/
+
+:root {
+  color-scheme: light;
+
+  /* Type: serif speaks, sans works, mono labels */
+  --font-display: "Instrument Serif", Georgia, serif;   /* one weight, titles and brand moments only */
+  --font-text: "Instrument Sans", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --fs-caption: 0.75rem;  /* 12: meta, times, hints */
+  --fs-small: 0.8125rem;  /* 13: secondary lines, sidebar */
+  --fs-body: 0.875rem;    /* 14: UI text */
+  --fs-read: 0.9375rem;   /* 15: anything read at length */
+  --fs-title: 1.0625rem;  /* 17: section and card titles (sans) */
+  --fs-h2: 1.625rem;      /* 26: display, section heads */
+  --fs-h1: 2.125rem;      /* 34: display, page titles */
+  --fs-hero: 3rem;        /* 48: display, empty states and brand moments */
+
+  --lh-tight: 1.2;
+  --lh-ui: 1.45;
+  --lh-read: 1.62;
+
+  /* Surfaces: warm paper, white only for things that rise */
+  --paper: #f7f6f3;       /* the window, the sidebar, the page ground */
+  --canvas: #fdfdfc;      /* the main reading area */
+  --raised: #ffffff;      /* cards, popovers, the composer */
+  --sunk: #f2f1ed;        /* inputs, hover */
+
+  --ink: #1b1b19;
+  --ink-2: #3c3c38;
+  --muted: #6d6c66;
+  --faint: #777570;       /* times, hints, placeholders */
+  --line: #ebeae5;
+  --line-strong: #dcdbd4;
+
+  /* Color only where it means something */
+  --primary: #22382b;     /* pine: the primary button, near-black green */
+  --on-primary: #f8f8f5;
+  --done: #5e7351;        /* sage */
+  --done-wash: #eef0e8;
+  --running: #2f7844;     /* live green */
+  --running-wash: #e6f1e8;
+  --accent: #b0461f;      /* rust: the one accent, "needs you", once per view */
+  --accent-wash: #f8ebe4;
+  --on-accent: #ffffff;
+  --focus: color-mix(in srgb, var(--ink) 60%, transparent); /* never the accent */
+
+  /* Space and shape */
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 24px; --s6: 32px; --s7: 48px;
+  --s8: 64px; --s9: 96px; --s10: 128px;   /* marketing pages only */
+  --r1: 6px; --r2: 10px; --r3: 14px; --r-pill: 999px;
+
+  /* Depth: lift, don't outline. Shadows are tinted toward pine, never plain grey. */
+  --card-edge: 0 0 0 1px var(--line);
+  --lift:
+    0 0 0 1px rgb(20 30 24 / .05),
+    0 1px 2px rgb(20 30 24 / .05),
+    0 4px 10px -4px rgb(20 30 24 / .08),
+    0 18px 36px -18px rgb(34 56 43 / .22);
+  --float:                                   /* menus, popovers, dialogs, toasts */
+    0 0 0 1px var(--line),
+    0 1px 2px rgb(20 30 24 / .05),
+    0 4px 10px -4px rgb(20 30 24 / .08),
+    0 18px 48px -18px rgb(20 24 20 / .30),
+    0 40px 70px -30px rgb(34 56 43 / .24);
+  --btn-lit: inset 0 1px 0 rgb(255 255 255 / .16), inset 0 -1px 0 rgb(0 0 0 / .18), 0 1px 2px rgb(20 30 24 / .18);
+  --btn-pressed: inset 0 2px 5px rgb(0 0 0 / .35), inset 0 -1px 0 rgb(255 255 255 / .06);
+  --glass: rgb(251 250 245 / .70);           /* only over color */
+  --glass-blur: blur(22px) saturate(1.15);
+
+  /* Motion: caused by something, plays once. Entrances ease out, exits ease in
+     and run faster, anything travelling A to B eases both ways. */
+  --ease-out: cubic-bezier(.2, .7, .2, 1);
+  --ease-in: cubic-bezier(.4, 0, 1, 1);
+  --ease-move: cubic-bezier(.45, 0, .55, 1);
+  --ease-signature: cubic-bezier(.34, 1.5, .64, 1); /* one moment per product, e.g. a check-in */
+  --dur-instant: 80ms;   /* a press going down */
+  --dur-fast: 140ms;     /* menus and tooltips in, every exit */
+  --dur-calm: 220ms;     /* dialogs and sheets in, disclosures */
+  --dur-move: 320ms;     /* anything that travels: filing, reordering */
+  --dur-arrive: 480ms;   /* brand moments and first arrival only */
+  --dur-loop: 1.2s;      /* "still running" indicators only, stop on result */
+}
+
+/* Dark: the same paper at night, not an inversion. Surfaces lighten as they
+   rise, and sunk sits above raised so hover still shows on cards. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #141312; --canvas: #1b1a18; --raised: #242220; --sunk: #2e2c29;
+  --ink: #eeece7; --ink-2: #cdc9c1; --muted: #a19d94; --faint: #8f8b82;
+  --line: #2d2b28; --line-strong: #433f3a;
+  --primary: #dfe8d6; --on-primary: #161a14;
+  --done: #adc19b; --done-wash: #242a20;
+  --running: #80c993; --running-wash: #1a2e20;
+  --accent: #e0845b; --accent-wash: #38251c; --on-accent: #1b1a18;
+  /* Cards rise by light, not by outline */
+  --card-edge: inset 0 1px 0 rgb(255 255 255 / .04);
+  --lift: 0 1px 2px rgb(0 0 0 / .35), 0 12px 30px -14px rgb(0 0 0 / .7);
+  --float: inset 0 1px 0 rgb(255 255 255 / .05), 0 0 0 1px var(--line-strong), 0 18px 48px -18px rgb(0 0 0 / .7);
+  --btn-lit: inset 0 1px 0 rgb(255 255 255 / .5), inset 0 -1px 0 rgb(0 0 0 / .12), 0 1px 2px rgb(0 0 0 / .3);
+  --btn-pressed: inset 0 2px 5px rgb(0 0 0 / .28), inset 0 -1px 0 rgb(255 255 255 / .3);
+  --glass: rgb(27 26 24 / .72);
+}
+
+/* Forest: Bryce's own dark variant ("a nice dark forest green that will be
+   easy on the eyes", 26 Sep). Rust warms to amber so it never reads as green. */
+:root[data-theme="forest"] {
+  color-scheme: dark;
+  --paper: #0e1813; --canvas: #122019; --raised: #182a21; --sunk: #203529;
+  --ink: #e4eee6; --ink-2: #c1d1c5; --muted: #98ae9e; --faint: #8aa290;
+  --line: #1f3127; --line-strong: #314a3c;
+  --primary: #d4e8c4; --on-primary: #0f1d15;
+  --done: #bcc99c; --done-wash: #1f3223;
+  --running: #7ed89a; --running-wash: #183a26;
+  --accent: #eb946b; --accent-wash: #3b2a1f; --on-accent: #122019;
+  --card-edge: inset 0 1px 0 rgb(220 255 230 / .05);
+  --lift: 0 1px 2px rgb(0 8 4 / .4), 0 12px 30px -14px rgb(0 8 4 / .75);
+  --float: inset 0 1px 0 rgb(220 255 230 / .06), 0 0 0 1px var(--line-strong), 0 18px 48px -18px rgb(0 8 4 / .75);
+  --btn-lit: inset 0 1px 0 rgb(255 255 255 / .5), inset 0 -1px 0 rgb(0 0 0 / .12), 0 1px 2px rgb(0 0 0 / .3);
+  --btn-pressed: inset 0 2px 5px rgb(0 0 0 / .28), inset 0 -1px 0 rgb(255 255 255 / .3);
+  --glass: rgb(18 32 25 / .72);
+}
+
+/* Reduced motion: show the end state */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-instant: 0ms; --dur-fast: 0ms; --dur-calm: 0ms;
+    --dur-move: 0ms; --dur-arrive: 0ms;
+  }
+}
+
+

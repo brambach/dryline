@@ -1,0 +1,35 @@
+/*
+  Warm paper: Arro's "paper and clay" surfaces (built/arro.md). Import after
+  tokens.css. Pair it with accents/clay.css for the full Arro look.
+
+  Light only, as Arro is. The selector is plain :root, so data-theme="dark",
+  data-theme="forest" and auto-dark.css all outrank it and dark mode keeps the
+  base values.
+
+  Recorded in Arro and set here: paper, card (raised), sunk tray, the four
+  inks, "kept" (done) and its wash, and the long warm-brown card shadow.
+  Not recorded in Arro, so the base values stay: canvas, hairlines, running,
+  and every shadow layer except the long one.
+*/
+
+:root {
+  --paper: #f5f1e8;
+  --raised: #fffdf8;
+  --sunk: #efeadf;
+
+  --ink: #2b2722;
+  --ink-2: #575049;
+  --muted: #6b645b;
+  --faint: #7d766c;
+
+  --done: #5d7a63;
+  --done-wash: #e8ece3;
+
+  --lift:
+    0 0 0 1px rgb(20 30 24 / .05),
+    0 1px 2px rgb(20 30 24 / .05),
+    0 4px 10px -4px rgb(20 30 24 / .08),
+    0 18px 36px -18px rgb(90 60 35 / .24);
+}
+
+

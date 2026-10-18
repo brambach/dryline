@@ -5,9 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% block title %}dryline{% endblock %}</title>
 <meta name="description" content="Daily cited trail conditions for Lake Tahoe and Truckee.">
-<meta name="theme-color" content="#f7f6f3" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#141312" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="{{ MODES.light.paper }}" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="{{ MODES.dark.paper }}" media="(prefers-color-scheme: dark)">
 <link rel="preload" href="{{ root }}fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{ root }}design-tokens/tokens.css">
+<link rel="stylesheet" href="{{ root }}design-tokens/auto-dark.css">
 <link rel="stylesheet" href="{{ root }}style.css">
 <link rel="alternate" type="application/rss+xml" title="dryline" href="{{ root }}feed.xml">
 </head>

@@ -1,0 +1,40 @@
+/*
+  @brambach/design-tokens v0.1.0: auto-dark.css. Generated from tokens.css by
+  dev/build.mjs, so edit the dark block there instead.
+
+  Optional. Import after tokens.css to follow the OS dark setting while <html>
+  has no data-theme. Any data-theme ("light", "dark", "forest") wins.
+*/
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+    --paper: #141312;
+    --canvas: #1b1a18;
+    --raised: #242220;
+    --sunk: #2e2c29;
+    --ink: #eeece7;
+    --ink-2: #cdc9c1;
+    --muted: #a19d94;
+    --faint: #8f8b82;
+    --line: #2d2b28;
+    --line-strong: #433f3a;
+    --primary: #dfe8d6;
+    --on-primary: #161a14;
+    --done: #adc19b;
+    --done-wash: #242a20;
+    --running: #80c993;
+    --running-wash: #1a2e20;
+    --accent: #e0845b;
+    --accent-wash: #38251c;
+    --on-accent: #1b1a18;
+    --card-edge: inset 0 1px 0 rgb(255 255 255 / .04);
+    --lift: 0 1px 2px rgb(0 0 0 / .35), 0 12px 30px -14px rgb(0 0 0 / .7);
+    --float: inset 0 1px 0 rgb(255 255 255 / .05), 0 0 0 1px var(--line-strong), 0 18px 48px -18px rgb(0 0 0 / .7);
+    --btn-lit: inset 0 1px 0 rgb(255 255 255 / .5), inset 0 -1px 0 rgb(0 0 0 / .12), 0 1px 2px rgb(0 0 0 / .3);
+    --btn-pressed: inset 0 2px 5px rgb(0 0 0 / .28), inset 0 -1px 0 rgb(255 255 255 / .3);
+    --glass: rgb(27 26 24 / .72);
+  }
+}
+
+

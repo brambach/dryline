@@ -4,6 +4,20 @@ dryline follows [github.com/brambach/design-taste](https://github.com/brambach/d
 (`APPLY.md`, `built/dervo.md`, `tokens/tokens.css`). Its surface is product UI, read daily: calm, with taste
 in a few places only. This file records how the rules were applied and where dryline deviates on purpose.
 
+## Tokens
+
+The shared tokens (`@brambach/design-tokens`, from `tokens/` in design-taste) are vendored, not copied
+by hand, in `src/dryline/templates/design-tokens/`. `VERSION` records the pin (commit
+`e8404234a6e8`, v0.1.0, untagged as of this writing). Pages load `tokens.css`, then `auto-dark.css`,
+then `style.css`. The build copies the CSS to `site/design-tokens/`, and `theme-color` is read from
+`tokens.json`. Don't edit the vendored files: `sync.sh --check` (CI and `tests/test_site.py`) fails if
+they drift. Override in `style.css` instead. To bump, run `sh src/dryline/templates/design-tokens/sync.sh
+--ref <tag>` on a machine that can read design-taste, then commit the folder.
+
+`style.css` only defines dryline's own tokens: `--scene` and the five status colors. `--dry` is the
+shared `--done` (sage) and `--closed` is the shared `--accent` (rust). `--muddy`, `--snow` and
+`--unknown` have their own light and dark values.
+
 ## Applied
 
 - **Type, three voices.** Instrument Serif speaks once per page ("Today", the trail name, "Archive"), in
