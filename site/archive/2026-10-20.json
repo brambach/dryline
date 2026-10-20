@@ -1,0 +1,578 @@
+[
+ {
+  "trail_id": "mount-tallac",
+  "trail_name": "Mount Tallac (via Mt. Tallac Trailhead)",
+  "date": "2026-10-20",
+  "status": "unknown",
+  "claims": [],
+  "context": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 5,427–10,739 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   },
+   {
+    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
+    "tried_url": "https://api.weather.gov/"
+   }
+  ],
+  "forecast": {
+   "kind": "forecast",
+   "statement": "NWS Today: Mostly Cloudy then Slight Chance Light Rain, high 49°F.",
+   "source_name": "NWS forecast",
+   "source_url": "https://api.weather.gov/gridpoints/REV/30,80/forecast",
+   "fetched_at": "2026-10-20T18:06:53.063747Z",
+   "quote": "Today: Mostly Cloudy then Slight Chance Light Rain, high 49°F",
+   "observed_at": "2026-10-20T11:00:00-07:00"
+  }
+ },
+ {
+  "trail_id": "eagle-lake-desolation",
+  "trail_name": "Eagle Lake (Desolation Wilderness) via Eagle Falls",
+  "date": "2026-10-20",
+  "status": "unknown",
+  "claims": [],
+  "context": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 5,574–8,023 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   },
+   {
+    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
+    "tried_url": "https://api.weather.gov/"
+   }
+  ],
+  "forecast": {
+   "kind": "forecast",
+   "statement": "NWS Today: Mostly Cloudy then Slight Chance Light Rain, high 49°F.",
+   "source_name": "NWS forecast",
+   "source_url": "https://api.weather.gov/gridpoints/REV/29,82/forecast",
+   "fetched_at": "2026-10-20T18:06:52.737973Z",
+   "quote": "Today: Mostly Cloudy then Slight Chance Light Rain, high 49°F",
+   "observed_at": "2026-10-20T11:00:00-07:00"
+  }
+ },
+ {
+  "trail_id": "rubicon-trail-dl-bliss",
+  "trail_name": "Rubicon Trail (D.L. Bliss to Emerald Bay)",
+  "date": "2026-10-20",
+  "status": "unknown",
+  "claims": [],
+  "context": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 5,232–7,602 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   },
+   {
+    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
+    "tried_url": "https://api.weather.gov/"
+   },
+   {
+    "what": "No official closure source dryline can read for California State Parks",
+    "tried_url": "https://www.parks.ca.gov/?page_id=505"
+   }
+  ],
+  "forecast": {
+   "kind": "forecast",
+   "statement": "NWS Today: Mostly Cloudy then Slight Chance Light Rain, high 56°F.",
+   "source_name": "NWS forecast",
+   "source_url": "https://api.weather.gov/gridpoints/REV/31,84/forecast",
+   "fetched_at": "2026-10-20T18:06:53.696329Z",
+   "quote": "Today: Mostly Cloudy then Slight Chance Light Rain, high 56°F",
+   "observed_at": "2026-10-20T11:00:00-07:00"
+  }
+ },
+ {
+  "trail_id": "cascade-falls",
+  "trail_name": "Cascade Falls (Bayview Trailhead)",
+  "date": "2026-10-20",
+  "status": "unknown",
+  "claims": [],
+  "context": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 5,789–7,927 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   },
+   {
+    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
+    "tried_url": "https://api.weather.gov/"
+   }
+  ],
+  "forecast": {
+   "kind": "forecast",
+   "statement": "NWS Today: Mostly Cloudy then Slight Chance Light Rain, high 53°F.",
+   "source_name": "NWS forecast",
+   "source_url": "https://api.weather.gov/gridpoints/REV/30,82/forecast",
+   "fetched_at": "2026-10-20T18:06:53.252969Z",
+   "quote": "Today: Mostly Cloudy then Slight Chance Light Rain, high 53°F",
+   "observed_at": "2026-10-20T11:00:00-07:00"
+  }
+ },
+ {
+  "trail_id": "echo-lakes-to-lake-aloha",
+  "trail_name": "Echo Lakes to Lake Aloha (PCT/TRT)",
+  "date": "2026-10-20",
+  "status": "unknown",
+  "claims": [],
+  "context": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 6,412–9,337 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   },
+   {
+    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
+    "tried_url": "https://api.weather.gov/"
+   },
+   {
+    "what": "Tahoe Rim Trail Association entry for EchotoBP was last updated Jul 7, older than 14 days",
+    "tried_url": "https://tahoerimtrail.org/current-trail-conditions/"
+   }
+  ],
+  "forecast": {
+   "kind": "forecast",
+   "statement": "NWS Today: Mostly Cloudy then Slight Chance Light Rain, high 48°F.",
+   "source_name": "NWS forecast",
+   "source_url": "https://api.weather.gov/gridpoints/REV/29,78/forecast",
+   "fetched_at": "2026-10-20T18:06:52.393211Z",
+   "quote": "Today: Mostly Cloudy then Slight Chance Light Rain, high 48°F",
+   "observed_at": "2026-10-20T11:00:00-07:00"
+  }
+ },
+ {
+  "trail_id": "ellis-peak",
+  "trail_name": "Ellis Peak",
+  "date": "2026-10-20",
+  "status": "unknown",
+  "claims": [],
+  "context": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 6,776–9,730 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   },
+   {
+    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
+    "tried_url": "https://api.weather.gov/"
+   }
+  ],
+  "forecast": {
+   "kind": "forecast",
+   "statement": "NWS Today: Mostly Cloudy then Slight Chance Light Rain, high 48°F.",
+   "source_name": "NWS forecast",
+   "source_url": "https://api.weather.gov/gridpoints/REV/28,88/forecast",
+   "fetched_at": "2026-10-20T18:06:52.217523Z",
+   "quote": "Today: Mostly Cloudy then Slight Chance Light Rain, high 48°F",
+   "observed_at": "2026-10-20T11:00:00-07:00"
+  }
+ },
+ {
+  "trail_id": "mr-toads-wild-ride",
+  "trail_name": "Mr. Toad's Wild Ride (Saxon Creek Trail) via Big Meadow/TRT",
+  "date": "2026-10-20",
+  "status": "unknown",
+  "claims": [],
+  "context": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 5,497–9,954 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   },
+   {
+    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
+    "tried_url": "https://api.weather.gov/"
+   },
+   {
+    "what": "Tahoe Rim Trail Association entry for KBStoBM was last updated Jul 6, older than 14 days",
+    "tried_url": "https://tahoerimtrail.org/current-trail-conditions/"
+   }
+  ],
+  "forecast": {
+   "kind": "forecast",
+   "statement": "NWS Today: Mostly Cloudy then Slight Chance Light Rain, high 49°F.",
+   "source_name": "NWS forecast",
+   "source_url": "https://api.weather.gov/gridpoints/REV/34,75/forecast",
+   "fetched_at": "2026-10-20T18:06:54.029016Z",
+   "quote": "Today: Mostly Cloudy then Slight Chance Light Rain, high 49°F",
+   "observed_at": "2026-10-20T11:00:00-07:00"
+  }
+ },
+ {
+  "trail_id": "corral-trail",
+  "trail_name": "Corral Trail (South Lake Tahoe)",
+  "date": "2026-10-20",
+  "status": "unknown",
+  "claims": [],
+  "context": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 5,387–8,054 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   },
+   {
+    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
+    "tried_url": "https://api.weather.gov/"
+   }
+  ],
+  "forecast": {
+   "kind": "forecast",
+   "statement": "NWS Today: Mostly Cloudy then Slight Chance Light Rain, high 52°F.",
+   "source_name": "NWS forecast",
+   "source_url": "https://api.weather.gov/gridpoints/REV/35,78/forecast",
+   "fetched_at": "2026-10-20T18:06:54.297145Z",
+   "quote": "Today: Mostly Cloudy then Slight Chance Light Rain, high 52°F",
+   "observed_at": "2026-10-20T11:00:00-07:00"
+  }
+ },
+ {
+  "trail_id": "van-sickle-bi-state-park",
+  "trail_name": "Van Sickle Trail (Van Sickle Bi-State Park to TRT)",
+  "date": "2026-10-20",
+  "status": "unknown",
+  "claims": [],
+  "context": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 5,438–8,792 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   },
+   {
+    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
+    "tried_url": "https://api.weather.gov/"
+   },
+   {
+    "what": "Tahoe Rim Trail Association entry for KBNtoKBS was last updated Jul 7, older than 14 days",
+    "tried_url": "https://tahoerimtrail.org/current-trail-conditions/"
+   }
+  ],
+  "forecast": {
+   "kind": "forecast",
+   "statement": "NWS Today: Mostly Cloudy then Slight Chance Rain And Snow, high 47°F.",
+   "source_name": "NWS forecast",
+   "source_url": "https://api.weather.gov/gridpoints/REV/37,81/forecast",
+   "fetched_at": "2026-10-20T18:06:54.896038Z",
+   "quote": "Today: Mostly Cloudy then Slight Chance Rain And Snow, high 47°F",
+   "observed_at": "2026-10-20T08:00:00-07:00"
+  }
+ },
+ {
+  "trail_id": "mount-rose-summit",
+  "trail_name": "Mount Rose Summit Trail",
+  "date": "2026-10-20",
+  "status": "unknown",
+  "claims": [],
+  "context": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 7,913–11,785 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   },
+   {
+    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
+    "tried_url": "https://api.weather.gov/"
+   },
+   {
+    "what": "Tahoe Rim Trail Association entry for BrockwaytoRose was last updated Jul 7, older than 14 days",
+    "tried_url": "https://tahoerimtrail.org/current-trail-conditions/"
+   }
+  ],
+  "forecast": {
+   "kind": "forecast",
+   "statement": "NWS Today: Partly Sunny then Slight Chance Light Snow, high 46°F.",
+   "source_name": "NWS forecast",
+   "source_url": "https://api.weather.gov/gridpoints/REV/40,99/forecast",
+   "fetched_at": "2026-10-20T18:06:55.265676Z",
+   "quote": "Today: Partly Sunny then Slight Chance Light Snow, high 46°F",
+   "observed_at": "2026-10-20T11:00:00-07:00"
+  }
+ },
+ {
+  "trail_id": "flume-trail",
+  "trail_name": "Flume Trail (Spooner Lake to Tunnel Creek)",
+  "date": "2026-10-20",
+  "status": "unknown",
+  "claims": [],
+  "context": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 5,311–9,143 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   },
+   {
+    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
+    "tried_url": "https://api.weather.gov/"
+   }
+  ],
+  "forecast": {
+   "kind": "forecast",
+   "statement": "NWS Today: Mostly Cloudy then Slight Chance Light Rain, high 52°F.",
+   "source_name": "NWS forecast",
+   "source_url": "https://api.weather.gov/gridpoints/REV/39,90/forecast",
+   "fetched_at": "2026-10-20T18:06:55.082759Z",
+   "quote": "Today: Mostly Cloudy then Slight Chance Light Rain, high 52°F",
+   "observed_at": "2026-10-20T11:00:00-07:00"
+  }
+ },
+ {
+  "trail_id": "marlette-lake",
+  "trail_name": "Marlette Lake via North Canyon (Spooner)",
+  "date": "2026-10-20",
+  "status": "unknown",
+  "claims": [],
+  "context": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 5,953–9,168 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   },
+   {
+    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
+    "tried_url": "https://api.weather.gov/"
+   }
+  ],
+  "forecast": {
+   "kind": "forecast",
+   "statement": "NWS Today: Mostly Cloudy then Slight Chance Light Rain, high 52°F.",
+   "source_name": "NWS forecast",
+   "source_url": "https://api.weather.gov/gridpoints/REV/39,90/forecast",
+   "fetched_at": "2026-10-20T18:06:55.082759Z",
+   "quote": "Today: Mostly Cloudy then Slight Chance Light Rain, high 52°F",
+   "observed_at": "2026-10-20T11:00:00-07:00"
+  }
+ },
+ {
+  "trail_id": "page-meadows",
+  "trail_name": "Page Meadows (TRT from Ward Creek)",
+  "date": "2026-10-20",
+  "status": "unknown",
+  "claims": [],
+  "context": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 5,532–8,002 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   },
+   {
+    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
+    "tried_url": "https://api.weather.gov/"
+   },
+   {
+    "what": "Tahoe Rim Trail Association entry for BPtoTC was last updated Jul 7, older than 14 days",
+    "tried_url": "https://tahoerimtrail.org/current-trail-conditions/"
+   }
+  ],
+  "forecast": {
+   "kind": "forecast",
+   "statement": "NWS Today: Mostly Cloudy then Slight Chance Light Rain, high 56°F.",
+   "source_name": "NWS forecast",
+   "source_url": "https://api.weather.gov/gridpoints/REV/29,92/forecast",
+   "fetched_at": "2026-10-20T18:06:52.907671Z",
+   "quote": "Today: Mostly Cloudy then Slight Chance Light Rain, high 56°F",
+   "observed_at": "2026-10-20T11:00:00-07:00"
+  }
+ },
+ {
+  "trail_id": "five-lakes",
+  "trail_name": "Five Lakes Trail (Alpine Meadows)",
+  "date": "2026-10-20",
+  "status": "unknown",
+  "claims": [],
+  "context": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 5,542–8,579 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   },
+   {
+    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
+    "tried_url": "https://api.weather.gov/"
+   }
+  ],
+  "forecast": {
+   "kind": "forecast",
+   "statement": "NWS Today: Slight Chance Rain Showers, high 52°F.",
+   "source_name": "NWS forecast",
+   "source_url": "https://api.weather.gov/gridpoints/STO/89,86/forecast",
+   "fetched_at": "2026-10-20T18:06:55.865789Z",
+   "quote": "Today: Slight Chance Rain Showers, high 52°F",
+   "observed_at": "2026-10-20T11:00:00-07:00"
+  }
+ },
+ {
+  "trail_id": "castle-peak",
+  "trail_name": "Castle Peak (Donner Summit)",
+  "date": "2026-10-20",
+  "status": "unknown",
+  "claims": [],
+  "context": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 6,274–10,109 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   },
+   {
+    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
+    "tried_url": "https://api.weather.gov/"
+   }
+  ],
+  "forecast": {
+   "kind": "forecast",
+   "statement": "NWS Today: Slight Chance Rain Showers, high 51°F.",
+   "source_name": "NWS forecast",
+   "source_url": "https://api.weather.gov/gridpoints/STO/87,95/forecast",
+   "fetched_at": "2026-10-20T18:06:55.442692Z",
+   "quote": "Today: Slight Chance Rain Showers, high 51°F",
+   "observed_at": "2026-10-20T11:00:00-07:00"
+  }
+ },
+ {
+  "trail_id": "mount-judah-loop",
+  "trail_name": "Mount Judah Loop (PCT, Donner Summit)",
+  "date": "2026-10-20",
+  "status": "unknown",
+  "claims": [],
+  "context": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 6,061–9,243 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   },
+   {
+    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
+    "tried_url": "https://api.weather.gov/"
+   }
+  ],
+  "forecast": {
+   "kind": "forecast",
+   "statement": "NWS Today: Slight Chance Rain Showers, high 56°F.",
+   "source_name": "NWS forecast",
+   "source_url": "https://api.weather.gov/gridpoints/STO/88,92/forecast",
+   "fetched_at": "2026-10-20T18:06:55.636369Z",
+   "quote": "Today: Slight Chance Rain Showers, high 56°F",
+   "observed_at": "2026-10-20T11:00:00-07:00"
+  }
+ },
+ {
+  "trail_id": "donner-lake-rim-trail",
+  "trail_name": "Donner Lake Rim Trail",
+  "date": "2026-10-20",
+  "status": "unknown",
+  "claims": [],
+  "context": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 5,356–8,689 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   },
+   {
+    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
+    "tried_url": "https://api.weather.gov/"
+   },
+   {
+    "what": "No official closure source dryline can read for Truckee Donner Land Trust",
+    "tried_url": "https://www.truckeedonnerlandtrust.org/donner-lake-rim-trail"
+   }
+  ],
+  "forecast": {
+   "kind": "forecast",
+   "statement": "NWS Today: Mostly Cloudy then Slight Chance Light Rain, high 56°F.",
+   "source_name": "NWS forecast",
+   "source_url": "https://api.weather.gov/gridpoints/REV/27,101/forecast",
+   "fetched_at": "2026-10-20T18:06:51.950494Z",
+   "quote": "Today: Mostly Cloudy then Slight Chance Light Rain, high 56°F",
+   "observed_at": "2026-10-20T11:00:00-07:00"
+  }
+ },
+ {
+  "trail_id": "sawtooth-trail",
+  "trail_name": "Sawtooth Trail (Truckee)",
+  "date": "2026-10-20",
+  "status": "unknown",
+  "claims": [],
+  "context": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 5,208–7,469 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   },
+   {
+    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
+    "tried_url": "https://api.weather.gov/"
+   }
+  ],
+  "forecast": {
+   "kind": "forecast",
+   "statement": "NWS Today: Mostly Cloudy then Slight Chance Light Rain, high 60°F.",
+   "source_name": "NWS forecast",
+   "source_url": "https://api.weather.gov/gridpoints/REV/30,98/forecast",
+   "fetched_at": "2026-10-20T18:06:53.467190Z",
+   "quote": "Today: Mostly Cloudy then Slight Chance Light Rain, high 60°F",
+   "observed_at": "2026-10-20T11:00:00-07:00"
+  }
+ },
+ {
+  "trail_id": "trt-brockway-to-martis-peak",
+  "trail_name": "Tahoe Rim Trail: Brockway Summit to Martis Peak",
+  "date": "2026-10-20",
+  "status": "unknown",
+  "claims": [],
+  "context": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 6,046–9,736 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   },
+   {
+    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
+    "tried_url": "https://api.weather.gov/"
+   },
+   {
+    "what": "Tahoe Rim Trail Association entry for BrockwaytoRose was last updated Jul 7, older than 14 days",
+    "tried_url": "https://tahoerimtrail.org/current-trail-conditions/"
+   }
+  ],
+  "forecast": {
+   "kind": "forecast",
+   "statement": "NWS Today: Mostly Cloudy then Slight Chance Light Rain, high 53°F.",
+   "source_name": "NWS forecast",
+   "source_url": "https://api.weather.gov/gridpoints/REV/35,97/forecast",
+   "fetched_at": "2026-10-20T18:06:54.739718Z",
+   "quote": "Today: Mostly Cloudy then Slight Chance Light Rain, high 53°F",
+   "observed_at": "2026-10-20T11:00:00-07:00"
+  }
+ },
+ {
+  "trail_id": "big-meadow-to-round-lake",
+  "trail_name": "Big Meadow to Round Lake (TRT)",
+  "date": "2026-10-20",
+  "status": "unknown",
+  "claims": [],
+  "context": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 6,243–9,117 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   },
+   {
+    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
+    "tried_url": "https://api.weather.gov/"
+   },
+   {
+    "what": "Tahoe Rim Trail Association entry for BMtoEcho was last updated Jul 7, older than 14 days",
+    "tried_url": "https://tahoerimtrail.org/current-trail-conditions/"
+   }
+  ],
+  "forecast": {
+   "kind": "forecast",
+   "statement": "NWS Today: Mostly Cloudy then Slight Chance Rain Showers, high 52°F.",
+   "source_name": "NWS forecast",
+   "source_url": "https://api.weather.gov/gridpoints/STO/94,66/forecast",
+   "fetched_at": "2026-10-20T18:06:56.052435Z",
+   "quote": "Today: Mostly Cloudy then Slight Chance Rain Showers, high 52°F",
+   "observed_at": "2026-10-20T11:00:00-07:00"
+  }
+ }
+]
