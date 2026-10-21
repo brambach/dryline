@@ -2,72 +2,90 @@
  {
   "trail_id": "mount-tallac",
   "trail_name": "Mount Tallac (via Mt. Tallac Trailhead)",
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "status": "unknown",
   "claims": [],
-  "context": [],
+  "context": [
+   {
+    "kind": "precip",
+    "statement": "No measurable rain in the 38 h to 8:53am Oct 21 at South Lake Tahoe, Lake Tahoe Airport (NWS, 7 km away).",
+    "source_name": "NWS observations",
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-19T17%3A15%3A28Z",
+    "fetched_at": "2026-10-21T18:16:04.642148Z",
+    "quote": "KTVL: 30 routine METARs with AO2 from 200253Z to 211553Z; precipitation groups: P0000@210053Z",
+    "observed_at": "2026-10-21T15:53:00Z"
+   }
+  ],
   "missing": [
    {
     "what": "No SNOTEL station within 40 km and 5,427–10,739 ft reported snow depth in the last 2 days",
     "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
-   },
-   {
-    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
-    "tried_url": "https://api.weather.gov/"
    }
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Mostly Cloudy then Slight Chance Light Rain, high 49°F.",
+   "statement": "NWS Today: Showers And Thunderstorms, high 46°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/30,80/forecast",
-   "fetched_at": "2026-10-20T18:06:53.063747Z",
-   "quote": "Today: Mostly Cloudy then Slight Chance Light Rain, high 49°F",
-   "observed_at": "2026-10-20T11:00:00-07:00"
+   "fetched_at": "2026-10-21T18:16:00.167548Z",
+   "quote": "Today: Showers And Thunderstorms, high 46°F",
+   "observed_at": "2026-10-21T11:00:00-07:00"
   }
  },
  {
   "trail_id": "eagle-lake-desolation",
   "trail_name": "Eagle Lake (Desolation Wilderness) via Eagle Falls",
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "status": "unknown",
   "claims": [],
-  "context": [],
+  "context": [
+   {
+    "kind": "precip",
+    "statement": "No measurable rain in the 38 h to 8:53am Oct 21 at South Lake Tahoe, Lake Tahoe Airport (NWS, 12 km away).",
+    "source_name": "NWS observations",
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-19T17%3A15%3A28Z",
+    "fetched_at": "2026-10-21T18:16:04.642148Z",
+    "quote": "KTVL: 30 routine METARs with AO2 from 200253Z to 211553Z; precipitation groups: P0000@210053Z",
+    "observed_at": "2026-10-21T15:53:00Z"
+   }
+  ],
   "missing": [
    {
     "what": "No SNOTEL station within 40 km and 5,574–8,023 ft reported snow depth in the last 2 days",
     "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
-   },
-   {
-    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
-    "tried_url": "https://api.weather.gov/"
    }
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Mostly Cloudy then Slight Chance Light Rain, high 49°F.",
+   "statement": "NWS Today: Showers And Thunderstorms then Rain And Snow, high 46°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/29,82/forecast",
-   "fetched_at": "2026-10-20T18:06:52.737973Z",
-   "quote": "Today: Mostly Cloudy then Slight Chance Light Rain, high 49°F",
-   "observed_at": "2026-10-20T11:00:00-07:00"
+   "fetched_at": "2026-10-21T18:15:59.530931Z",
+   "quote": "Today: Showers And Thunderstorms then Rain And Snow, high 46°F",
+   "observed_at": "2026-10-21T11:00:00-07:00"
   }
  },
  {
   "trail_id": "rubicon-trail-dl-bliss",
   "trail_name": "Rubicon Trail (D.L. Bliss to Emerald Bay)",
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "status": "unknown",
   "claims": [],
-  "context": [],
+  "context": [
+   {
+    "kind": "precip",
+    "statement": "No measurable rain in the 38 h to 8:53am Oct 21 at South Lake Tahoe, Lake Tahoe Airport (NWS, 13 km away).",
+    "source_name": "NWS observations",
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-19T17%3A15%3A28Z",
+    "fetched_at": "2026-10-21T18:16:04.642148Z",
+    "quote": "KTVL: 30 routine METARs with AO2 from 200253Z to 211553Z; precipitation groups: P0000@210053Z",
+    "observed_at": "2026-10-21T15:53:00Z"
+   }
+  ],
   "missing": [
    {
     "what": "No SNOTEL station within 40 km and 5,232–7,602 ft reported snow depth in the last 2 days",
     "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
-   },
-   {
-    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
-    "tried_url": "https://api.weather.gov/"
    },
    {
     "what": "No official closure source dryline can read for California State Parks",
@@ -76,56 +94,68 @@
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Mostly Cloudy then Slight Chance Light Rain, high 56°F.",
+   "statement": "NWS Today: Showers And Thunderstorms, high 53°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/31,84/forecast",
-   "fetched_at": "2026-10-20T18:06:53.696329Z",
-   "quote": "Today: Mostly Cloudy then Slight Chance Light Rain, high 56°F",
-   "observed_at": "2026-10-20T11:00:00-07:00"
+   "fetched_at": "2026-10-21T18:16:00.862871Z",
+   "quote": "Today: Showers And Thunderstorms, high 53°F",
+   "observed_at": "2026-10-21T11:00:00-07:00"
   }
  },
  {
   "trail_id": "cascade-falls",
   "trail_name": "Cascade Falls (Bayview Trailhead)",
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "status": "unknown",
   "claims": [],
-  "context": [],
+  "context": [
+   {
+    "kind": "precip",
+    "statement": "No measurable rain in the 38 h to 8:53am Oct 21 at South Lake Tahoe, Lake Tahoe Airport (NWS, 10 km away).",
+    "source_name": "NWS observations",
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-19T17%3A15%3A28Z",
+    "fetched_at": "2026-10-21T18:16:04.642148Z",
+    "quote": "KTVL: 30 routine METARs with AO2 from 200253Z to 211553Z; precipitation groups: P0000@210053Z",
+    "observed_at": "2026-10-21T15:53:00Z"
+   }
+  ],
   "missing": [
    {
     "what": "No SNOTEL station within 40 km and 5,789–7,927 ft reported snow depth in the last 2 days",
     "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
-   },
-   {
-    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
-    "tried_url": "https://api.weather.gov/"
    }
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Mostly Cloudy then Slight Chance Light Rain, high 53°F.",
+   "statement": "NWS Today: Showers And Thunderstorms, high 50°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/30,82/forecast",
-   "fetched_at": "2026-10-20T18:06:53.252969Z",
-   "quote": "Today: Mostly Cloudy then Slight Chance Light Rain, high 53°F",
-   "observed_at": "2026-10-20T11:00:00-07:00"
+   "fetched_at": "2026-10-21T18:16:00.442317Z",
+   "quote": "Today: Showers And Thunderstorms, high 50°F",
+   "observed_at": "2026-10-21T11:00:00-07:00"
   }
  },
  {
   "trail_id": "echo-lakes-to-lake-aloha",
   "trail_name": "Echo Lakes to Lake Aloha (PCT/TRT)",
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "status": "unknown",
   "claims": [],
-  "context": [],
+  "context": [
+   {
+    "kind": "precip",
+    "statement": "No measurable rain in the 38 h to 8:53am Oct 21 at South Lake Tahoe, Lake Tahoe Airport (NWS, 8 km away).",
+    "source_name": "NWS observations",
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-19T17%3A15%3A28Z",
+    "fetched_at": "2026-10-21T18:16:04.642148Z",
+    "quote": "KTVL: 30 routine METARs with AO2 from 200253Z to 211553Z; precipitation groups: P0000@210053Z",
+    "observed_at": "2026-10-21T15:53:00Z"
+   }
+  ],
   "missing": [
    {
     "what": "No SNOTEL station within 40 km and 6,412–9,337 ft reported snow depth in the last 2 days",
     "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
-   },
-   {
-    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
-    "tried_url": "https://api.weather.gov/"
    },
    {
     "what": "Tahoe Rim Trail Association entry for EchotoBP was last updated Jul 7, older than 14 days",
@@ -134,56 +164,68 @@
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Mostly Cloudy then Slight Chance Light Rain, high 48°F.",
+   "statement": "NWS Today: Showers And Thunderstorms then Rain And Snow, high 45°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/29,78/forecast",
-   "fetched_at": "2026-10-20T18:06:52.393211Z",
-   "quote": "Today: Mostly Cloudy then Slight Chance Light Rain, high 48°F",
-   "observed_at": "2026-10-20T11:00:00-07:00"
+   "fetched_at": "2026-10-21T18:15:59.378398Z",
+   "quote": "Today: Showers And Thunderstorms then Rain And Snow, high 45°F",
+   "observed_at": "2026-10-21T11:00:00-07:00"
   }
  },
  {
   "trail_id": "ellis-peak",
   "trail_name": "Ellis Peak",
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "status": "unknown",
   "claims": [],
-  "context": [],
+  "context": [
+   {
+    "kind": "precip",
+    "statement": "No measurable rain in the 38 h to 8:53am Oct 21 at South Lake Tahoe, Lake Tahoe Airport (NWS, 26 km away).",
+    "source_name": "NWS observations",
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-19T17%3A15%3A28Z",
+    "fetched_at": "2026-10-21T18:16:04.642148Z",
+    "quote": "KTVL: 30 routine METARs with AO2 from 200253Z to 211553Z; precipitation groups: P0000@210053Z",
+    "observed_at": "2026-10-21T15:53:00Z"
+   }
+  ],
   "missing": [
    {
     "what": "No SNOTEL station within 40 km and 6,776–9,730 ft reported snow depth in the last 2 days",
     "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
-   },
-   {
-    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
-    "tried_url": "https://api.weather.gov/"
    }
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Mostly Cloudy then Slight Chance Light Rain, high 48°F.",
+   "statement": "NWS Today: Chance Showers And Thunderstorms then Slight Chance T-storms, high 45°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/28,88/forecast",
-   "fetched_at": "2026-10-20T18:06:52.217523Z",
-   "quote": "Today: Mostly Cloudy then Slight Chance Light Rain, high 48°F",
-   "observed_at": "2026-10-20T11:00:00-07:00"
+   "fetched_at": "2026-10-21T18:15:59.110145Z",
+   "quote": "Today: Chance Showers And Thunderstorms then Slight Chance T-storms, high 45°F",
+   "observed_at": "2026-10-21T11:00:00-07:00"
   }
  },
  {
   "trail_id": "mr-toads-wild-ride",
   "trail_name": "Mr. Toad's Wild Ride (Saxon Creek Trail) via Big Meadow/TRT",
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "status": "unknown",
   "claims": [],
-  "context": [],
+  "context": [
+   {
+    "kind": "precip",
+    "statement": "No measurable rain in the 38 h to 8:53am Oct 21 at South Lake Tahoe, Lake Tahoe Airport (NWS, 10 km away).",
+    "source_name": "NWS observations",
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-19T17%3A15%3A28Z",
+    "fetched_at": "2026-10-21T18:16:04.642148Z",
+    "quote": "KTVL: 30 routine METARs with AO2 from 200253Z to 211553Z; precipitation groups: P0000@210053Z",
+    "observed_at": "2026-10-21T15:53:00Z"
+   }
+  ],
   "missing": [
    {
     "what": "No SNOTEL station within 40 km and 5,497–9,954 ft reported snow depth in the last 2 days",
     "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
-   },
-   {
-    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
-    "tried_url": "https://api.weather.gov/"
    },
    {
     "what": "Tahoe Rim Trail Association entry for KBStoBM was last updated Jul 6, older than 14 days",
@@ -192,56 +234,68 @@
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Mostly Cloudy then Slight Chance Light Rain, high 49°F.",
+   "statement": "NWS Today: Showers And Thunderstorms then Light Snow, high 46°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/34,75/forecast",
-   "fetched_at": "2026-10-20T18:06:54.029016Z",
-   "quote": "Today: Mostly Cloudy then Slight Chance Light Rain, high 49°F",
-   "observed_at": "2026-10-20T11:00:00-07:00"
+   "fetched_at": "2026-10-21T18:16:01.117295Z",
+   "quote": "Today: Showers And Thunderstorms then Light Snow, high 46°F",
+   "observed_at": "2026-10-21T11:00:00-07:00"
   }
  },
  {
   "trail_id": "corral-trail",
   "trail_name": "Corral Trail (South Lake Tahoe)",
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "status": "unknown",
   "claims": [],
-  "context": [],
+  "context": [
+   {
+    "kind": "precip",
+    "statement": "No measurable rain in the 38 h to 8:53am Oct 21 at South Lake Tahoe, Lake Tahoe Airport (NWS, 2 km away).",
+    "source_name": "NWS observations",
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-19T17%3A15%3A28Z",
+    "fetched_at": "2026-10-21T18:16:04.642148Z",
+    "quote": "KTVL: 30 routine METARs with AO2 from 200253Z to 211553Z; precipitation groups: P0000@210053Z",
+    "observed_at": "2026-10-21T15:53:00Z"
+   }
+  ],
   "missing": [
    {
     "what": "No SNOTEL station within 40 km and 5,387–8,054 ft reported snow depth in the last 2 days",
     "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
-   },
-   {
-    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
-    "tried_url": "https://api.weather.gov/"
    }
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Mostly Cloudy then Slight Chance Light Rain, high 52°F.",
+   "statement": "NWS Today: Showers And Thunderstorms, high 49°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/35,78/forecast",
-   "fetched_at": "2026-10-20T18:06:54.297145Z",
-   "quote": "Today: Mostly Cloudy then Slight Chance Light Rain, high 52°F",
-   "observed_at": "2026-10-20T11:00:00-07:00"
+   "fetched_at": "2026-10-21T18:16:01.297676Z",
+   "quote": "Today: Showers And Thunderstorms, high 49°F",
+   "observed_at": "2026-10-21T11:00:00-07:00"
   }
  },
  {
   "trail_id": "van-sickle-bi-state-park",
   "trail_name": "Van Sickle Trail (Van Sickle Bi-State Park to TRT)",
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "status": "unknown",
   "claims": [],
-  "context": [],
+  "context": [
+   {
+    "kind": "precip",
+    "statement": "No measurable rain in the 38 h to 8:53am Oct 21 at South Lake Tahoe, Lake Tahoe Airport (NWS, 8 km away).",
+    "source_name": "NWS observations",
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-19T17%3A15%3A28Z",
+    "fetched_at": "2026-10-21T18:16:04.642148Z",
+    "quote": "KTVL: 30 routine METARs with AO2 from 200253Z to 211553Z; precipitation groups: P0000@210053Z",
+    "observed_at": "2026-10-21T15:53:00Z"
+   }
+  ],
   "missing": [
    {
     "what": "No SNOTEL station within 40 km and 5,438–8,792 ft reported snow depth in the last 2 days",
     "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
-   },
-   {
-    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
-    "tried_url": "https://api.weather.gov/"
    },
    {
     "what": "Tahoe Rim Trail Association entry for KBNtoKBS was last updated Jul 7, older than 14 days",
@@ -250,18 +304,18 @@
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Mostly Cloudy then Slight Chance Rain And Snow, high 47°F.",
+   "statement": "NWS Today: Showers And Thunderstorms then Slight Chance T-storms, high 43°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/37,81/forecast",
-   "fetched_at": "2026-10-20T18:06:54.896038Z",
-   "quote": "Today: Mostly Cloudy then Slight Chance Rain And Snow, high 47°F",
-   "observed_at": "2026-10-20T08:00:00-07:00"
+   "fetched_at": "2026-10-21T18:16:01.932951Z",
+   "quote": "Today: Showers And Thunderstorms then Slight Chance T-storms, high 43°F",
+   "observed_at": "2026-10-21T11:00:00-07:00"
   }
  },
  {
   "trail_id": "mount-rose-summit",
   "trail_name": "Mount Rose Summit Trail",
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "status": "unknown",
   "claims": [],
   "context": [],
@@ -281,18 +335,18 @@
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Partly Sunny then Slight Chance Light Snow, high 46°F.",
+   "statement": "NWS Today: Slight Chance T-storms, high 43°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/40,99/forecast",
-   "fetched_at": "2026-10-20T18:06:55.265676Z",
-   "quote": "Today: Partly Sunny then Slight Chance Light Snow, high 46°F",
-   "observed_at": "2026-10-20T11:00:00-07:00"
+   "fetched_at": "2026-10-21T18:16:02.369157Z",
+   "quote": "Today: Slight Chance T-storms, high 43°F",
+   "observed_at": "2026-10-21T11:00:00-07:00"
   }
  },
  {
   "trail_id": "flume-trail",
   "trail_name": "Flume Trail (Spooner Lake to Tunnel Creek)",
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "status": "unknown",
   "claims": [],
   "context": [],
@@ -308,18 +362,18 @@
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Mostly Cloudy then Slight Chance Light Rain, high 52°F.",
+   "statement": "NWS Today: Showers And Thunderstorms, high 48°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/39,90/forecast",
-   "fetched_at": "2026-10-20T18:06:55.082759Z",
-   "quote": "Today: Mostly Cloudy then Slight Chance Light Rain, high 52°F",
-   "observed_at": "2026-10-20T11:00:00-07:00"
+   "fetched_at": "2026-10-21T18:16:02.128024Z",
+   "quote": "Today: Showers And Thunderstorms, high 48°F",
+   "observed_at": "2026-10-21T11:00:00-07:00"
   }
  },
  {
   "trail_id": "marlette-lake",
   "trail_name": "Marlette Lake via North Canyon (Spooner)",
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "status": "unknown",
   "claims": [],
   "context": [],
@@ -335,29 +389,35 @@
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Mostly Cloudy then Slight Chance Light Rain, high 52°F.",
+   "statement": "NWS Today: Showers And Thunderstorms, high 48°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/39,90/forecast",
-   "fetched_at": "2026-10-20T18:06:55.082759Z",
-   "quote": "Today: Mostly Cloudy then Slight Chance Light Rain, high 52°F",
-   "observed_at": "2026-10-20T11:00:00-07:00"
+   "fetched_at": "2026-10-21T18:16:02.128024Z",
+   "quote": "Today: Showers And Thunderstorms, high 48°F",
+   "observed_at": "2026-10-21T11:00:00-07:00"
   }
  },
  {
   "trail_id": "page-meadows",
   "trail_name": "Page Meadows (TRT from Ward Creek)",
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "status": "unknown",
   "claims": [],
-  "context": [],
+  "context": [
+   {
+    "kind": "precip",
+    "statement": "No measurable rain in the 38 h to 8:53am Oct 21 at South Lake Tahoe, Lake Tahoe Airport (NWS, 32 km away).",
+    "source_name": "NWS observations",
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-19T17%3A15%3A28Z",
+    "fetched_at": "2026-10-21T18:16:04.642148Z",
+    "quote": "KTVL: 30 routine METARs with AO2 from 200253Z to 211553Z; precipitation groups: P0000@210053Z",
+    "observed_at": "2026-10-21T15:53:00Z"
+   }
+  ],
   "missing": [
    {
     "what": "No SNOTEL station within 40 km and 5,532–8,002 ft reported snow depth in the last 2 days",
     "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
-   },
-   {
-    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
-    "tried_url": "https://api.weather.gov/"
    },
    {
     "what": "Tahoe Rim Trail Association entry for BPtoTC was last updated Jul 7, older than 14 days",
@@ -366,45 +426,51 @@
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Mostly Cloudy then Slight Chance Light Rain, high 56°F.",
+   "statement": "NWS Today: Showers And Thunderstorms, high 54°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/29,92/forecast",
-   "fetched_at": "2026-10-20T18:06:52.907671Z",
-   "quote": "Today: Mostly Cloudy then Slight Chance Light Rain, high 56°F",
-   "observed_at": "2026-10-20T11:00:00-07:00"
+   "fetched_at": "2026-10-21T18:15:59.763633Z",
+   "quote": "Today: Showers And Thunderstorms, high 54°F",
+   "observed_at": "2026-10-21T11:00:00-07:00"
   }
  },
  {
   "trail_id": "five-lakes",
   "trail_name": "Five Lakes Trail (Alpine Meadows)",
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "status": "unknown",
   "claims": [],
-  "context": [],
+  "context": [
+   {
+    "kind": "precip",
+    "statement": "No measurable rain in the 38 h to 8:53am Oct 21 at South Lake Tahoe, Lake Tahoe Airport (NWS, 37 km away).",
+    "source_name": "NWS observations",
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-19T17%3A15%3A28Z",
+    "fetched_at": "2026-10-21T18:16:04.642148Z",
+    "quote": "KTVL: 30 routine METARs with AO2 from 200253Z to 211553Z; precipitation groups: P0000@210053Z",
+    "observed_at": "2026-10-21T15:53:00Z"
+   }
+  ],
   "missing": [
    {
     "what": "No SNOTEL station within 40 km and 5,542–8,579 ft reported snow depth in the last 2 days",
     "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
-   },
-   {
-    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
-    "tried_url": "https://api.weather.gov/"
    }
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Slight Chance Rain Showers, high 52°F.",
+   "statement": "NWS Today: Showers And Thunderstorms, high 50°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/STO/89,86/forecast",
-   "fetched_at": "2026-10-20T18:06:55.865789Z",
-   "quote": "Today: Slight Chance Rain Showers, high 52°F",
-   "observed_at": "2026-10-20T11:00:00-07:00"
+   "fetched_at": "2026-10-21T18:16:03.146159Z",
+   "quote": "Today: Showers And Thunderstorms, high 50°F",
+   "observed_at": "2026-10-21T11:00:00-07:00"
   }
  },
  {
   "trail_id": "castle-peak",
   "trail_name": "Castle Peak (Donner Summit)",
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "status": "unknown",
   "claims": [],
   "context": [],
@@ -420,18 +486,18 @@
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Slight Chance Rain Showers, high 51°F.",
+   "statement": "NWS Today: Showers And Thunderstorms, high 50°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/STO/87,95/forecast",
-   "fetched_at": "2026-10-20T18:06:55.442692Z",
-   "quote": "Today: Slight Chance Rain Showers, high 51°F",
-   "observed_at": "2026-10-20T11:00:00-07:00"
+   "fetched_at": "2026-10-21T18:16:02.587485Z",
+   "quote": "Today: Showers And Thunderstorms, high 50°F",
+   "observed_at": "2026-10-21T11:00:00-07:00"
   }
  },
  {
   "trail_id": "mount-judah-loop",
   "trail_name": "Mount Judah Loop (PCT, Donner Summit)",
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "status": "unknown",
   "claims": [],
   "context": [],
@@ -447,18 +513,18 @@
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Slight Chance Rain Showers, high 56°F.",
+   "statement": "NWS Today: Showers And Thunderstorms, high 55°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/STO/88,92/forecast",
-   "fetched_at": "2026-10-20T18:06:55.636369Z",
-   "quote": "Today: Slight Chance Rain Showers, high 56°F",
-   "observed_at": "2026-10-20T11:00:00-07:00"
+   "fetched_at": "2026-10-21T18:16:02.812598Z",
+   "quote": "Today: Showers And Thunderstorms, high 55°F",
+   "observed_at": "2026-10-21T11:00:00-07:00"
   }
  },
  {
   "trail_id": "donner-lake-rim-trail",
   "trail_name": "Donner Lake Rim Trail",
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "status": "unknown",
   "claims": [],
   "context": [],
@@ -478,18 +544,18 @@
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Mostly Cloudy then Slight Chance Light Rain, high 56°F.",
+   "statement": "NWS Today: Showers And Thunderstorms, high 54°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/27,101/forecast",
-   "fetched_at": "2026-10-20T18:06:51.950494Z",
-   "quote": "Today: Mostly Cloudy then Slight Chance Light Rain, high 56°F",
-   "observed_at": "2026-10-20T11:00:00-07:00"
+   "fetched_at": "2026-10-21T18:15:58.752698Z",
+   "quote": "Today: Showers And Thunderstorms, high 54°F",
+   "observed_at": "2026-10-21T11:00:00-07:00"
   }
  },
  {
   "trail_id": "sawtooth-trail",
   "trail_name": "Sawtooth Trail (Truckee)",
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "status": "unknown",
   "claims": [],
   "context": [],
@@ -505,18 +571,18 @@
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Mostly Cloudy then Slight Chance Light Rain, high 60°F.",
+   "statement": "NWS Today: Showers And Thunderstorms, high 58°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/30,98/forecast",
-   "fetched_at": "2026-10-20T18:06:53.467190Z",
-   "quote": "Today: Mostly Cloudy then Slight Chance Light Rain, high 60°F",
-   "observed_at": "2026-10-20T11:00:00-07:00"
+   "fetched_at": "2026-10-21T18:16:00.655339Z",
+   "quote": "Today: Showers And Thunderstorms, high 58°F",
+   "observed_at": "2026-10-21T11:00:00-07:00"
   }
  },
  {
   "trail_id": "trt-brockway-to-martis-peak",
   "trail_name": "Tahoe Rim Trail: Brockway Summit to Martis Peak",
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "status": "unknown",
   "claims": [],
   "context": [],
@@ -536,29 +602,35 @@
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Mostly Cloudy then Slight Chance Light Rain, high 53°F.",
+   "statement": "NWS Today: Showers And Thunderstorms, high 51°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/35,97/forecast",
-   "fetched_at": "2026-10-20T18:06:54.739718Z",
-   "quote": "Today: Mostly Cloudy then Slight Chance Light Rain, high 53°F",
-   "observed_at": "2026-10-20T11:00:00-07:00"
+   "fetched_at": "2026-10-21T18:16:01.724248Z",
+   "quote": "Today: Showers And Thunderstorms, high 51°F",
+   "observed_at": "2026-10-21T11:00:00-07:00"
   }
  },
  {
   "trail_id": "big-meadow-to-round-lake",
   "trail_name": "Big Meadow to Round Lake (TRT)",
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "status": "unknown",
   "claims": [],
-  "context": [],
+  "context": [
+   {
+    "kind": "precip",
+    "statement": "No measurable rain in the 38 h to 8:53am Oct 21 at South Lake Tahoe, Lake Tahoe Airport (NWS, 12 km away).",
+    "source_name": "NWS observations",
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-19T17%3A15%3A28Z",
+    "fetched_at": "2026-10-21T18:16:04.642148Z",
+    "quote": "KTVL: 30 routine METARs with AO2 from 200253Z to 211553Z; precipitation groups: P0000@210053Z",
+    "observed_at": "2026-10-21T15:53:00Z"
+   }
+  ],
   "missing": [
    {
     "what": "No SNOTEL station within 40 km and 6,243–9,117 ft reported snow depth in the last 2 days",
     "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
-   },
-   {
-    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
-    "tried_url": "https://api.weather.gov/"
    },
    {
     "what": "Tahoe Rim Trail Association entry for BMtoEcho was last updated Jul 7, older than 14 days",
@@ -567,12 +639,12 @@
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Mostly Cloudy then Slight Chance Rain Showers, high 52°F.",
+   "statement": "NWS Today: Showers And Thunderstorms, high 49°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/STO/94,66/forecast",
-   "fetched_at": "2026-10-20T18:06:56.052435Z",
-   "quote": "Today: Mostly Cloudy then Slight Chance Rain Showers, high 52°F",
-   "observed_at": "2026-10-20T11:00:00-07:00"
+   "fetched_at": "2026-10-21T18:16:03.317485Z",
+   "quote": "Today: Showers And Thunderstorms, high 49°F",
+   "observed_at": "2026-10-21T11:00:00-07:00"
   }
  }
 ]
