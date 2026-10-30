@@ -1,0 +1,1462 @@
+{
+ "date": "2026-10-23",
+ "trails": [
+  {
+   "trail_id": "mount-tallac",
+   "issued": "2026-10-23",
+   "days": [
+    {
+     "date": "2026-10-23",
+     "status": "muddy",
+     "weather": "Chance Light Snow then Mostly Sunny, 43°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-24",
+     "status": "muddy",
+     "weather": "Sunny, 48°F",
+     "swe_in": 0.0,
+     "water_in": 0.52
+    },
+    {
+     "date": "2026-10-25",
+     "status": "muddy",
+     "weather": "Sunny, 53°F",
+     "swe_in": 0.0,
+     "water_in": 0.38
+    },
+    {
+     "date": "2026-10-26",
+     "status": "dry",
+     "weather": "Sunny, 50°F",
+     "swe_in": 0.0,
+     "water_in": 0.22
+    },
+    {
+     "date": "2026-10-27",
+     "status": "dry",
+     "weather": "Sunny, 50°F",
+     "swe_in": 0.0,
+     "water_in": 0.11
+    },
+    {
+     "date": "2026-10-28",
+     "status": "dry",
+     "weather": "Mostly Sunny, 50°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-29",
+     "status": "dry",
+     "weather": "Mostly Sunny, 48°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": "2026-10-26",
+   "wet_from": null,
+   "horizon": "2026-10-29",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (8,848 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/30,80/forecast",
+     "fetched_at": "2026-10-23T17:57:17.885010Z",
+     "quote": "Today: A chance of snow before 11am. Mostly sunny, with a high near 40. North wind 10 to 20 mph. Chance of precipitation is 30%.",
+     "observed_at": "2026-10-23T10:00:00-07:00"
+    }
+   ],
+   "basis": "Dry days ahead in the forecast.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "eagle-lake-desolation",
+   "issued": "2026-10-23",
+   "days": [
+    {
+     "date": "2026-10-23",
+     "status": "muddy",
+     "weather": "Chance Light Snow then Mostly Sunny, 43°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-24",
+     "status": "muddy",
+     "weather": "Sunny, 49°F",
+     "swe_in": 0.0,
+     "water_in": 0.52
+    },
+    {
+     "date": "2026-10-25",
+     "status": "muddy",
+     "weather": "Sunny, 53°F",
+     "swe_in": 0.0,
+     "water_in": 0.39
+    },
+    {
+     "date": "2026-10-26",
+     "status": "muddy",
+     "weather": "Sunny, 50°F",
+     "swe_in": 0.0,
+     "water_in": 0.26
+    },
+    {
+     "date": "2026-10-27",
+     "status": "dry",
+     "weather": "Sunny, 51°F",
+     "swe_in": 0.0,
+     "water_in": 0.15
+    },
+    {
+     "date": "2026-10-28",
+     "status": "dry",
+     "weather": "Mostly Sunny, 50°F",
+     "swe_in": 0.0,
+     "water_in": 0.06
+    },
+    {
+     "date": "2026-10-29",
+     "status": "dry",
+     "weather": "Mostly Sunny, 48°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": "2026-10-27",
+   "wet_from": null,
+   "horizon": "2026-10-29",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (7,799 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/29,82/forecast",
+     "fetched_at": "2026-10-23T17:57:17.226209Z",
+     "quote": "Today: A chance of snow before 11am. Mostly sunny, with a high near 39. Northeast wind 5 to 15 mph, with gusts as high as 30 mph. Chance of precipitation is 30%.",
+     "observed_at": "2026-10-23T10:00:00-07:00"
+    }
+   ],
+   "basis": "Dry days ahead in the forecast. Faces northwest, so it dries slower.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "rubicon-trail-dl-bliss",
+   "issued": "2026-10-23",
+   "days": [
+    {
+     "date": "2026-10-23",
+     "status": "muddy",
+     "weather": "Slight Chance Light Rain then Mostly Sunny, 46°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-24",
+     "status": "muddy",
+     "weather": "Sunny, 50°F",
+     "swe_in": 0.0,
+     "water_in": 0.51
+    },
+    {
+     "date": "2026-10-25",
+     "status": "muddy",
+     "weather": "Sunny, 56°F",
+     "swe_in": 0.0,
+     "water_in": 0.35
+    },
+    {
+     "date": "2026-10-26",
+     "status": "dry",
+     "weather": "Sunny, 53°F",
+     "swe_in": 0.0,
+     "water_in": 0.18
+    },
+    {
+     "date": "2026-10-27",
+     "status": "dry",
+     "weather": "Sunny, 53°F",
+     "swe_in": 0.0,
+     "water_in": 0.05
+    },
+    {
+     "date": "2026-10-28",
+     "status": "dry",
+     "weather": "Mostly Sunny, 53°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-29",
+     "status": "dry",
+     "weather": "Mostly Sunny, 51°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": "2026-10-26",
+   "wet_from": null,
+   "horizon": "2026-10-29",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (6,230 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/31,84/forecast",
+     "fetched_at": "2026-10-23T17:57:18.325058Z",
+     "quote": "Today: A slight chance of rain before 11am. Mostly sunny, with a high near 47. North wind 0 to 15 mph, with gusts as high as 30 mph. Chance of precipitation is 20%.",
+     "observed_at": "2026-10-23T10:00:00-07:00"
+    }
+   ],
+   "basis": "Dry days ahead in the forecast.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "cascade-falls",
+   "issued": "2026-10-23",
+   "days": [
+    {
+     "date": "2026-10-23",
+     "status": "muddy",
+     "weather": "Chance Rain And Snow then Mostly Sunny, 45°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-24",
+     "status": "muddy",
+     "weather": "Sunny, 50°F",
+     "swe_in": 0.0,
+     "water_in": 0.51
+    },
+    {
+     "date": "2026-10-25",
+     "status": "muddy",
+     "weather": "Sunny, 54°F",
+     "swe_in": 0.0,
+     "water_in": 0.36
+    },
+    {
+     "date": "2026-10-26",
+     "status": "dry",
+     "weather": "Sunny, 52°F",
+     "swe_in": 0.0,
+     "water_in": 0.2
+    },
+    {
+     "date": "2026-10-27",
+     "status": "dry",
+     "weather": "Sunny, 52°F",
+     "swe_in": 0.0,
+     "water_in": 0.08
+    },
+    {
+     "date": "2026-10-28",
+     "status": "dry",
+     "weather": "Mostly Sunny, 51°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-29",
+     "status": "dry",
+     "weather": "Mostly Sunny, 50°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": "2026-10-26",
+   "wet_from": null,
+   "horizon": "2026-10-29",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (7,041 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/30,82/forecast",
+     "fetched_at": "2026-10-23T17:57:18.010635Z",
+     "quote": "Today: A chance of rain and snow before 11am. Mostly sunny, with a high near 44. Northeast wind 0 to 10 mph, with gusts as high as 30 mph. Chance of precipitation is 30%.",
+     "observed_at": "2026-10-23T10:00:00-07:00"
+    }
+   ],
+   "basis": "Dry days ahead in the forecast.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "echo-lakes-to-lake-aloha",
+   "issued": "2026-10-23",
+   "days": [
+    {
+     "date": "2026-10-23",
+     "status": "muddy",
+     "weather": "Chance Light Snow then Mostly Sunny, 41°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-24",
+     "status": "muddy",
+     "weather": "Sunny, 48°F",
+     "swe_in": 0.0,
+     "water_in": 0.52
+    },
+    {
+     "date": "2026-10-25",
+     "status": "muddy",
+     "weather": "Sunny, 51°F",
+     "swe_in": 0.0,
+     "water_in": 0.36
+    },
+    {
+     "date": "2026-10-26",
+     "status": "dry",
+     "weather": "Sunny, 48°F",
+     "swe_in": 0.0,
+     "water_in": 0.19
+    },
+    {
+     "date": "2026-10-27",
+     "status": "dry",
+     "weather": "Sunny, 49°F",
+     "swe_in": 0.0,
+     "water_in": 0.07
+    },
+    {
+     "date": "2026-10-28",
+     "status": "dry",
+     "weather": "Mostly Sunny, 48°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-29",
+     "status": "dry",
+     "weather": "Mostly Sunny, 46°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": "2026-10-26",
+   "wet_from": null,
+   "horizon": "2026-10-29",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (8,399 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/29,78/forecast",
+     "fetched_at": "2026-10-23T17:57:17.008506Z",
+     "quote": "Today: A chance of snow before 11am. Mostly sunny. High near 39, with temperatures falling to around 37 in the afternoon. Northeast wind 8 to 17 mph, with gusts as high as 26 mph. Chance of precipitation is 30%. New rainfall amounts less than a tenth of an inch possible.",
+     "observed_at": "2026-10-23T10:00:00-07:00"
+    }
+   ],
+   "basis": "Dry days ahead in the forecast. South-facing, so it dries fast.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "ellis-peak",
+   "issued": "2026-10-23",
+   "days": [
+    {
+     "date": "2026-10-23",
+     "status": "muddy",
+     "weather": "Slight Chance Light Snow then Sunny, 40°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-24",
+     "status": "muddy",
+     "weather": "Sunny, 44°F",
+     "swe_in": 0.29,
+     "water_in": 0.52
+    },
+    {
+     "date": "2026-10-25",
+     "status": "muddy",
+     "weather": "Sunny, 48°F",
+     "swe_in": 0.0,
+     "water_in": 0.4
+    },
+    {
+     "date": "2026-10-26",
+     "status": "muddy",
+     "weather": "Sunny, 45°F",
+     "swe_in": 0.0,
+     "water_in": 0.27
+    },
+    {
+     "date": "2026-10-27",
+     "status": "dry",
+     "weather": "Sunny, 47°F",
+     "swe_in": 0.0,
+     "water_in": 0.17
+    },
+    {
+     "date": "2026-10-28",
+     "status": "dry",
+     "weather": "Mostly Sunny, 45°F",
+     "swe_in": 0.0,
+     "water_in": 0.08
+    },
+    {
+     "date": "2026-10-29",
+     "status": "dry",
+     "weather": "Mostly Sunny, 44°F",
+     "swe_in": 0.0,
+     "water_in": 0.01
+    }
+   ],
+   "dry_by": "2026-10-27",
+   "wet_from": null,
+   "horizon": "2026-10-29",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (8,350 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/28,88/forecast",
+     "fetched_at": "2026-10-23T17:57:16.868010Z",
+     "quote": "Today: A slight chance of snow before 11am. Sunny, with a high near 40. Northeast wind 10 to 15 mph, with gusts as high as 30 mph. Chance of precipitation is 20%.",
+     "observed_at": "2026-10-23T10:00:00-07:00"
+    }
+   ],
+   "basis": "Dry days ahead in the forecast.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "mr-toads-wild-ride",
+   "issued": "2026-10-23",
+   "days": [
+    {
+     "date": "2026-10-23",
+     "status": "muddy",
+     "weather": "Chance Light Snow then Mostly Sunny, 43°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-24",
+     "status": "muddy",
+     "weather": "Sunny, 50°F",
+     "swe_in": 0.0,
+     "water_in": 0.52
+    },
+    {
+     "date": "2026-10-25",
+     "status": "muddy",
+     "weather": "Sunny, 56°F",
+     "swe_in": 0.0,
+     "water_in": 0.36
+    },
+    {
+     "date": "2026-10-26",
+     "status": "dry",
+     "weather": "Sunny, 53°F",
+     "swe_in": 0.0,
+     "water_in": 0.19
+    },
+    {
+     "date": "2026-10-27",
+     "status": "dry",
+     "weather": "Sunny, 53°F",
+     "swe_in": 0.0,
+     "water_in": 0.06
+    },
+    {
+     "date": "2026-10-28",
+     "status": "dry",
+     "weather": "Mostly Sunny, 52°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-29",
+     "status": "dry",
+     "weather": "Mostly Sunny, 51°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": "2026-10-26",
+   "wet_from": null,
+   "horizon": "2026-10-29",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (9,111 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/34,75/forecast",
+     "fetched_at": "2026-10-23T17:57:18.477601Z",
+     "quote": "Today: A chance of snow before 11am. Mostly sunny, with a high near 38. North wind 5 to 20 mph. Chance of precipitation is 40%. New snow accumulation of less than half an inch possible.",
+     "observed_at": "2026-10-23T10:00:00-07:00"
+    }
+   ],
+   "basis": "Dry days ahead in the forecast.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "corral-trail",
+   "issued": "2026-10-23",
+   "days": [
+    {
+     "date": "2026-10-23",
+     "status": "muddy",
+     "weather": "Chance Light Snow then Mostly Sunny, 46°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-24",
+     "status": "muddy",
+     "weather": "Sunny, 51°F",
+     "swe_in": 0.0,
+     "water_in": 0.51
+    },
+    {
+     "date": "2026-10-25",
+     "status": "muddy",
+     "weather": "Sunny, 58°F",
+     "swe_in": 0.0,
+     "water_in": 0.35
+    },
+    {
+     "date": "2026-10-26",
+     "status": "dry",
+     "weather": "Sunny, 55°F",
+     "swe_in": 0.0,
+     "water_in": 0.16
+    },
+    {
+     "date": "2026-10-27",
+     "status": "dry",
+     "weather": "Sunny, 55°F",
+     "swe_in": 0.0,
+     "water_in": 0.02
+    },
+    {
+     "date": "2026-10-28",
+     "status": "dry",
+     "weather": "Mostly Sunny, 54°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-29",
+     "status": "dry",
+     "weather": "Mostly Sunny, 53°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": "2026-10-26",
+   "wet_from": null,
+   "horizon": "2026-10-29",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (7,930 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/35,78/forecast",
+     "fetched_at": "2026-10-23T17:57:18.606842Z",
+     "quote": "Today: A chance of snow before 11am. Mostly sunny, with a high near 42. North wind 0 to 5 mph. Chance of precipitation is 30%. New snow accumulation of less than half an inch possible.",
+     "observed_at": "2026-10-23T10:00:00-07:00"
+    }
+   ],
+   "basis": "Dry days ahead in the forecast.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "van-sickle-bi-state-park",
+   "issued": "2026-10-23",
+   "days": [
+    {
+     "date": "2026-10-23",
+     "status": "muddy",
+     "weather": "Chance Light Snow then Mostly Sunny, 43°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-24",
+     "status": "muddy",
+     "weather": "Sunny, 47°F",
+     "swe_in": 0.0,
+     "water_in": 0.52
+    },
+    {
+     "date": "2026-10-25",
+     "status": "muddy",
+     "weather": "Sunny, 54°F",
+     "swe_in": 0.0,
+     "water_in": 0.39
+    },
+    {
+     "date": "2026-10-26",
+     "status": "muddy",
+     "weather": "Sunny, 52°F",
+     "swe_in": 0.0,
+     "water_in": 0.25
+    },
+    {
+     "date": "2026-10-27",
+     "status": "dry",
+     "weather": "Sunny, 51°F",
+     "swe_in": 0.0,
+     "water_in": 0.14
+    },
+    {
+     "date": "2026-10-28",
+     "status": "dry",
+     "weather": "Mostly Sunny, 51°F",
+     "swe_in": 0.0,
+     "water_in": 0.04
+    },
+    {
+     "date": "2026-10-29",
+     "status": "dry",
+     "weather": "Mostly Sunny, 50°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": "2026-10-27",
+   "wet_from": null,
+   "horizon": "2026-10-29",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (9,203 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/37,81/forecast",
+     "fetched_at": "2026-10-23T17:57:19.047748Z",
+     "quote": "Today: A chance of snow before 11am. Mostly sunny, with a high near 36. North wind 10 to 15 mph, with gusts as high as 25 mph. Chance of precipitation is 30%. New snow accumulation of less than half an inch possible.",
+     "observed_at": "2026-10-23T10:00:00-07:00"
+    }
+   ],
+   "basis": "Dry days ahead in the forecast. Faces northwest, so it dries slower.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "mount-rose-summit",
+   "issued": "2026-10-23",
+   "days": [
+    {
+     "date": "2026-10-23",
+     "status": "snow",
+     "weather": "Sunny, 34°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-24",
+     "status": "snow",
+     "weather": "Sunny, 39°F",
+     "swe_in": 0.6,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-10-25",
+     "status": "muddy",
+     "weather": "Sunny, 45°F",
+     "swe_in": 0.44,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-10-26",
+     "status": "muddy",
+     "weather": "Sunny, 43°F",
+     "swe_in": 0.0,
+     "water_in": 0.47
+    },
+    {
+     "date": "2026-10-27",
+     "status": "muddy",
+     "weather": "Sunny, 42°F",
+     "swe_in": 0.0,
+     "water_in": 0.37
+    },
+    {
+     "date": "2026-10-28",
+     "status": "muddy",
+     "weather": "Mostly Sunny, 42°F",
+     "swe_in": 0.0,
+     "water_in": 0.28
+    },
+    {
+     "date": "2026-10-29",
+     "status": "dry",
+     "weather": "Mostly Sunny, 41°F",
+     "swe_in": 0.0,
+     "water_in": 0.21
+    }
+   ],
+   "dry_by": "2026-10-29",
+   "wet_from": null,
+   "horizon": "2026-10-29",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (9,718 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/40,99/forecast",
+     "fetched_at": "2026-10-23T17:57:19.329569Z",
+     "quote": "Today: Sunny, with a high near 34. North wind around 15 mph, with gusts as high as 25 mph. New snow accumulation of less than half an inch possible.",
+     "observed_at": "2026-10-23T10:00:00-07:00"
+    }
+   ],
+   "basis": "Snow up top melts out by our math, then the ground needs a day or two.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "flume-trail",
+   "issued": "2026-10-23",
+   "days": [
+    {
+     "date": "2026-10-23",
+     "status": "muddy",
+     "weather": "Sunny, 45°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-24",
+     "status": "muddy",
+     "weather": "Sunny, 48°F",
+     "swe_in": 0.0,
+     "water_in": 0.46
+    },
+    {
+     "date": "2026-10-25",
+     "status": "muddy",
+     "weather": "Sunny, 55°F",
+     "swe_in": 0.0,
+     "water_in": 0.33
+    },
+    {
+     "date": "2026-10-26",
+     "status": "dry",
+     "weather": "Sunny, 53°F",
+     "swe_in": 0.0,
+     "water_in": 0.16
+    },
+    {
+     "date": "2026-10-27",
+     "status": "dry",
+     "weather": "Sunny, 52°F",
+     "swe_in": 0.0,
+     "water_in": 0.03
+    },
+    {
+     "date": "2026-10-28",
+     "status": "dry",
+     "weather": "Mostly Sunny, 51°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-29",
+     "status": "dry",
+     "weather": "Mostly Sunny, 50°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": "2026-10-26",
+   "wet_from": null,
+   "horizon": "2026-10-29",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (8,215 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/39,90/forecast",
+     "fetched_at": "2026-10-23T17:57:19.187366Z",
+     "quote": "Today: Sunny, with a high near 42. North wind 10 to 15 mph. Little or no snow accumulation expected.",
+     "observed_at": "2026-10-23T10:00:00-07:00"
+    }
+   ],
+   "basis": "Dry days ahead in the forecast.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "marlette-lake",
+   "issued": "2026-10-23",
+   "days": [
+    {
+     "date": "2026-10-23",
+     "status": "muddy",
+     "weather": "Sunny, 44°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-24",
+     "status": "muddy",
+     "weather": "Sunny, 47°F",
+     "swe_in": 0.0,
+     "water_in": 0.47
+    },
+    {
+     "date": "2026-10-25",
+     "status": "muddy",
+     "weather": "Sunny, 54°F",
+     "swe_in": 0.0,
+     "water_in": 0.34
+    },
+    {
+     "date": "2026-10-26",
+     "status": "dry",
+     "weather": "Sunny, 52°F",
+     "swe_in": 0.0,
+     "water_in": 0.18
+    },
+    {
+     "date": "2026-10-27",
+     "status": "dry",
+     "weather": "Sunny, 51°F",
+     "swe_in": 0.0,
+     "water_in": 0.05
+    },
+    {
+     "date": "2026-10-28",
+     "status": "dry",
+     "weather": "Mostly Sunny, 50°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-29",
+     "status": "dry",
+     "weather": "Mostly Sunny, 49°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": "2026-10-26",
+   "wet_from": null,
+   "horizon": "2026-10-29",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (8,215 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/39,90/forecast",
+     "fetched_at": "2026-10-23T17:57:19.187366Z",
+     "quote": "Today: Sunny, with a high near 42. North wind 10 to 15 mph. Little or no snow accumulation expected.",
+     "observed_at": "2026-10-23T10:00:00-07:00"
+    }
+   ],
+   "basis": "Dry days ahead in the forecast.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "page-meadows",
+   "issued": "2026-10-23",
+   "days": [
+    {
+     "date": "2026-10-23",
+     "status": "muddy",
+     "weather": "Sunny, 49°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-24",
+     "status": "muddy",
+     "weather": "Sunny, 53°F",
+     "swe_in": 0.0,
+     "water_in": 0.42
+    },
+    {
+     "date": "2026-10-25",
+     "status": "dry",
+     "weather": "Sunny, 58°F",
+     "swe_in": 0.0,
+     "water_in": 0.23
+    },
+    {
+     "date": "2026-10-26",
+     "status": "dry",
+     "weather": "Sunny, 55°F",
+     "swe_in": 0.0,
+     "water_in": 0.03
+    },
+    {
+     "date": "2026-10-27",
+     "status": "dry",
+     "weather": "Sunny, 56°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-28",
+     "status": "dry",
+     "weather": "Mostly Sunny, 54°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-29",
+     "status": "dry",
+     "weather": "Mostly Sunny, 53°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": "2026-10-25",
+   "wet_from": null,
+   "horizon": "2026-10-29",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (6,988 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/29,92/forecast",
+     "fetched_at": "2026-10-23T17:57:17.736572Z",
+     "quote": "Today: Sunny, with a high near 48. North wind 0 to 5 mph, with gusts as high as 25 mph.",
+     "observed_at": "2026-10-23T10:00:00-07:00"
+    }
+   ],
+   "basis": "Dry days ahead in the forecast. South-facing, so it dries fast.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "five-lakes",
+   "issued": "2026-10-23",
+   "days": [
+    {
+     "date": "2026-10-23",
+     "status": "muddy",
+     "weather": "Areas Of Frost then Sunny, 46°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-24",
+     "status": "muddy",
+     "weather": "Sunny, 51°F",
+     "swe_in": 0.0,
+     "water_in": 0.45
+    },
+    {
+     "date": "2026-10-25",
+     "status": "muddy",
+     "weather": "Widespread Frost then Sunny, 54°F",
+     "swe_in": 0.0,
+     "water_in": 0.28
+    },
+    {
+     "date": "2026-10-26",
+     "status": "dry",
+     "weather": "Widespread Frost then Sunny, 51°F",
+     "swe_in": 0.0,
+     "water_in": 0.1
+    },
+    {
+     "date": "2026-10-27",
+     "status": "dry",
+     "weather": "Sunny, 52°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-28",
+     "status": "dry",
+     "weather": "Mostly Sunny, 51°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-29",
+     "status": "dry",
+     "weather": "Mostly Sunny, 50°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": "2026-10-26",
+   "wet_from": null,
+   "horizon": "2026-10-29",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (7,772 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/STO/89,86/forecast",
+     "fetched_at": "2026-10-23T17:57:19.803016Z",
+     "quote": "Today: Areas of frost before noon. Sunny. High near 44, with temperatures falling to around 42 in the afternoon. North northeast wind around 6 mph. New rainfall amounts less than a tenth of an inch possible.",
+     "observed_at": "2026-10-23T10:00:00-07:00"
+    }
+   ],
+   "basis": "Dry days ahead in the forecast. Faces southeast and gets morning sun.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "castle-peak",
+   "issued": "2026-10-23",
+   "days": [
+    {
+     "date": "2026-10-23",
+     "status": "snow",
+     "weather": "Areas Of Frost then Sunny, 40°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-24",
+     "status": "muddy",
+     "weather": "Sunny, 47°F",
+     "swe_in": 0.38,
+     "water_in": 0.5
+    },
+    {
+     "date": "2026-10-25",
+     "status": "muddy",
+     "weather": "Widespread Frost then Sunny, 49°F",
+     "swe_in": 0.0,
+     "water_in": 0.37
+    },
+    {
+     "date": "2026-10-26",
+     "status": "dry",
+     "weather": "Sunny, 45°F",
+     "swe_in": 0.0,
+     "water_in": 0.24
+    },
+    {
+     "date": "2026-10-27",
+     "status": "dry",
+     "weather": "Sunny, 46°F",
+     "swe_in": 0.0,
+     "water_in": 0.15
+    },
+    {
+     "date": "2026-10-28",
+     "status": "dry",
+     "weather": "Mostly Sunny, 45°F",
+     "swe_in": 0.0,
+     "water_in": 0.07
+    },
+    {
+     "date": "2026-10-29",
+     "status": "dry",
+     "weather": "Mostly Sunny, 44°F",
+     "swe_in": 0.0,
+     "water_in": 0.01
+    }
+   ],
+   "dry_by": "2026-10-26",
+   "wet_from": null,
+   "horizon": "2026-10-29",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (7,510 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/STO/87,95/forecast",
+     "fetched_at": "2026-10-23T17:57:19.475599Z",
+     "quote": "Today: Areas of frost before noon. Sunny. High near 42, with temperatures falling to around 40 in the afternoon. North northeast wind 6 to 9 mph, with gusts as high as 24 mph. New rainfall amounts less than a tenth of an inch possible.",
+     "observed_at": "2026-10-23T10:00:00-07:00"
+    }
+   ],
+   "basis": "Snow up top melts out by our math, then the ground needs a day or two.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "mount-judah-loop",
+   "issued": "2026-10-23",
+   "days": [
+    {
+     "date": "2026-10-23",
+     "status": "muddy",
+     "weather": "Patchy Frost then Sunny, 46°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-24",
+     "status": "muddy",
+     "weather": "Sunny, 52°F",
+     "swe_in": 0.0,
+     "water_in": 0.47
+    },
+    {
+     "date": "2026-10-25",
+     "status": "muddy",
+     "weather": "Widespread Frost then Sunny, 55°F",
+     "swe_in": 0.0,
+     "water_in": 0.33
+    },
+    {
+     "date": "2026-10-26",
+     "status": "dry",
+     "weather": "Sunny, 51°F",
+     "swe_in": 0.0,
+     "water_in": 0.2
+    },
+    {
+     "date": "2026-10-27",
+     "status": "dry",
+     "weather": "Sunny, 52°F",
+     "swe_in": 0.0,
+     "water_in": 0.1
+    },
+    {
+     "date": "2026-10-28",
+     "status": "dry",
+     "weather": "Mostly Sunny, 52°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-29",
+     "status": "dry",
+     "weather": "Mostly Sunny, 50°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": "2026-10-26",
+   "wet_from": null,
+   "horizon": "2026-10-29",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (7,316 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/STO/88,92/forecast",
+     "fetched_at": "2026-10-23T17:57:19.617860Z",
+     "quote": "Today: Patchy frost before 11am. Sunny. High near 47, with temperatures falling to around 45 in the afternoon. Northeast wind 2 to 8 mph, with gusts as high as 22 mph. New rainfall amounts less than a tenth of an inch possible.",
+     "observed_at": "2026-10-23T10:00:00-07:00"
+    }
+   ],
+   "basis": "Dry days ahead in the forecast. Faces northwest, so it dries slower.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "donner-lake-rim-trail",
+   "issued": "2026-10-23",
+   "days": [
+    {
+     "date": "2026-10-23",
+     "status": "muddy",
+     "weather": "Sunny, 47°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-24",
+     "status": "muddy",
+     "weather": "Sunny, 53°F",
+     "swe_in": 0.0,
+     "water_in": 0.44
+    },
+    {
+     "date": "2026-10-25",
+     "status": "dry",
+     "weather": "Sunny, 56°F",
+     "swe_in": 0.0,
+     "water_in": 0.25
+    },
+    {
+     "date": "2026-10-26",
+     "status": "dry",
+     "weather": "Sunny, 52°F",
+     "swe_in": 0.0,
+     "water_in": 0.06
+    },
+    {
+     "date": "2026-10-27",
+     "status": "dry",
+     "weather": "Sunny, 53°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-28",
+     "status": "dry",
+     "weather": "Mostly Sunny, 53°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-29",
+     "status": "dry",
+     "weather": "Mostly Sunny, 51°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": "2026-10-25",
+   "wet_from": null,
+   "horizon": "2026-10-29",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (6,998 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/27,101/forecast",
+     "fetched_at": "2026-10-23T17:57:16.624928Z",
+     "quote": "Today: Sunny, with a high near 47. Northeast wind 5 to 10 mph, with gusts as high as 25 mph.",
+     "observed_at": "2026-10-23T10:00:00-07:00"
+    }
+   ],
+   "basis": "Dry days ahead in the forecast. South-facing, so it dries fast.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "sawtooth-trail",
+   "issued": "2026-10-23",
+   "days": [
+    {
+     "date": "2026-10-23",
+     "status": "muddy",
+     "weather": "Sunny, 51°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-24",
+     "status": "muddy",
+     "weather": "Sunny, 56°F",
+     "swe_in": 0.0,
+     "water_in": 0.43
+    },
+    {
+     "date": "2026-10-25",
+     "status": "muddy",
+     "weather": "Sunny, 61°F",
+     "swe_in": 0.0,
+     "water_in": 0.25
+    },
+    {
+     "date": "2026-10-26",
+     "status": "dry",
+     "weather": "Sunny, 58°F",
+     "swe_in": 0.0,
+     "water_in": 0.07
+    },
+    {
+     "date": "2026-10-27",
+     "status": "dry",
+     "weather": "Sunny, 58°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-28",
+     "status": "dry",
+     "weather": "Mostly Sunny, 58°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-29",
+     "status": "dry",
+     "weather": "Mostly Sunny, 56°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": "2026-10-26",
+   "wet_from": null,
+   "horizon": "2026-10-29",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (6,483 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/30,98/forecast",
+     "fetched_at": "2026-10-23T17:57:18.162314Z",
+     "quote": "Today: Sunny, with a high near 50. Northeast wind 0 to 5 mph.",
+     "observed_at": "2026-10-23T10:00:00-07:00"
+    }
+   ],
+   "basis": "Dry days ahead in the forecast.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "trt-brockway-to-martis-peak",
+   "issued": "2026-10-23",
+   "days": [
+    {
+     "date": "2026-10-23",
+     "status": "muddy",
+     "weather": "Sunny, 44°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-24",
+     "status": "muddy",
+     "weather": "Sunny, 48°F",
+     "swe_in": 0.0,
+     "water_in": 0.46
+    },
+    {
+     "date": "2026-10-25",
+     "status": "muddy",
+     "weather": "Sunny, 54°F",
+     "swe_in": 0.0,
+     "water_in": 0.3
+    },
+    {
+     "date": "2026-10-26",
+     "status": "dry",
+     "weather": "Sunny, 50°F",
+     "swe_in": 0.0,
+     "water_in": 0.12
+    },
+    {
+     "date": "2026-10-27",
+     "status": "dry",
+     "weather": "Sunny, 51°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-28",
+     "status": "dry",
+     "weather": "Mostly Sunny, 50°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-29",
+     "status": "dry",
+     "weather": "Mostly Sunny, 49°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": "2026-10-26",
+   "wet_from": null,
+   "horizon": "2026-10-29",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (7,910 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/35,97/forecast",
+     "fetched_at": "2026-10-23T17:57:18.899078Z",
+     "quote": "Today: Sunny, with a high near 44. North wind around 5 mph.",
+     "observed_at": "2026-10-23T10:00:00-07:00"
+    }
+   ],
+   "basis": "Dry days ahead in the forecast. South-facing, so it dries fast.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "big-meadow-to-round-lake",
+   "issued": "2026-10-23",
+   "days": [
+    {
+     "date": "2026-10-23",
+     "status": "muddy",
+     "weather": "Chance Light Snow then Mostly Sunny, 44°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-10-24",
+     "status": "muddy",
+     "weather": "Widespread Frost then Sunny, 51°F",
+     "swe_in": 0.0,
+     "water_in": 0.52
+    },
+    {
+     "date": "2026-10-25",
+     "status": "muddy",
+     "weather": "Sunny, 56°F",
+     "swe_in": 0.0,
+     "water_in": 0.38
+    },
+    {
+     "date": "2026-10-26",
+     "status": "dry",
+     "weather": "Sunny, 53°F",
+     "swe_in": 0.0,
+     "water_in": 0.23
+    },
+    {
+     "date": "2026-10-27",
+     "status": "dry",
+     "weather": "Sunny, 53°F",
+     "swe_in": 0.0,
+     "water_in": 0.12
+    },
+    {
+     "date": "2026-10-28",
+     "status": "dry",
+     "weather": "Mostly Sunny, 52°F",
+     "swe_in": 0.0,
+     "water_in": 0.02
+    },
+    {
+     "date": "2026-10-29",
+     "status": "dry",
+     "weather": "Mostly Sunny, 51°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": "2026-10-26",
+   "wet_from": null,
+   "horizon": "2026-10-29",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (8,153 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/STO/94,66/forecast",
+     "fetched_at": "2026-10-23T17:57:19.970137Z",
+     "quote": "Today: A chance of snow before 11am, then areas of frost between 11am and noon. Mostly sunny. High near 42, with temperatures falling to around 40 in the afternoon. Northeast wind around 5 mph, with gusts as high as 20 mph. Chance of precipitation is 30%. Little or no snow accum…",
+     "observed_at": "2026-10-23T10:00:00-07:00"
+    }
+   ],
+   "basis": "Dry days ahead in the forecast. Faces northwest, so it dries slower.",
+   "why_none": ""
+  }
+ ],
+ "snow_lines": [
+  {
+   "date": "2026-10-23",
+   "snow_line_ft": 8800,
+   "kind": "today"
+  },
+  {
+   "date": "2026-10-24",
+   "snow_line_ft": 10600,
+   "kind": "forecast"
+  },
+  {
+   "date": "2026-10-25",
+   "snow_line_ft": null,
+   "kind": "forecast"
+  },
+  {
+   "date": "2026-10-26",
+   "snow_line_ft": null,
+   "kind": "forecast"
+  },
+  {
+   "date": "2026-10-27",
+   "snow_line_ft": null,
+   "kind": "forecast"
+  },
+  {
+   "date": "2026-10-28",
+   "snow_line_ft": null,
+   "kind": "forecast"
+  },
+  {
+   "date": "2026-10-29",
+   "snow_line_ft": null,
+   "kind": "forecast"
+  }
+ ]
+}

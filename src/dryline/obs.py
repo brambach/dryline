@@ -38,6 +38,7 @@ class SnowObs(Cited):
     elevation_ft: int
     date: dt.date
     depth_in: float
+    swe_in: float | None = None  # snow water equivalent (WTEQ), when the station reports it
 
 
 class PrecipObs(Cited):
@@ -80,6 +81,22 @@ class ForecastObs(Cited):
     start: AwareDatetime
 
 
+class ForecastPeriod(Cited):
+    """One 12-hour NWS forecast period, with the amounts NWS spells out in words."""
+
+    name: str
+    start: AwareDatetime
+    end: AwareDatetime
+    is_daytime: bool
+    temp_f: int
+    pop: int = 0  # chance of precipitation, percent
+    short_forecast: str
+    rain_in: float | None = None  # "New rainfall amounts between a quarter and half of an inch"
+    snow_in: float | None = None  # "New snow accumulation of 1 to 3 inches"
+    snow_level_ft: int | None = None  # "Snow level 7500 feet"
+    grid_elevation_ft: int  # elevation NWS forecast this gridpoint for
+
+
 class Gap(Strict):
     """A source we tried and could not use today."""
 
@@ -97,6 +114,7 @@ class Observations(Strict):
     closures: tuple[ClosureObs, ...] = ()
     conditions: tuple[ConditionsObs, ...] = ()
     forecasts: dict[str, ForecastObs] = Field(default_factory=dict)
+    outlooks: dict[str, tuple[ForecastPeriod, ...]] = Field(default_factory=dict)
     gaps: tuple[Gap, ...] = ()
 
 

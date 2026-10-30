@@ -18,7 +18,30 @@ they drift. Override in `style.css` instead. To bump, run `sh src/dryline/templa
 shared `--done` (sage) and `--closed` is the shared `--accent` (rust). `--muddy`, `--snow` and
 `--unknown` have their own light and dark values.
 
-## Applied
+## The face (Oct 30, 2026)
+
+The first version looked like every other project of Bryce's: same paper, same Instrument trio, same
+sage. The brief asked each product to get a face of its own, close to his taste without matching the
+portfolio.
+
+- **The ridge.** The basin drawn as one ink engraving (`ridge.py`, `_ridge.html`). Trails sit at their
+  real high points, ordered clockwise around the lake. The rock is engraved by offset copies of the crest,
+  slopes facing away from the light get diagonal hatching, snow above the snow line is bare paper with
+  stipple, the lake is broken horizontal strokes at 6,225 ft. The skyline between trails is drawn and the
+  caption says so.
+- **Motion the product causes.** The snow line is the one moving thing. On load it settles from the sky
+  to today's height. Dragging the days moves it through the archive and the forecast, smoothed so it
+  never jumps. Rider report pins pop onto the ridge with the one overshoot (`--ease-signature`). Reduced
+  motion shows the end state.
+- **One pine ink on cream.** `--paper #f2eee3`, `--ink #1e2f26`; at night the paper is deep pine
+  `#10140f`, not an inversion. The engraving is the ink at three strengths (`--etch*`).
+- **Type.** Fraunces, soft and a little wonky, speaks once per page (the verdict, the trail name). Hanken
+  Grotesk works, IBM Plex Mono labels. Bryce had Fraunces and Alegreya as his two favorites for the
+  portfolio; Alegreya went there, so dryline gets Fraunces.
+- **The verdict leads.** The page opens on one sentence ("18 of 20 trails are muddy today. Most dry by
+  Monday."), not a date.
+
+## Applied (from the first version, still true)
 
 - **Type, three voices.** Instrument Serif speaks once per page ("Today", the trail name, "Archive"), in
   one weight. Instrument Sans works: rows, labels, prose. JetBrains Mono labels: elevations, counts,
@@ -31,11 +54,6 @@ shared `--done` (sage) and `--closed` is the shared `--accent` (rust). `--muddy`
 - **Say it once.** Lines are grouped under a sans label ("Likely dry"), so rows don't repeat the word. The
   counts appear once, in the summary under the date.
 - **Quiet lists.** There are no rule lines between rows. Hovering a row dims the others (140ms, ease-out).
-- **No motion on load or scroll.** The page paints finished. The only transitions are hover color and
-  opacity, and they respect `prefers-reduced-motion`.
-- **One scene, receding.** A halftone ridgeline sits behind the title on day pages. Dots are the only
-  ornament. Alternatives are rendered in `docs/screenshots/options/`: `ridge` (default), `wash` (a soft
-  sage and morning-gold CSS wash), and `none`. Switch with `<body data-scene>` in `base.html`.
 - **Checked at 1052×854 @2x and 390×844 @2x** (`scripts/screenshots.py`), with no horizontal overflow.
 
 ## Deliberate deviations

@@ -5,22 +5,21 @@
 {% macro missing_item(m) -%}
 <span class="gap">Missing: {{ m.what }}.</span> <a class="cite" data-source href="{{ m.tried_url }}" rel="noopener">checked {{ m.tried_url|host }}</a>
 {%- endmacro %}
-{% macro trail_line(line, trail, root) %}
+{% macro trail_line(line, trail, root, phrase="") %}
 <li class="line s-{{ line.status }}" data-line="{{ line.trail_id }}">
   <div class="line-head">
     {{ glyph(line.status) }}<span class="sr">{{ LABEL[line.status] }}:</span>
-    <a class="name" href="{{ root }}trails/{{ line.trail_id }}/">{{ line.trail_name }}</a>
+    <a class="name" href="{{ root }}trails/{{ line.trail_id }}/">{{ line.trail_name.split(" (")[0] }}</a>
+    {% if phrase %}<span class="next">{{ phrase }}</span>{% endif %}
     {% if trail %}<span class="elev">{{ trail.elevation_min_ft|ft }}–{{ trail.elevation_max_ft|ft }} ft</span>{% endif %}
   </div>
   <div class="why">
   {% if line.status == "unknown" %}
     <p>{{ missing_item(line.missing[0]) }}</p>
   {% else %}
-    {% for c in line.claims[:2] %}<p>{{ c.statement }} {{ cite(c.source_url, c.fetched_at) }}</p>{% endfor %}
-  {% endif %}
-  {% if line.forecast %}
-    <p class="fx">{{ line.forecast.statement }} {{ cite(line.forecast.source_url, line.forecast.fetched_at) }}</p>
+    {% set c = line.claims[0] %}<p>{{ c.statement }} {{ cite(c.source_url, c.fetched_at) }}</p>
   {% endif %}
   </div>
+  <div class="reports" data-reports="{{ line.trail_id }}" hidden></div>
 </li>
 {% endmacro %}

@@ -1,16 +1,62 @@
 {% extends "base.html" %}
 {% from "_line.html" import cite, missing_item %}
 {% from "_glyph.html" import glyph %}
-{% block title %}{{ trail.name }} · dryline{% endblock %}
+{% block title %}{{ short }} · dryline{% endblock %}
+{% block description %}Is {{ short }} dry? Today's call and a dry-by forecast, every reason cited.{% endblock %}
 {% block main %}
-<section class="hero">
-  <p class="date">{{ line.date.strftime("%A, %B %-d") }}</p>
-  <h1 class="display trail-title">{{ trail.name }}</h1>
-  <p class="status-big s-{{ line.status }}">{{ glyph(line.status) }}{{ LABEL[line.status] }}</p>
+<section class="hero trail-hero" data-trail="{{ trail.id }}">
+  <p class="kicker mono">{{ trail.elevation_min_ft|ft }}–{{ trail.elevation_max_ft|ft }} ft · {% if trail.aspect == "mixed" %}mixed aspect{% else %}faces {{ trail.aspect }}{% endif %} · {{ trail.activities|join(", ") }}</p>
+  <h1 class="display trail-title">{{ short }}</h1>
+  {% if short != trail.name %}<p class="fullname">{{ trail.name }}</p>{% endif %}
+  <p class="status-big s-{{ line.status }}">{{ glyph(line.status) }}<span>{{ LABEL[line.status] }} today{% if phrase %}, <em>{{ phrase }}</em>{% endif %}.</span></p>
+</section>
+
+{% set lo, hi = 5900, 11200 %}
+{% macro pct(ft) %}{{ ((ft - lo) / (hi - lo) * 100)|round(2) }}{% endmacro %}
+<div class="gauge" aria-hidden="true">
+  <span class="gg-band" style="left:{{ pct(trail.elevation_min_ft) }}%;right:{{ 100 - pct(trail.elevation_max_ft)|float }}%"></span>
+  <span class="gg-tick gg-lake" style="left:{{ pct(LAKE_FT) }}%"><i>lake</i></span>
+  {% if snow_line_ft %}<span class="gg-tick gg-snow" style="left:{{ pct(snow_line_ft) }}%"><i>snow line {{ snow_line_ft|ft }}</i></span>{% endif %}
+  <span class="gg-end mono">{{ lo|ft }}</span><span class="gg-end gg-right mono">{{ hi|ft }} ft</span>
+</div>
+
+{% if outlook and not outlook.why_none %}
+<section class="block">
+  <h2 class="label">This week <span class="hint">a forecast, so a guess</span></h2>
+  <ol class="week">
+  {% for d in outlook.days %}
+    <li class="s-{{ d.status }}{% if loop.first %} is-today{% endif %}">
+      <span class="wd">{% if loop.first %}Today{% else %}{{ d.date.strftime("%a") }}{% endif %}</span>
+      {{ glyph(d.status) }}
+      <span class="st">{{ WORD[d.status] }}</span>
+      {% if d.weather %}<span class="wx mono">{{ d.weather }}</span>{% endif %}
+    </li>
+  {% endfor %}
+  </ol>
+  <p class="basis">{{ outlook.basis }} {% for c in outlook.sources %}{{ cite(c.source_url, c.fetched_at) }}{% endfor %} <a class="more" href="{{ root }}how/">How the forecast works</a></p>
+</section>
+{% elif outlook %}
+<section class="block"><h2 class="label">This week</h2><p class="basis">{{ outlook.why_none }}</p></section>
+{% endif %}
+
+<section class="block" id="report" data-report-block data-trail="{{ trail.id }}" data-name="{{ short }}">
+  <h2 class="label">From riders and runners</h2>
+  <ol class="report-list" data-report-list><li class="empty">No reports in the last two days.</li></ol>
+  <form class="report" data-report-form>
+    <p class="ask">Were you on it today? How was the dirt?</p>
+    <div class="choices" role="radiogroup" aria-label="Conditions">
+      {% for value, word in [("dry", "Dry"), ("tacky", "Tacky"), ("muddy", "Muddy"), ("snow", "Snow")] %}
+      <label class="choice"><input type="radio" name="condition" value="{{ value }}" required><span>{{ word }}</span></label>
+      {% endfor %}
+    </div>
+    <label class="note"><span class="sr">Anything else (optional)</span><input name="note" maxlength="140" placeholder="Anything else? Puddles past the bridge, snow above 8k…" autocomplete="off"></label>
+    <button type="submit" class="send">Send report</button>
+    <p class="form-msg" data-form-msg aria-live="polite"></p>
+  </form>
 </section>
 
 <section class="block">
-  <h2 class="label">Why</h2>
+  <h2 class="label">Why today's call</h2>
   <ul class="claims" data-line="{{ trail.id }}">
   {% for c in line.claims %}
     <li><p>{{ c.statement }}</p><p class="quote"><span class="mono">“{{ c.quote }}”</span> {{ cite(c.source_url, c.fetched_at, true) }}</p></li>
@@ -38,9 +84,6 @@
 <section class="block">
   <h2 class="label">Trail</h2>
   <dl class="facts">
-    <dt>Elevation</dt><dd class="mono">{{ trail.elevation_min_ft|ft }}–{{ trail.elevation_max_ft|ft }} ft</dd>
-    <dt>Aspect</dt><dd class="mono">{{ trail.aspect }}</dd>
-    <dt>For</dt><dd>{{ trail.activities|join(", ") }}</dd>
     <dt>Managed by</dt><dd>{{ trail.land_manager }}</dd>
     <dt>Official status</dt><dd><a href="{{ trail.official_status_url }}" rel="noopener">{{ trail.official_status_url|host }}</a></dd>
     {% if trail.official_info_url %}<dt>Trail info</dt><dd><a href="{{ trail.official_info_url }}" rel="noopener">{{ trail.official_info_url|host }}</a></dd>{% endif %}
@@ -52,7 +95,7 @@
 </section>
 
 <section class="block">
-  <h2 class="label">Recent days</h2>
+  <h2 class="label">Recent mornings</h2>
   <ol class="history">
   {% for d, l in history %}
     <li class="s-{{ l.status }}">{{ glyph(l.status) }}<a href="{{ root }}archive/{{ d }}/">{{ d.strftime("%a %b %-d") }}</a><span>{{ LABEL[l.status] }}</span></li>

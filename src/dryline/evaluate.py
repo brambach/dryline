@@ -7,8 +7,11 @@ import datetime as dt
 from collections import Counter, defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 from dryline.models import STATUSES, TrailLine
+
+PACIFIC = ZoneInfo("America/Los_Angeles")
 
 TRUTHS = ("dry", "muddy", "snow", "closed")
 FIELDS = ("date", "trail", "truth", "note")
@@ -112,3 +115,80 @@ def score(labels: list[Label], days: dict[dt.date, list[TrailLine]]) -> Report:
             continue
         report.pairs.append((lab.truth, line.status))
     return report
+
+
+# --- Rider reports as labels ----------------------------------------------------------------
+
+# "Tacky" is what riders want: firm, a little moisture. For the rules that's dry.
+REPORT_TRUTH = {"dry": "dry", "tacky": "dry", "muddy": "muddy", "snow": "snow"}
+
+
+def labels_from_reports(raw_root: Path) -> list[Label]:
+    """Each day's archived rider reports, as labels. Several reports of one trail-day vote; a tie
+    is skipped rather than guessed."""
+    import json
+
+    from dryline.fetch import load_raw
+
+    labels = []
+    for path in sorted(raw_root.glob("*/reports/recent.json.gz")):
+        raw = load_raw(path)
+        if not raw.ok:
+            continue
+        votes: dict[tuple[str, str], Counter] = defaultdict(Counter)
+        for r in json.loads(raw.body).get("reports", []):
+            truth = REPORT_TRUTH.get(r.get("condition"))
+            if truth and r.get("trail") and r.get("at"):
+                at = dt.datetime.fromisoformat(r["at"].replace("Z", "+00:00"))
+                votes[(at.astimezone(PACIFIC).date().isoformat(), r["trail"])][truth] += 1
+        for (day, trail), c in sorted(votes.items()):
+            (top, n), *rest = c.most_common()
+            if rest and rest[0][1] == n:
+                continue
+            labels.append(
+                Label(dt.date.fromisoformat(day), trail, top, f"{sum(c.values())} rider reports")
+            )
+    return labels
+
+
+# --- Forecast backtest -----------------------------------------------------------------------
+
+CALLED = ("dry", "muddy", "snow")
+
+
+@dataclass
+class Backtest:
+    """Forecast calls scored against the rules' call on the day they were for.
+
+    This checks the forecast against dryline's own morning reading, not against riders. It says
+    whether the drying math tracks the data, which is the first thing to get right.
+    """
+
+    by_lead: dict[int, list[tuple[str, str]]] = field(default_factory=lambda: defaultdict(list))
+
+    def add(self, lead: int, predicted: str, actual: str) -> None:
+        self.by_lead[lead].append((predicted, actual))
+
+    def hits(self, lead: int | None = None) -> tuple[int, int]:
+        pairs = (
+            self.by_lead.get(lead, [])
+            if lead is not None
+            else [p for v in self.by_lead.values() for p in v]
+        )
+        return sum(p == a for p, a in pairs), len(pairs)
+
+    def rows(self) -> list[tuple[int, int, int]]:
+        return [(lead, *self.hits(lead)) for lead in sorted(self.by_lead)]
+
+
+def backtest(outlooks, days: dict[dt.date, list[TrailLine]]) -> Backtest:
+    """`outlooks`: issued date -> DayOutlook (dryline.pipeline)."""
+    bt = Backtest()
+    actual = {(d, line.trail_id): line.status for d, lines in days.items() for line in lines}
+    for issued, day_outlook in sorted(outlooks.items()):
+        for o in day_outlook.trails:
+            for od in o.days[1:]:
+                truth = actual.get((od.date, o.trail_id))
+                if od.status in CALLED and truth in CALLED:
+                    bt.add((od.date - issued).days, od.status, truth)
+    return bt

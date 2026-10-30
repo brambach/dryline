@@ -1,6 +1,5 @@
 {#- Status glyphs, drawn here. Shape carries the meaning; color is secondary. -#}
-{% macro glyph(status) -%}
-<svg class="glyph g-{{ status }}" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false">
+{% macro glyph_paths(status) -%}
 {%- if status == "dry" -%}
 <circle cx="8" cy="8" r="6.25"/><path d="M5.3 8.3l1.8 1.8 3.7-3.9"/>
 {%- elif status == "muddy" -%}
@@ -12,5 +11,7 @@
 {%- else -%}
 <circle cx="8" cy="8" r="6.25" stroke-dasharray="2.1 2.3"/>
 {%- endif -%}
-</svg>
+{%- endmacro %}
+{% macro glyph(status) -%}
+<svg class="glyph g-{{ status }}" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false">{{ glyph_paths(status) }}</svg>
 {%- endmacro %}

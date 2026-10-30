@@ -3,30 +3,102 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tahoe Rim Trail: Brockway Summit to Martis Peak · dryline</title>
-<meta name="description" content="Daily cited trail conditions for Lake Tahoe and Truckee.">
-<meta name="theme-color" content="#f7f6f3" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#141312" media="(prefers-color-scheme: dark)">
-<link rel="preload" href="../../fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+<title>Martis Peak · dryline</title>
+<meta name="description" content="Is Martis Peak dry? Today's call and a dry-by forecast, every reason cited.">
+<meta name="theme-color" content="#f2eee3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#10140f" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../fonts/hanken-grotesk-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../../design-tokens/tokens.css">
 <link rel="stylesheet" href="../../design-tokens/auto-dark.css">
 <link rel="stylesheet" href="../../style.css">
 <link rel="alternate" type="application/rss+xml" title="dryline" href="../../feed.xml">
+<script src="../../dryline.js" defer></script>
 </head>
-<body data-scene="ridge">
+<body data-page="trail" data-root="../../">
 <header class="top">
-  <a class="brand" href="../../">dryline</a>
-  <nav><a href="../../archive/">Archive</a><a href="../../feed.xml">RSS</a><a href="../../today.json">JSON</a></nav>
+  <a class="brand" href="../../"><svg class="mark" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M2 18 L8 9 L11 13 L15 6 L22 18" fill="none"/><path d="M5.5 12.6 H18.4" stroke-dasharray="1.6 1.8"/></svg>dryline</a>
+  <nav>
+    <a href="../../mine/">My trails</a>
+    <a href="../../how/">How it works</a>
+    <a href="../../archive/">Archive</a>
+  </nav>
 </header>
 <main>
-<section class="hero">
-  <p class="date">Friday, October 23</p>
-  <h1 class="display trail-title">Tahoe Rim Trail: Brockway Summit to Martis Peak</h1>
-  <p class="status-big s-muddy"><svg class="glyph g-muddy" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M4.7 8.7c1.1-1.3 2.2-1.3 3.3 0s2.2 1.3 3.3 0"/></svg>Likely muddy</p>
+<section class="hero trail-hero" data-trail="trt-brockway-to-martis-peak">
+  <p class="kicker mono">7,046–8,736 ft · faces S · hike, run, ride</p>
+  <h1 class="display trail-title">Martis Peak</h1>
+<p class="fullname">Tahoe Rim Trail: Brockway Summit to Martis Peak</p>  <p class="status-big s-muddy"><svg class="glyph g-muddy" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M4.7 8.7c1.1-1.3 2.2-1.3 3.3 0s2.2 1.3 3.3 0"/></svg><span>Likely muddy today, <em>dry by Monday</em>.</span></p>
+</section>
+
+<div class="gauge" aria-hidden="true">
+  <span class="gg-band" style="left:21.62%;right:46.49%"></span>
+  <span class="gg-tick gg-lake" style="left:6.13%"><i>lake</i></span>
+<span class="gg-tick gg-snow" style="left:54.72%"><i>snow line 8,800</i></span>  <span class="gg-end mono">5,900</span><span class="gg-end gg-right mono">11,200 ft</span>
+</div>
+
+<section class="block">
+  <h2 class="label">This week <span class="hint">a forecast, so a guess</span></h2>
+  <ol class="week">
+    <li class="s-muddy is-today">
+      <span class="wd">Today</span>
+      <svg class="glyph g-muddy" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M4.7 8.7c1.1-1.3 2.2-1.3 3.3 0s2.2 1.3 3.3 0"/></svg>
+      <span class="st">muddy</span>
+<span class="wx mono">Sunny, 44°F</span>    </li>
+    <li class="s-muddy">
+      <span class="wd">Sat</span>
+      <svg class="glyph g-muddy" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M4.7 8.7c1.1-1.3 2.2-1.3 3.3 0s2.2 1.3 3.3 0"/></svg>
+      <span class="st">muddy</span>
+<span class="wx mono">Sunny, 48°F</span>    </li>
+    <li class="s-muddy">
+      <span class="wd">Sun</span>
+      <svg class="glyph g-muddy" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M4.7 8.7c1.1-1.3 2.2-1.3 3.3 0s2.2 1.3 3.3 0"/></svg>
+      <span class="st">muddy</span>
+<span class="wx mono">Sunny, 54°F</span>    </li>
+    <li class="s-dry">
+      <span class="wd">Mon</span>
+      <svg class="glyph g-dry" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M5.3 8.3l1.8 1.8 3.7-3.9"/></svg>
+      <span class="st">dry</span>
+<span class="wx mono">Sunny, 50°F</span>    </li>
+    <li class="s-dry">
+      <span class="wd">Tue</span>
+      <svg class="glyph g-dry" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M5.3 8.3l1.8 1.8 3.7-3.9"/></svg>
+      <span class="st">dry</span>
+<span class="wx mono">Sunny, 51°F</span>    </li>
+    <li class="s-dry">
+      <span class="wd">Wed</span>
+      <svg class="glyph g-dry" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M5.3 8.3l1.8 1.8 3.7-3.9"/></svg>
+      <span class="st">dry</span>
+<span class="wx mono">Mostly Sunny, 50°F</span>    </li>
+    <li class="s-dry">
+      <span class="wd">Thu</span>
+      <svg class="glyph g-dry" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M5.3 8.3l1.8 1.8 3.7-3.9"/></svg>
+      <span class="st">dry</span>
+<span class="wx mono">Mostly Sunny, 49°F</span>    </li>
+  </ol>
+  <p class="basis">Dry days ahead in the forecast. South-facing, so it dries fast. <a class="cite" data-source href="https://api.weather.gov/gridpoints/REV/35,97/forecast" rel="noopener">api.weather.gov · 10:57am</a> <a class="more" href="../../how/">How the forecast works</a></p>
+</section>
+
+<section class="block" id="report" data-report-block data-trail="trt-brockway-to-martis-peak" data-name="Martis Peak">
+  <h2 class="label">From riders and runners</h2>
+  <ol class="report-list" data-report-list><li class="empty">No reports in the last two days.</li></ol>
+  <form class="report" data-report-form>
+    <p class="ask">Were you on it today? How was the dirt?</p>
+    <div class="choices" role="radiogroup" aria-label="Conditions">
+      <label class="choice"><input type="radio" name="condition" value="dry" required><span>Dry</span></label>
+      <label class="choice"><input type="radio" name="condition" value="tacky" required><span>Tacky</span></label>
+      <label class="choice"><input type="radio" name="condition" value="muddy" required><span>Muddy</span></label>
+      <label class="choice"><input type="radio" name="condition" value="snow" required><span>Snow</span></label>
+    </div>
+    <label class="note"><span class="sr">Anything else (optional)</span><input name="note" maxlength="140" placeholder="Anything else? Puddles past the bridge, snow above 8k…" autocomplete="off"></label>
+    <button type="submit" class="send">Send report</button>
+    <p class="form-msg" data-form-msg aria-live="polite"></p>
+  </form>
 </section>
 
 <section class="block">
-  <h2 class="label">Why</h2>
+  <h2 class="label">Why today's call</h2>
   <ul class="claims" data-line="trt-brockway-to-martis-peak">
     <li><p>Likely muddy: 0.50 in of precipitation on Oct 21–22 at Truckee #2 (SNOTEL, 11 km away).</p><p class="quote"><span class="mono">“834:CA:SNTL PRCP 2026-10-21=0.5 in, 2026-10-22=0 in”</span> <a class="cite" data-source href="https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&amp;elements=SNWD%2CWTEQ%2CPRCP&amp;duration=DAILY&amp;beginDate=2026-10-16&amp;endDate=2026-10-23" rel="noopener">wcc.sc.egov.usda.gov · fetched Oct 23, 10:57am</a></p></li>
     <li><span class="gap">Missing: Tahoe Rim Trail Association entry for BrockwaytoRose was last updated Jul 7, older than 14 days.</span> <a class="cite" data-source href="https://tahoerimtrail.org/current-trail-conditions/" rel="noopener">checked tahoerimtrail.org</a></li>
@@ -45,9 +117,6 @@
 <section class="block">
   <h2 class="label">Trail</h2>
   <dl class="facts">
-    <dt>Elevation</dt><dd class="mono">7,046–8,736 ft</dd>
-    <dt>Aspect</dt><dd class="mono">S</dd>
-    <dt>For</dt><dd>hike, run, ride</dd>
     <dt>Managed by</dt><dd>Tahoe Rim Trail Association (on USFS land)</dd>
     <dt>Official status</dt><dd><a href="https://www.fs.usda.gov/r05/laketahoebasin/alerts" rel="noopener">fs.usda.gov</a></dd>
 <dt>Trail info</dt><dd><a href="https://tahoerimtrail.org/current-trail-conditions/" rel="noopener">tahoerimtrail.org</a></dd>    <dt>Trail data</dt><dd>Draft, not yet reviewed      <details class="sources"><summary>14 sources</summary><ol class="mono">
@@ -56,7 +125,7 @@
 </section>
 
 <section class="block">
-  <h2 class="label">Recent days</h2>
+  <h2 class="label">Recent mornings</h2>
   <ol class="history">
     <li class="s-muddy"><svg class="glyph g-muddy" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M4.7 8.7c1.1-1.3 2.2-1.3 3.3 0s2.2 1.3 3.3 0"/></svg><a href="../../archive/2026-10-23/">Fri Oct 23</a><span>Likely muddy</span></li>
     <li class="s-muddy"><svg class="glyph g-muddy" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M4.7 8.7c1.1-1.3 2.2-1.3 3.3 0s2.2 1.3 3.3 0"/></svg><a href="../../archive/2026-10-22/">Thu Oct 22</a><span>Likely muddy</span></li>
@@ -70,8 +139,8 @@
 </section>
 </main>
 <footer>
-  <p>Not safety advice. Statuses come from fixed rules applied to public data, and every reason links to its source and fetch time. Check the land manager before you go.</p>
-  <p class="mono">Built Oct 23, 10:57am Pacific</p>
+  <p>Not safety advice. Today's calls come from fixed rules on public data, and every reason links its source. The dry-by days are a forecast and can be wrong. Check the land manager before you go.</p>
+  <p class="mono">Built Oct 29, 10:29pm Pacific · <a href="../../feed.xml">RSS</a> · <a href="../../today.json">JSON</a> · <a href="https://github.com/brambach/dryline">Source</a></p>
 </footer>
 </body>
 </html>

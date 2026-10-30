@@ -16,6 +16,7 @@ from dryline.obs import (
     ClosureObs,
     ConditionsObs,
     ForecastObs,
+    ForecastPeriod,
     Gap,
     PrecipObs,
     SnowObs,
@@ -83,6 +84,7 @@ def parse_snotel(
                     elevation_ft=st.elevation_ft,
                     date=day,
                     depth_in=depth,
+                    swe_in=swe,
                 )
             )
         prcp = series.get("PRCP", {})
@@ -206,6 +208,102 @@ def parse_nws_forecast(raw: RawResponse, now: dt.datetime, max_age_h: int = 18) 
         short_forecast=f"{p.get('shortForecast', '')}{temp}",
         start=dt.datetime.fromisoformat(p["startTime"]),
     )
+
+
+_AMOUNT_WORDS = {
+    "a tenth": 0.1,
+    "tenth": 0.1,
+    "a quarter": 0.25,
+    "quarter": 0.25,
+    "a half": 0.5,
+    "half": 0.5,
+    "three quarters": 0.75,
+    "one inch": 1.0,
+    "one": 1.0,
+    "two": 2.0,
+    "three": 3.0,
+    "four": 4.0,
+}
+_RAIN = re.compile(r"New (?:rainfall|precipitation) amounts? (?:of )?(.+?) possible", re.I)
+_SNOW_AMT = re.compile(r"New snow accumulation (?:of )?(.+?) possible", re.I)
+_SNOW_LEVEL = re.compile(r"Snow level (?:\w+ )*?(\d{3,5}) feet", re.I)
+
+
+def _amount(word: str) -> float | None:
+    word = word.strip().lower()
+    word = re.sub(r"\s*\b(of )?(an |a )?inch(es)?$", "", word).strip()
+    if word in ("", "an", "a"):  # "an inch"
+        return 1.0
+    if word.replace(".", "", 1).isdigit():
+        return float(word)
+    return _AMOUNT_WORDS.get(word)
+
+
+def nws_amount(phrase: str) -> float | None:
+    """NWS amount phrases to inches: 'between a quarter and half of an inch' -> 0.38.
+
+    NWS writes amounts from a small fixed vocabulary. Anything we don't recognise is None,
+    never a guess.
+    """
+    p = phrase.strip().lower().rstrip(".")
+    if m := re.fullmatch(r"between (.+?) and (.+)", p):
+        lo, hi = _amount(m.group(1)), _amount(m.group(2))
+        return round((lo + hi) / 2, 2) if lo is not None and hi is not None else None
+    if m := re.fullmatch(r"(\d+(?:\.\d+)?) to (\d+(?:\.\d+)?) inch(?:es)?", p):
+        return round((float(m.group(1)) + float(m.group(2))) / 2, 2)
+    if m := re.fullmatch(r"less than (.+)", p):
+        v = _amount(m.group(1))
+        return round(v / 2, 2) if v is not None else None
+    if m := re.fullmatch(r"(?:around|near|up to|close to) (.+)", p):
+        return _amount(m.group(1))
+    return None
+
+
+def parse_nws_periods(
+    raw: RawResponse, now: dt.datetime, max_age_h: int = 18
+) -> tuple[ForecastPeriod, ...]:
+    """Every forecast period that hasn't ended yet, with amounts and snow level read out."""
+    if not raw.ok:
+        raise ParseError(f"NWS forecast HTTP {raw.status_code}")
+    props = raw.json_body().get("properties") or {}
+    periods = props.get("periods") or []
+    updated = props.get("updateTime") or props.get("generatedAt")
+    elev = (props.get("elevation") or {}).get("value")
+    if not periods or not updated or elev is None:
+        raise ParseError("NWS forecast: no periods or elevation")
+    if now - dt.datetime.fromisoformat(updated) > dt.timedelta(hours=max_age_h):
+        raise ParseError(f"NWS forecast is stale (updated {updated})")
+    out = []
+    for p in periods:
+        end = dt.datetime.fromisoformat(p["endTime"])
+        if end <= now:
+            continue
+        text = p.get("detailedForecast") or ""
+        rain = _RAIN.search(text)
+        snow = _SNOW_AMT.search(text)
+        level = _SNOW_LEVEL.search(text)
+        out.append(
+            ForecastPeriod(
+                source_name="NWS forecast",
+                source_url=raw.url,
+                fetched_at=raw.fetched_at,
+                quote=_clip(f"{p['name']}: {text}" if text else p["name"]),
+                name=p["name"],
+                start=dt.datetime.fromisoformat(p["startTime"]),
+                end=end,
+                is_daytime=bool(p.get("isDaytime")),
+                temp_f=int(p["temperature"]),
+                pop=int((p.get("probabilityOfPrecipitation") or {}).get("value") or 0),
+                short_forecast=p.get("shortForecast") or "",
+                rain_in=nws_amount(rain.group(1)) if rain else None,
+                snow_in=nws_amount(snow.group(1)) if snow else None,
+                snow_level_ft=int(level.group(1)) if level else None,
+                grid_elevation_ft=round(float(elev) * 3.28084),
+            )
+        )
+    if not out:
+        raise ParseError("NWS forecast: no current periods")
+    return tuple(out)
 
 
 # --- Official pages ----------------------------------------------------------------------

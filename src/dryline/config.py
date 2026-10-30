@@ -44,6 +44,14 @@ class Paths:
         return self.root / "data" / "lines"
 
     @property
+    def outlook(self) -> Path:
+        return self.root / "data" / "outlook"
+
+    @property
+    def reports(self) -> Path:
+        return self.root / "data" / "reports"
+
+    @property
     def site(self) -> Path:
         return self.root / "site"
 

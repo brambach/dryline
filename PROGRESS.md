@@ -338,3 +338,21 @@ docs/screenshots/{today,archive,trail}-{mobile,desktop}.png  horizontal-overflow
 Before and after screenshots (light, plus dark for the today and trail pages) are pixel-identical,
 except for one digit of the "Built" time in the footer. Rebuilding on Oct 18 before that day's data
 is collected shows "Saturday" and the stale notice instead of "Today", both before and after this change.
+
+## M7: Trail forecast (Oct 30, 2026)
+
+The brief: turn the digest into a surf forecast for trails. Dry-by forecast, the ridge, rider reports,
+a morning email, a published hit rate.
+
+```
+$ uv run pytest -q
+118 passed
+$ for d in 16..23: uv run dryline build --date 2026-10-$d
+2026-10-22: forecast for 20 trails, 19 with a dry-by day
+2026-10-23: forecast for 20 trails, 20 with a dry-by day
+```
+
+Backtest on the archive: the Oct 19 forecast called muddy from Wednesday Oct 22 on the trails that got
+the storm, and Oct 22 was muddy. See How it works on the site for the scored table. The sandbox that built
+this can't reach NWS or SNOTEL, so the forecast was only run on the archived snapshots; the daily
+workflow runs it live.

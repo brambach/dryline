@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My trails · dryline</title>
+<meta name="description" content="When will your Tahoe trail be rideable? A daily dry-by forecast for 20 trails, every call cited.">
+<meta name="theme-color" content="#f2eee3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#10140f" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/hanken-grotesk-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../design-tokens/tokens.css">
+<link rel="stylesheet" href="../design-tokens/auto-dark.css">
+<link rel="stylesheet" href="../style.css">
+<link rel="alternate" type="application/rss+xml" title="dryline" href="../feed.xml">
+<script src="../dryline.js" defer></script>
+</head>
+<body data-page="mine" data-root="../">
+<header class="top">
+  <a class="brand" href="../"><svg class="mark" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M2 18 L8 9 L11 13 L15 6 L22 18" fill="none"/><path d="M5.5 12.6 H18.4" stroke-dasharray="1.6 1.8"/></svg>dryline</a>
+  <nav>
+    <a href="../mine/" aria-current="page">My trails</a>
+    <a href="../how/">How it works</a>
+    <a href="../archive/">Archive</a>
+  </nav>
+</header>
+<main>
+<section class="hero">
+  <p class="kicker mono">My trails</p>
+  <h1 class="display">Pick the ones you ride.</h1>
+  <p class="lede">They go to the top of the page on this device. Add your email and you'll get one short note each morning: which of yours are dry, and when the rest will be.</p>
+</section>
+
+<form class="pick" data-pick>
+  <ul class="pick-list">
+    <li><label><input type="checkbox" name="trail" value="cascade-falls"><span class="pk-name">Cascade Falls</span><span class="elev">6,927 ft</span></label></li>
+    <li><label><input type="checkbox" name="trail" value="castle-peak"><span class="pk-name">Castle Peak</span><span class="elev">9,109 ft</span></label></li>
+    <li><label><input type="checkbox" name="trail" value="corral-trail"><span class="pk-name">Corral Trail</span><span class="elev">7,054 ft</span></label></li>
+    <li><label><input type="checkbox" name="trail" value="donner-lake-rim-trail"><span class="pk-name">Donner Lake Rim Trail</span><span class="elev">7,689 ft</span></label></li>
+    <li><label><input type="checkbox" name="trail" value="eagle-lake-desolation"><span class="pk-name">Eagle Lake</span><span class="elev">7,023 ft</span></label></li>
+    <li><label><input type="checkbox" name="trail" value="ellis-peak"><span class="pk-name">Ellis Peak</span><span class="elev">8,730 ft</span></label></li>
+    <li><label><input type="checkbox" name="trail" value="five-lakes"><span class="pk-name">Five Lakes Trail</span><span class="elev">7,579 ft</span></label></li>
+    <li><label><input type="checkbox" name="trail" value="flume-trail"><span class="pk-name">Flume Trail</span><span class="elev">8,143 ft</span></label></li>
+    <li><label><input type="checkbox" name="trail" value="echo-lakes-to-lake-aloha"><span class="pk-name">Lake Aloha</span><span class="elev">8,337 ft</span></label></li>
+    <li><label><input type="checkbox" name="trail" value="marlette-lake"><span class="pk-name">Marlette Lake</span><span class="elev">8,168 ft</span></label></li>
+    <li><label><input type="checkbox" name="trail" value="trt-brockway-to-martis-peak"><span class="pk-name">Martis Peak</span><span class="elev">8,736 ft</span></label></li>
+    <li><label><input type="checkbox" name="trail" value="mount-judah-loop"><span class="pk-name">Mount Judah</span><span class="elev">8,243 ft</span></label></li>
+    <li><label><input type="checkbox" name="trail" value="mount-rose-summit"><span class="pk-name">Mount Rose Summit Trail</span><span class="elev">10,785 ft</span></label></li>
+    <li><label><input type="checkbox" name="trail" value="mount-tallac"><span class="pk-name">Mount Tallac</span><span class="elev">9,739 ft</span></label></li>
+    <li><label><input type="checkbox" name="trail" value="mr-toads-wild-ride"><span class="pk-name">Mr. Toad&#39;s Wild Ride</span><span class="elev">8,954 ft</span></label></li>
+    <li><label><input type="checkbox" name="trail" value="page-meadows"><span class="pk-name">Page Meadows</span><span class="elev">7,002 ft</span></label></li>
+    <li><label><input type="checkbox" name="trail" value="big-meadow-to-round-lake"><span class="pk-name">Round Lake</span><span class="elev">8,117 ft</span></label></li>
+    <li><label><input type="checkbox" name="trail" value="rubicon-trail-dl-bliss"><span class="pk-name">Rubicon Trail</span><span class="elev">6,602 ft</span></label></li>
+    <li><label><input type="checkbox" name="trail" value="sawtooth-trail"><span class="pk-name">Sawtooth Trail</span><span class="elev">6,469 ft</span></label></li>
+    <li><label><input type="checkbox" name="trail" value="van-sickle-bi-state-park"><span class="pk-name">Van Sickle</span><span class="elev">7,792 ft</span></label></li>
+  </ul>
+</form>
+
+<section class="block subscribe" id="email">
+  <h2 class="label">Morning email</h2>
+  <form class="sub" data-subscribe>
+    <label class="note"><span class="sr">Email</span><input type="email" name="email" required placeholder="you@example.com" autocomplete="email"></label>
+    <button type="submit" class="send">Send me mornings</button>
+    <p class="form-msg" data-form-msg aria-live="polite">Around 7am Pacific, only on days we have data. One click to stop.</p>
+  </form>
+</section>
+
+<section class="block" id="report">
+  <h2 class="label">Report a trail</h2>
+  <p>Pick the trail you were on. The report form is on its page, and it takes about ten seconds.</p>
+  <ul class="report-links">
+<li><a href="../trails/cascade-falls/#report">Cascade Falls</a></li><li><a href="../trails/castle-peak/#report">Castle Peak</a></li><li><a href="../trails/corral-trail/#report">Corral Trail</a></li><li><a href="../trails/donner-lake-rim-trail/#report">Donner Lake Rim Trail</a></li><li><a href="../trails/eagle-lake-desolation/#report">Eagle Lake</a></li><li><a href="../trails/ellis-peak/#report">Ellis Peak</a></li><li><a href="../trails/five-lakes/#report">Five Lakes Trail</a></li><li><a href="../trails/flume-trail/#report">Flume Trail</a></li><li><a href="../trails/echo-lakes-to-lake-aloha/#report">Lake Aloha</a></li><li><a href="../trails/marlette-lake/#report">Marlette Lake</a></li><li><a href="../trails/trt-brockway-to-martis-peak/#report">Martis Peak</a></li><li><a href="../trails/mount-judah-loop/#report">Mount Judah</a></li><li><a href="../trails/mount-rose-summit/#report">Mount Rose Summit Trail</a></li><li><a href="../trails/mount-tallac/#report">Mount Tallac</a></li><li><a href="../trails/mr-toads-wild-ride/#report">Mr. Toad&#39;s Wild Ride</a></li><li><a href="../trails/page-meadows/#report">Page Meadows</a></li><li><a href="../trails/big-meadow-to-round-lake/#report">Round Lake</a></li><li><a href="../trails/rubicon-trail-dl-bliss/#report">Rubicon Trail</a></li><li><a href="../trails/sawtooth-trail/#report">Sawtooth Trail</a></li><li><a href="../trails/van-sickle-bi-state-park/#report">Van Sickle</a></li>  </ul>
+</section>
+</main>
+<footer>
+  <p>Not safety advice. Today's calls come from fixed rules on public data, and every reason links its source. The dry-by days are a forecast and can be wrong. Check the land manager before you go.</p>
+  <p class="mono">Built Oct 29, 10:29pm Pacific · <a href="../feed.xml">RSS</a> · <a href="../today.json">JSON</a> · <a href="https://github.com/brambach/dryline">Source</a></p>
+</footer>
+</body>
+</html>
