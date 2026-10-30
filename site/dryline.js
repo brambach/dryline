@@ -180,6 +180,16 @@
   async function loadReports() {
     try {
       const r = await fetch(api("reports?days=2"), { headers: { accept: "application/json" } });
+      if (r.status === 503) {
+        // Storage isn't connected yet: say so once, instead of a form that can't send.
+        const form = document.querySelector("[data-report-form]");
+        if (form) {
+          form.classList.add("sent");
+          const msg = form.querySelector("[data-form-msg]");
+          msg.textContent = "Rider reports open soon. Until then, the call above is all rules and public data.";
+        }
+        return null;
+      }
       if (!r.ok) return null;
       const body = await r.json();
       return Array.isArray(body.reports) ? body.reports : null;

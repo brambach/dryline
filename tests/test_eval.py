@@ -54,3 +54,31 @@ def test_label_page_hides_prediction_behind_details():
     html = render_page({DAY: [line("a", "dry")]}, [Label(DAY, "a", "dry")], "labels.csv")
     assert "<details><summary>dryline said</summary>Likely dry." in html
     assert 'value="dry" checked' in html
+
+
+def test_rider_reports_become_labels(tmp_path):
+    import gzip
+    import json
+
+    from dryline.evaluate import labels_from_reports
+    from dryline.fetch import RawResponse
+
+    reports = [
+        {"trail": "a", "condition": "tacky", "at": "2026-10-31T01:30:00Z"},  # 6:30pm Oct 30 PT
+        {"trail": "a", "condition": "dry", "at": "2026-10-30T18:00:00Z"},
+        {"trail": "b", "condition": "muddy", "at": "2026-10-30T18:00:00Z"},
+        {"trail": "b", "condition": "dry", "at": "2026-10-30T19:00:00Z"},  # a tie: skipped
+    ]
+    raw = RawResponse(
+        source="reports",
+        url="https://dryline.brycerambach.com/api/reports?days=1",
+        fetched_at="2026-10-31T13:40:00Z",
+        status_code=200,
+        content_type="application/json",
+        body=json.dumps({"reports": reports}),
+    )
+    path = tmp_path / "2026-10-31" / "reports" / "recent.json.gz"
+    path.parent.mkdir(parents=True)
+    path.write_bytes(gzip.compress(raw.model_dump_json().encode()))
+    labels = labels_from_reports(tmp_path)
+    assert [(str(lab.date), lab.trail, lab.truth) for lab in labels] == [("2026-10-30", "a", "dry")]

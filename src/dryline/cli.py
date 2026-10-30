@@ -100,6 +100,11 @@ def cmd_eval(args, paths) -> int:
     labels_path = Path(args.labels) if args.labels else paths.labels
     lines_dir = Path(args.lines) if args.lines else paths.lines
     labels = read_labels(labels_path)
+    if args.reports:
+        from dryline.evaluate import labels_from_reports
+
+        labels = labels_from_reports(paths.raw)
+        labels_path = paths.raw / "*/reports"
     if not labels:
         print(f"{labels_path}: no labels yet. Run `dryline label` to add some.")
         return 0
@@ -146,6 +151,7 @@ def main(argv: list[str] | None = None) -> int:
     p = sub.add_parser("eval", help="score labels against archived lines")
     p.add_argument("--labels")
     p.add_argument("--lines")
+    p.add_argument("--reports", action="store_true", help="score against archived rider reports")
     p = sub.add_parser("label", help="serve the local labeling page")
     p.add_argument("--labels")
     p.add_argument("--port", type=int, default=8765)

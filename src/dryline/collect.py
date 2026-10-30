@@ -25,6 +25,8 @@ GEOJSON = {"Accept": "application/geo+json"}
 # clients to send an identifying User-Agent instead, which we do. HTML pages always check robots.
 API_SOURCES_SKIP_ROBOTS = True
 SNOTEL_ELEMENTS = "SNWD,WTEQ,PRCP"
+# dryline's own rider reports, archived daily so the eval can score against them.
+REPORTS_URL = "https://dryline.brycerambach.com/api/reports?days=1"
 
 
 def collect_snotel(f: Fetcher, stations: StationsFile, day: dt.date) -> None:
@@ -83,6 +85,9 @@ def collect(
 ) -> list[str]:
     collect_snotel(f, stations, f.day)
     collect_nws(f, grid, now)
+    f.get(
+        "reports", "recent", REPORTS_URL, headers={"Accept": "application/json"}, check_robots=False
+    )
     return collect_pages(f, trails)
 
 

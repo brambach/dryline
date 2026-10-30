@@ -37,6 +37,8 @@ markers = ["browser: launches Chromium (local only, allowed to open sockets on l
 [tool.ruff]
 line-length = 100
 target-version = "py312"
+# Vendored from design-taste; sync.sh --check fails if anything touches it.
+extend-exclude = ["src/dryline/templates/design-tokens"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "B", "UP", "SIM"]
