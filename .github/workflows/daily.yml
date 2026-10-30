@@ -1,7 +1,7 @@
 name: daily
 
 # Git scraping: collect public sources each morning, apply the rules and the forecast, commit the
-# snapshot and the built site. Vercel deploys site/ (and the API) from that commit.
+# snapshot and the built site. Vercel deploys production from main, so the commit goes there too.
 on:
   schedule:
     - cron: "40 13 * * *" # 6:40am PDT / 5:40am PST
@@ -41,4 +41,5 @@ jobs:
           else
             git commit -m "data: $(TZ=America/Los_Angeles date +%Y-%m-%d)"
             git push
+            git push origin HEAD:main
           fi
