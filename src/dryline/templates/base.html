@@ -4,27 +4,33 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% block title %}dryline{% endblock %}</title>
-<meta name="description" content="Daily cited trail conditions for Lake Tahoe and Truckee.">
-<meta name="theme-color" content="{{ MODES.light.paper }}" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="{{ MODES.dark.paper }}" media="(prefers-color-scheme: dark)">
-<link rel="preload" href="{{ root }}fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+<meta name="description" content="{% block description %}When will your Tahoe trail be rideable? A daily dry-by forecast for 20 trails, every call cited.{% endblock %}">
+<meta name="theme-color" content="#f2eee3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#10140f" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="{{ root }}favicon.svg" type="image/svg+xml">
+<link rel="preload" href="{{ root }}fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ root }}fonts/hanken-grotesk-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{{ root }}design-tokens/tokens.css">
 <link rel="stylesheet" href="{{ root }}design-tokens/auto-dark.css">
 <link rel="stylesheet" href="{{ root }}style.css">
 <link rel="alternate" type="application/rss+xml" title="dryline" href="{{ root }}feed.xml">
+<script src="{{ root }}dryline.js" defer></script>
 </head>
-<body data-scene="ridge">
-{% block scene %}{% endblock %}
+<body data-page="{{ page }}" data-root="{{ root }}">
 <header class="top">
-  <a class="brand" href="{{ root }}">dryline</a>
-  <nav><a href="{{ root }}archive/">Archive</a><a href="{{ root }}feed.xml">RSS</a><a href="{{ root }}today.json">JSON</a></nav>
+  <a class="brand" href="{{ root }}">{% include "_mark.html" %}dryline</a>
+  <nav>
+    <a href="{{ root }}mine/"{% if page == "mine" %} aria-current="page"{% endif %}>My trails</a>
+    <a href="{{ root }}how/"{% if page == "how" %} aria-current="page"{% endif %}>How it works</a>
+    <a href="{{ root }}archive/"{% if page == "archive" %} aria-current="page"{% endif %}>Archive</a>
+  </nav>
 </header>
 <main>
 {% block main %}{% endblock %}
 </main>
 <footer>
-  <p>Not safety advice. Statuses come from fixed rules applied to public data, and every reason links to its source and fetch time. Check the land manager before you go.</p>
-  <p class="mono">Built {{ built_at|stamp }} Pacific</p>
+  <p>Not safety advice. Today's calls come from fixed rules on public data, and every reason links its source. The dry-by days are a forecast and can be wrong. Check the land manager before you go.</p>
+  <p class="mono">Built {{ built_at|stamp }} Pacific · <a href="{{ root }}feed.xml">RSS</a> · <a href="{{ root }}today.json">JSON</a> · <a href="https://github.com/brambach/dryline">Source</a></p>
 </footer>
 </body>
 </html>

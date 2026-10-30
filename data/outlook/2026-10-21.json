@@ -1,0 +1,386 @@
+{
+ "date": "2026-10-21",
+ "trails": [
+  {
+   "trail_id": "mount-tallac",
+   "issued": "2026-10-21",
+   "days": [
+    {
+     "date": "2026-10-21",
+     "status": "unknown",
+     "weather": "",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": null,
+   "sources": [],
+   "basis": "",
+   "why_none": "No forecast without a call for today."
+  },
+  {
+   "trail_id": "eagle-lake-desolation",
+   "issued": "2026-10-21",
+   "days": [
+    {
+     "date": "2026-10-21",
+     "status": "unknown",
+     "weather": "",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": null,
+   "sources": [],
+   "basis": "",
+   "why_none": "No forecast without a call for today."
+  },
+  {
+   "trail_id": "rubicon-trail-dl-bliss",
+   "issued": "2026-10-21",
+   "days": [
+    {
+     "date": "2026-10-21",
+     "status": "unknown",
+     "weather": "",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": null,
+   "sources": [],
+   "basis": "",
+   "why_none": "No forecast without a call for today."
+  },
+  {
+   "trail_id": "cascade-falls",
+   "issued": "2026-10-21",
+   "days": [
+    {
+     "date": "2026-10-21",
+     "status": "unknown",
+     "weather": "",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": null,
+   "sources": [],
+   "basis": "",
+   "why_none": "No forecast without a call for today."
+  },
+  {
+   "trail_id": "echo-lakes-to-lake-aloha",
+   "issued": "2026-10-21",
+   "days": [
+    {
+     "date": "2026-10-21",
+     "status": "unknown",
+     "weather": "",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": null,
+   "sources": [],
+   "basis": "",
+   "why_none": "No forecast without a call for today."
+  },
+  {
+   "trail_id": "ellis-peak",
+   "issued": "2026-10-21",
+   "days": [
+    {
+     "date": "2026-10-21",
+     "status": "unknown",
+     "weather": "",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": null,
+   "sources": [],
+   "basis": "",
+   "why_none": "No forecast without a call for today."
+  },
+  {
+   "trail_id": "mr-toads-wild-ride",
+   "issued": "2026-10-21",
+   "days": [
+    {
+     "date": "2026-10-21",
+     "status": "unknown",
+     "weather": "",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": null,
+   "sources": [],
+   "basis": "",
+   "why_none": "No forecast without a call for today."
+  },
+  {
+   "trail_id": "corral-trail",
+   "issued": "2026-10-21",
+   "days": [
+    {
+     "date": "2026-10-21",
+     "status": "unknown",
+     "weather": "",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": null,
+   "sources": [],
+   "basis": "",
+   "why_none": "No forecast without a call for today."
+  },
+  {
+   "trail_id": "van-sickle-bi-state-park",
+   "issued": "2026-10-21",
+   "days": [
+    {
+     "date": "2026-10-21",
+     "status": "unknown",
+     "weather": "",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": null,
+   "sources": [],
+   "basis": "",
+   "why_none": "No forecast without a call for today."
+  },
+  {
+   "trail_id": "mount-rose-summit",
+   "issued": "2026-10-21",
+   "days": [
+    {
+     "date": "2026-10-21",
+     "status": "unknown",
+     "weather": "",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": null,
+   "sources": [],
+   "basis": "",
+   "why_none": "No forecast without a call for today."
+  },
+  {
+   "trail_id": "flume-trail",
+   "issued": "2026-10-21",
+   "days": [
+    {
+     "date": "2026-10-21",
+     "status": "unknown",
+     "weather": "",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": null,
+   "sources": [],
+   "basis": "",
+   "why_none": "No forecast without a call for today."
+  },
+  {
+   "trail_id": "marlette-lake",
+   "issued": "2026-10-21",
+   "days": [
+    {
+     "date": "2026-10-21",
+     "status": "unknown",
+     "weather": "",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": null,
+   "sources": [],
+   "basis": "",
+   "why_none": "No forecast without a call for today."
+  },
+  {
+   "trail_id": "page-meadows",
+   "issued": "2026-10-21",
+   "days": [
+    {
+     "date": "2026-10-21",
+     "status": "unknown",
+     "weather": "",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": null,
+   "sources": [],
+   "basis": "",
+   "why_none": "No forecast without a call for today."
+  },
+  {
+   "trail_id": "five-lakes",
+   "issued": "2026-10-21",
+   "days": [
+    {
+     "date": "2026-10-21",
+     "status": "unknown",
+     "weather": "",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": null,
+   "sources": [],
+   "basis": "",
+   "why_none": "No forecast without a call for today."
+  },
+  {
+   "trail_id": "castle-peak",
+   "issued": "2026-10-21",
+   "days": [
+    {
+     "date": "2026-10-21",
+     "status": "unknown",
+     "weather": "",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": null,
+   "sources": [],
+   "basis": "",
+   "why_none": "No forecast without a call for today."
+  },
+  {
+   "trail_id": "mount-judah-loop",
+   "issued": "2026-10-21",
+   "days": [
+    {
+     "date": "2026-10-21",
+     "status": "unknown",
+     "weather": "",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": null,
+   "sources": [],
+   "basis": "",
+   "why_none": "No forecast without a call for today."
+  },
+  {
+   "trail_id": "donner-lake-rim-trail",
+   "issued": "2026-10-21",
+   "days": [
+    {
+     "date": "2026-10-21",
+     "status": "unknown",
+     "weather": "",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": null,
+   "sources": [],
+   "basis": "",
+   "why_none": "No forecast without a call for today."
+  },
+  {
+   "trail_id": "sawtooth-trail",
+   "issued": "2026-10-21",
+   "days": [
+    {
+     "date": "2026-10-21",
+     "status": "unknown",
+     "weather": "",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": null,
+   "sources": [],
+   "basis": "",
+   "why_none": "No forecast without a call for today."
+  },
+  {
+   "trail_id": "trt-brockway-to-martis-peak",
+   "issued": "2026-10-21",
+   "days": [
+    {
+     "date": "2026-10-21",
+     "status": "unknown",
+     "weather": "",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": null,
+   "sources": [],
+   "basis": "",
+   "why_none": "No forecast without a call for today."
+  },
+  {
+   "trail_id": "big-meadow-to-round-lake",
+   "issued": "2026-10-21",
+   "days": [
+    {
+     "date": "2026-10-21",
+     "status": "unknown",
+     "weather": "",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": null,
+   "sources": [],
+   "basis": "",
+   "why_none": "No forecast without a call for today."
+  }
+ ],
+ "snow_lines": []
+}

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How it works · dryline</title>
+<meta name="description" content="When will your Tahoe trail be rideable? A daily dry-by forecast for 20 trails, every call cited.">
+<meta name="theme-color" content="#f2eee3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#10140f" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/hanken-grotesk-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../design-tokens/tokens.css">
+<link rel="stylesheet" href="../design-tokens/auto-dark.css">
+<link rel="stylesheet" href="../style.css">
+<link rel="alternate" type="application/rss+xml" title="dryline" href="../feed.xml">
+<script src="../dryline.js" defer></script>
+</head>
+<body data-page="how" data-root="../">
+<header class="top">
+  <a class="brand" href="../"><svg class="mark" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M2 18 L8 9 L11 13 L15 6 L22 18" fill="none"/><path d="M5.5 12.6 H18.4" stroke-dasharray="1.6 1.8"/></svg>dryline</a>
+  <nav>
+    <a href="../mine/">My trails</a>
+    <a href="../how/" aria-current="page">How it works</a>
+    <a href="../archive/">Archive</a>
+  </nav>
+</header>
+<main>
+<section class="hero">
+  <p class="kicker mono">How it works</p>
+  <h1 class="display">Every call has a source, or it says unknown.</h1>
+</section>
+
+<section class="prose">
+<h2 class="label">Today's call</h2>
+<p>Each morning at 6:40 a job pulls snow depth from NRCS SNOTEL stations, rain from NWS airport sensors and SNOTEL gauges, the NWS forecast, and closure pages from the Forest Service, Nevada State Parks and the Tahoe Rim Trail. Fixed rules turn that into one call per trail. No AI touches the call.</p>
+<ul>
+  <li><b>Closed</b> when an official page names the trail and a closure.</li>
+  <li><b>Snow</b> when a SNOTEL station near the trail, at a similar height, has 2 in or more at or below its high point.</li>
+  <li><b>Muddy</b> after a quarter inch of rain in 48 hours at the nearest gauge.</li>
+  <li><b>Dry</b> only with proof on both counts: a bare station near the high point and a complete, low rain record.</li>
+  <li><b>Unknown</b> when any of that is missing or stale. Then the page says what's missing and where we looked.</li>
+</ul>
+
+<h2 class="label">The dry-by forecast</h2>
+<p>Starting from today's call, dryline runs the NWS forecast forward a day at a time with a small water budget. Snow at the trail's high point melts with warm days. Rain and meltwater soak the ground, then sun, warmth and a south-facing slope dry it out. North faces hold water longer. The first day the ground drops back under the muddy line is the dry-by day.</p>
+<p>It's a guess, and the numbers it uses are all <a href="https://github.com/brambach/dryline/blob/main/src/dryline/forecast.py">in the code</a>. Closed and unknown trails don't get one.</p>
+
+<h2 class="label">How often it's right</h2>
+<p>Scored against the next mornings' calls, across 8 mornings since Oct 16:</p>
+<table class="score">
+  <thead><tr><th>Days ahead</th><th>Matched</th><th>Calls</th><th>Hit rate</th></tr></thead>
+  <tbody>
+<tr><td class="mono">1</td><td class="mono">68</td><td class="mono">68</td><td class="mono">100%</td></tr><tr><td class="mono">2</td><td class="mono">33</td><td class="mono">33</td><td class="mono">100%</td></tr><tr><td class="mono">3</td><td class="mono">31</td><td class="mono">36</td><td class="mono">86%</td></tr><tr><td class="mono">4</td><td class="mono">18</td><td class="mono">33</td><td class="mono">55%</td></tr><tr><td class="mono">5</td><td class="mono">5</td><td class="mono">33</td><td class="mono">15%</td></tr><tr><td class="mono">6</td><td class="mono">0</td><td class="mono">36</td><td class="mono">0%</td></tr><tr><td class="mono">7</td><td class="mono">0</td><td class="mono">18</td><td class="mono">0%</td></tr>  </tbody>
+</table>
+<p class="hint">That's a small sample from one storm, so read it as a start. Rider reports are the real test, and they get scored here as they come in.</p>
+
+<h2 class="label">Rider reports</h2>
+<p>Anyone can say how a trail actually was: dry, tacky, muddy or snow, plus a short note. Reports show on the trail's page for two days, and they're the ground truth the forecast gets tuned against. No account, no tracking.</p>
+
+<h2 class="label">What it won't do</h2>
+<p>It won't guess when the data isn't there, and it won't scrape sites that ask not to be scraped. It isn't safety advice. Snow, closures and fire change fast, so check the land manager before you go.</p>
+</section>
+</main>
+<footer>
+  <p>Not safety advice. Today's calls come from fixed rules on public data, and every reason links its source. The dry-by days are a forecast and can be wrong. Check the land manager before you go.</p>
+  <p class="mono">Built Oct 29, 10:21pm Pacific · <a href="../feed.xml">RSS</a> · <a href="../today.json">JSON</a> · <a href="https://github.com/brambach/dryline">Source</a></p>
+</footer>
+</body>
+</html>

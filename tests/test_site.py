@@ -107,10 +107,13 @@ def test_shared_tokens_load_before_own_css(site):
     assert not (site / "design-tokens" / "VERSION").exists()
 
 
-def test_theme_color_comes_from_tokens(site):
+def test_theme_color_matches_drylines_paper(site):
     html = (site / "index.html").read_text()
-    assert 'content="#f7f6f3" media="(prefers-color-scheme: light)"' in html
-    assert 'content="#141312" media="(prefers-color-scheme: dark)"' in html
+    css = (TEMPLATES / "style.css").read_text()
+    light = re.search(r"--paper:\s*(#[0-9a-f]{6})", css).group(1)
+    dark = re.findall(r"--paper:\s*(#[0-9a-f]{6})", css)[1]
+    assert f'content="{light}" media="(prefers-color-scheme: light)"' in html
+    assert f'content="{dark}" media="(prefers-color-scheme: dark)"' in html
 
 
 def test_own_css_only_sets_project_tokens():
@@ -118,8 +121,13 @@ def test_own_css_only_sets_project_tokens():
     shared = set(json.loads((TOKENS / "tokens.json").read_text())["tokens"])
     roots = "".join(re.findall(r":root[^{]*\{([^}]*)\}", css))
     own = set(re.findall(r"--([\w-]+)\s*:", roots))
-    assert own == {"scene", "dry", "muddy", "snow", "closed", "unknown"}
-    assert not own & shared
+    project = {"etch", "etch-soft", "etch-faint", "dry", "muddy", "snow", "closed", "unknown"}
+    # dryline re-inks the shared paper, ink and type so it has a face of its own (DESIGN.md).
+    reinked = {"paper", "raised", "sunk", "ink", "ink-2", "muted", "faint", "line", "line-strong"}
+    reinked |= {"font-display", "font-text", "font-mono"}
+    assert own == project | reinked
+    assert not project & shared
+    assert reinked <= shared
     local = set(re.findall(r"--([\w-]+)\s*:", css))
     used = set(re.findall(r"var\(--([\w-]+)", css))
     assert used <= local | shared, used - local - shared

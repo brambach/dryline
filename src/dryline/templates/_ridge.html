@@ -1,0 +1,62 @@
+{#- The face: the basin as one ink engraving. Trails sit at their real high points; the snow
+    line is the one moving thing. dryline.js scrubs it through the archive and the forecast. -#}
+{% from "_glyph.html" import glyph_paths %}
+<figure class="ridge-fig" data-ridge data-timeline='{{ timeline }}'
+  data-y-top="34" data-y-bottom="408" data-ft-top="11200" data-ft-bottom="5900">
+<div class="ridge-scroll" data-ridge-scroll>
+<svg class="ridge" viewBox="0 0 {{ ridge.width }} {{ ridge.height }}" role="img"
+  aria-labelledby="ridge-title" preserveAspectRatio="xMidYMid meet">
+  <title id="ridge-title">The Tahoe basin with every trail at its high point and today's snow line</title>
+  <defs>
+    <pattern id="shade" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-36)"><path d="M0 0 V4" /></pattern>
+    <pattern id="stipple" width="11" height="9" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r=".75"/><circle cx="7.5" cy="6.5" r=".6"/></pattern>
+    <clipPath id="land"><path d="{{ ridge.path }}"/></clipPath>
+    <path id="crest" d="{{ ridge.line }}"/>
+    <mask id="bare" maskUnits="userSpaceOnUse" x="0" y="0" width="{{ ridge.width }}" height="{{ ridge.height }}">
+      <rect width="{{ ridge.width }}" height="{{ ridge.height }}" fill="#fff"/>
+      <rect data-cap width="{{ ridge.width }}" height="0" fill="#000"/>
+    </mask>
+    <mask id="snowy" maskUnits="userSpaceOnUse" x="0" y="0" width="{{ ridge.width }}" height="{{ ridge.height }}">
+      <rect data-cap width="{{ ridge.width }}" height="0" fill="#fff"/>
+    </mask>
+  </defs>
+  <path class="far" d="{{ ridge.far }}"/>
+  <g class="ticks">
+    {% for ft, y in ridge.ticks %}<line x1="0" x2="{{ ridge.width }}" y1="{{ y }}" y2="{{ y }}"/><text x="4" y="{{ y - 5 }}">{{ ft|ft }} ft</text>{% endfor %}
+  </g>
+  <g clip-path="url(#land)">
+    <rect class="paper" width="{{ ridge.width }}" height="{{ ridge.height }}"/>
+    <g class="rock" mask="url(#bare)">
+      <g class="contours">{% for off in ridge.contours %}<use href="#crest" y="{{ off }}"/>{% endfor %}</g>
+      {% for f in ridge.facets %}<path class="facet" d="{{ f }}"/>{% endfor %}
+    </g>
+    <rect class="snowfield" width="{{ ridge.width }}" height="{{ ridge.height }}" mask="url(#snowy)"/>
+  </g>
+  <path class="crest" d="{{ ridge.line }}"/>
+  <g class="snowline" data-snowline hidden>
+    <line x1="0" x2="{{ ridge.width }}" y1="0" y2="0"/>
+    <text x="{{ ridge.width / 2 }}" y="16" text-anchor="middle" data-snowline-label></text>
+  </g>
+  <g class="lake">
+    {% for x1, x2, y in ridge.lake_lines %}<line x1="{{ x1 }}" x2="{{ x2 }}" y1="{{ y }}" y2="{{ y }}"/>{% endfor %}
+    <text x="{{ ridge.width / 2 }}" y="{{ ridge.lake_y + 24 }}" text-anchor="middle">Lake Tahoe · {{ LAKE_FT|ft }} ft</text>
+  </g>
+  <g class="markers">
+    {% for m in ridge.markers %}{% set line = (lines|selectattr("trail_id", "equalto", m.trail_id)|first) %}
+    <a href="trails/{{ m.trail_id }}/" class="mk s-{{ line.status }}" data-mk="{{ m.trail_id }}" data-x="{{ m.x }}" data-y="{{ m.y }}">
+      <title>{{ m.short }}, {{ m.top_ft|ft }} ft: {{ LABEL[line.status] }}</title>
+      <line class="leader" x1="{{ m.x }}" x2="{{ m.x }}" y1="{{ m.y - 4 }}" y2="{{ m.y - 20 }}"/>
+      <circle class="hit" cx="{{ m.x }}" cy="{{ m.y - 30 }}" r="16"/>
+      <g class="g" transform="translate({{ m.x - 8 }} {{ m.y - 38 }})">{% for s in ["dry", "muddy", "snow", "closed", "unknown"] %}<g class="gs gs-{{ s }}">{{ glyph_paths(s) }}</g>{% endfor %}</g>
+      <text class="nm" x="{{ m.x }}" y="{{ m.y - 46 }}" transform="rotate(-38 {{ m.x }} {{ m.y - 46 }})">{{ m.short }}</text>
+    </a>
+    {% endfor %}
+  </g>
+</svg>
+</div>
+<div class="scrub" data-scrub>
+  <div class="scrub-head"><span class="scrub-day" data-scrub-day></span><span class="scrub-note" data-scrub-note></span></div>
+  <div class="days" role="slider" tabindex="0" aria-label="Day" data-days></div>
+</div>
+<figcaption>Every trail sits at its real high point. The skyline between them is drawn, not surveyed. Drag the days to move the snow line through the archive and the forecast.</figcaption>
+</figure>

@@ -1,0 +1,142 @@
+[
+ {
+  "id": "mount-tallac",
+  "name": "Mount Tallac (via Mt. Tallac Trailhead)",
+  "short": "Mount Tallac",
+  "elevation_min_ft": 6427,
+  "elevation_max_ft": 9739
+ },
+ {
+  "id": "eagle-lake-desolation",
+  "name": "Eagle Lake (Desolation Wilderness) via Eagle Falls",
+  "short": "Eagle Lake",
+  "elevation_min_ft": 6574,
+  "elevation_max_ft": 7023
+ },
+ {
+  "id": "rubicon-trail-dl-bliss",
+  "name": "Rubicon Trail (D.L. Bliss to Emerald Bay)",
+  "short": "Rubicon Trail",
+  "elevation_min_ft": 6232,
+  "elevation_max_ft": 6602
+ },
+ {
+  "id": "cascade-falls",
+  "name": "Cascade Falls (Bayview Trailhead)",
+  "short": "Cascade Falls",
+  "elevation_min_ft": 6789,
+  "elevation_max_ft": 6927
+ },
+ {
+  "id": "echo-lakes-to-lake-aloha",
+  "name": "Echo Lakes to Lake Aloha (PCT/TRT)",
+  "short": "Lake Aloha",
+  "elevation_min_ft": 7412,
+  "elevation_max_ft": 8337
+ },
+ {
+  "id": "ellis-peak",
+  "name": "Ellis Peak",
+  "short": "Ellis Peak",
+  "elevation_min_ft": 7776,
+  "elevation_max_ft": 8730
+ },
+ {
+  "id": "mr-toads-wild-ride",
+  "name": "Mr. Toad's Wild Ride (Saxon Creek Trail) via Big Meadow/TRT",
+  "short": "Mr. Toad's Wild Ride",
+  "elevation_min_ft": 6497,
+  "elevation_max_ft": 8954
+ },
+ {
+  "id": "corral-trail",
+  "name": "Corral Trail (South Lake Tahoe)",
+  "short": "Corral Trail",
+  "elevation_min_ft": 6387,
+  "elevation_max_ft": 7054
+ },
+ {
+  "id": "van-sickle-bi-state-park",
+  "name": "Van Sickle Trail (Van Sickle Bi-State Park to TRT)",
+  "short": "Van Sickle",
+  "elevation_min_ft": 6438,
+  "elevation_max_ft": 7792
+ },
+ {
+  "id": "mount-rose-summit",
+  "name": "Mount Rose Summit Trail",
+  "short": "Mount Rose Summit Trail",
+  "elevation_min_ft": 8913,
+  "elevation_max_ft": 10785
+ },
+ {
+  "id": "flume-trail",
+  "name": "Flume Trail (Spooner Lake to Tunnel Creek)",
+  "short": "Flume Trail",
+  "elevation_min_ft": 6311,
+  "elevation_max_ft": 8143
+ },
+ {
+  "id": "marlette-lake",
+  "name": "Marlette Lake via North Canyon (Spooner)",
+  "short": "Marlette Lake",
+  "elevation_min_ft": 6953,
+  "elevation_max_ft": 8168
+ },
+ {
+  "id": "page-meadows",
+  "name": "Page Meadows (TRT from Ward Creek)",
+  "short": "Page Meadows",
+  "elevation_min_ft": 6532,
+  "elevation_max_ft": 7002
+ },
+ {
+  "id": "five-lakes",
+  "name": "Five Lakes Trail (Alpine Meadows)",
+  "short": "Five Lakes Trail",
+  "elevation_min_ft": 6542,
+  "elevation_max_ft": 7579
+ },
+ {
+  "id": "castle-peak",
+  "name": "Castle Peak (Donner Summit)",
+  "short": "Castle Peak",
+  "elevation_min_ft": 7274,
+  "elevation_max_ft": 9109
+ },
+ {
+  "id": "mount-judah-loop",
+  "name": "Mount Judah Loop (PCT, Donner Summit)",
+  "short": "Mount Judah",
+  "elevation_min_ft": 7061,
+  "elevation_max_ft": 8243
+ },
+ {
+  "id": "donner-lake-rim-trail",
+  "name": "Donner Lake Rim Trail",
+  "short": "Donner Lake Rim Trail",
+  "elevation_min_ft": 6356,
+  "elevation_max_ft": 7689
+ },
+ {
+  "id": "sawtooth-trail",
+  "name": "Sawtooth Trail (Truckee)",
+  "short": "Sawtooth Trail",
+  "elevation_min_ft": 6208,
+  "elevation_max_ft": 6469
+ },
+ {
+  "id": "trt-brockway-to-martis-peak",
+  "name": "Tahoe Rim Trail: Brockway Summit to Martis Peak",
+  "short": "Martis Peak",
+  "elevation_min_ft": 7046,
+  "elevation_max_ft": 8736
+ },
+ {
+  "id": "big-meadow-to-round-lake",
+  "name": "Big Meadow to Round Lake (TRT)",
+  "short": "Round Lake",
+  "elevation_min_ft": 7243,
+  "elevation_max_ft": 8117
+ }
+]

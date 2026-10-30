@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}My trails · dryline{% endblock %}
+{% block main %}
+<section class="hero">
+  <p class="kicker mono">My trails</p>
+  <h1 class="display">Pick the ones you ride.</h1>
+  <p class="lede">They go to the top of the page on this device. Add your email and you'll get one short note each morning: which of yours are dry, and when the rest will be.</p>
+</section>
+
+<form class="pick" data-pick>
+  <ul class="pick-list">
+  {% for t in trails %}
+    <li><label><input type="checkbox" name="trail" value="{{ t.id }}"><span class="pk-name">{{ shorts[t.id] }}</span><span class="elev">{{ t.elevation_max_ft|ft }} ft</span></label></li>
+  {% endfor %}
+  </ul>
+</form>
+
+<section class="block subscribe" id="email">
+  <h2 class="label">Morning email</h2>
+  <form class="sub" data-subscribe>
+    <label class="note"><span class="sr">Email</span><input type="email" name="email" required placeholder="you@example.com" autocomplete="email"></label>
+    <button type="submit" class="send">Send me mornings</button>
+    <p class="form-msg" data-form-msg aria-live="polite">Around 7am Pacific, only on days we have data. One click to stop.</p>
+  </form>
+</section>
+
+<section class="block" id="report">
+  <h2 class="label">Report a trail</h2>
+  <p>Pick the trail you were on. The report form is on its page, and it takes about ten seconds.</p>
+  <ul class="report-links">
+  {% for t in trails %}<li><a href="{{ root }}trails/{{ t.id }}/#report">{{ shorts[t.id] }}</a></li>{% endfor %}
+  </ul>
+</section>
+{% endblock %}

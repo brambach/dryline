@@ -112,3 +112,46 @@ def score(labels: list[Label], days: dict[dt.date, list[TrailLine]]) -> Report:
             continue
         report.pairs.append((lab.truth, line.status))
     return report
+
+
+# --- Forecast backtest -----------------------------------------------------------------------
+
+CALLED = ("dry", "muddy", "snow")
+
+
+@dataclass
+class Backtest:
+    """Forecast calls scored against the rules' call on the day they were for.
+
+    This checks the forecast against dryline's own morning reading, not against riders. It says
+    whether the drying math tracks the data, which is the first thing to get right.
+    """
+
+    by_lead: dict[int, list[tuple[str, str]]] = field(default_factory=lambda: defaultdict(list))
+
+    def add(self, lead: int, predicted: str, actual: str) -> None:
+        self.by_lead[lead].append((predicted, actual))
+
+    def hits(self, lead: int | None = None) -> tuple[int, int]:
+        pairs = (
+            self.by_lead.get(lead, [])
+            if lead is not None
+            else [p for v in self.by_lead.values() for p in v]
+        )
+        return sum(p == a for p, a in pairs), len(pairs)
+
+    def rows(self) -> list[tuple[int, int, int]]:
+        return [(lead, *self.hits(lead)) for lead in sorted(self.by_lead)]
+
+
+def backtest(outlooks, days: dict[dt.date, list[TrailLine]]) -> Backtest:
+    """`outlooks`: issued date -> DayOutlook (dryline.pipeline)."""
+    bt = Backtest()
+    actual = {(d, line.trail_id): line.status for d, lines in days.items() for line in lines}
+    for issued, day_outlook in sorted(outlooks.items()):
+        for o in day_outlook.trails:
+            for od in o.days[1:]:
+                truth = actual.get((od.date, o.trail_id))
+                if od.status in CALLED and truth in CALLED:
+                    bt.add((od.date - issued).days, od.status, truth)
+    return bt

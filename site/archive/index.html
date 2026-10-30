@@ -4,24 +4,31 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Archive · dryline</title>
-<meta name="description" content="Daily cited trail conditions for Lake Tahoe and Truckee.">
-<meta name="theme-color" content="#f7f6f3" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#141312" media="(prefers-color-scheme: dark)">
-<link rel="preload" href="../fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+<meta name="description" content="When will your Tahoe trail be rideable? A daily dry-by forecast for 20 trails, every call cited.">
+<meta name="theme-color" content="#f2eee3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#10140f" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/hanken-grotesk-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../design-tokens/tokens.css">
 <link rel="stylesheet" href="../design-tokens/auto-dark.css">
 <link rel="stylesheet" href="../style.css">
 <link rel="alternate" type="application/rss+xml" title="dryline" href="../feed.xml">
+<script src="../dryline.js" defer></script>
 </head>
-<body data-scene="ridge">
+<body data-page="archive" data-root="../">
 <header class="top">
-  <a class="brand" href="../">dryline</a>
-  <nav><a href="../archive/">Archive</a><a href="../feed.xml">RSS</a><a href="../today.json">JSON</a></nav>
+  <a class="brand" href="../"><svg class="mark" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M2 18 L8 9 L11 13 L15 6 L22 18" fill="none"/><path d="M5.5 12.6 H18.4" stroke-dasharray="1.6 1.8"/></svg>dryline</a>
+  <nav>
+    <a href="../mine/">My trails</a>
+    <a href="../how/">How it works</a>
+    <a href="../archive/" aria-current="page">Archive</a>
+  </nav>
 </header>
 <main>
 <section class="hero">
+  <p class="kicker mono">Every morning, as published</p>
   <h1 class="display">Archive</h1>
-  <p class="date">Every day's digest, as published.</p>
 </section>
 <ol class="archive">
   <li><a class="day" href="2026-10-23/">Fri, Oct 23, 2026</a>
@@ -51,8 +58,8 @@
 </ol>
 </main>
 <footer>
-  <p>Not safety advice. Statuses come from fixed rules applied to public data, and every reason links to its source and fetch time. Check the land manager before you go.</p>
-  <p class="mono">Built Oct 23, 10:57am Pacific</p>
+  <p>Not safety advice. Today's calls come from fixed rules on public data, and every reason links its source. The dry-by days are a forecast and can be wrong. Check the land manager before you go.</p>
+  <p class="mono">Built Oct 29, 10:21pm Pacific · <a href="../feed.xml">RSS</a> · <a href="../today.json">JSON</a> · <a href="https://github.com/brambach/dryline">Source</a></p>
 </footer>
 </body>
 </html>

@@ -8,13 +8,22 @@ from pathlib import Path
 from dryline.collect import forecast_name
 from dryline.config import ASOS_STATIONS, PAGES, GridFile, StationsFile
 from dryline.fetch import day_dir, load_raw, raw_path
-from dryline.models import Trail, TrailLine
+from dryline.forecast import (
+    SnowLineDay,
+    TrailOutlook,
+    basin_snow_lines,
+    outlook,
+    snow_line_on,
+    start_water,
+)
+from dryline.models import Strict, Trail, TrailLine
 from dryline.obs import Gap, Observations
 from dryline.parse import (
     ParseError,
     parse_nvparks,
     parse_nws_forecast,
     parse_nws_observations,
+    parse_nws_periods,
     parse_snotel,
     parse_trta,
     parse_usfs_alerts,
@@ -43,6 +52,7 @@ def observations_for_day(
     notes = notes if notes is not None else []
     snow, precip, closures, conditions, gaps = [], [], [], [], []
     forecasts = {}
+    outlooks = {}
 
     path = raw_path(raw_root, day, "snotel", "daily")
     if path.exists():
@@ -62,6 +72,7 @@ def observations_for_day(
         if fpath.exists():
             try:
                 forecasts[trail.id] = parse_nws_forecast(load_raw(fpath), now)
+                outlooks[trail.id] = parse_nws_periods(load_raw(fpath), now)
             except PARSE_ERRORS as e:
                 notes.append(f"forecast {trail.id}: {e}")
         st = entry.obs_station
@@ -117,6 +128,7 @@ def observations_for_day(
         closures=tuple(closures),
         conditions=tuple(conditions),
         forecasts=forecasts,
+        outlooks=outlooks,
         gaps=tuple(gaps),
     )
 
@@ -134,3 +146,39 @@ def lines_for_day(
     obs = observations_for_day(raw_root, day, trails, stations, grid, now, notes)
     t = thresholds or Thresholds()
     return [evaluate(trail, obs, now, t, today=day) for trail in trails]
+
+
+class DayOutlook(Strict):
+    """Everything forecast-shaped for one day: per-trail outlooks and the basin snow line."""
+
+    date: dt.date
+    trails: tuple[TrailOutlook, ...]
+    snow_lines: tuple[SnowLineDay, ...] = ()
+
+
+def outlook_for_day(
+    raw_root: Path,
+    day: dt.date,
+    trails: list[Trail],
+    stations: StationsFile,
+    grid: GridFile,
+    now: dt.datetime,
+    lines: list[TrailLine],
+    notes: list[str] | None = None,
+) -> DayOutlook:
+    obs = observations_for_day(raw_root, day, trails, stations, grid, now, notes)
+    by_id = {line.trail_id: line for line in lines}
+    outs = tuple(
+        outlook(t, by_id[t.id], obs, day, start_water(t, obs, now)) for t in trails if t.id in by_id
+    )
+    return DayOutlook(date=day, trails=outs, snow_lines=basin_snow_lines(obs, trails, day))
+
+
+def observed_snow_line(
+    raw_root: Path, day: dt.date, trails: list[Trail], stations: StationsFile, grid: GridFile
+) -> int | None:
+    now = snapshot_time(raw_root, day)
+    if now is None:
+        return None
+    obs = observations_for_day(raw_root, day, trails, stations, grid, now, [])
+    return snow_line_on(obs, day)

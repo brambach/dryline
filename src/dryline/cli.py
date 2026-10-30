@@ -45,8 +45,8 @@ def cmd_collect(args, paths) -> int:
 
 def cmd_build(args, paths) -> int:
     from dryline.config import load_grid, load_stations, load_trails
-    from dryline.pipeline import lines_for_day, snapshot_time
-    from dryline.site import build_site, load_lines, save_lines
+    from dryline.pipeline import lines_for_day, outlook_for_day, snapshot_time
+    from dryline.site import build_site, load_lines, load_outlooks, save_lines, save_outlook
 
     now = _now(args)
     day = _day(args, now)
@@ -68,6 +68,18 @@ def cmd_build(args, paths) -> int:
             notes=notes,
         )
         save_lines(paths.lines, day, lines)
+        out_day = outlook_for_day(
+            paths.raw,
+            day,
+            trails,
+            load_stations(paths.stations),
+            load_grid(paths.grid),
+            now,
+            lines,
+        )
+        save_outlook(paths.outlook, out_day)
+        dry_by = sum(1 for o in out_day.trails if o.dry_by)
+        print(f"{day}: forecast for {len(out_day.trails)} trails, {dry_by} with a dry-by day")
         counts = Counter(line.status for line in lines)
         print(f"{day}: " + ", ".join(f"{n} {s}" for s, n in sorted(counts.items())))
     else:
@@ -76,7 +88,7 @@ def cmd_build(args, paths) -> int:
         print(f"note: {n}")
     days = load_lines(paths.lines)
     out = Path(args.out) if args.out else paths.site
-    written = build_site(out, days, trails, built_at)
+    written = build_site(out, days, trails, built_at, outlooks=load_outlooks(paths.outlook))
     print(f"wrote {len(written)} files to {out}")
     return 0
 
