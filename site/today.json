@@ -2,128 +2,132 @@
  {
   "trail_id": "mount-tallac",
   "trail_name": "Mount Tallac (via Mt. Tallac Trailhead)",
-  "date": "2026-10-23",
-  "status": "muddy",
+  "date": "2026-10-31",
+  "status": "snow",
   "claims": [
    {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.40 in of precipitation on Oct 21–22 at Fallen Leaf (SNOTEL, 2 km away).",
+    "kind": "snow",
+    "statement": "Snow likely above ~8,360 ft (trail tops out at 9,739 ft): Carson Pass SNOTEL (8,360 ft, 25 km away) reported 2 in of snow on Oct 30.",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "473:CA:SNTL PRCP 2026-10-21=0.4 in, 2026-10-22=0 in",
-    "observed_at": "2026-10-23T00:00:00-08:00"
-   },
-   {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.29 in of precipitation in the 47 h to 9:53am Oct 23 at South Lake Tahoe, Lake Tahoe Airport (NWS, 7 km away).",
-    "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-21T16%3A57%3A12Z",
-    "fetched_at": "2026-10-23T17:57:21.237666Z",
-    "quote": "KTVL: 29 routine METARs with AO2 from 211853Z to 231653Z; precipitation groups: P0000@212153Z, P0005@212353Z, P0008@220048Z, P0014@220153Z, P0000@220353Z, P0001@221153Z, P0000@221253Z, P0000@230153Z, P0000@231553Z, P0001@231653Z",
-    "observed_at": "2026-10-23T16:53:00Z"
-   }
-  ],
-  "context": [],
-  "missing": [
-   {
-    "what": "No SNOTEL station within 40 km and 1,000 ft of the 9,739 ft high point reported bare ground, so snow up high can't be ruled out",
-    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
-   }
-  ],
-  "forecast": {
-   "kind": "forecast",
-   "statement": "NWS Today: Chance Light Snow then Mostly Sunny, high 40°F.",
-   "source_name": "NWS forecast",
-   "source_url": "https://api.weather.gov/gridpoints/REV/30,80/forecast",
-   "fetched_at": "2026-10-23T17:57:17.885010Z",
-   "quote": "Today: Chance Light Snow then Mostly Sunny, high 40°F",
-   "observed_at": "2026-10-23T10:00:00-07:00"
-  }
- },
- {
-  "trail_id": "eagle-lake-desolation",
-  "trail_name": "Eagle Lake (Desolation Wilderness) via Eagle Falls",
-  "date": "2026-10-23",
-  "status": "muddy",
-  "claims": [
-   {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.40 in of precipitation on Oct 21–22 at Fallen Leaf (SNOTEL, 5 km away).",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "473:CA:SNTL PRCP 2026-10-21=0.4 in, 2026-10-22=0 in",
-    "observed_at": "2026-10-23T00:00:00-08:00"
-   },
-   {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.29 in of precipitation in the 47 h to 9:53am Oct 23 at South Lake Tahoe, Lake Tahoe Airport (NWS, 12 km away).",
-    "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-21T16%3A57%3A12Z",
-    "fetched_at": "2026-10-23T17:57:21.237666Z",
-    "quote": "KTVL: 29 routine METARs with AO2 from 211853Z to 231653Z; precipitation groups: P0000@212153Z, P0005@212353Z, P0008@220048Z, P0014@220153Z, P0000@220353Z, P0001@221153Z, P0000@221253Z, P0000@230153Z, P0000@231553Z, P0001@231653Z",
-    "observed_at": "2026-10-23T16:53:00Z"
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "1067:CA:SNTL 2026-10-30 SNWD=2 in, WTEQ=0.5 in",
+    "observed_at": null
    }
   ],
   "context": [
    {
-    "kind": "snow",
-    "statement": "No snow at similar elevation: Rubicon #2 SNOTEL (7,560 ft, 6 km away) reported 0 in of snow on Oct 22.",
+    "kind": "precip",
+    "statement": "Likely muddy: 0.30 in of precipitation on Oct 29–30 at Fallen Leaf (SNOTEL, 2 km away).",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "724:CA:SNTL 2026-10-22 SNWD=0 in, WTEQ=0 in",
-    "observed_at": null
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "473:CA:SNTL PRCP 2026-10-29=0 in, 2026-10-30=0.3 in",
+    "observed_at": "2026-10-31T00:00:00-08:00"
+   },
+   {
+    "kind": "precip",
+    "statement": "Little rain: 0.07 in in the 45 h to 8:45am Oct 31 at South Lake Tahoe, Lake Tahoe Airport (NWS, 7 km away).",
+    "source_name": "NWS observations",
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-29T16%3A55%3A08Z",
+    "fetched_at": "2026-10-31T17:55:16.743663Z",
+    "quote": "KTVL: 39 routine METARs with AO2 from 291953Z to 311545Z; precipitation groups: P0002@300853Z, P0002@301047Z, P0001@301153Z, P0000@301253Z, P0000@301353Z, P0000@301453Z, P0000@301553Z, P0000@302153Z, P0000@310153Z, P0001@310853Z, P0000@310953Z, P0001@311153Z, P0000@311253Z, P000…",
+    "observed_at": "2026-10-31T15:45:00Z"
    }
   ],
   "missing": [],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Chance Light Snow then Mostly Sunny, high 39°F.",
+   "statement": "NWS Today: Snow, high 35°F.",
    "source_name": "NWS forecast",
-   "source_url": "https://api.weather.gov/gridpoints/REV/29,82/forecast",
-   "fetched_at": "2026-10-23T17:57:17.226209Z",
-   "quote": "Today: Chance Light Snow then Mostly Sunny, high 39°F",
-   "observed_at": "2026-10-23T10:00:00-07:00"
+   "source_url": "https://api.weather.gov/gridpoints/REV/30,80/forecast",
+   "fetched_at": "2026-10-31T17:55:12.751048Z",
+   "quote": "Today: Snow, high 35°F",
+   "observed_at": "2026-10-31T10:00:00-07:00"
   }
  },
  {
-  "trail_id": "rubicon-trail-dl-bliss",
-  "trail_name": "Rubicon Trail (D.L. Bliss to Emerald Bay)",
-  "date": "2026-10-23",
+  "trail_id": "eagle-lake-desolation",
+  "trail_name": "Eagle Lake (Desolation Wilderness) via Eagle Falls",
+  "date": "2026-10-31",
   "status": "muddy",
   "claims": [
    {
     "kind": "precip",
-    "statement": "Likely muddy: 0.60 in of precipitation on Oct 21–22 at Rubicon #2 (SNOTEL, 3 km away).",
+    "statement": "Likely muddy: 0.30 in of precipitation on Oct 29–30 at Fallen Leaf (SNOTEL, 5 km away).",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "724:CA:SNTL PRCP 2026-10-21=0.5 in, 2026-10-22=0.1 in",
-    "observed_at": "2026-10-23T00:00:00-08:00"
-   },
-   {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.29 in of precipitation in the 47 h to 9:53am Oct 23 at South Lake Tahoe, Lake Tahoe Airport (NWS, 13 km away).",
-    "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-21T16%3A57%3A12Z",
-    "fetched_at": "2026-10-23T17:57:21.237666Z",
-    "quote": "KTVL: 29 routine METARs with AO2 from 211853Z to 231653Z; precipitation groups: P0000@212153Z, P0005@212353Z, P0008@220048Z, P0014@220153Z, P0000@220353Z, P0001@221153Z, P0000@221253Z, P0000@230153Z, P0000@231553Z, P0001@231653Z",
-    "observed_at": "2026-10-23T16:53:00Z"
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "473:CA:SNTL PRCP 2026-10-29=0 in, 2026-10-30=0.3 in",
+    "observed_at": "2026-10-31T00:00:00-08:00"
    }
   ],
   "context": [
    {
     "kind": "snow",
-    "statement": "No snow at similar elevation: Rubicon #2 SNOTEL (7,560 ft, 3 km away) reported 0 in of snow on Oct 22.",
+    "statement": "No snow at similar elevation: Rubicon #2 SNOTEL (7,560 ft, 6 km away) reported 0 in of snow on Oct 30.",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "724:CA:SNTL 2026-10-22 SNWD=0 in, WTEQ=0 in",
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "724:CA:SNTL 2026-10-30 SNWD=0 in, WTEQ=0.6 in",
     "observed_at": null
+   },
+   {
+    "kind": "precip",
+    "statement": "Little rain: 0.07 in in the 45 h to 8:45am Oct 31 at South Lake Tahoe, Lake Tahoe Airport (NWS, 12 km away).",
+    "source_name": "NWS observations",
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-29T16%3A55%3A08Z",
+    "fetched_at": "2026-10-31T17:55:16.743663Z",
+    "quote": "KTVL: 39 routine METARs with AO2 from 291953Z to 311545Z; precipitation groups: P0002@300853Z, P0002@301047Z, P0001@301153Z, P0000@301253Z, P0000@301353Z, P0000@301453Z, P0000@301553Z, P0000@302153Z, P0000@310153Z, P0001@310853Z, P0000@310953Z, P0001@311153Z, P0000@311253Z, P000…",
+    "observed_at": "2026-10-31T15:45:00Z"
    }
   ],
+  "missing": [],
+  "forecast": {
+   "kind": "forecast",
+   "statement": "NWS Today: Light Snow, high 34°F.",
+   "source_name": "NWS forecast",
+   "source_url": "https://api.weather.gov/gridpoints/REV/29,82/forecast",
+   "fetched_at": "2026-10-31T17:55:12.019188Z",
+   "quote": "Today: Light Snow, high 34°F",
+   "observed_at": "2026-10-31T10:00:00-07:00"
+  }
+ },
+ {
+  "trail_id": "rubicon-trail-dl-bliss",
+  "trail_name": "Rubicon Trail (D.L. Bliss to Emerald Bay)",
+  "date": "2026-10-31",
+  "status": "dry",
+  "claims": [
+   {
+    "kind": "snow",
+    "statement": "No snow at similar elevation: Rubicon #2 SNOTEL (7,560 ft, 3 km away) reported 0 in of snow on Oct 30.",
+    "source_name": "NRCS SNOTEL",
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "724:CA:SNTL 2026-10-30 SNWD=0 in, WTEQ=0.6 in",
+    "observed_at": null
+   },
+   {
+    "kind": "precip",
+    "statement": "Little rain: 0.20 in on Oct 29–30 at Rubicon #2 (SNOTEL, 3 km away).",
+    "source_name": "NRCS SNOTEL",
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "724:CA:SNTL PRCP 2026-10-29=0 in, 2026-10-30=0.2 in",
+    "observed_at": "2026-10-31T00:00:00-08:00"
+   },
+   {
+    "kind": "precip",
+    "statement": "Little rain: 0.07 in in the 45 h to 8:45am Oct 31 at South Lake Tahoe, Lake Tahoe Airport (NWS, 13 km away).",
+    "source_name": "NWS observations",
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-29T16%3A55%3A08Z",
+    "fetched_at": "2026-10-31T17:55:16.743663Z",
+    "quote": "KTVL: 39 routine METARs with AO2 from 291953Z to 311545Z; precipitation groups: P0002@300853Z, P0002@301047Z, P0001@301153Z, P0000@301253Z, P0000@301353Z, P0000@301453Z, P0000@301553Z, P0000@302153Z, P0000@310153Z, P0001@310853Z, P0000@310953Z, P0001@311153Z, P0000@311253Z, P000…",
+    "observed_at": "2026-10-31T15:45:00Z"
+   }
+  ],
+  "context": [],
   "missing": [
    {
     "what": "No official closure source dryline can read for California State Parks",
@@ -132,95 +136,104 @@
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Slight Chance Light Rain then Mostly Sunny, high 47°F.",
+   "statement": "NWS Today: Rain And Snow, high 39°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/31,84/forecast",
-   "fetched_at": "2026-10-23T17:57:18.325058Z",
-   "quote": "Today: Slight Chance Light Rain then Mostly Sunny, high 47°F",
-   "observed_at": "2026-10-23T10:00:00-07:00"
+   "fetched_at": "2026-10-31T17:55:13.272081Z",
+   "quote": "Today: Rain And Snow, high 39°F",
+   "observed_at": "2026-10-31T10:00:00-07:00"
   }
  },
  {
   "trail_id": "cascade-falls",
   "trail_name": "Cascade Falls (Bayview Trailhead)",
-  "date": "2026-10-23",
+  "date": "2026-10-31",
   "status": "muddy",
   "claims": [
    {
     "kind": "precip",
-    "statement": "Likely muddy: 0.40 in of precipitation on Oct 21–22 at Fallen Leaf (SNOTEL, 4 km away).",
+    "statement": "Likely muddy: 0.30 in of precipitation on Oct 29–30 at Fallen Leaf (SNOTEL, 4 km away).",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "473:CA:SNTL PRCP 2026-10-21=0.4 in, 2026-10-22=0 in",
-    "observed_at": "2026-10-23T00:00:00-08:00"
-   },
-   {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.29 in of precipitation in the 47 h to 9:53am Oct 23 at South Lake Tahoe, Lake Tahoe Airport (NWS, 10 km away).",
-    "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-21T16%3A57%3A12Z",
-    "fetched_at": "2026-10-23T17:57:21.237666Z",
-    "quote": "KTVL: 29 routine METARs with AO2 from 211853Z to 231653Z; precipitation groups: P0000@212153Z, P0005@212353Z, P0008@220048Z, P0014@220153Z, P0000@220353Z, P0001@221153Z, P0000@221253Z, P0000@230153Z, P0000@231553Z, P0001@231653Z",
-    "observed_at": "2026-10-23T16:53:00Z"
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "473:CA:SNTL PRCP 2026-10-29=0 in, 2026-10-30=0.3 in",
+    "observed_at": "2026-10-31T00:00:00-08:00"
    }
   ],
   "context": [
    {
     "kind": "snow",
-    "statement": "No snow at similar elevation: Rubicon #2 SNOTEL (7,560 ft, 7 km away) reported 0 in of snow on Oct 22.",
+    "statement": "No snow at similar elevation: Rubicon #2 SNOTEL (7,560 ft, 7 km away) reported 0 in of snow on Oct 30.",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "724:CA:SNTL 2026-10-22 SNWD=0 in, WTEQ=0 in",
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "724:CA:SNTL 2026-10-30 SNWD=0 in, WTEQ=0.6 in",
     "observed_at": null
+   },
+   {
+    "kind": "precip",
+    "statement": "Little rain: 0.07 in in the 45 h to 8:45am Oct 31 at South Lake Tahoe, Lake Tahoe Airport (NWS, 10 km away).",
+    "source_name": "NWS observations",
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-29T16%3A55%3A08Z",
+    "fetched_at": "2026-10-31T17:55:16.743663Z",
+    "quote": "KTVL: 39 routine METARs with AO2 from 291953Z to 311545Z; precipitation groups: P0002@300853Z, P0002@301047Z, P0001@301153Z, P0000@301253Z, P0000@301353Z, P0000@301453Z, P0000@301553Z, P0000@302153Z, P0000@310153Z, P0001@310853Z, P0000@310953Z, P0001@311153Z, P0000@311253Z, P000…",
+    "observed_at": "2026-10-31T15:45:00Z"
    }
   ],
   "missing": [],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Chance Rain And Snow then Mostly Sunny, high 44°F.",
+   "statement": "NWS Today: Rain And Snow, high 37°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/30,82/forecast",
-   "fetched_at": "2026-10-23T17:57:18.010635Z",
-   "quote": "Today: Chance Rain And Snow then Mostly Sunny, high 44°F",
-   "observed_at": "2026-10-23T10:00:00-07:00"
+   "fetched_at": "2026-10-31T17:55:12.898495Z",
+   "quote": "Today: Rain And Snow, high 37°F",
+   "observed_at": "2026-10-31T10:00:00-07:00"
   }
  },
  {
   "trail_id": "echo-lakes-to-lake-aloha",
   "trail_name": "Echo Lakes to Lake Aloha (PCT/TRT)",
-  "date": "2026-10-23",
+  "date": "2026-10-31",
   "status": "muddy",
   "claims": [
    {
     "kind": "precip",
-    "statement": "Likely muddy: 0.50 in of precipitation on Oct 21–22 at Echo Peak (SNOTEL, 3 km away).",
+    "statement": "Likely muddy: 0.40 in of precipitation on Oct 29–30 at Echo Peak (SNOTEL, 3 km away).",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "463:CA:SNTL PRCP 2026-10-21=0.3 in, 2026-10-22=0.2 in",
-    "observed_at": "2026-10-23T00:00:00-08:00"
-   },
-   {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.29 in of precipitation in the 47 h to 9:53am Oct 23 at South Lake Tahoe, Lake Tahoe Airport (NWS, 8 km away).",
-    "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-21T16%3A57%3A12Z",
-    "fetched_at": "2026-10-23T17:57:21.237666Z",
-    "quote": "KTVL: 29 routine METARs with AO2 from 211853Z to 231653Z; precipitation groups: P0000@212153Z, P0005@212353Z, P0008@220048Z, P0014@220153Z, P0000@220353Z, P0001@221153Z, P0000@221253Z, P0000@230153Z, P0000@231553Z, P0001@231653Z",
-    "observed_at": "2026-10-23T16:53:00Z"
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "463:CA:SNTL PRCP 2026-10-29=0 in, 2026-10-30=0.4 in",
+    "observed_at": "2026-10-31T00:00:00-08:00"
    }
   ],
   "context": [
    {
     "kind": "snow",
-    "statement": "No snow at similar elevation: Horse Meadow SNOTEL (8,580 ft, 14 km away) reported 0 in of snow on Oct 22.",
+    "statement": "No snow at similar elevation: Horse Meadow SNOTEL (8,580 ft, 14 km away) reported 0 in of snow on Oct 30.",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "1050:CA:SNTL 2026-10-22 SNWD=0 in, WTEQ=0 in",
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "1050:CA:SNTL 2026-10-30 SNWD=0 in, WTEQ=0.2 in",
     "observed_at": null
+   },
+   {
+    "kind": "snow",
+    "statement": "Snow likely only above ~8,360 ft, higher than this trail's 8,337 ft high point: Carson Pass SNOTEL (8,360 ft, 16 km away) reported 2 in of snow on Oct 30.",
+    "source_name": "NRCS SNOTEL",
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "1067:CA:SNTL 2026-10-30 SNWD=2 in, WTEQ=0.5 in",
+    "observed_at": null
+   },
+   {
+    "kind": "precip",
+    "statement": "Little rain: 0.07 in in the 45 h to 8:45am Oct 31 at South Lake Tahoe, Lake Tahoe Airport (NWS, 8 km away).",
+    "source_name": "NWS observations",
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-29T16%3A55%3A08Z",
+    "fetched_at": "2026-10-31T17:55:16.743663Z",
+    "quote": "KTVL: 39 routine METARs with AO2 from 291953Z to 311545Z; precipitation groups: P0002@300853Z, P0002@301047Z, P0001@301153Z, P0000@301253Z, P0000@301353Z, P0000@301453Z, P0000@301553Z, P0000@302153Z, P0000@310153Z, P0001@310853Z, P0000@310953Z, P0001@311153Z, P0000@311253Z, P000…",
+    "observed_at": "2026-10-31T15:45:00Z"
    }
   ],
   "missing": [
@@ -231,104 +244,95 @@
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Chance Light Snow then Mostly Sunny, high 39°F.",
+   "statement": "NWS Today: Snow then Snow Showers, high 33°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/29,78/forecast",
-   "fetched_at": "2026-10-23T17:57:17.008506Z",
-   "quote": "Today: Chance Light Snow then Mostly Sunny, high 39°F",
-   "observed_at": "2026-10-23T10:00:00-07:00"
+   "fetched_at": "2026-10-31T17:55:11.522016Z",
+   "quote": "Today: Snow then Snow Showers, high 33°F",
+   "observed_at": "2026-10-31T10:00:00-07:00"
   }
  },
  {
   "trail_id": "ellis-peak",
   "trail_name": "Ellis Peak",
-  "date": "2026-10-23",
+  "date": "2026-10-31",
   "status": "muddy",
   "claims": [
    {
     "kind": "precip",
-    "statement": "Likely muddy: 0.70 in of precipitation on Oct 21–22 at Ward Creek #3 (SNOTEL, 7 km away).",
+    "statement": "Likely muddy: 0.30 in of precipitation on Oct 29–30 at Ward Creek #3 (SNOTEL, 7 km away).",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "848:CA:SNTL PRCP 2026-10-21=0.5 in, 2026-10-22=0.2 in",
-    "observed_at": "2026-10-23T00:00:00-08:00"
-   },
-   {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.29 in of precipitation in the 47 h to 9:53am Oct 23 at South Lake Tahoe, Lake Tahoe Airport (NWS, 26 km away).",
-    "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-21T16%3A57%3A12Z",
-    "fetched_at": "2026-10-23T17:57:21.237666Z",
-    "quote": "KTVL: 29 routine METARs with AO2 from 211853Z to 231653Z; precipitation groups: P0000@212153Z, P0005@212353Z, P0008@220048Z, P0014@220153Z, P0000@220353Z, P0001@221153Z, P0000@221253Z, P0000@230153Z, P0000@231553Z, P0001@231653Z",
-    "observed_at": "2026-10-23T16:53:00Z"
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "848:CA:SNTL PRCP 2026-10-29=0 in, 2026-10-30=0.3 in",
+    "observed_at": "2026-10-31T00:00:00-08:00"
    }
   ],
   "context": [
    {
     "kind": "snow",
-    "statement": "No snow at similar elevation: Palisades Tahoe SNOTEL (8,010 ft, 13 km away) reported 0 in of snow on Oct 22.",
+    "statement": "No snow at similar elevation: Mt Rose Ski Area SNOTEL (8,810 ft, 38 km away) reported 1 in of snow on Oct 30.",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "784:CA:SNTL 2026-10-22 SNWD=0 in, WTEQ=0 in",
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "652:NV:SNTL 2026-10-30 SNWD=1 in, WTEQ=0.4 in",
     "observed_at": null
    },
    {
-    "kind": "snow",
-    "statement": "Snow likely only above ~8,810 ft, higher than this trail's 8,730 ft high point: Mt Rose Ski Area SNOTEL (8,810 ft, 38 km away) reported 3 in of snow on Oct 22.",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "652:NV:SNTL 2026-10-22 SNWD=3 in, WTEQ=0.6 in",
-    "observed_at": null
+    "kind": "precip",
+    "statement": "Little rain: 0.07 in in the 45 h to 8:45am Oct 31 at South Lake Tahoe, Lake Tahoe Airport (NWS, 26 km away).",
+    "source_name": "NWS observations",
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-29T16%3A55%3A08Z",
+    "fetched_at": "2026-10-31T17:55:16.743663Z",
+    "quote": "KTVL: 39 routine METARs with AO2 from 291953Z to 311545Z; precipitation groups: P0002@300853Z, P0002@301047Z, P0001@301153Z, P0000@301253Z, P0000@301353Z, P0000@301453Z, P0000@301553Z, P0000@302153Z, P0000@310153Z, P0001@310853Z, P0000@310953Z, P0001@311153Z, P0000@311253Z, P000…",
+    "observed_at": "2026-10-31T15:45:00Z"
    }
   ],
   "missing": [],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Slight Chance Light Snow then Sunny, high 40°F.",
+   "statement": "NWS Today: Snow, high 34°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/28,88/forecast",
-   "fetched_at": "2026-10-23T17:57:16.868010Z",
-   "quote": "Today: Slight Chance Light Snow then Sunny, high 40°F",
-   "observed_at": "2026-10-23T10:00:00-07:00"
+   "fetched_at": "2026-10-31T17:55:11.359279Z",
+   "quote": "Today: Snow, high 34°F",
+   "observed_at": "2026-10-31T10:00:00-07:00"
   }
  },
  {
   "trail_id": "mr-toads-wild-ride",
   "trail_name": "Mr. Toad's Wild Ride (Saxon Creek Trail) via Big Meadow/TRT",
-  "date": "2026-10-23",
-  "status": "muddy",
+  "date": "2026-10-31",
+  "status": "snow",
   "claims": [
    {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.40 in of precipitation on Oct 21–22 at Hagans Meadow (SNOTEL, 5 km away).",
+    "kind": "snow",
+    "statement": "Snow likely above ~8,360 ft (trail tops out at 8,954 ft): Carson Pass SNOTEL (8,360 ft, 11 km away) reported 2 in of snow on Oct 30.",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "508:CA:SNTL PRCP 2026-10-21=0.3 in, 2026-10-22=0.1 in",
-    "observed_at": "2026-10-23T00:00:00-08:00"
-   },
-   {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.29 in of precipitation in the 47 h to 9:53am Oct 23 at South Lake Tahoe, Lake Tahoe Airport (NWS, 10 km away).",
-    "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-21T16%3A57%3A12Z",
-    "fetched_at": "2026-10-23T17:57:21.237666Z",
-    "quote": "KTVL: 29 routine METARs with AO2 from 211853Z to 231653Z; precipitation groups: P0000@212153Z, P0005@212353Z, P0008@220048Z, P0014@220153Z, P0000@220353Z, P0001@221153Z, P0000@221253Z, P0000@230153Z, P0000@231553Z, P0001@231653Z",
-    "observed_at": "2026-10-23T16:53:00Z"
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "1067:CA:SNTL 2026-10-30 SNWD=2 in, WTEQ=0.5 in",
+    "observed_at": null
    }
   ],
   "context": [
    {
-    "kind": "snow",
-    "statement": "No snow at similar elevation: Horse Meadow SNOTEL (8,580 ft, 7 km away) reported 0 in of snow on Oct 22.",
+    "kind": "precip",
+    "statement": "Little rain: 0.10 in on Oct 29–30 at Hagans Meadow (SNOTEL, 5 km away).",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "1050:CA:SNTL 2026-10-22 SNWD=0 in, WTEQ=0 in",
-    "observed_at": null
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "508:CA:SNTL PRCP 2026-10-29=0 in, 2026-10-30=0.1 in",
+    "observed_at": "2026-10-31T00:00:00-08:00"
+   },
+   {
+    "kind": "precip",
+    "statement": "Little rain: 0.07 in in the 45 h to 8:45am Oct 31 at South Lake Tahoe, Lake Tahoe Airport (NWS, 10 km away).",
+    "source_name": "NWS observations",
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-29T16%3A55%3A08Z",
+    "fetched_at": "2026-10-31T17:55:16.743663Z",
+    "quote": "KTVL: 39 routine METARs with AO2 from 291953Z to 311545Z; precipitation groups: P0002@300853Z, P0002@301047Z, P0001@301153Z, P0000@301253Z, P0000@301353Z, P0000@301453Z, P0000@301553Z, P0000@302153Z, P0000@310153Z, P0001@310853Z, P0000@310953Z, P0001@311153Z, P0000@311253Z, P000…",
+    "observed_at": "2026-10-31T15:45:00Z"
    }
   ],
   "missing": [
@@ -339,97 +343,104 @@
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Chance Light Snow then Mostly Sunny, high 38°F.",
+   "statement": "NWS Today: Snow, high 33°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/34,75/forecast",
-   "fetched_at": "2026-10-23T17:57:18.477601Z",
-   "quote": "Today: Chance Light Snow then Mostly Sunny, high 38°F",
-   "observed_at": "2026-10-23T10:00:00-07:00"
+   "fetched_at": "2026-10-31T17:55:13.433086Z",
+   "quote": "Today: Snow, high 33°F",
+   "observed_at": "2026-10-31T10:00:00-07:00"
   }
  },
  {
   "trail_id": "corral-trail",
   "trail_name": "Corral Trail (South Lake Tahoe)",
-  "date": "2026-10-23",
-  "status": "muddy",
+  "date": "2026-10-31",
+  "status": "dry",
   "claims": [
    {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.40 in of precipitation on Oct 21–22 at Hagans Meadow (SNOTEL, 2 km away).",
+    "kind": "snow",
+    "statement": "No snow at similar elevation: Hagans Meadow SNOTEL (7,740 ft, 2 km away) reported 0 in of snow on Oct 30.",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "508:CA:SNTL PRCP 2026-10-21=0.3 in, 2026-10-22=0.1 in",
-    "observed_at": "2026-10-23T00:00:00-08:00"
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "508:CA:SNTL 2026-10-30 SNWD=0 in, WTEQ=0 in",
+    "observed_at": null
    },
    {
     "kind": "precip",
-    "statement": "Likely muddy: 0.29 in of precipitation in the 47 h to 9:53am Oct 23 at South Lake Tahoe, Lake Tahoe Airport (NWS, 2 km away).",
-    "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-21T16%3A57%3A12Z",
-    "fetched_at": "2026-10-23T17:57:21.237666Z",
-    "quote": "KTVL: 29 routine METARs with AO2 from 211853Z to 231653Z; precipitation groups: P0000@212153Z, P0005@212353Z, P0008@220048Z, P0014@220153Z, P0000@220353Z, P0001@221153Z, P0000@221253Z, P0000@230153Z, P0000@231553Z, P0001@231653Z",
-    "observed_at": "2026-10-23T16:53:00Z"
-   }
-  ],
-  "context": [
-   {
-    "kind": "snow",
-    "statement": "No snow at similar elevation: Hagans Meadow SNOTEL (7,740 ft, 2 km away) reported 0 in of snow on Oct 22.",
+    "statement": "Little rain: 0.10 in on Oct 29–30 at Hagans Meadow (SNOTEL, 2 km away).",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "508:CA:SNTL 2026-10-22 SNWD=0 in, WTEQ=0 in",
-    "observed_at": null
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "508:CA:SNTL PRCP 2026-10-29=0 in, 2026-10-30=0.1 in",
+    "observed_at": "2026-10-31T00:00:00-08:00"
+   },
+   {
+    "kind": "precip",
+    "statement": "Little rain: 0.07 in in the 45 h to 8:45am Oct 31 at South Lake Tahoe, Lake Tahoe Airport (NWS, 2 km away).",
+    "source_name": "NWS observations",
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-29T16%3A55%3A08Z",
+    "fetched_at": "2026-10-31T17:55:16.743663Z",
+    "quote": "KTVL: 39 routine METARs with AO2 from 291953Z to 311545Z; precipitation groups: P0002@300853Z, P0002@301047Z, P0001@301153Z, P0000@301253Z, P0000@301353Z, P0000@301453Z, P0000@301553Z, P0000@302153Z, P0000@310153Z, P0001@310853Z, P0000@310953Z, P0001@311153Z, P0000@311253Z, P000…",
+    "observed_at": "2026-10-31T15:45:00Z"
    }
   ],
+  "context": [],
   "missing": [],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Chance Light Snow then Mostly Sunny, high 42°F.",
+   "statement": "NWS Today: Snow, high 36°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/35,78/forecast",
-   "fetched_at": "2026-10-23T17:57:18.606842Z",
-   "quote": "Today: Chance Light Snow then Mostly Sunny, high 42°F",
-   "observed_at": "2026-10-23T10:00:00-07:00"
+   "fetched_at": "2026-10-31T17:55:13.607896Z",
+   "quote": "Today: Snow, high 36°F",
+   "observed_at": "2026-10-31T10:00:00-07:00"
   }
  },
  {
   "trail_id": "van-sickle-bi-state-park",
   "trail_name": "Van Sickle Trail (Van Sickle Bi-State Park to TRT)",
-  "date": "2026-10-23",
-  "status": "muddy",
+  "date": "2026-10-31",
+  "status": "dry",
   "claims": [
    {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.70 in of precipitation on Oct 21–22 at Heavenly Valley (SNOTEL, 4 km away).",
+    "kind": "snow",
+    "statement": "No snow at similar elevation: Heavenly Valley SNOTEL (8,540 ft, 4 km away) reported 0 in of snow on Oct 30.",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "518:CA:SNTL PRCP 2026-10-21=0.7 in, 2026-10-22=0 in",
-    "observed_at": "2026-10-23T00:00:00-08:00"
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "518:CA:SNTL 2026-10-30 SNWD=0 in, WTEQ=0.3 in",
+    "observed_at": null
+   },
+   {
+    "kind": "snow",
+    "statement": "Snow likely only above ~8,360 ft, higher than this trail's 7,792 ft high point: Carson Pass SNOTEL (8,360 ft, 30 km away) reported 2 in of snow on Oct 30.",
+    "source_name": "NRCS SNOTEL",
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "1067:CA:SNTL 2026-10-30 SNWD=2 in, WTEQ=0.5 in",
+    "observed_at": null
    },
    {
     "kind": "precip",
-    "statement": "Likely muddy: 0.29 in of precipitation in the 47 h to 9:53am Oct 23 at South Lake Tahoe, Lake Tahoe Airport (NWS, 8 km away).",
-    "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-21T16%3A57%3A12Z",
-    "fetched_at": "2026-10-23T17:57:21.237666Z",
-    "quote": "KTVL: 29 routine METARs with AO2 from 211853Z to 231653Z; precipitation groups: P0000@212153Z, P0005@212353Z, P0008@220048Z, P0014@220153Z, P0000@220353Z, P0001@221153Z, P0000@221253Z, P0000@230153Z, P0000@231553Z, P0001@231653Z",
-    "observed_at": "2026-10-23T16:53:00Z"
-   }
-  ],
-  "context": [
-   {
-    "kind": "snow",
-    "statement": "No snow at similar elevation: Heavenly Valley SNOTEL (8,540 ft, 4 km away) reported 0 in of snow on Oct 22.",
+    "statement": "Little rain: 0.20 in on Oct 29–30 at Heavenly Valley (SNOTEL, 4 km away).",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "518:CA:SNTL 2026-10-22 SNWD=0 in, WTEQ=0 in",
-    "observed_at": null
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "518:CA:SNTL PRCP 2026-10-29=0.1 in, 2026-10-30=0.1 in",
+    "observed_at": "2026-10-31T00:00:00-08:00"
+   },
+   {
+    "kind": "precip",
+    "statement": "Little rain: 0.07 in in the 45 h to 8:45am Oct 31 at South Lake Tahoe, Lake Tahoe Airport (NWS, 8 km away).",
+    "source_name": "NWS observations",
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-29T16%3A55%3A08Z",
+    "fetched_at": "2026-10-31T17:55:16.743663Z",
+    "quote": "KTVL: 39 routine METARs with AO2 from 291953Z to 311545Z; precipitation groups: P0002@300853Z, P0002@301047Z, P0001@301153Z, P0000@301253Z, P0000@301353Z, P0000@301453Z, P0000@301553Z, P0000@302153Z, P0000@310153Z, P0001@310853Z, P0000@310953Z, P0001@311153Z, P0000@311253Z, P000…",
+    "observed_at": "2026-10-31T15:45:00Z"
    }
   ],
+  "context": [],
   "missing": [
    {
     "what": "Tahoe Rim Trail Association entry for KBNtoKBS was last updated Jul 7, older than 14 days",
@@ -442,42 +453,36 @@
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Chance Light Snow then Mostly Sunny, high 36°F.",
+   "statement": "NWS Today: Light Snow, high 33°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/37,81/forecast",
-   "fetched_at": "2026-10-23T17:57:19.047748Z",
-   "quote": "Today: Chance Light Snow then Mostly Sunny, high 36°F",
-   "observed_at": "2026-10-23T10:00:00-07:00"
+   "fetched_at": "2026-10-31T17:55:14.058777Z",
+   "quote": "Today: Light Snow, high 33°F",
+   "observed_at": "2026-10-31T10:00:00-07:00"
   }
  },
  {
   "trail_id": "mount-rose-summit",
   "trail_name": "Mount Rose Summit Trail",
-  "date": "2026-10-23",
-  "status": "snow",
+  "date": "2026-10-31",
+  "status": "muddy",
   "claims": [
    {
-    "kind": "snow",
-    "statement": "Snow likely above ~8,810 ft (trail tops out at 10,785 ft): Mt Rose Ski Area SNOTEL (8,810 ft, 0 km away) reported 3 in of snow on Oct 22.",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "652:NV:SNTL 2026-10-22 SNWD=3 in, WTEQ=0.6 in",
-    "observed_at": null
-   }
-  ],
-  "context": [
-   {
     "kind": "precip",
-    "statement": "Likely muddy: 0.90 in of precipitation on Oct 21–22 at Mt Rose Ski Area (SNOTEL, 0 km away).",
+    "statement": "Likely muddy: 0.30 in of precipitation on Oct 29–30 at Mt Rose Ski Area (SNOTEL, 0 km away).",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "652:NV:SNTL PRCP 2026-10-21=0.6 in, 2026-10-22=0.3 in",
-    "observed_at": "2026-10-23T00:00:00-08:00"
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "652:NV:SNTL PRCP 2026-10-29=0.1 in, 2026-10-30=0.2 in",
+    "observed_at": "2026-10-31T00:00:00-08:00"
    }
   ],
+  "context": [],
   "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 1,000 ft of the 10,785 ft high point reported bare ground, so snow up high can't be ruled out",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   },
    {
     "what": "Tahoe Rim Trail Association entry for BrockwaytoRose was last updated Jul 7, older than 14 days",
     "tried_url": "https://tahoerimtrail.org/current-trail-conditions/"
@@ -485,59 +490,40 @@
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Sunny, high 34°F.",
+   "statement": "NWS Today: Snow, high 31°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/40,99/forecast",
-   "fetched_at": "2026-10-23T17:57:19.329569Z",
-   "quote": "Today: Sunny, high 34°F",
-   "observed_at": "2026-10-23T10:00:00-07:00"
+   "fetched_at": "2026-10-31T17:55:14.385359Z",
+   "quote": "Today: Snow, high 31°F",
+   "observed_at": "2026-10-31T10:00:00-07:00"
   }
  },
  {
   "trail_id": "flume-trail",
   "trail_name": "Flume Trail (Spooner Lake to Tunnel Creek)",
-  "date": "2026-10-23",
-  "status": "muddy",
+  "date": "2026-10-31",
+  "status": "dry",
   "claims": [
    {
-    "kind": "precip",
-    "statement": "Likely muddy: 1.30 in of precipitation on Oct 21–22 at Marlette Lake (SNOTEL, 1 km away).",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "615:NV:SNTL PRCP 2026-10-21=0.7 in, 2026-10-22=0.6 in",
-    "observed_at": "2026-10-23T00:00:00-08:00"
-   },
-   {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.25 in of precipitation in the 47 h to 9:50am Oct 23 at Carson City Airport (NWS, 15 km away).",
-    "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KCXP/observations?start=2026-10-21T16%3A57%3A12Z",
-    "fetched_at": "2026-10-23T17:57:20.529596Z",
-    "quote": "KCXP: 30 routine METARs with AO2 from 211850Z to 231650Z; precipitation groups: P0015@220155Z, P0010@220355Z",
-    "observed_at": "2026-10-23T16:50:00Z"
-   }
-  ],
-  "context": [
-   {
     "kind": "snow",
-    "statement": "No snow at similar elevation: Heavenly Valley SNOTEL (8,540 ft, 20 km away) reported 0 in of snow on Oct 22.",
+    "statement": "No snow at similar elevation: Mt Rose Ski Area SNOTEL (8,810 ft, 18 km away) reported 1 in of snow on Oct 30.",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "518:CA:SNTL 2026-10-22 SNWD=0 in, WTEQ=0 in",
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "652:NV:SNTL 2026-10-30 SNWD=1 in, WTEQ=0.4 in",
     "observed_at": null
    },
    {
-    "kind": "snow",
-    "statement": "Snow likely only above ~8,810 ft, higher than this trail's 8,143 ft high point: Mt Rose Ski Area SNOTEL (8,810 ft, 18 km away) reported 3 in of snow on Oct 22.",
+    "kind": "precip",
+    "statement": "Little rain: 0.20 in on Oct 29–30 at Marlette Lake (SNOTEL, 1 km away).",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "652:NV:SNTL 2026-10-22 SNWD=3 in, WTEQ=0.6 in",
-    "observed_at": null
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "615:NV:SNTL PRCP 2026-10-29=0.2 in, 2026-10-30=0 in",
+    "observed_at": "2026-10-31T00:00:00-08:00"
    }
   ],
+  "context": [],
   "missing": [
    {
     "what": "Nevada State Parks alert banner not found (layout changed?)",
@@ -546,59 +532,40 @@
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Sunny, high 42°F.",
+   "statement": "NWS Today: Light Snow, high 36°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/39,90/forecast",
-   "fetched_at": "2026-10-23T17:57:19.187366Z",
-   "quote": "Today: Sunny, high 42°F",
-   "observed_at": "2026-10-23T10:00:00-07:00"
+   "fetched_at": "2026-10-31T17:55:14.214093Z",
+   "quote": "Today: Light Snow, high 36°F",
+   "observed_at": "2026-10-31T10:00:00-07:00"
   }
  },
  {
   "trail_id": "marlette-lake",
   "trail_name": "Marlette Lake via North Canyon (Spooner)",
-  "date": "2026-10-23",
-  "status": "muddy",
+  "date": "2026-10-31",
+  "status": "dry",
   "claims": [
    {
-    "kind": "precip",
-    "statement": "Likely muddy: 1.30 in of precipitation on Oct 21–22 at Marlette Lake (SNOTEL, 1 km away).",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "615:NV:SNTL PRCP 2026-10-21=0.7 in, 2026-10-22=0.6 in",
-    "observed_at": "2026-10-23T00:00:00-08:00"
-   },
-   {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.25 in of precipitation in the 47 h to 9:50am Oct 23 at Carson City Airport (NWS, 15 km away).",
-    "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KCXP/observations?start=2026-10-21T16%3A57%3A12Z",
-    "fetched_at": "2026-10-23T17:57:20.529596Z",
-    "quote": "KCXP: 30 routine METARs with AO2 from 211850Z to 231650Z; precipitation groups: P0015@220155Z, P0010@220355Z",
-    "observed_at": "2026-10-23T16:50:00Z"
-   }
-  ],
-  "context": [
-   {
     "kind": "snow",
-    "statement": "No snow at similar elevation: Heavenly Valley SNOTEL (8,540 ft, 20 km away) reported 0 in of snow on Oct 22.",
+    "statement": "No snow at similar elevation: Mt Rose Ski Area SNOTEL (8,810 ft, 18 km away) reported 1 in of snow on Oct 30.",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "518:CA:SNTL 2026-10-22 SNWD=0 in, WTEQ=0 in",
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "652:NV:SNTL 2026-10-30 SNWD=1 in, WTEQ=0.4 in",
     "observed_at": null
    },
    {
-    "kind": "snow",
-    "statement": "Snow likely only above ~8,810 ft, higher than this trail's 8,168 ft high point: Mt Rose Ski Area SNOTEL (8,810 ft, 18 km away) reported 3 in of snow on Oct 22.",
+    "kind": "precip",
+    "statement": "Little rain: 0.20 in on Oct 29–30 at Marlette Lake (SNOTEL, 1 km away).",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "652:NV:SNTL 2026-10-22 SNWD=3 in, WTEQ=0.6 in",
-    "observed_at": null
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "615:NV:SNTL PRCP 2026-10-29=0.2 in, 2026-10-30=0 in",
+    "observed_at": "2026-10-31T00:00:00-08:00"
    }
   ],
+  "context": [],
   "missing": [
    {
     "what": "Nevada State Parks alert banner not found (layout changed?)",
@@ -607,41 +574,40 @@
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Sunny, high 42°F.",
+   "statement": "NWS Today: Light Snow, high 36°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/39,90/forecast",
-   "fetched_at": "2026-10-23T17:57:19.187366Z",
-   "quote": "Today: Sunny, high 42°F",
-   "observed_at": "2026-10-23T10:00:00-07:00"
+   "fetched_at": "2026-10-31T17:55:14.214093Z",
+   "quote": "Today: Light Snow, high 36°F",
+   "observed_at": "2026-10-31T10:00:00-07:00"
   }
  },
  {
   "trail_id": "page-meadows",
   "trail_name": "Page Meadows (TRT from Ward Creek)",
-  "date": "2026-10-23",
-  "status": "muddy",
+  "date": "2026-10-31",
+  "status": "dry",
   "claims": [
    {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.60 in of precipitation on Oct 21–22 at Tahoe City Cross (SNOTEL, 3 km away).",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "809:CA:SNTL PRCP 2026-10-21=0.6 in, 2026-10-22=0 in",
-    "observed_at": "2026-10-23T00:00:00-08:00"
-   }
-  ],
-  "context": [
-   {
     "kind": "snow",
-    "statement": "No snow at similar elevation: Rubicon #2 SNOTEL (7,560 ft, 17 km away) reported 0 in of snow on Oct 22.",
+    "statement": "No snow at similar elevation: Rubicon #2 SNOTEL (7,560 ft, 17 km away) reported 0 in of snow on Oct 30.",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "724:CA:SNTL 2026-10-22 SNWD=0 in, WTEQ=0 in",
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "724:CA:SNTL 2026-10-30 SNWD=0 in, WTEQ=0.6 in",
     "observed_at": null
+   },
+   {
+    "kind": "precip",
+    "statement": "Little rain: 0.10 in on Oct 29–30 at Tahoe City Cross (SNOTEL, 3 km away).",
+    "source_name": "NRCS SNOTEL",
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "809:CA:SNTL PRCP 2026-10-29=0 in, 2026-10-30=0.1 in",
+    "observed_at": "2026-10-31T00:00:00-08:00"
    }
   ],
+  "context": [],
   "missing": [
    {
     "what": "Tahoe Rim Trail Association entry for BPtoTC was last updated Jul 7, older than 14 days",
@@ -650,164 +616,152 @@
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Sunny, high 48°F.",
+   "statement": "NWS Today: Rain And Snow, high 39°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/29,92/forecast",
-   "fetched_at": "2026-10-23T17:57:17.736572Z",
-   "quote": "Today: Sunny, high 48°F",
-   "observed_at": "2026-10-23T10:00:00-07:00"
+   "fetched_at": "2026-10-31T17:55:12.588036Z",
+   "quote": "Today: Rain And Snow, high 39°F",
+   "observed_at": "2026-10-31T10:00:00-07:00"
   }
  },
  {
   "trail_id": "five-lakes",
   "trail_name": "Five Lakes Trail (Alpine Meadows)",
-  "date": "2026-10-23",
+  "date": "2026-10-31",
   "status": "muddy",
   "claims": [
    {
     "kind": "precip",
-    "statement": "Likely muddy: 0.50 in of precipitation on Oct 21–22 at Palisades Tahoe (SNOTEL, 2 km away).",
+    "statement": "Likely muddy: 0.30 in of precipitation on Oct 29–30 at Palisades Tahoe (SNOTEL, 2 km away).",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "784:CA:SNTL PRCP 2026-10-21=0.4 in, 2026-10-22=0.1 in",
-    "observed_at": "2026-10-23T00:00:00-08:00"
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "784:CA:SNTL PRCP 2026-10-29=0 in, 2026-10-30=0.3 in",
+    "observed_at": "2026-10-31T00:00:00-08:00"
    }
   ],
   "context": [
    {
     "kind": "snow",
-    "statement": "No snow at similar elevation: Palisades Tahoe SNOTEL (8,010 ft, 2 km away) reported 0 in of snow on Oct 22.",
+    "statement": "No snow at similar elevation: Palisades Tahoe SNOTEL (8,010 ft, 2 km away) reported 0 in of snow on Oct 30.",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "784:CA:SNTL 2026-10-22 SNWD=0 in, WTEQ=0 in",
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "784:CA:SNTL 2026-10-30 SNWD=0 in, WTEQ=0.9 in",
     "observed_at": null
    }
   ],
   "missing": [],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Areas Of Frost then Sunny, high 44°F.",
+   "statement": "NWS Today: Light Snow, high 36°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/STO/89,86/forecast",
-   "fetched_at": "2026-10-23T17:57:19.803016Z",
-   "quote": "Today: Areas Of Frost then Sunny, high 44°F",
-   "observed_at": "2026-10-23T10:00:00-07:00"
+   "fetched_at": "2026-10-31T17:55:14.983871Z",
+   "quote": "Today: Light Snow, high 36°F",
+   "observed_at": "2026-10-31T10:00:00-07:00"
   }
  },
  {
   "trail_id": "castle-peak",
   "trail_name": "Castle Peak (Donner Summit)",
-  "date": "2026-10-23",
-  "status": "snow",
+  "date": "2026-10-31",
+  "status": "dry",
   "claims": [
    {
     "kind": "snow",
-    "statement": "Snow likely above ~8,810 ft (trail tops out at 9,109 ft): Mt Rose Ski Area SNOTEL (8,810 ft, 39 km away) reported 3 in of snow on Oct 22.",
+    "statement": "No snow at similar elevation: Independence Lake SNOTEL (8,340 ft, 8 km away) reported 0 in of snow on Oct 30.",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "652:NV:SNTL 2026-10-22 SNWD=3 in, WTEQ=0.6 in",
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "541:CA:SNTL 2026-10-30 SNWD=0 in, WTEQ=0.2 in",
     "observed_at": null
-   }
-  ],
-  "context": [
+   },
    {
     "kind": "precip",
-    "statement": "Likely muddy: 0.40 in of precipitation on Oct 21–22 at Css Lab (SNOTEL, 2 km away).",
+    "statement": "No measurable rain on Oct 29–30 at Css Lab (SNOTEL, 2 km away).",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "428:CA:SNTL PRCP 2026-10-21=0.3 in, 2026-10-22=0.1 in",
-    "observed_at": "2026-10-23T00:00:00-08:00"
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "428:CA:SNTL PRCP 2026-10-29=0 in, 2026-10-30=0 in",
+    "observed_at": "2026-10-31T00:00:00-08:00"
    }
   ],
+  "context": [],
   "missing": [],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Areas Of Frost then Sunny, high 42°F.",
+   "statement": "NWS Today: Light Snow, high 34°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/STO/87,95/forecast",
-   "fetched_at": "2026-10-23T17:57:19.475599Z",
-   "quote": "Today: Areas Of Frost then Sunny, high 42°F",
-   "observed_at": "2026-10-23T10:00:00-07:00"
+   "fetched_at": "2026-10-31T17:55:14.639717Z",
+   "quote": "Today: Light Snow, high 34°F",
+   "observed_at": "2026-10-31T10:00:00-07:00"
   }
  },
  {
   "trail_id": "mount-judah-loop",
   "trail_name": "Mount Judah Loop (PCT, Donner Summit)",
-  "date": "2026-10-23",
-  "status": "muddy",
+  "date": "2026-10-31",
+  "status": "dry",
   "claims": [
    {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.40 in of precipitation on Oct 21–22 at Css Lab (SNOTEL, 4 km away).",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "428:CA:SNTL PRCP 2026-10-21=0.3 in, 2026-10-22=0.1 in",
-    "observed_at": "2026-10-23T00:00:00-08:00"
-   }
-  ],
-  "context": [
-   {
     "kind": "snow",
-    "statement": "No snow at similar elevation: Independence Lake SNOTEL (8,340 ft, 13 km away) reported 0 in of snow on Oct 22.",
+    "statement": "No snow at similar elevation: Independence Lake SNOTEL (8,340 ft, 13 km away) reported 0 in of snow on Oct 30.",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "541:CA:SNTL 2026-10-22 SNWD=0 in, WTEQ=0 in",
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "541:CA:SNTL 2026-10-30 SNWD=0 in, WTEQ=0.2 in",
     "observed_at": null
    },
    {
-    "kind": "snow",
-    "statement": "Snow likely only above ~8,810 ft, higher than this trail's 8,243 ft high point: Mt Rose Ski Area SNOTEL (8,810 ft, 36 km away) reported 3 in of snow on Oct 22.",
+    "kind": "precip",
+    "statement": "No measurable rain on Oct 29–30 at Css Lab (SNOTEL, 4 km away).",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "652:NV:SNTL 2026-10-22 SNWD=3 in, WTEQ=0.6 in",
-    "observed_at": null
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "428:CA:SNTL PRCP 2026-10-29=0 in, 2026-10-30=0 in",
+    "observed_at": "2026-10-31T00:00:00-08:00"
    }
   ],
+  "context": [],
   "missing": [],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Patchy Frost then Sunny, high 47°F.",
+   "statement": "NWS Today: Rain And Snow, high 37°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/STO/88,92/forecast",
-   "fetched_at": "2026-10-23T17:57:19.617860Z",
-   "quote": "Today: Patchy Frost then Sunny, high 47°F",
-   "observed_at": "2026-10-23T10:00:00-07:00"
+   "fetched_at": "2026-10-31T17:55:14.825273Z",
+   "quote": "Today: Rain And Snow, high 37°F",
+   "observed_at": "2026-10-31T10:00:00-07:00"
   }
  },
  {
   "trail_id": "donner-lake-rim-trail",
   "trail_name": "Donner Lake Rim Trail",
-  "date": "2026-10-23",
-  "status": "muddy",
+  "date": "2026-10-31",
+  "status": "dry",
   "claims": [
    {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.50 in of precipitation on Oct 21–22 at Truckee #2 (SNOTEL, 5 km away).",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "834:CA:SNTL PRCP 2026-10-21=0.5 in, 2026-10-22=0 in",
-    "observed_at": "2026-10-23T00:00:00-08:00"
-   }
-  ],
-  "context": [
-   {
     "kind": "snow",
-    "statement": "No snow at similar elevation: Independence Lake SNOTEL (8,340 ft, 9 km away) reported 0 in of snow on Oct 22.",
+    "statement": "No snow at similar elevation: Independence Lake SNOTEL (8,340 ft, 9 km away) reported 0 in of snow on Oct 30.",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "541:CA:SNTL 2026-10-22 SNWD=0 in, WTEQ=0 in",
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "541:CA:SNTL 2026-10-30 SNWD=0 in, WTEQ=0.2 in",
     "observed_at": null
+   },
+   {
+    "kind": "precip",
+    "statement": "No measurable rain on Oct 29–30 at Truckee #2 (SNOTEL, 5 km away).",
+    "source_name": "NRCS SNOTEL",
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "834:CA:SNTL PRCP 2026-10-29=0 in, 2026-10-30=0 in",
+    "observed_at": "2026-10-31T00:00:00-08:00"
    }
   ],
+  "context": [],
   "missing": [
    {
     "what": "No official closure source dryline can read for Truckee Donner Land Trust",
@@ -816,88 +770,77 @@
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Sunny, high 47°F.",
+   "statement": "NWS Today: Rain And Snow, high 37°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/27,101/forecast",
-   "fetched_at": "2026-10-23T17:57:16.624928Z",
-   "quote": "Today: Sunny, high 47°F",
-   "observed_at": "2026-10-23T10:00:00-07:00"
+   "fetched_at": "2026-10-31T17:55:11.062854Z",
+   "quote": "Today: Rain And Snow, high 37°F",
+   "observed_at": "2026-10-31T10:00:00-07:00"
   }
  },
  {
   "trail_id": "sawtooth-trail",
   "trail_name": "Sawtooth Trail (Truckee)",
-  "date": "2026-10-23",
-  "status": "muddy",
+  "date": "2026-10-31",
+  "status": "dry",
   "claims": [
    {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.50 in of precipitation on Oct 21–22 at Truckee #2 (SNOTEL, 1 km away).",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "834:CA:SNTL PRCP 2026-10-21=0.5 in, 2026-10-22=0 in",
-    "observed_at": "2026-10-23T00:00:00-08:00"
-   }
-  ],
-  "context": [
-   {
     "kind": "snow",
-    "statement": "No snow at similar elevation: Truckee #2 SNOTEL (6,500 ft, 1 km away) reported 0 in of snow on Oct 22.",
+    "statement": "No snow at similar elevation: Truckee #2 SNOTEL (6,500 ft, 1 km away) reported 0 in of snow on Oct 30.",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "834:CA:SNTL 2026-10-22 SNWD=0 in, WTEQ=0 in",
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "834:CA:SNTL 2026-10-30 SNWD=0 in, WTEQ=0.6 in",
     "observed_at": null
+   },
+   {
+    "kind": "precip",
+    "statement": "No measurable rain on Oct 29–30 at Truckee #2 (SNOTEL, 1 km away).",
+    "source_name": "NRCS SNOTEL",
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "834:CA:SNTL PRCP 2026-10-29=0 in, 2026-10-30=0 in",
+    "observed_at": "2026-10-31T00:00:00-08:00"
    }
   ],
+  "context": [],
   "missing": [],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Sunny, high 50°F.",
+   "statement": "NWS Today: Rain And Snow, high 41°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/30,98/forecast",
-   "fetched_at": "2026-10-23T17:57:18.162314Z",
-   "quote": "Today: Sunny, high 50°F",
-   "observed_at": "2026-10-23T10:00:00-07:00"
+   "fetched_at": "2026-10-31T17:55:13.068467Z",
+   "quote": "Today: Rain And Snow, high 41°F",
+   "observed_at": "2026-10-31T10:00:00-07:00"
   }
  },
  {
   "trail_id": "trt-brockway-to-martis-peak",
   "trail_name": "Tahoe Rim Trail: Brockway Summit to Martis Peak",
-  "date": "2026-10-23",
-  "status": "muddy",
+  "date": "2026-10-31",
+  "status": "dry",
   "claims": [
    {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.50 in of precipitation on Oct 21–22 at Truckee #2 (SNOTEL, 11 km away).",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "834:CA:SNTL PRCP 2026-10-21=0.5 in, 2026-10-22=0 in",
-    "observed_at": "2026-10-23T00:00:00-08:00"
-   }
-  ],
-  "context": [
-   {
     "kind": "snow",
-    "statement": "No snow at similar elevation: Marlette Lake SNOTEL (7,860 ft, 18 km away) reported 0 in of snow on Oct 22.",
+    "statement": "No snow at similar elevation: Mt Rose Ski Area SNOTEL (8,810 ft, 12 km away) reported 1 in of snow on Oct 30.",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "615:NV:SNTL 2026-10-22 SNWD=0 in, WTEQ=0 in",
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "652:NV:SNTL 2026-10-30 SNWD=1 in, WTEQ=0.4 in",
     "observed_at": null
    },
    {
-    "kind": "snow",
-    "statement": "Snow likely only above ~8,810 ft, higher than this trail's 8,736 ft high point: Mt Rose Ski Area SNOTEL (8,810 ft, 12 km away) reported 3 in of snow on Oct 22.",
+    "kind": "precip",
+    "statement": "No measurable rain on Oct 29–30 at Truckee #2 (SNOTEL, 11 km away).",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "652:NV:SNTL 2026-10-22 SNWD=3 in, WTEQ=0.6 in",
-    "observed_at": null
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "834:CA:SNTL PRCP 2026-10-29=0 in, 2026-10-30=0 in",
+    "observed_at": "2026-10-31T00:00:00-08:00"
    }
   ],
+  "context": [],
   "missing": [
    {
     "what": "Tahoe Rim Trail Association entry for BrockwaytoRose was last updated Jul 7, older than 14 days",
@@ -906,48 +849,57 @@
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Sunny, high 44°F.",
+   "statement": "NWS Today: Light Snow, high 36°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/35,97/forecast",
-   "fetched_at": "2026-10-23T17:57:18.899078Z",
-   "quote": "Today: Sunny, high 44°F",
-   "observed_at": "2026-10-23T10:00:00-07:00"
+   "fetched_at": "2026-10-31T17:55:13.911680Z",
+   "quote": "Today: Light Snow, high 36°F",
+   "observed_at": "2026-10-31T10:00:00-07:00"
   }
  },
  {
   "trail_id": "big-meadow-to-round-lake",
   "trail_name": "Big Meadow to Round Lake (TRT)",
-  "date": "2026-10-23",
+  "date": "2026-10-31",
   "status": "muddy",
   "claims": [
    {
     "kind": "precip",
-    "statement": "Likely muddy: 0.40 in of precipitation on Oct 21–22 at Carson Pass (SNOTEL, 6 km away).",
+    "statement": "Likely muddy: 0.40 in of precipitation on Oct 29–30 at Carson Pass (SNOTEL, 6 km away).",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "1067:CA:SNTL PRCP 2026-10-21=0.2 in, 2026-10-22=0.2 in",
-    "observed_at": "2026-10-23T00:00:00-08:00"
-   },
-   {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.29 in of precipitation in the 47 h to 9:53am Oct 23 at South Lake Tahoe, Lake Tahoe Airport (NWS, 12 km away).",
-    "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-21T16%3A57%3A12Z",
-    "fetched_at": "2026-10-23T17:57:21.237666Z",
-    "quote": "KTVL: 29 routine METARs with AO2 from 211853Z to 231653Z; precipitation groups: P0000@212153Z, P0005@212353Z, P0008@220048Z, P0014@220153Z, P0000@220353Z, P0001@221153Z, P0000@221253Z, P0000@230153Z, P0000@231553Z, P0001@231653Z",
-    "observed_at": "2026-10-23T16:53:00Z"
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "1067:CA:SNTL PRCP 2026-10-29=0.1 in, 2026-10-30=0.3 in",
+    "observed_at": "2026-10-31T00:00:00-08:00"
    }
   ],
   "context": [
    {
     "kind": "snow",
-    "statement": "No snow at similar elevation: Carson Pass SNOTEL (8,360 ft, 6 km away) reported 0 in of snow on Oct 22.",
+    "statement": "No snow at similar elevation: Burnside Lake SNOTEL (8,180 ft, 10 km away) reported 0 in of snow on Oct 30.",
     "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-16&endDate=2026-10-23",
-    "fetched_at": "2026-10-23T17:57:12.747168Z",
-    "quote": "1067:CA:SNTL 2026-10-22 SNWD=0 in, WTEQ=0 in",
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "1051:CA:SNTL 2026-10-30 SNWD=0 in, WTEQ=0.4 in",
     "observed_at": null
+   },
+   {
+    "kind": "snow",
+    "statement": "Snow likely only above ~8,360 ft, higher than this trail's 8,117 ft high point: Carson Pass SNOTEL (8,360 ft, 6 km away) reported 2 in of snow on Oct 30.",
+    "source_name": "NRCS SNOTEL",
+    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-10-24&endDate=2026-10-31",
+    "fetched_at": "2026-10-31T17:55:08.799573Z",
+    "quote": "1067:CA:SNTL 2026-10-30 SNWD=2 in, WTEQ=0.5 in",
+    "observed_at": null
+   },
+   {
+    "kind": "precip",
+    "statement": "Little rain: 0.07 in in the 45 h to 8:45am Oct 31 at South Lake Tahoe, Lake Tahoe Airport (NWS, 12 km away).",
+    "source_name": "NWS observations",
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-10-29T16%3A55%3A08Z",
+    "fetched_at": "2026-10-31T17:55:16.743663Z",
+    "quote": "KTVL: 39 routine METARs with AO2 from 291953Z to 311545Z; precipitation groups: P0002@300853Z, P0002@301047Z, P0001@301153Z, P0000@301253Z, P0000@301353Z, P0000@301453Z, P0000@301553Z, P0000@302153Z, P0000@310153Z, P0001@310853Z, P0000@310953Z, P0001@311153Z, P0000@311253Z, P000…",
+    "observed_at": "2026-10-31T15:45:00Z"
    }
   ],
   "missing": [
@@ -958,12 +910,12 @@
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Chance Light Snow then Mostly Sunny, high 42°F.",
+   "statement": "NWS Today: Light Snow, high 35°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/STO/94,66/forecast",
-   "fetched_at": "2026-10-23T17:57:19.970137Z",
-   "quote": "Today: Chance Light Snow then Mostly Sunny, high 42°F",
-   "observed_at": "2026-10-23T10:00:00-07:00"
+   "fetched_at": "2026-10-31T17:55:15.153930Z",
+   "quote": "Today: Light Snow, high 35°F",
+   "observed_at": "2026-10-31T10:00:00-07:00"
   }
  }
 ]
