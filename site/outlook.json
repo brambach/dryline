@@ -1,72 +1,72 @@
 {
- "date": "2026-11-18",
+ "date": "2026-11-19",
  "trails": [
   {
    "trail_id": "mount-tallac",
-   "issued": "2026-11-18",
+   "issued": "2026-11-19",
    "days": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "status": "snow",
-     "weather": "Heavy Snow, 33°F",
+     "weather": "Heavy Snow, 34°F",
      "swe_in": 0.0,
      "water_in": 0.0
     },
     {
-     "date": "2026-11-19",
-     "status": "snow",
-     "weather": "Heavy Snow, 33°F",
-     "swe_in": 7.1,
-     "water_in": 0.6
-    },
-    {
      "date": "2026-11-20",
      "status": "snow",
-     "weather": "Slight Chance Light Snow then Mostly Sunny, 30°F",
-     "swe_in": 9.5,
+     "weather": "Chance Light Snow, 28°F",
+     "swe_in": 7.9,
      "water_in": 0.6
     },
     {
      "date": "2026-11-21",
      "status": "snow",
-     "weather": "Mostly Sunny then Slight Chance Light Snow, 35°F",
-     "swe_in": 9.5,
+     "weather": "Partly Sunny then Chance Light Snow, 32°F",
+     "swe_in": 7.92,
      "water_in": 0.6
     },
     {
      "date": "2026-11-22",
      "status": "snow",
-     "weather": "Light Snow, 30°F",
-     "swe_in": 9.7,
+     "weather": "Light Snow, 29°F",
+     "swe_in": 7.92,
      "water_in": 0.6
     },
     {
      "date": "2026-11-23",
      "status": "snow",
-     "weather": "Chance Light Snow then Partly Sunny, 33°F",
-     "swe_in": 10.3,
+     "weather": "Slight Chance Light Snow then Partly Sunny, 32°F",
+     "swe_in": 8.32,
      "water_in": 0.6
     },
     {
      "date": "2026-11-24",
      "status": "snow",
-     "weather": "Snow, 35°F",
-     "swe_in": 10.3,
+     "weather": "Light Snow Likely, 35°F",
+     "swe_in": 8.32,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-25",
+     "status": "snow",
+     "weather": "Snow Likely, 34°F",
+     "swe_in": 9.07,
      "water_in": 0.6
     }
    ],
    "dry_by": null,
    "wet_from": null,
-   "horizon": "2026-11-24",
+   "horizon": "2026-11-25",
    "sources": [
     {
      "kind": "forecast",
      "statement": "NWS forecast for this trail's gridpoint (8,848 ft), 14 periods.",
      "source_name": "NWS forecast",
      "source_url": "https://api.weather.gov/gridpoints/REV/30,80/forecast",
-     "fetched_at": "2026-11-18T21:34:47.307041Z",
-     "quote": "This Afternoon: Snow. Cloudy, with a high near 30. Southwest wind 45 to 55 mph, with gusts as high as 90 mph. Chance of precipitation is 100%. New snow accumulation of 9 to 13 inches possible.",
-     "observed_at": "2026-11-18T13:00:00-08:00"
+     "fetched_at": "2026-11-19T21:47:18.466468Z",
+     "quote": "This Afternoon: Snow and areas of freezing fog. Cloudy. High near 31, with temperatures falling to around 23 in the afternoon. Southwest wind 25 to 30 mph, with gusts as high as 45 mph. Chance of precipitation is 90%. New snow accumulation of 5 to 9 inches possible.",
+     "observed_at": "2026-11-19T13:00:00-08:00"
     }
    ],
    "basis": "Not enough warm days in the forecast to melt it out.",
@@ -74,70 +74,70 @@
   },
   {
    "trail_id": "eagle-lake-desolation",
-   "issued": "2026-11-18",
+   "issued": "2026-11-19",
    "days": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "status": "snow",
-     "weather": "Heavy Snow, 32°F",
+     "weather": "Heavy Snow, 34°F",
      "swe_in": 0.0,
      "water_in": 0.0
     },
     {
-     "date": "2026-11-19",
-     "status": "snow",
-     "weather": "Heavy Snow, 33°F",
-     "swe_in": 3.8,
-     "water_in": 0.6
-    },
-    {
      "date": "2026-11-20",
      "status": "snow",
-     "weather": "Slight Chance Light Snow then Mostly Sunny, 30°F",
-     "swe_in": 6.2,
+     "weather": "Chance Light Snow then Areas Of Freezing Fog, 29°F",
+     "swe_in": 2.85,
      "water_in": 0.6
     },
     {
      "date": "2026-11-21",
      "status": "snow",
-     "weather": "Mostly Sunny then Chance Light Snow, 34°F",
-     "swe_in": 6.2,
+     "weather": "Partly Sunny then Chance Light Snow, 32°F",
+     "swe_in": 2.87,
      "water_in": 0.6
     },
     {
      "date": "2026-11-22",
      "status": "snow",
      "weather": "Light Snow, 30°F",
-     "swe_in": 6.39,
+     "swe_in": 2.87,
      "water_in": 0.6
     },
     {
      "date": "2026-11-23",
      "status": "snow",
-     "weather": "Chance Light Snow, 33°F",
-     "swe_in": 6.99,
+     "weather": "Slight Chance Light Snow then Partly Sunny, 33°F",
+     "swe_in": 3.27,
      "water_in": 0.6
     },
     {
      "date": "2026-11-24",
      "status": "snow",
-     "weather": "Snow, 35°F",
-     "swe_in": 6.99,
+     "weather": "Light Snow Likely, 36°F",
+     "swe_in": 3.27,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-25",
+     "status": "snow",
+     "weather": "Snow Likely, 34°F",
+     "swe_in": 3.98,
      "water_in": 0.6
     }
    ],
    "dry_by": null,
    "wet_from": null,
-   "horizon": "2026-11-24",
+   "horizon": "2026-11-25",
    "sources": [
     {
      "kind": "forecast",
      "statement": "NWS forecast for this trail's gridpoint (7,799 ft), 14 periods.",
      "source_name": "NWS forecast",
      "source_url": "https://api.weather.gov/gridpoints/REV/29,82/forecast",
-     "fetched_at": "2026-11-18T21:34:46.989367Z",
-     "quote": "This Afternoon: Snow. Cloudy, with a high near 28. Southwest wind 15 to 20 mph, with gusts as high as 35 mph. Chance of precipitation is 100%. New snow accumulation of 10 to 14 inches possible.",
-     "observed_at": "2026-11-18T13:00:00-08:00"
+     "fetched_at": "2026-11-19T21:47:17.903208Z",
+     "quote": "This Afternoon: Snow and areas of freezing fog. Cloudy, with a high near 30. Southwest wind around 15 mph, with gusts as high as 40 mph. Chance of precipitation is 90%. New snow accumulation of 5 to 9 inches possible.",
+     "observed_at": "2026-11-19T13:00:00-08:00"
     }
    ],
    "basis": "Not enough warm days in the forecast to melt it out. Faces northwest, so it dries slower.",
@@ -145,70 +145,70 @@
   },
   {
    "trail_id": "rubicon-trail-dl-bliss",
-   "issued": "2026-11-18",
+   "issued": "2026-11-19",
    "days": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "status": "snow",
      "weather": "Snow, 30°F",
      "swe_in": 0.0,
      "water_in": 0.0
     },
     {
-     "date": "2026-11-19",
-     "status": "snow",
-     "weather": "Snow, 30°F",
-     "swe_in": 2.85,
-     "water_in": 0.6
-    },
-    {
      "date": "2026-11-20",
      "status": "snow",
-     "weather": "Mostly Sunny, 29°F",
-     "swe_in": 3.95,
+     "weather": "Chance Light Snow, 26°F",
+     "swe_in": 3.69,
      "water_in": 0.6
     },
     {
      "date": "2026-11-21",
      "status": "snow",
-     "weather": "Mostly Sunny then Slight Chance Light Snow, 32°F",
-     "swe_in": 3.95,
+     "weather": "Partly Sunny then Chance Light Snow, 30°F",
+     "swe_in": 3.7,
      "water_in": 0.6
     },
     {
      "date": "2026-11-22",
      "status": "snow",
-     "weather": "Light Snow, 28°F",
-     "swe_in": 4.0,
+     "weather": "Light Snow, 27°F",
+     "swe_in": 3.7,
      "water_in": 0.6
     },
     {
      "date": "2026-11-23",
      "status": "snow",
-     "weather": "Slight Chance Light Snow then Partly Sunny, 30°F",
-     "swe_in": 4.4,
+     "weather": "Slight Chance Light Snow then Partly Sunny, 29°F",
+     "swe_in": 4.1,
      "water_in": 0.6
     },
     {
      "date": "2026-11-24",
      "status": "snow",
-     "weather": "Light Snow, 33°F",
-     "swe_in": 4.4,
+     "weather": "Light Snow Likely, 33°F",
+     "swe_in": 4.1,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-25",
+     "status": "snow",
+     "weather": "Light Snow Likely, 31°F",
+     "swe_in": 4.44,
      "water_in": 0.6
     }
    ],
    "dry_by": null,
    "wet_from": null,
-   "horizon": "2026-11-24",
+   "horizon": "2026-11-25",
    "sources": [
     {
      "kind": "forecast",
      "statement": "NWS forecast for this trail's gridpoint (6,230 ft), 14 periods.",
      "source_name": "NWS forecast",
      "source_url": "https://api.weather.gov/gridpoints/REV/31,84/forecast",
-     "fetched_at": "2026-11-18T21:34:47.713772Z",
-     "quote": "This Afternoon: Snow. Cloudy, with a high near 31. South wind 10 to 30 mph, with gusts as high as 45 mph. Chance of precipitation is 100%. New snow accumulation of 3 to 7 inches possible.",
-     "observed_at": "2026-11-18T13:00:00-08:00"
+     "fetched_at": "2026-11-19T21:47:19.357696Z",
+     "quote": "Today: Snow and areas of freezing fog. Cloudy, with a high near 31. Southwest wind 10 to 20 mph, with gusts as high as 40 mph. Chance of precipitation is 100%. New snow accumulation of 3 to 5 inches possible.",
+     "observed_at": "2026-11-19T11:00:00-08:00"
     }
    ],
    "basis": "Not enough warm days in the forecast to melt it out.",
@@ -216,70 +216,70 @@
   },
   {
    "trail_id": "cascade-falls",
-   "issued": "2026-11-18",
+   "issued": "2026-11-19",
    "days": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "status": "snow",
-     "weather": "Heavy Snow, 33°F",
+     "weather": "Snow, 34°F",
      "swe_in": 0.0,
      "water_in": 0.0
     },
     {
-     "date": "2026-11-19",
-     "status": "snow",
-     "weather": "Heavy Snow, 34°F",
-     "swe_in": 3.19,
-     "water_in": 0.6
-    },
-    {
      "date": "2026-11-20",
      "status": "snow",
-     "weather": "Slight Chance Light Snow then Mostly Sunny, 31°F",
-     "swe_in": 5.37,
+     "weather": "Chance Light Snow then Patchy Fog, 29°F",
+     "swe_in": 2.65,
      "water_in": 0.6
     },
     {
      "date": "2026-11-21",
      "status": "snow",
-     "weather": "Mostly Sunny then Chance Light Snow, 35°F",
-     "swe_in": 5.37,
+     "weather": "Partly Sunny then Chance Light Snow, 33°F",
+     "swe_in": 2.66,
      "water_in": 0.6
     },
     {
      "date": "2026-11-22",
      "status": "snow",
      "weather": "Light Snow, 31°F",
-     "swe_in": 5.39,
+     "swe_in": 2.66,
      "water_in": 0.6
     },
     {
      "date": "2026-11-23",
      "status": "snow",
-     "weather": "Chance Light Snow then Partly Sunny, 33°F",
-     "swe_in": 5.79,
+     "weather": "Slight Chance Light Snow then Partly Sunny, 33°F",
+     "swe_in": 3.06,
      "water_in": 0.6
     },
     {
      "date": "2026-11-24",
      "status": "snow",
-     "weather": "Light Snow Likely, 36°F",
-     "swe_in": 5.78,
+     "weather": "Chance Light Snow, 36°F",
+     "swe_in": 3.05,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-25",
+     "status": "snow",
+     "weather": "Light Snow Likely, 34°F",
+     "swe_in": 3.65,
      "water_in": 0.6
     }
    ],
    "dry_by": null,
    "wet_from": null,
-   "horizon": "2026-11-24",
+   "horizon": "2026-11-25",
    "sources": [
     {
      "kind": "forecast",
      "statement": "NWS forecast for this trail's gridpoint (7,041 ft), 14 periods.",
      "source_name": "NWS forecast",
      "source_url": "https://api.weather.gov/gridpoints/REV/30,82/forecast",
-     "fetched_at": "2026-11-18T21:34:47.457347Z",
-     "quote": "This Afternoon: Snow. Cloudy, with a high near 32. South wind 10 to 20 mph, with gusts as high as 35 mph. Chance of precipitation is 100%. New snow accumulation of 7 to 11 inches possible.",
-     "observed_at": "2026-11-18T13:00:00-08:00"
+     "fetched_at": "2026-11-19T21:47:18.658600Z",
+     "quote": "This Afternoon: Snow and areas of freezing fog. Cloudy, with a high near 33. Southwest wind 10 to 15 mph, with gusts as high as 40 mph. Chance of precipitation is 90%. New snow accumulation of 4 to 8 inches possible.",
+     "observed_at": "2026-11-19T13:00:00-08:00"
     }
    ],
    "basis": "Not enough warm days in the forecast to melt it out.",
@@ -287,70 +287,70 @@
   },
   {
    "trail_id": "echo-lakes-to-lake-aloha",
-   "issued": "2026-11-18",
+   "issued": "2026-11-19",
    "days": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "status": "snow",
-     "weather": "Heavy Snow, 29°F",
+     "weather": "Heavy Snow, 30°F",
      "swe_in": 0.0,
      "water_in": 0.0
     },
     {
-     "date": "2026-11-19",
-     "status": "snow",
-     "weather": "Heavy Snow then Snow Showers, 30°F",
-     "swe_in": 6.37,
-     "water_in": 0.6
-    },
-    {
      "date": "2026-11-20",
      "status": "snow",
-     "weather": "Slight Chance Light Snow then Mostly Sunny, 26°F",
-     "swe_in": 8.97,
+     "weather": "Areas Of Freezing Fog, 24°F",
+     "swe_in": 6.74,
      "water_in": 0.6
     },
     {
      "date": "2026-11-21",
      "status": "snow",
-     "weather": "Mostly Sunny then Slight Chance Light Snow, 30°F",
-     "swe_in": 8.97,
+     "weather": "Partly Sunny then Chance Light Snow, 28°F",
+     "swe_in": 6.78,
      "water_in": 0.6
     },
     {
      "date": "2026-11-22",
      "status": "snow",
-     "weather": "Light Snow, 26°F",
-     "swe_in": 9.17,
+     "weather": "Light Snow, 25°F",
+     "swe_in": 6.78,
      "water_in": 0.6
     },
     {
      "date": "2026-11-23",
      "status": "snow",
-     "weather": "Chance Light Snow, 29°F",
-     "swe_in": 9.87,
+     "weather": "Slight Chance Light Snow then Partly Sunny, 29°F",
+     "swe_in": 7.18,
      "water_in": 0.6
     },
     {
      "date": "2026-11-24",
      "status": "snow",
-     "weather": "Snow, 31°F",
-     "swe_in": 9.89,
+     "weather": "Light Snow Likely, 32°F",
+     "swe_in": 7.19,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-25",
+     "status": "snow",
+     "weather": "Snow Likely, 30°F",
+     "swe_in": 8.09,
      "water_in": 0.6
     }
    ],
    "dry_by": null,
    "wet_from": null,
-   "horizon": "2026-11-24",
+   "horizon": "2026-11-25",
    "sources": [
     {
      "kind": "forecast",
      "statement": "NWS forecast for this trail's gridpoint (8,399 ft), 14 periods.",
      "source_name": "NWS forecast",
      "source_url": "https://api.weather.gov/gridpoints/REV/29,78/forecast",
-     "fetched_at": "2026-11-18T21:34:46.844316Z",
-     "quote": "This Afternoon: Snow. Cloudy. High near 27, with temperatures falling to around 25 in the afternoon. South southwest wind 41 to 53 mph, with gusts as high as 84 mph. Chance of precipitation is 100%. New snow accumulation of 10 to 14 inches possible.",
-     "observed_at": "2026-11-18T13:00:00-08:00"
+     "fetched_at": "2026-11-19T21:47:17.528503Z",
+     "quote": "This Afternoon: Snow and areas of freezing fog. Cloudy. High near 28, with temperatures falling to around 22 in the afternoon. Southwest wind 18 to 28 mph, with gusts as high as 41 mph. Chance of precipitation is 100%. New snow accumulation of 6 to 10 inches possible.",
+     "observed_at": "2026-11-19T13:00:00-08:00"
     }
    ],
    "basis": "Not enough warm days in the forecast to melt it out. South-facing, so it dries fast.",
@@ -358,70 +358,70 @@
   },
   {
    "trail_id": "ellis-peak",
-   "issued": "2026-11-18",
+   "issued": "2026-11-19",
    "days": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "status": "snow",
-     "weather": "Heavy Snow, 26°F",
+     "weather": "Snow, 29°F",
      "swe_in": 0.0,
      "water_in": 0.0
     },
     {
-     "date": "2026-11-19",
-     "status": "snow",
-     "weather": "Heavy Snow, 29°F",
-     "swe_in": 5.59,
-     "water_in": 0.6
-    },
-    {
      "date": "2026-11-20",
      "status": "snow",
-     "weather": "Slight Chance Light Snow then Mostly Sunny, 25°F",
-     "swe_in": 7.79,
+     "weather": "Areas Of Fog, 24°F",
+     "swe_in": 5.84,
      "water_in": 0.6
     },
     {
      "date": "2026-11-21",
      "status": "snow",
-     "weather": "Mostly Sunny then Chance Light Snow, 28°F",
-     "swe_in": 7.79,
+     "weather": "Partly Sunny then Chance Light Snow, 26°F",
+     "swe_in": 5.85,
      "water_in": 0.6
     },
     {
      "date": "2026-11-22",
      "status": "snow",
      "weather": "Light Snow, 24°F",
-     "swe_in": 7.99,
+     "swe_in": 5.85,
      "water_in": 0.6
     },
     {
      "date": "2026-11-23",
      "status": "snow",
-     "weather": "Slight Chance Light Snow, 27°F",
-     "swe_in": 8.59,
+     "weather": "Slight Chance Light Snow then Partly Sunny, 27°F",
+     "swe_in": 6.25,
      "water_in": 0.6
     },
     {
      "date": "2026-11-24",
      "status": "snow",
-     "weather": "Snow, 29°F",
-     "swe_in": 8.59,
+     "weather": "Light Snow Likely, 30°F",
+     "swe_in": 6.25,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-25",
+     "status": "snow",
+     "weather": "Snow Likely, 28°F",
+     "swe_in": 7.0,
      "water_in": 0.6
     }
    ],
    "dry_by": null,
    "wet_from": null,
-   "horizon": "2026-11-24",
+   "horizon": "2026-11-25",
    "sources": [
     {
      "kind": "forecast",
      "statement": "NWS forecast for this trail's gridpoint (8,350 ft), 14 periods.",
      "source_name": "NWS forecast",
      "source_url": "https://api.weather.gov/gridpoints/REV/28,88/forecast",
-     "fetched_at": "2026-11-18T21:34:46.632998Z",
-     "quote": "This Afternoon: Snow. Cloudy, with a high near 26. Southwest wind 45 to 55 mph, with gusts as high as 95 mph. Chance of precipitation is 100%. New snow accumulation of 9 to 13 inches possible.",
-     "observed_at": "2026-11-18T13:00:00-08:00"
+     "fetched_at": "2026-11-19T21:47:17.175772Z",
+     "quote": "This Afternoon: Snow and areas of freezing fog. Cloudy, with a high near 29. Southwest wind 20 to 25 mph, with gusts as high as 40 mph. Chance of precipitation is 90%. New snow accumulation of 4 to 8 inches possible.",
+     "observed_at": "2026-11-19T13:00:00-08:00"
     }
    ],
    "basis": "Not enough warm days in the forecast to melt it out.",
@@ -429,70 +429,70 @@
   },
   {
    "trail_id": "mr-toads-wild-ride",
-   "issued": "2026-11-18",
+   "issued": "2026-11-19",
    "days": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "status": "snow",
-     "weather": "Heavy Snow, 32°F",
+     "weather": "Snow, 34°F",
      "swe_in": 0.0,
      "water_in": 0.0
     },
     {
-     "date": "2026-11-19",
-     "status": "snow",
-     "weather": "Heavy Snow, 33°F",
-     "swe_in": 6.9,
-     "water_in": 0.6
-    },
-    {
      "date": "2026-11-20",
      "status": "snow",
-     "weather": "Mostly Sunny, 30°F",
-     "swe_in": 8.6,
+     "weather": "Chance Light Snow, 28°F",
+     "swe_in": 7.75,
      "water_in": 0.6
     },
     {
      "date": "2026-11-21",
      "status": "snow",
-     "weather": "Mostly Sunny then Slight Chance Light Snow, 35°F",
-     "swe_in": 8.6,
+     "weather": "Partly Sunny then Slight Chance Light Snow, 32°F",
+     "swe_in": 7.77,
      "water_in": 0.6
     },
     {
      "date": "2026-11-22",
      "status": "snow",
-     "weather": "Light Snow, 30°F",
-     "swe_in": 8.65,
+     "weather": "Light Snow Likely, 30°F",
+     "swe_in": 7.77,
      "water_in": 0.6
     },
     {
      "date": "2026-11-23",
      "status": "snow",
-     "weather": "Chance Light Snow then Partly Sunny, 32°F",
-     "swe_in": 9.25,
+     "weather": "Slight Chance Light Snow then Mostly Sunny, 33°F",
+     "swe_in": 8.17,
      "water_in": 0.6
     },
     {
      "date": "2026-11-24",
      "status": "snow",
-     "weather": "Snow, 35°F",
-     "swe_in": 9.25,
+     "weather": "Light Snow Likely, 36°F",
+     "swe_in": 8.17,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-25",
+     "status": "snow",
+     "weather": "Snow Likely, 34°F",
+     "swe_in": 8.92,
      "water_in": 0.6
     }
    ],
    "dry_by": null,
    "wet_from": null,
-   "horizon": "2026-11-24",
+   "horizon": "2026-11-25",
    "sources": [
     {
      "kind": "forecast",
      "statement": "NWS forecast for this trail's gridpoint (9,111 ft), 14 periods.",
      "source_name": "NWS forecast",
      "source_url": "https://api.weather.gov/gridpoints/REV/34,75/forecast",
-     "fetched_at": "2026-11-18T21:34:47.873400Z",
-     "quote": "This Afternoon: Snow. Cloudy, with a high near 27. Southwest wind 40 to 55 mph, with gusts as high as 90 mph. Chance of precipitation is 100%. New snow accumulation of 9 to 13 inches possible.",
-     "observed_at": "2026-11-18T13:00:00-08:00"
+     "fetched_at": "2026-11-19T21:47:19.579633Z",
+     "quote": "This Afternoon: Snow and areas of freezing fog. Cloudy, with a high near 29. Southwest wind 10 to 30 mph, with gusts as high as 45 mph. Chance of precipitation is 90%. New snow accumulation of 4 to 8 inches possible.",
+     "observed_at": "2026-11-19T13:00:00-08:00"
     }
    ],
    "basis": "Not enough warm days in the forecast to melt it out.",
@@ -500,70 +500,70 @@
   },
   {
    "trail_id": "corral-trail",
-   "issued": "2026-11-18",
+   "issued": "2026-11-19",
    "days": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "status": "snow",
-     "weather": "Snow, 32°F",
+     "weather": "Snow, 33°F",
      "swe_in": 0.0,
      "water_in": 0.0
     },
     {
-     "date": "2026-11-19",
-     "status": "snow",
-     "weather": "Heavy Snow, 33°F",
-     "swe_in": 2.6,
-     "water_in": 0.6
-    },
-    {
      "date": "2026-11-20",
      "status": "snow",
-     "weather": "Mostly Sunny, 32°F",
-     "swe_in": 4.3,
+     "weather": "Chance Light Snow, 29°F",
+     "swe_in": 2.42,
      "water_in": 0.6
     },
     {
      "date": "2026-11-21",
      "status": "snow",
-     "weather": "Mostly Sunny then Slight Chance Light Snow, 36°F",
-     "swe_in": 4.3,
+     "weather": "Partly Sunny then Slight Chance Light Snow, 33°F",
+     "swe_in": 2.42,
      "water_in": 0.6
     },
     {
      "date": "2026-11-22",
      "status": "snow",
-     "weather": "Light Snow Likely, 32°F",
-     "swe_in": 4.3,
+     "weather": "Light Snow Likely, 31°F",
+     "swe_in": 2.42,
      "water_in": 0.6
     },
     {
      "date": "2026-11-23",
      "status": "snow",
-     "weather": "Chance Light Snow then Partly Sunny, 33°F",
-     "swe_in": 4.65,
+     "weather": "Slight Chance Light Snow then Mostly Sunny, 32°F",
+     "swe_in": 2.72,
      "water_in": 0.6
     },
     {
      "date": "2026-11-24",
      "status": "snow",
-     "weather": "Light Snow, 37°F",
-     "swe_in": 4.65,
+     "weather": "Light Snow Likely, 36°F",
+     "swe_in": 2.72,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-25",
+     "status": "snow",
+     "weather": "Light Snow Likely, 35°F",
+     "swe_in": 3.12,
      "water_in": 0.6
     }
    ],
    "dry_by": null,
    "wet_from": null,
-   "horizon": "2026-11-24",
+   "horizon": "2026-11-25",
    "sources": [
     {
      "kind": "forecast",
      "statement": "NWS forecast for this trail's gridpoint (7,930 ft), 14 periods.",
      "source_name": "NWS forecast",
      "source_url": "https://api.weather.gov/gridpoints/REV/35,78/forecast",
-     "fetched_at": "2026-11-18T21:34:48.009330Z",
-     "quote": "This Afternoon: Snow. Cloudy, with a high near 28. South wind 5 to 20 mph, with gusts as high as 35 mph. Chance of precipitation is 100%. New snow accumulation of 5 to 9 inches possible.",
-     "observed_at": "2026-11-18T13:00:00-08:00"
+     "fetched_at": "2026-11-19T21:47:20.131442Z",
+     "quote": "This Afternoon: Snow and areas of freezing fog. Cloudy, with a high near 29. Southwest wind 5 to 10 mph, with gusts as high as 30 mph. Chance of precipitation is 100%. New snow accumulation of 3 to 5 inches possible.",
+     "observed_at": "2026-11-19T12:00:00-08:00"
     }
    ],
    "basis": "Not enough warm days in the forecast to melt it out.",
@@ -571,70 +571,70 @@
   },
   {
    "trail_id": "van-sickle-bi-state-park",
-   "issued": "2026-11-18",
+   "issued": "2026-11-19",
    "days": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "status": "snow",
-     "weather": "Snow, 33°F",
+     "weather": "Snow, 34°F",
      "swe_in": 0.0,
      "water_in": 0.0
     },
     {
-     "date": "2026-11-19",
-     "status": "snow",
-     "weather": "Snow, 33°F",
-     "swe_in": 3.14,
-     "water_in": 0.6
-    },
-    {
      "date": "2026-11-20",
      "status": "snow",
-     "weather": "Mostly Sunny, 30°F",
-     "swe_in": 4.44,
+     "weather": "Chance Light Snow, 29°F",
+     "swe_in": 3.27,
      "water_in": 0.6
     },
     {
      "date": "2026-11-21",
      "status": "snow",
-     "weather": "Mostly Sunny, 35°F",
-     "swe_in": 4.44,
+     "weather": "Partly Sunny then Slight Chance Light Snow, 33°F",
+     "swe_in": 3.28,
      "water_in": 0.6
     },
     {
      "date": "2026-11-22",
      "status": "snow",
-     "weather": "Light Snow Likely, 32°F",
-     "swe_in": 4.4,
+     "weather": "Light Snow Likely, 31°F",
+     "swe_in": 3.28,
      "water_in": 0.6
     },
     {
      "date": "2026-11-23",
      "status": "snow",
-     "weather": "Slight Chance Light Snow then Partly Sunny, 32°F",
-     "swe_in": 4.7,
+     "weather": "Slight Chance Light Snow then Mostly Sunny, 31°F",
+     "swe_in": 3.58,
      "water_in": 0.6
     },
     {
      "date": "2026-11-24",
      "status": "snow",
-     "weather": "Light Snow, 36°F",
-     "swe_in": 4.7,
+     "weather": "Light Snow Likely, 35°F",
+     "swe_in": 3.58,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-25",
+     "status": "snow",
+     "weather": "Light Snow Likely, 35°F",
+     "swe_in": 3.92,
      "water_in": 0.6
     }
    ],
    "dry_by": null,
    "wet_from": null,
-   "horizon": "2026-11-24",
+   "horizon": "2026-11-25",
    "sources": [
     {
      "kind": "forecast",
      "statement": "NWS forecast for this trail's gridpoint (9,203 ft), 14 periods.",
      "source_name": "NWS forecast",
      "source_url": "https://api.weather.gov/gridpoints/REV/37,81/forecast",
-     "fetched_at": "2026-11-18T21:34:48.306069Z",
-     "quote": "This Afternoon: Snow. Cloudy, with a high near 26. Southwest wind 40 to 50 mph, with gusts as high as 80 mph. Chance of precipitation is 100%. New snow accumulation of 3 to 5 inches possible.",
-     "observed_at": "2026-11-18T13:00:00-08:00"
+     "fetched_at": "2026-11-19T21:47:20.981941Z",
+     "quote": "This Afternoon: Snow and areas of freezing fog. Mostly cloudy, with a high near 27. Southwest wind 20 to 30 mph, with gusts as high as 45 mph. Chance of precipitation is 80%. New snow accumulation of 2 to 4 inches possible.",
+     "observed_at": "2026-11-19T13:00:00-08:00"
     }
    ],
    "basis": "Not enough warm days in the forecast to melt it out. Faces northwest, so it dries slower.",
@@ -642,70 +642,70 @@
   },
   {
    "trail_id": "mount-rose-summit",
-   "issued": "2026-11-18",
+   "issued": "2026-11-19",
    "days": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "status": "snow",
-     "weather": "Heavy Snow, 25°F",
+     "weather": "Snow, 24°F",
      "swe_in": 0.0,
      "water_in": 0.0
     },
     {
-     "date": "2026-11-19",
-     "status": "snow",
-     "weather": "Heavy Snow, 23°F",
-     "swe_in": 6.3,
-     "water_in": 0.6
-    },
-    {
      "date": "2026-11-20",
      "status": "snow",
-     "weather": "Mostly Sunny, 21°F",
-     "swe_in": 7.45,
+     "weather": "Chance Light Snow then Mostly Sunny, 19°F",
+     "swe_in": 7.0,
      "water_in": 0.6
     },
     {
      "date": "2026-11-21",
      "status": "snow",
-     "weather": "Mostly Sunny, 24°F",
-     "swe_in": 7.45,
+     "weather": "Partly Sunny, 23°F",
+     "swe_in": 7.01,
      "water_in": 0.6
     },
     {
      "date": "2026-11-22",
      "status": "snow",
-     "weather": "Light Snow Likely, 22°F",
-     "swe_in": 7.5,
+     "weather": "Light Snow Likely, 21°F",
+     "swe_in": 7.01,
      "water_in": 0.6
     },
     {
      "date": "2026-11-23",
      "status": "snow",
-     "weather": "Slight Chance Light Snow then Partly Sunny, 23°F",
-     "swe_in": 7.85,
+     "weather": "Partly Sunny, 21°F",
+     "swe_in": 7.23,
      "water_in": 0.6
     },
     {
      "date": "2026-11-24",
      "status": "snow",
-     "weather": "Light Snow, 26°F",
-     "swe_in": 7.85,
+     "weather": "Light Snow Likely, 26°F",
+     "swe_in": 7.23,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-25",
+     "status": "snow",
+     "weather": "Chance Light Snow, 25°F",
+     "swe_in": 7.58,
      "water_in": 0.6
     }
    ],
    "dry_by": null,
    "wet_from": null,
-   "horizon": "2026-11-24",
+   "horizon": "2026-11-25",
    "sources": [
     {
      "kind": "forecast",
      "statement": "NWS forecast for this trail's gridpoint (9,718 ft), 14 periods.",
      "source_name": "NWS forecast",
      "source_url": "https://api.weather.gov/gridpoints/REV/40,99/forecast",
-     "fetched_at": "2026-11-18T21:34:48.587027Z",
-     "quote": "This Afternoon: Snow. Cloudy, with a high near 25. Southwest wind 40 to 45 mph, with gusts as high as 75 mph. Chance of precipitation is 100%. New snow accumulation of 9 to 13 inches possible.",
-     "observed_at": "2026-11-18T13:00:00-08:00"
+     "fetched_at": "2026-11-19T21:47:21.734968Z",
+     "quote": "This Afternoon: Snow and areas of freezing fog. Mostly cloudy, with a high near 24. West wind 15 to 25 mph, with gusts as high as 40 mph. Chance of precipitation is 80%. New snow accumulation of 3 to 5 inches possible.",
+     "observed_at": "2026-11-19T13:00:00-08:00"
     }
    ],
    "basis": "Not enough warm days in the forecast to melt it out.",
@@ -713,70 +713,70 @@
   },
   {
    "trail_id": "flume-trail",
-   "issued": "2026-11-18",
+   "issued": "2026-11-19",
    "days": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "status": "snow",
-     "weather": "Snow, 32°F",
+     "weather": "Snow Likely, 30°F",
      "swe_in": 0.0,
      "water_in": 0.0
     },
     {
-     "date": "2026-11-19",
-     "status": "snow",
-     "weather": "Snow, 30°F",
-     "swe_in": 4.02,
-     "water_in": 0.6
-    },
-    {
      "date": "2026-11-20",
      "status": "snow",
-     "weather": "Mostly Sunny, 29°F",
-     "swe_in": 5.12,
+     "weather": "Areas Of Freezing Fog then Mostly Sunny, 27°F",
+     "swe_in": 4.61,
      "water_in": 0.6
     },
     {
      "date": "2026-11-21",
      "status": "snow",
-     "weather": "Mostly Sunny, 32°F",
-     "swe_in": 5.12,
+     "weather": "Partly Sunny, 30°F",
+     "swe_in": 4.62,
      "water_in": 0.6
     },
     {
      "date": "2026-11-22",
      "status": "snow",
-     "weather": "Light Snow Likely, 29°F",
-     "swe_in": 5.17,
+     "weather": "Light Snow Likely, 28°F",
+     "swe_in": 4.62,
      "water_in": 0.6
     },
     {
      "date": "2026-11-23",
      "status": "snow",
-     "weather": "Slight Chance Light Snow then Partly Sunny, 30°F",
-     "swe_in": 5.52,
+     "weather": "Partly Sunny, 28°F",
+     "swe_in": 5.02,
      "water_in": 0.6
     },
     {
      "date": "2026-11-24",
      "status": "snow",
-     "weather": "Light Snow, 33°F",
-     "swe_in": 5.52,
+     "weather": "Light Snow Likely, 32°F",
+     "swe_in": 5.02,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-25",
+     "status": "snow",
+     "weather": "Light Snow Likely, 32°F",
+     "swe_in": 5.27,
      "water_in": 0.6
     }
    ],
    "dry_by": null,
    "wet_from": null,
-   "horizon": "2026-11-24",
+   "horizon": "2026-11-25",
    "sources": [
     {
      "kind": "forecast",
      "statement": "NWS forecast for this trail's gridpoint (8,215 ft), 14 periods.",
      "source_name": "NWS forecast",
      "source_url": "https://api.weather.gov/gridpoints/REV/39,90/forecast",
-     "fetched_at": "2026-11-18T21:34:48.435931Z",
-     "quote": "This Afternoon: Snow. Cloudy, with a high near 29. Southwest wind 30 to 35 mph, with gusts as high as 55 mph. Chance of precipitation is 100%. New snow accumulation of 3 to 5 inches possible.",
-     "observed_at": "2026-11-18T13:00:00-08:00"
+     "fetched_at": "2026-11-19T21:47:21.355097Z",
+     "quote": "This Afternoon: Snow likely and areas of freezing fog. Mostly cloudy, with a high near 27. West wind 15 to 20 mph, with gusts as high as 35 mph. Chance of precipitation is 70%. New snow accumulation of 2 to 4 inches possible.",
+     "observed_at": "2026-11-19T13:00:00-08:00"
     }
    ],
    "basis": "Not enough warm days in the forecast to melt it out.",
@@ -784,70 +784,70 @@
   },
   {
    "trail_id": "marlette-lake",
-   "issued": "2026-11-18",
+   "issued": "2026-11-19",
    "days": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "status": "snow",
-     "weather": "Snow, 31°F",
+     "weather": "Snow Likely, 29°F",
      "swe_in": 0.0,
      "water_in": 0.0
     },
     {
-     "date": "2026-11-19",
-     "status": "snow",
-     "weather": "Snow, 29°F",
-     "swe_in": 3.83,
-     "water_in": 0.6
-    },
-    {
      "date": "2026-11-20",
      "status": "snow",
-     "weather": "Mostly Sunny, 28°F",
-     "swe_in": 4.93,
+     "weather": "Areas Of Freezing Fog then Mostly Sunny, 26°F",
+     "swe_in": 4.41,
      "water_in": 0.6
     },
     {
      "date": "2026-11-21",
      "status": "snow",
-     "weather": "Mostly Sunny, 31°F",
-     "swe_in": 4.93,
+     "weather": "Partly Sunny, 29°F",
+     "swe_in": 4.42,
      "water_in": 0.6
     },
     {
      "date": "2026-11-22",
      "status": "snow",
-     "weather": "Light Snow Likely, 28°F",
-     "swe_in": 4.98,
+     "weather": "Light Snow Likely, 27°F",
+     "swe_in": 4.42,
      "water_in": 0.6
     },
     {
      "date": "2026-11-23",
      "status": "snow",
-     "weather": "Slight Chance Light Snow then Partly Sunny, 29°F",
-     "swe_in": 5.33,
+     "weather": "Partly Sunny, 27°F",
+     "swe_in": 4.82,
      "water_in": 0.6
     },
     {
      "date": "2026-11-24",
      "status": "snow",
-     "weather": "Light Snow, 32°F",
-     "swe_in": 5.33,
+     "weather": "Light Snow Likely, 31°F",
+     "swe_in": 4.82,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-25",
+     "status": "snow",
+     "weather": "Light Snow Likely, 31°F",
+     "swe_in": 5.07,
      "water_in": 0.6
     }
    ],
    "dry_by": null,
    "wet_from": null,
-   "horizon": "2026-11-24",
+   "horizon": "2026-11-25",
    "sources": [
     {
      "kind": "forecast",
      "statement": "NWS forecast for this trail's gridpoint (8,215 ft), 14 periods.",
      "source_name": "NWS forecast",
      "source_url": "https://api.weather.gov/gridpoints/REV/39,90/forecast",
-     "fetched_at": "2026-11-18T21:34:48.435931Z",
-     "quote": "This Afternoon: Snow. Cloudy, with a high near 29. Southwest wind 30 to 35 mph, with gusts as high as 55 mph. Chance of precipitation is 100%. New snow accumulation of 3 to 5 inches possible.",
-     "observed_at": "2026-11-18T13:00:00-08:00"
+     "fetched_at": "2026-11-19T21:47:21.355097Z",
+     "quote": "This Afternoon: Snow likely and areas of freezing fog. Mostly cloudy, with a high near 27. West wind 15 to 20 mph, with gusts as high as 35 mph. Chance of precipitation is 70%. New snow accumulation of 2 to 4 inches possible.",
+     "observed_at": "2026-11-19T13:00:00-08:00"
     }
    ],
    "basis": "Not enough warm days in the forecast to melt it out.",
@@ -855,70 +855,70 @@
   },
   {
    "trail_id": "page-meadows",
-   "issued": "2026-11-18",
+   "issued": "2026-11-19",
    "days": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "status": "snow",
      "weather": "Snow, 33°F",
      "swe_in": 0.0,
      "water_in": 0.0
     },
     {
-     "date": "2026-11-19",
-     "status": "snow",
-     "weather": "Heavy Snow, 33°F",
-     "swe_in": 3.39,
-     "water_in": 0.6
-    },
-    {
      "date": "2026-11-20",
      "status": "snow",
-     "weather": "Slight Chance Light Snow then Mostly Sunny, 33°F",
-     "swe_in": 5.19,
+     "weather": "Chance Light Snow then Areas Of Freezing Fog, 31°F",
+     "swe_in": 2.92,
      "water_in": 0.6
     },
     {
      "date": "2026-11-21",
      "status": "snow",
-     "weather": "Mostly Sunny then Chance Light Snow, 35°F",
-     "swe_in": 5.19,
+     "weather": "Partly Sunny then Chance Light Snow, 33°F",
+     "swe_in": 2.93,
      "water_in": 0.6
     },
     {
      "date": "2026-11-22",
      "status": "snow",
      "weather": "Light Snow, 31°F",
-     "swe_in": 5.36,
+     "swe_in": 2.93,
      "water_in": 0.6
     },
     {
      "date": "2026-11-23",
      "status": "snow",
-     "weather": "Slight Chance Light Snow, 34°F",
-     "swe_in": 5.96,
+     "weather": "Partly Sunny, 33°F",
+     "swe_in": 3.33,
      "water_in": 0.6
     },
     {
      "date": "2026-11-24",
      "status": "snow",
-     "weather": "Snow, 36°F",
-     "swe_in": 5.95,
+     "weather": "Light Snow Likely, 37°F",
+     "swe_in": 3.33,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-25",
+     "status": "snow",
+     "weather": "Light Snow Likely, 35°F",
+     "swe_in": 3.92,
      "water_in": 0.6
     }
    ],
    "dry_by": null,
    "wet_from": null,
-   "horizon": "2026-11-24",
+   "horizon": "2026-11-25",
    "sources": [
     {
      "kind": "forecast",
      "statement": "NWS forecast for this trail's gridpoint (6,988 ft), 14 periods.",
      "source_name": "NWS forecast",
      "source_url": "https://api.weather.gov/gridpoints/REV/29,92/forecast",
-     "fetched_at": "2026-11-18T21:34:47.133811Z",
-     "quote": "This Afternoon: Snow. Cloudy, with a high near 32. Southwest wind 10 to 20 mph, with gusts as high as 35 mph. Chance of precipitation is 100%. New snow accumulation of 6 to 10 inches possible.",
-     "observed_at": "2026-11-18T13:00:00-08:00"
+     "fetched_at": "2026-11-19T21:47:18.131629Z",
+     "quote": "This Afternoon: Snow and areas of freezing fog. Cloudy, with a high near 32. Southwest wind 5 to 10 mph, with gusts as high as 35 mph. Chance of precipitation is 90%. New snow accumulation of 3 to 7 inches possible.",
+     "observed_at": "2026-11-19T13:00:00-08:00"
     }
    ],
    "basis": "Not enough warm days in the forecast to melt it out. South-facing, so it dries fast.",
@@ -926,70 +926,70 @@
   },
   {
    "trail_id": "five-lakes",
-   "issued": "2026-11-18",
+   "issued": "2026-11-19",
    "days": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "status": "snow",
-     "weather": "Snow, 31°F",
+     "weather": "Snow, 33°F",
      "swe_in": 0.0,
      "water_in": 0.0
     },
     {
-     "date": "2026-11-19",
-     "status": "snow",
-     "weather": "Heavy Snow, 32°F",
-     "swe_in": 3.94,
-     "water_in": 0.6
-    },
-    {
      "date": "2026-11-20",
      "status": "snow",
-     "weather": "Slight Chance Light Snow then Widespread Frost, 29°F",
-     "swe_in": 5.64,
+     "weather": "Chance Light Snow then Widespread Frost, 27°F",
+     "swe_in": 3.67,
      "water_in": 0.6
     },
     {
      "date": "2026-11-21",
      "status": "snow",
-     "weather": "Widespread Frost then Chance Light Snow, 31°F",
-     "swe_in": 5.64,
+     "weather": "Widespread Frost then Chance Light Snow, 29°F",
+     "swe_in": 3.69,
      "water_in": 0.6
     },
     {
      "date": "2026-11-22",
      "status": "snow",
      "weather": "Light Snow, 28°F",
-     "swe_in": 5.84,
+     "swe_in": 3.79,
      "water_in": 0.6
     },
     {
      "date": "2026-11-23",
      "status": "snow",
-     "weather": "Slight Chance Light Snow, 30°F",
-     "swe_in": 6.44,
+     "weather": "Partly Sunny, 30°F",
+     "swe_in": 4.29,
      "water_in": 0.6
     },
     {
      "date": "2026-11-24",
      "status": "snow",
-     "weather": "Snow, 32°F",
-     "swe_in": 6.45,
+     "weather": "Light Snow Likely, 33°F",
+     "swe_in": 4.29,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-25",
+     "status": "snow",
+     "weather": "Snow Likely, 33°F",
+     "swe_in": 5.19,
      "water_in": 0.6
     }
    ],
    "dry_by": null,
    "wet_from": null,
-   "horizon": "2026-11-24",
+   "horizon": "2026-11-25",
    "sources": [
     {
      "kind": "forecast",
      "statement": "NWS forecast for this trail's gridpoint (7,772 ft), 14 periods.",
      "source_name": "NWS forecast",
      "source_url": "https://api.weather.gov/gridpoints/STO/89,86/forecast",
-     "fetched_at": "2026-11-18T21:34:49.028428Z",
-     "quote": "This Afternoon: Snow and areas of freezing fog. Cloudy, with a high near 29. South southwest wind 10 to 14 mph, with gusts as high as 48 mph. Chance of precipitation is 100%. New snow accumulation of 8 to 12 inches possible.",
-     "observed_at": "2026-11-18T12:00:00-08:00"
+     "fetched_at": "2026-11-19T21:47:23.028599Z",
+     "quote": "This Afternoon: Snow. Cloudy. High near 31, with temperatures falling to around 26 in the afternoon. Southwest wind 6 to 10 mph, with gusts as high as 25 mph. Chance of precipitation is 100%. New snow accumulation of 4 to 8 inches possible.",
+     "observed_at": "2026-11-19T13:00:00-08:00"
     }
    ],
    "basis": "Not enough warm days in the forecast to melt it out. Faces southeast and gets morning sun.",
@@ -997,70 +997,70 @@
   },
   {
    "trail_id": "castle-peak",
-   "issued": "2026-11-18",
+   "issued": "2026-11-19",
    "days": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "status": "snow",
-     "weather": "Heavy Snow, 25°F",
+     "weather": "Snow, 24°F",
      "swe_in": 0.0,
      "water_in": 0.0
     },
     {
-     "date": "2026-11-19",
-     "status": "snow",
-     "weather": "Heavy Snow, 25°F",
-     "swe_in": 6.6,
-     "water_in": 0.6
-    },
-    {
      "date": "2026-11-20",
      "status": "snow",
-     "weather": "Slight Chance Light Snow then Widespread Frost, 25°F",
-     "swe_in": 8.2,
+     "weather": "Chance Light Snow then Widespread Frost, 24°F",
+     "swe_in": 7.2,
      "water_in": 0.6
     },
     {
      "date": "2026-11-21",
      "status": "snow",
-     "weather": "Widespread Frost then Chance Light Snow, 26°F",
-     "swe_in": 8.2,
+     "weather": "Widespread Frost then Light Snow Likely, 25°F",
+     "swe_in": 7.24,
      "water_in": 0.6
     },
     {
      "date": "2026-11-22",
      "status": "snow",
      "weather": "Light Snow, 23°F",
-     "swe_in": 8.5,
+     "swe_in": 7.42,
      "water_in": 0.6
     },
     {
      "date": "2026-11-23",
      "status": "snow",
-     "weather": "Chance Light Snow, 26°F",
-     "swe_in": 9.1,
+     "weather": "Partly Sunny, 27°F",
+     "swe_in": 7.92,
      "water_in": 0.6
     },
     {
      "date": "2026-11-24",
      "status": "snow",
-     "weather": "Snow, 28°F",
-     "swe_in": 9.11,
+     "weather": "Light Snow Likely, 28°F",
+     "swe_in": 7.92,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-25",
+     "status": "snow",
+     "weather": "Snow Likely, 27°F",
+     "swe_in": 8.82,
      "water_in": 0.6
     }
    ],
    "dry_by": null,
    "wet_from": null,
-   "horizon": "2026-11-24",
+   "horizon": "2026-11-25",
    "sources": [
     {
      "kind": "forecast",
      "statement": "NWS forecast for this trail's gridpoint (7,510 ft), 14 periods.",
      "source_name": "NWS forecast",
      "source_url": "https://api.weather.gov/gridpoints/STO/87,95/forecast",
-     "fetched_at": "2026-11-18T21:34:48.741917Z",
-     "quote": "This Afternoon: Snow and areas of freezing fog. Cloudy, with a high near 27. South southwest wind around 13 mph, with gusts as high as 37 mph. Chance of precipitation is 100%. New snow accumulation of 10 to 14 inches possible.",
-     "observed_at": "2026-11-18T13:00:00-08:00"
+     "fetched_at": "2026-11-19T21:47:22.053239Z",
+     "quote": "This Afternoon: Snow. Cloudy. High near 26, with temperatures falling to around 24 in the afternoon. Southwest wind around 9 mph, with gusts as high as 24 mph. Chance of precipitation is 100%. New snow accumulation of 3 to 5 inches possible.",
+     "observed_at": "2026-11-19T13:00:00-08:00"
     }
    ],
    "basis": "Not enough warm days in the forecast to melt it out.",
@@ -1068,70 +1068,70 @@
   },
   {
    "trail_id": "mount-judah-loop",
-   "issued": "2026-11-18",
+   "issued": "2026-11-19",
    "days": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "status": "snow",
      "weather": "Snow, 29°F",
      "swe_in": 0.0,
      "water_in": 0.0
     },
     {
-     "date": "2026-11-19",
-     "status": "snow",
-     "weather": "Heavy Snow, 30°F",
-     "swe_in": 4.43,
-     "water_in": 0.6
-    },
-    {
      "date": "2026-11-20",
      "status": "snow",
-     "weather": "Slight Chance Light Snow then Widespread Frost, 29°F",
-     "swe_in": 5.93,
+     "weather": "Chance Light Snow then Widespread Frost, 28°F",
+     "swe_in": 4.26,
      "water_in": 0.6
     },
     {
      "date": "2026-11-21",
      "status": "snow",
-     "weather": "Widespread Frost then Chance Light Snow, 31°F",
-     "swe_in": 5.93,
+     "weather": "Widespread Frost then Light Snow Likely, 29°F",
+     "swe_in": 4.27,
      "water_in": 0.6
     },
     {
      "date": "2026-11-22",
      "status": "snow",
-     "weather": "Light Snow, 28°F",
-     "swe_in": 6.13,
+     "weather": "Light Snow, 27°F",
+     "swe_in": 4.45,
      "water_in": 0.6
     },
     {
      "date": "2026-11-23",
      "status": "snow",
-     "weather": "Chance Light Snow, 30°F",
-     "swe_in": 6.73,
+     "weather": "Partly Sunny, 31°F",
+     "swe_in": 4.85,
      "water_in": 0.6
     },
     {
      "date": "2026-11-24",
      "status": "snow",
-     "weather": "Snow, 32°F",
-     "swe_in": 6.74,
+     "weather": "Light Snow Likely, 33°F",
+     "swe_in": 4.85,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-25",
+     "status": "snow",
+     "weather": "Light Snow Likely, 32°F",
+     "swe_in": 5.65,
      "water_in": 0.6
     }
    ],
    "dry_by": null,
    "wet_from": null,
-   "horizon": "2026-11-24",
+   "horizon": "2026-11-25",
    "sources": [
     {
      "kind": "forecast",
      "statement": "NWS forecast for this trail's gridpoint (7,316 ft), 14 periods.",
      "source_name": "NWS forecast",
      "source_url": "https://api.weather.gov/gridpoints/STO/88,92/forecast",
-     "fetched_at": "2026-11-18T21:34:48.884915Z",
-     "quote": "This Afternoon: Snow and areas of freezing fog. Cloudy, with a high near 30. South southwest wind around 10 mph, with gusts as high as 33 mph. Chance of precipitation is 100%. New snow accumulation of 8 to 12 inches possible.",
-     "observed_at": "2026-11-18T13:00:00-08:00"
+     "fetched_at": "2026-11-19T21:47:22.795961Z",
+     "quote": "This Afternoon: Snow. Cloudy. High near 30, with temperatures falling to around 27 in the afternoon. Southwest wind around 8 mph, with gusts as high as 23 mph. Chance of precipitation is 100%. New snow accumulation of 3 to 5 inches possible.",
+     "observed_at": "2026-11-19T13:00:00-08:00"
     }
    ],
    "basis": "Not enough warm days in the forecast to melt it out. Faces northwest, so it dries slower.",
@@ -1139,70 +1139,70 @@
   },
   {
    "trail_id": "donner-lake-rim-trail",
-   "issued": "2026-11-18",
+   "issued": "2026-11-19",
    "days": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "status": "snow",
-     "weather": "Heavy Snow, 30°F",
+     "weather": "Snow, 31°F",
      "swe_in": 0.0,
      "water_in": 0.0
     },
     {
-     "date": "2026-11-19",
-     "status": "snow",
-     "weather": "Heavy Snow, 31°F",
-     "swe_in": 4.63,
-     "water_in": 0.6
-    },
-    {
      "date": "2026-11-20",
      "status": "snow",
-     "weather": "Slight Chance Light Snow then Mostly Sunny, 31°F",
-     "swe_in": 6.43,
+     "weather": "Light Snow Likely then Areas Of Freezing Fog, 29°F",
+     "swe_in": 3.96,
      "water_in": 0.6
     },
     {
      "date": "2026-11-21",
      "status": "snow",
-     "weather": "Mostly Sunny then Chance Light Snow, 33°F",
-     "swe_in": 6.43,
+     "weather": "Partly Sunny then Chance Light Snow, 30°F",
+     "swe_in": 4.06,
      "water_in": 0.6
     },
     {
      "date": "2026-11-22",
      "status": "snow",
      "weather": "Light Snow, 28°F",
-     "swe_in": 6.63,
+     "swe_in": 4.19,
      "water_in": 0.6
     },
     {
      "date": "2026-11-23",
      "status": "snow",
-     "weather": "Slight Chance Light Snow, 31°F",
-     "swe_in": 7.23,
+     "weather": "Partly Sunny, 32°F",
+     "swe_in": 4.49,
      "water_in": 0.6
     },
     {
      "date": "2026-11-24",
      "status": "snow",
-     "weather": "Light Snow Likely, 33°F",
-     "swe_in": 7.23,
+     "weather": "Chance Light Snow, 34°F",
+     "swe_in": 4.49,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-25",
+     "status": "snow",
+     "weather": "Light Snow Likely, 32°F",
+     "swe_in": 5.14,
      "water_in": 0.6
     }
    ],
    "dry_by": null,
    "wet_from": null,
-   "horizon": "2026-11-24",
+   "horizon": "2026-11-25",
    "sources": [
     {
      "kind": "forecast",
      "statement": "NWS forecast for this trail's gridpoint (6,998 ft), 14 periods.",
      "source_name": "NWS forecast",
      "source_url": "https://api.weather.gov/gridpoints/REV/27,101/forecast",
-     "fetched_at": "2026-11-18T21:34:46.364628Z",
-     "quote": "This Afternoon: Snow. Cloudy, with a high near 30. Southwest wind 10 to 15 mph, with gusts as high as 30 mph. Chance of precipitation is 100%. New snow accumulation of 9 to 13 inches possible.",
-     "observed_at": "2026-11-18T13:00:00-08:00"
+     "fetched_at": "2026-11-19T21:47:16.888610Z",
+     "quote": "This Afternoon: Snow and areas of freezing fog. Cloudy, with a high near 31. Southwest wind around 10 mph, with gusts as high as 25 mph. Chance of precipitation is 90%. New snow accumulation of 4 to 6 inches possible.",
+     "observed_at": "2026-11-19T13:00:00-08:00"
     }
    ],
    "basis": "Not enough warm days in the forecast to melt it out. South-facing, so it dries fast.",
@@ -1210,70 +1210,70 @@
   },
   {
    "trail_id": "sawtooth-trail",
-   "issued": "2026-11-18",
+   "issued": "2026-11-19",
    "days": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "status": "snow",
      "weather": "Snow, 35°F",
      "swe_in": 0.0,
      "water_in": 0.0
     },
     {
-     "date": "2026-11-19",
-     "status": "snow",
-     "weather": "Heavy Snow, 36°F",
-     "swe_in": 2.37,
-     "water_in": 0.6
-    },
-    {
      "date": "2026-11-20",
      "status": "snow",
-     "weather": "Mostly Sunny, 35°F",
-     "swe_in": 3.63,
+     "weather": "Chance Light Snow then Areas Of Freezing Fog, 32°F",
+     "swe_in": 2.22,
      "water_in": 0.6
     },
     {
      "date": "2026-11-21",
      "status": "snow",
-     "weather": "Mostly Sunny then Chance Light Snow, 38°F",
-     "swe_in": 3.53,
+     "weather": "Partly Sunny then Chance Light Snow, 34°F",
+     "swe_in": 2.23,
      "water_in": 0.6
     },
     {
      "date": "2026-11-22",
      "status": "snow",
      "weather": "Light Snow, 33°F",
-     "swe_in": 3.51,
+     "swe_in": 2.21,
      "water_in": 0.6
     },
     {
      "date": "2026-11-23",
      "status": "snow",
-     "weather": "Slight Chance Light Snow, 36°F",
-     "swe_in": 3.86,
+     "weather": "Partly Sunny, 35°F",
+     "swe_in": 2.5,
      "water_in": 0.6
     },
     {
      "date": "2026-11-24",
      "status": "snow",
-     "weather": "Light Snow Likely, 38°F",
-     "swe_in": 3.81,
+     "weather": "Chance Light Snow, 38°F",
+     "swe_in": 2.43,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-25",
+     "status": "snow",
+     "weather": "Light Snow Likely, 37°F",
+     "swe_in": 2.9,
      "water_in": 0.6
     }
    ],
    "dry_by": null,
    "wet_from": null,
-   "horizon": "2026-11-24",
+   "horizon": "2026-11-25",
    "sources": [
     {
      "kind": "forecast",
      "statement": "NWS forecast for this trail's gridpoint (6,483 ft), 14 periods.",
      "source_name": "NWS forecast",
      "source_url": "https://api.weather.gov/gridpoints/REV/30,98/forecast",
-     "fetched_at": "2026-11-18T21:34:47.585610Z",
-     "quote": "This Afternoon: Snow. Cloudy, with a high near 34. South wind 10 to 15 mph, with gusts as high as 30 mph. Chance of precipitation is 100%. New snow accumulation of 3 to 7 inches possible.",
-     "observed_at": "2026-11-18T13:00:00-08:00"
+     "fetched_at": "2026-11-19T21:47:18.975575Z",
+     "quote": "This Afternoon: Snow and areas of freezing fog. Cloudy, with a high near 34. Southwest wind 5 to 10 mph, with gusts as high as 25 mph. Chance of precipitation is 90%. New snow accumulation of 2 to 4 inches possible.",
+     "observed_at": "2026-11-19T13:00:00-08:00"
     }
    ],
    "basis": "Not enough warm days in the forecast to melt it out.",
@@ -1281,70 +1281,70 @@
   },
   {
    "trail_id": "trt-brockway-to-martis-peak",
-   "issued": "2026-11-18",
+   "issued": "2026-11-19",
    "days": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "status": "snow",
-     "weather": "Snow, 30°F",
+     "weather": "Snow, 29°F",
      "swe_in": 0.0,
      "water_in": 0.0
     },
     {
-     "date": "2026-11-19",
-     "status": "snow",
-     "weather": "Heavy Snow, 29°F",
-     "swe_in": 5.02,
-     "water_in": 0.6
-    },
-    {
      "date": "2026-11-20",
      "status": "snow",
-     "weather": "Mostly Sunny, 28°F",
-     "swe_in": 6.22,
+     "weather": "Areas Of Fog then Mostly Sunny, 27°F",
+     "swe_in": 5.8,
      "water_in": 0.6
     },
     {
      "date": "2026-11-21",
      "status": "snow",
-     "weather": "Mostly Sunny then Slight Chance Light Snow, 32°F",
-     "swe_in": 6.22,
+     "weather": "Partly Sunny then Chance Light Snow, 30°F",
+     "swe_in": 5.82,
      "water_in": 0.6
     },
     {
      "date": "2026-11-22",
      "status": "snow",
-     "weather": "Light Snow, 29°F",
-     "swe_in": 6.27,
+     "weather": "Light Snow Likely, 27°F",
+     "swe_in": 5.82,
      "water_in": 0.6
     },
     {
      "date": "2026-11-23",
      "status": "snow",
-     "weather": "Slight Chance Light Snow then Partly Sunny, 30°F",
-     "swe_in": 6.72,
+     "weather": "Partly Sunny, 29°F",
+     "swe_in": 6.04,
      "water_in": 0.6
     },
     {
      "date": "2026-11-24",
      "status": "snow",
-     "weather": "Light Snow, 33°F",
-     "swe_in": 6.72,
+     "weather": "Light Snow Likely, 33°F",
+     "swe_in": 6.04,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-25",
+     "status": "snow",
+     "weather": "Light Snow Likely, 32°F",
+     "swe_in": 6.39,
      "water_in": 0.6
     }
    ],
    "dry_by": null,
    "wet_from": null,
-   "horizon": "2026-11-24",
+   "horizon": "2026-11-25",
    "sources": [
     {
      "kind": "forecast",
      "statement": "NWS forecast for this trail's gridpoint (7,910 ft), 14 periods.",
      "source_name": "NWS forecast",
      "source_url": "https://api.weather.gov/gridpoints/REV/35,97/forecast",
-     "fetched_at": "2026-11-18T21:34:48.167917Z",
-     "quote": "This Afternoon: Snow. Cloudy, with a high near 30. South wind 10 to 20 mph, with gusts as high as 30 mph. Chance of precipitation is 100%. New snow accumulation of 6 to 10 inches possible.",
-     "observed_at": "2026-11-18T13:00:00-08:00"
+     "fetched_at": "2026-11-19T21:47:20.702830Z",
+     "quote": "This Afternoon: Snow and areas of freezing fog. Cloudy, with a high near 29. Southwest wind around 10 mph, with gusts as high as 25 mph. Chance of precipitation is 90%. New snow accumulation of 2 to 4 inches possible.",
+     "observed_at": "2026-11-19T13:00:00-08:00"
     }
    ],
    "basis": "Not enough warm days in the forecast to melt it out. South-facing, so it dries fast.",
@@ -1352,70 +1352,70 @@
   },
   {
    "trail_id": "big-meadow-to-round-lake",
-   "issued": "2026-11-18",
+   "issued": "2026-11-19",
    "days": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "status": "snow",
-     "weather": "Heavy Snow, 30°F",
+     "weather": "Snow, 31°F",
      "swe_in": 0.0,
      "water_in": 0.0
     },
     {
-     "date": "2026-11-19",
-     "status": "snow",
-     "weather": "Heavy Snow then Snow Showers, 32°F",
-     "swe_in": 4.61,
-     "water_in": 0.6
-    },
-    {
      "date": "2026-11-20",
      "status": "snow",
-     "weather": "Widespread Frost, 31°F",
-     "swe_in": 6.31,
+     "weather": "Widespread Frost, 28°F",
+     "swe_in": 4.7,
      "water_in": 0.6
     },
     {
      "date": "2026-11-21",
      "status": "snow",
-     "weather": "Mostly Sunny then Slight Chance Light Snow, 35°F",
-     "swe_in": 6.31,
+     "weather": "Partly Sunny then Slight Chance Light Snow, 32°F",
+     "swe_in": 4.7,
      "water_in": 0.6
     },
     {
      "date": "2026-11-22",
      "status": "snow",
-     "weather": "Light Snow, 31°F",
-     "swe_in": 6.39,
+     "weather": "Light Snow, 29°F",
+     "swe_in": 4.73,
      "water_in": 0.6
     },
     {
      "date": "2026-11-23",
      "status": "snow",
-     "weather": "Chance Light Snow then Partly Sunny, 33°F",
-     "swe_in": 7.09,
+     "weather": "Slight Chance Light Snow then Mostly Sunny, 34°F",
+     "swe_in": 5.23,
      "water_in": 0.6
     },
     {
      "date": "2026-11-24",
      "status": "snow",
-     "weather": "Light Snow, 35°F",
-     "swe_in": 7.1,
+     "weather": "Light Snow Likely, 36°F",
+     "swe_in": 5.23,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-25",
+     "status": "snow",
+     "weather": "Snow Likely, 34°F",
+     "swe_in": 5.95,
      "water_in": 0.6
     }
    ],
    "dry_by": null,
    "wet_from": null,
-   "horizon": "2026-11-24",
+   "horizon": "2026-11-25",
    "sources": [
     {
      "kind": "forecast",
      "statement": "NWS forecast for this trail's gridpoint (8,153 ft), 14 periods.",
      "source_name": "NWS forecast",
      "source_url": "https://api.weather.gov/gridpoints/STO/94,66/forecast",
-     "fetched_at": "2026-11-18T21:34:49.066044Z",
-     "quote": "This Afternoon: Snow and areas of freezing fog. Cloudy, with a high near 28. South wind around 7 mph, with gusts as high as 39 mph. Chance of precipitation is 100%. New snow accumulation of 10 to 14 inches possible.",
-     "observed_at": "2026-11-18T13:00:00-08:00"
+     "fetched_at": "2026-11-19T21:47:23.872448Z",
+     "quote": "This Afternoon: Snow. Cloudy. High near 29, with temperatures falling to around 24 in the afternoon. Southwest wind around 6 mph, with gusts as high as 28 mph. Chance of precipitation is 100%. New snow accumulation of 4 to 8 inches possible.",
+     "observed_at": "2026-11-19T13:00:00-08:00"
     }
    ],
    "basis": "Not enough warm days in the forecast to melt it out. Faces northwest, so it dries slower.",
@@ -1424,14 +1424,9 @@
  ],
  "snow_lines": [
   {
-   "date": "2026-11-18",
-   "snow_line_ft": 6450,
-   "kind": "today"
-  },
-  {
    "date": "2026-11-19",
-   "snow_line_ft": 6000,
-   "kind": "forecast"
+   "snow_line_ft": 5950,
+   "kind": "today"
   },
   {
    "date": "2026-11-20",
@@ -1455,6 +1450,11 @@
   },
   {
    "date": "2026-11-24",
+   "snow_line_ft": 6000,
+   "kind": "forecast"
+  },
+  {
+   "date": "2026-11-25",
    "snow_line_ft": 6000,
    "kind": "forecast"
   }
