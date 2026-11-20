@@ -2,134 +2,91 @@
  {
   "trail_id": "mount-tallac",
   "trail_name": "Mount Tallac (via Mt. Tallac Trailhead)",
-  "date": "2026-11-19",
-  "status": "snow",
+  "date": "2026-11-20",
+  "status": "muddy",
   "claims": [
    {
-    "kind": "snow",
-    "statement": "Snow likely above ~6,060 ft (trail tops out at 9,739 ft): Spratt Creek SNOTEL (6,060 ft, 36 km away) reported 7 in of snow on Nov 18.",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "778:CA:SNTL 2026-11-18 SNWD=7 in, WTEQ=1.1 in",
-    "observed_at": null
-   }
-  ],
-  "context": [
-   {
     "kind": "precip",
-    "statement": "Likely muddy: 1.40 in of precipitation on Nov 17–18 at Fallen Leaf (SNOTEL, 2 km away).",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "473:CA:SNTL PRCP 2026-11-17=0.1 in, 2026-11-18=1.3 in",
-    "observed_at": "2026-11-19T00:00:00-08:00"
-   },
-   {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.83 in of precipitation in the 48 h to 12:47pm Nov 19 at South Lake Tahoe, Lake Tahoe Airport (NWS, 7 km away).",
+    "statement": "Likely muddy: 0.83 in of precipitation in the 48 h to 12:53pm Nov 20 at South Lake Tahoe, Lake Tahoe Airport (NWS, 7 km away).",
     "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-11-17T20%3A47%3A14Z",
-    "fetched_at": "2026-11-19T21:47:25.630563Z",
-    "quote": "KTVL: 43 routine METARs with AO2 from 172153Z to 192047Z; precipitation groups: P0000@181449Z, P0000@181553Z, P0000@181647Z, P0000@181753Z, P0000@181853Z, P0000@181946Z, P0000@182053Z, P0001@182153Z, P0002@182253Z, P0001@182353Z, P0001@190045Z, P0000@190153Z, P0002@190248Z, P000…",
-    "observed_at": "2026-11-19T20:47:00Z"
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-11-18T20%3A31%3A29Z",
+    "fetched_at": "2026-11-20T21:31:37.151558Z",
+    "quote": "KTVL: 41 routine METARs with AO2 from 182153Z to 202053Z; precipitation groups: P0001@182153Z, P0002@182253Z, P0001@182353Z, P0001@190045Z, P0000@190153Z, P0002@190248Z, P0001@190353Z, P0008@190445Z, P0005@190551Z, P0008@190653Z, P0007@190750Z, P0000@190859Z, P0004@190953Z, P000…",
+    "observed_at": "2026-11-20T20:53:00Z"
    }
   ],
-  "missing": [],
+  "context": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 5,427–10,739 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   }
+  ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS This Afternoon: Heavy Snow, high 31°F.",
+   "statement": "NWS This Afternoon: Slight Chance Light Snow, high 25°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/30,80/forecast",
-   "fetched_at": "2026-11-19T21:47:18.466468Z",
-   "quote": "This Afternoon: Heavy Snow, high 31°F",
-   "observed_at": "2026-11-19T13:00:00-08:00"
+   "fetched_at": "2026-11-20T21:31:31.516042Z",
+   "quote": "This Afternoon: Slight Chance Light Snow, high 25°F",
+   "observed_at": "2026-11-20T13:00:00-08:00"
   }
  },
  {
   "trail_id": "eagle-lake-desolation",
   "trail_name": "Eagle Lake (Desolation Wilderness) via Eagle Falls",
-  "date": "2026-11-19",
-  "status": "snow",
+  "date": "2026-11-20",
+  "status": "muddy",
   "claims": [
    {
-    "kind": "snow",
-    "statement": "Snow likely above ~6,250 ft (trail tops out at 7,023 ft): Fallen Leaf SNOTEL (6,250 ft, 5 km away) reported 7 in of snow on Nov 18.",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "473:CA:SNTL 2026-11-18 SNWD=7 in, WTEQ=1.6 in",
-    "observed_at": null
-   }
-  ],
-  "context": [
-   {
     "kind": "precip",
-    "statement": "Likely muddy: 1.40 in of precipitation on Nov 17–18 at Fallen Leaf (SNOTEL, 5 km away).",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "473:CA:SNTL PRCP 2026-11-17=0.1 in, 2026-11-18=1.3 in",
-    "observed_at": "2026-11-19T00:00:00-08:00"
-   },
-   {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.83 in of precipitation in the 48 h to 12:47pm Nov 19 at South Lake Tahoe, Lake Tahoe Airport (NWS, 12 km away).",
+    "statement": "Likely muddy: 0.83 in of precipitation in the 48 h to 12:53pm Nov 20 at South Lake Tahoe, Lake Tahoe Airport (NWS, 12 km away).",
     "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-11-17T20%3A47%3A14Z",
-    "fetched_at": "2026-11-19T21:47:25.630563Z",
-    "quote": "KTVL: 43 routine METARs with AO2 from 172153Z to 192047Z; precipitation groups: P0000@181449Z, P0000@181553Z, P0000@181647Z, P0000@181753Z, P0000@181853Z, P0000@181946Z, P0000@182053Z, P0001@182153Z, P0002@182253Z, P0001@182353Z, P0001@190045Z, P0000@190153Z, P0002@190248Z, P000…",
-    "observed_at": "2026-11-19T20:47:00Z"
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-11-18T20%3A31%3A29Z",
+    "fetched_at": "2026-11-20T21:31:37.151558Z",
+    "quote": "KTVL: 41 routine METARs with AO2 from 182153Z to 202053Z; precipitation groups: P0001@182153Z, P0002@182253Z, P0001@182353Z, P0001@190045Z, P0000@190153Z, P0002@190248Z, P0001@190353Z, P0008@190445Z, P0005@190551Z, P0008@190653Z, P0007@190750Z, P0000@190859Z, P0004@190953Z, P000…",
+    "observed_at": "2026-11-20T20:53:00Z"
    }
   ],
-  "missing": [],
+  "context": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 5,574–8,023 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   }
+  ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS This Afternoon: Heavy Snow, high 30°F.",
+   "statement": "NWS This Afternoon: Slight Chance Light Snow, high 25°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/29,82/forecast",
-   "fetched_at": "2026-11-19T21:47:17.903208Z",
-   "quote": "This Afternoon: Heavy Snow, high 30°F",
-   "observed_at": "2026-11-19T13:00:00-08:00"
+   "fetched_at": "2026-11-20T21:31:30.876570Z",
+   "quote": "This Afternoon: Slight Chance Light Snow, high 25°F",
+   "observed_at": "2026-11-20T13:00:00-08:00"
   }
  },
  {
   "trail_id": "rubicon-trail-dl-bliss",
   "trail_name": "Rubicon Trail (D.L. Bliss to Emerald Bay)",
-  "date": "2026-11-19",
-  "status": "snow",
+  "date": "2026-11-20",
+  "status": "muddy",
   "claims": [
    {
-    "kind": "snow",
-    "statement": "Snow likely above ~6,250 ft (trail tops out at 6,602 ft): Fallen Leaf SNOTEL (6,250 ft, 7 km away) reported 7 in of snow on Nov 18.",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "473:CA:SNTL 2026-11-18 SNWD=7 in, WTEQ=1.6 in",
-    "observed_at": null
-   }
-  ],
-  "context": [
-   {
     "kind": "precip",
-    "statement": "Likely muddy: 1.60 in of precipitation on Nov 17–18 at Rubicon #2 (SNOTEL, 3 km away).",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "724:CA:SNTL PRCP 2026-11-17=0 in, 2026-11-18=1.6 in",
-    "observed_at": "2026-11-19T00:00:00-08:00"
-   },
-   {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.83 in of precipitation in the 48 h to 12:47pm Nov 19 at South Lake Tahoe, Lake Tahoe Airport (NWS, 13 km away).",
+    "statement": "Likely muddy: 0.83 in of precipitation in the 48 h to 12:53pm Nov 20 at South Lake Tahoe, Lake Tahoe Airport (NWS, 13 km away).",
     "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-11-17T20%3A47%3A14Z",
-    "fetched_at": "2026-11-19T21:47:25.630563Z",
-    "quote": "KTVL: 43 routine METARs with AO2 from 172153Z to 192047Z; precipitation groups: P0000@181449Z, P0000@181553Z, P0000@181647Z, P0000@181753Z, P0000@181853Z, P0000@181946Z, P0000@182053Z, P0001@182153Z, P0002@182253Z, P0001@182353Z, P0001@190045Z, P0000@190153Z, P0002@190248Z, P000…",
-    "observed_at": "2026-11-19T20:47:00Z"
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-11-18T20%3A31%3A29Z",
+    "fetched_at": "2026-11-20T21:31:37.151558Z",
+    "quote": "KTVL: 41 routine METARs with AO2 from 182153Z to 202053Z; precipitation groups: P0001@182153Z, P0002@182253Z, P0001@182353Z, P0001@190045Z, P0000@190153Z, P0002@190248Z, P0001@190353Z, P0008@190445Z, P0005@190551Z, P0008@190653Z, P0007@190750Z, P0000@190859Z, P0004@190953Z, P000…",
+    "observed_at": "2026-11-20T20:53:00Z"
    }
   ],
+  "context": [],
   "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 5,232–7,602 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   },
    {
     "what": "No official closure source dryline can read for California State Parks",
     "tried_url": "https://www.parks.ca.gov/?page_id=505"
@@ -137,82 +94,59 @@
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS Today: Snow, high 31°F.",
+   "statement": "NWS This Afternoon: Slight Chance Light Snow, high 27°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/31,84/forecast",
-   "fetched_at": "2026-11-19T21:47:19.357696Z",
-   "quote": "Today: Snow, high 31°F",
-   "observed_at": "2026-11-19T11:00:00-08:00"
+   "fetched_at": "2026-11-20T21:31:32.528080Z",
+   "quote": "This Afternoon: Slight Chance Light Snow, high 27°F",
+   "observed_at": "2026-11-20T13:00:00-08:00"
   }
  },
  {
   "trail_id": "cascade-falls",
   "trail_name": "Cascade Falls (Bayview Trailhead)",
-  "date": "2026-11-19",
-  "status": "snow",
+  "date": "2026-11-20",
+  "status": "muddy",
   "claims": [
    {
-    "kind": "snow",
-    "statement": "Snow likely above ~6,060 ft (trail tops out at 6,927 ft): Spratt Creek SNOTEL (6,060 ft, 39 km away) reported 7 in of snow on Nov 18.",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "778:CA:SNTL 2026-11-18 SNWD=7 in, WTEQ=1.1 in",
-    "observed_at": null
-   }
-  ],
-  "context": [
-   {
     "kind": "precip",
-    "statement": "Likely muddy: 1.40 in of precipitation on Nov 17–18 at Fallen Leaf (SNOTEL, 4 km away).",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "473:CA:SNTL PRCP 2026-11-17=0.1 in, 2026-11-18=1.3 in",
-    "observed_at": "2026-11-19T00:00:00-08:00"
-   },
-   {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.83 in of precipitation in the 48 h to 12:47pm Nov 19 at South Lake Tahoe, Lake Tahoe Airport (NWS, 10 km away).",
+    "statement": "Likely muddy: 0.83 in of precipitation in the 48 h to 12:53pm Nov 20 at South Lake Tahoe, Lake Tahoe Airport (NWS, 10 km away).",
     "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-11-17T20%3A47%3A14Z",
-    "fetched_at": "2026-11-19T21:47:25.630563Z",
-    "quote": "KTVL: 43 routine METARs with AO2 from 172153Z to 192047Z; precipitation groups: P0000@181449Z, P0000@181553Z, P0000@181647Z, P0000@181753Z, P0000@181853Z, P0000@181946Z, P0000@182053Z, P0001@182153Z, P0002@182253Z, P0001@182353Z, P0001@190045Z, P0000@190153Z, P0002@190248Z, P000…",
-    "observed_at": "2026-11-19T20:47:00Z"
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-11-18T20%3A31%3A29Z",
+    "fetched_at": "2026-11-20T21:31:37.151558Z",
+    "quote": "KTVL: 41 routine METARs with AO2 from 182153Z to 202053Z; precipitation groups: P0001@182153Z, P0002@182253Z, P0001@182353Z, P0001@190045Z, P0000@190153Z, P0002@190248Z, P0001@190353Z, P0008@190445Z, P0005@190551Z, P0008@190653Z, P0007@190750Z, P0000@190859Z, P0004@190953Z, P000…",
+    "observed_at": "2026-11-20T20:53:00Z"
    }
   ],
-  "missing": [],
+  "context": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 5,789–7,927 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   }
+  ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS This Afternoon: Snow, high 33°F.",
+   "statement": "NWS This Afternoon: Slight Chance Light Snow, high 28°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/30,82/forecast",
-   "fetched_at": "2026-11-19T21:47:18.658600Z",
-   "quote": "This Afternoon: Snow, high 33°F",
-   "observed_at": "2026-11-19T13:00:00-08:00"
+   "fetched_at": "2026-11-20T21:31:31.865209Z",
+   "quote": "This Afternoon: Slight Chance Light Snow, high 28°F",
+   "observed_at": "2026-11-20T13:00:00-08:00"
   }
  },
  {
   "trail_id": "echo-lakes-to-lake-aloha",
   "trail_name": "Echo Lakes to Lake Aloha (PCT/TRT)",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "snow",
   "claims": [
-   {
-    "kind": "snow",
-    "statement": "Snow likely above ~6,750 ft (trail tops out at 8,337 ft): Ward Creek #3 SNOTEL (6,750 ft, 32 km away) reported 27 in of snow on Nov 18.",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "848:CA:SNTL 2026-11-18 SNWD=27 in, WTEQ=4.2 in",
-    "observed_at": null
-   },
    {
     "kind": "conditions",
     "statement": "Tahoe Rim Trail Association, EchotoBP (updated Nov 17): “All Trail Segments are covered in snow, please prepare accordingly! Echo Peak SNOTEL data is available here.”",
     "source_name": "Tahoe Rim Trail Association",
     "source_url": "https://tahoerimtrail.org/current-trail-conditions/",
-    "fetched_at": "2026-11-19T21:47:30.255899Z",
+    "fetched_at": "2026-11-20T21:31:42.640450Z",
     "quote": "All Trail Segments are covered in snow, please prepare accordingly! Echo Peak SNOTEL data is available here.",
     "observed_at": null
    }
@@ -220,102 +154,75 @@
   "context": [
    {
     "kind": "precip",
-    "statement": "Likely muddy: 1.00 in of precipitation on Nov 17–18 at Echo Peak (SNOTEL, 3 km away).",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "463:CA:SNTL PRCP 2026-11-17=0 in, 2026-11-18=1 in",
-    "observed_at": "2026-11-19T00:00:00-08:00"
-   },
-   {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.83 in of precipitation in the 48 h to 12:47pm Nov 19 at South Lake Tahoe, Lake Tahoe Airport (NWS, 8 km away).",
+    "statement": "Likely muddy: 0.83 in of precipitation in the 48 h to 12:53pm Nov 20 at South Lake Tahoe, Lake Tahoe Airport (NWS, 8 km away).",
     "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-11-17T20%3A47%3A14Z",
-    "fetched_at": "2026-11-19T21:47:25.630563Z",
-    "quote": "KTVL: 43 routine METARs with AO2 from 172153Z to 192047Z; precipitation groups: P0000@181449Z, P0000@181553Z, P0000@181647Z, P0000@181753Z, P0000@181853Z, P0000@181946Z, P0000@182053Z, P0001@182153Z, P0002@182253Z, P0001@182353Z, P0001@190045Z, P0000@190153Z, P0002@190248Z, P000…",
-    "observed_at": "2026-11-19T20:47:00Z"
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-11-18T20%3A31%3A29Z",
+    "fetched_at": "2026-11-20T21:31:37.151558Z",
+    "quote": "KTVL: 41 routine METARs with AO2 from 182153Z to 202053Z; precipitation groups: P0001@182153Z, P0002@182253Z, P0001@182353Z, P0001@190045Z, P0000@190153Z, P0002@190248Z, P0001@190353Z, P0008@190445Z, P0005@190551Z, P0008@190653Z, P0007@190750Z, P0000@190859Z, P0004@190953Z, P000…",
+    "observed_at": "2026-11-20T20:53:00Z"
    }
   ],
-  "missing": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 6,412–9,337 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   }
+  ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS This Afternoon: Heavy Snow, high 28°F.",
+   "statement": "NWS This Afternoon: Slight Chance Light Snow, high 22°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/29,78/forecast",
-   "fetched_at": "2026-11-19T21:47:17.528503Z",
-   "quote": "This Afternoon: Heavy Snow, high 28°F",
-   "observed_at": "2026-11-19T13:00:00-08:00"
+   "fetched_at": "2026-11-20T21:31:30.491055Z",
+   "quote": "This Afternoon: Slight Chance Light Snow, high 22°F",
+   "observed_at": "2026-11-20T13:00:00-08:00"
   }
  },
  {
   "trail_id": "ellis-peak",
   "trail_name": "Ellis Peak",
-  "date": "2026-11-19",
-  "status": "snow",
+  "date": "2026-11-20",
+  "status": "muddy",
   "claims": [
    {
-    "kind": "snow",
-    "statement": "Snow likely above ~6,890 ft (trail tops out at 8,730 ft): Css Lab SNOTEL (6,890 ft, 31 km away) reported 36 in of snow on Nov 18.",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "428:CA:SNTL 2026-11-18 SNWD=36 in, WTEQ=4.8 in",
-    "observed_at": null
-   }
-  ],
-  "context": [
-   {
     "kind": "precip",
-    "statement": "Likely muddy: 2.10 in of precipitation on Nov 17–18 at Ward Creek #3 (SNOTEL, 7 km away).",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "848:CA:SNTL PRCP 2026-11-17=0 in, 2026-11-18=2.1 in",
-    "observed_at": "2026-11-19T00:00:00-08:00"
-   },
-   {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.83 in of precipitation in the 48 h to 12:47pm Nov 19 at South Lake Tahoe, Lake Tahoe Airport (NWS, 26 km away).",
+    "statement": "Likely muddy: 0.83 in of precipitation in the 48 h to 12:53pm Nov 20 at South Lake Tahoe, Lake Tahoe Airport (NWS, 26 km away).",
     "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-11-17T20%3A47%3A14Z",
-    "fetched_at": "2026-11-19T21:47:25.630563Z",
-    "quote": "KTVL: 43 routine METARs with AO2 from 172153Z to 192047Z; precipitation groups: P0000@181449Z, P0000@181553Z, P0000@181647Z, P0000@181753Z, P0000@181853Z, P0000@181946Z, P0000@182053Z, P0001@182153Z, P0002@182253Z, P0001@182353Z, P0001@190045Z, P0000@190153Z, P0002@190248Z, P000…",
-    "observed_at": "2026-11-19T20:47:00Z"
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-11-18T20%3A31%3A29Z",
+    "fetched_at": "2026-11-20T21:31:37.151558Z",
+    "quote": "KTVL: 41 routine METARs with AO2 from 182153Z to 202053Z; precipitation groups: P0001@182153Z, P0002@182253Z, P0001@182353Z, P0001@190045Z, P0000@190153Z, P0002@190248Z, P0001@190353Z, P0008@190445Z, P0005@190551Z, P0008@190653Z, P0007@190750Z, P0000@190859Z, P0004@190953Z, P000…",
+    "observed_at": "2026-11-20T20:53:00Z"
    }
   ],
-  "missing": [],
+  "context": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 6,776–9,730 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   }
+  ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS This Afternoon: Snow, high 29°F.",
+   "statement": "NWS This Afternoon: Slight Chance Light Snow, high 23°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/28,88/forecast",
-   "fetched_at": "2026-11-19T21:47:17.175772Z",
-   "quote": "This Afternoon: Snow, high 29°F",
-   "observed_at": "2026-11-19T13:00:00-08:00"
+   "fetched_at": "2026-11-20T21:31:30.252280Z",
+   "quote": "This Afternoon: Slight Chance Light Snow, high 23°F",
+   "observed_at": "2026-11-20T13:00:00-08:00"
   }
  },
  {
   "trail_id": "mr-toads-wild-ride",
   "trail_name": "Mr. Toad's Wild Ride (Saxon Creek Trail) via Big Meadow/TRT",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "snow",
   "claims": [
-   {
-    "kind": "snow",
-    "statement": "Snow likely above ~6,060 ft (trail tops out at 8,954 ft): Spratt Creek SNOTEL (6,060 ft, 21 km away) reported 7 in of snow on Nov 18.",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "778:CA:SNTL 2026-11-18 SNWD=7 in, WTEQ=1.1 in",
-    "observed_at": null
-   },
    {
     "kind": "conditions",
     "statement": "Tahoe Rim Trail Association, KBStoBM (updated Nov 17): “All Trail Segments are covered in snow, please prepare accordingly! Heavenly Valley SNOTEL data available here Horse Meadow SNOTEL data available here”",
     "source_name": "Tahoe Rim Trail Association",
     "source_url": "https://tahoerimtrail.org/current-trail-conditions/",
-    "fetched_at": "2026-11-19T21:47:30.255899Z",
+    "fetched_at": "2026-11-20T21:31:42.640450Z",
     "quote": "All Trail Segments are covered in snow, please prepare accordingly! Heavenly Valley SNOTEL data available here Horse Meadow SNOTEL data available here",
     "observed_at": null
    }
@@ -323,102 +230,75 @@
   "context": [
    {
     "kind": "precip",
-    "statement": "Likely muddy: 1.00 in of precipitation on Nov 17–18 at Hagans Meadow (SNOTEL, 5 km away).",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "508:CA:SNTL PRCP 2026-11-17=0 in, 2026-11-18=1 in",
-    "observed_at": "2026-11-19T00:00:00-08:00"
-   },
-   {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.83 in of precipitation in the 48 h to 12:47pm Nov 19 at South Lake Tahoe, Lake Tahoe Airport (NWS, 10 km away).",
+    "statement": "Likely muddy: 0.83 in of precipitation in the 48 h to 12:53pm Nov 20 at South Lake Tahoe, Lake Tahoe Airport (NWS, 10 km away).",
     "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-11-17T20%3A47%3A14Z",
-    "fetched_at": "2026-11-19T21:47:25.630563Z",
-    "quote": "KTVL: 43 routine METARs with AO2 from 172153Z to 192047Z; precipitation groups: P0000@181449Z, P0000@181553Z, P0000@181647Z, P0000@181753Z, P0000@181853Z, P0000@181946Z, P0000@182053Z, P0001@182153Z, P0002@182253Z, P0001@182353Z, P0001@190045Z, P0000@190153Z, P0002@190248Z, P000…",
-    "observed_at": "2026-11-19T20:47:00Z"
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-11-18T20%3A31%3A29Z",
+    "fetched_at": "2026-11-20T21:31:37.151558Z",
+    "quote": "KTVL: 41 routine METARs with AO2 from 182153Z to 202053Z; precipitation groups: P0001@182153Z, P0002@182253Z, P0001@182353Z, P0001@190045Z, P0000@190153Z, P0002@190248Z, P0001@190353Z, P0008@190445Z, P0005@190551Z, P0008@190653Z, P0007@190750Z, P0000@190859Z, P0004@190953Z, P000…",
+    "observed_at": "2026-11-20T20:53:00Z"
    }
   ],
-  "missing": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 5,497–9,954 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   }
+  ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS This Afternoon: Snow, high 29°F.",
+   "statement": "NWS This Afternoon: Chance Light Snow, high 23°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/34,75/forecast",
-   "fetched_at": "2026-11-19T21:47:19.579633Z",
-   "quote": "This Afternoon: Snow, high 29°F",
-   "observed_at": "2026-11-19T13:00:00-08:00"
+   "fetched_at": "2026-11-20T21:31:32.835466Z",
+   "quote": "This Afternoon: Chance Light Snow, high 23°F",
+   "observed_at": "2026-11-20T13:00:00-08:00"
   }
  },
  {
   "trail_id": "corral-trail",
   "trail_name": "Corral Trail (South Lake Tahoe)",
-  "date": "2026-11-19",
-  "status": "snow",
+  "date": "2026-11-20",
+  "status": "muddy",
   "claims": [
    {
-    "kind": "snow",
-    "statement": "Snow likely above ~6,060 ft (trail tops out at 7,054 ft): Spratt Creek SNOTEL (6,060 ft, 25 km away) reported 7 in of snow on Nov 18.",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "778:CA:SNTL 2026-11-18 SNWD=7 in, WTEQ=1.1 in",
-    "observed_at": null
-   }
-  ],
-  "context": [
-   {
     "kind": "precip",
-    "statement": "Likely muddy: 1.00 in of precipitation on Nov 17–18 at Hagans Meadow (SNOTEL, 2 km away).",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "508:CA:SNTL PRCP 2026-11-17=0 in, 2026-11-18=1 in",
-    "observed_at": "2026-11-19T00:00:00-08:00"
-   },
-   {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.83 in of precipitation in the 48 h to 12:47pm Nov 19 at South Lake Tahoe, Lake Tahoe Airport (NWS, 2 km away).",
+    "statement": "Likely muddy: 0.83 in of precipitation in the 48 h to 12:53pm Nov 20 at South Lake Tahoe, Lake Tahoe Airport (NWS, 2 km away).",
     "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-11-17T20%3A47%3A14Z",
-    "fetched_at": "2026-11-19T21:47:25.630563Z",
-    "quote": "KTVL: 43 routine METARs with AO2 from 172153Z to 192047Z; precipitation groups: P0000@181449Z, P0000@181553Z, P0000@181647Z, P0000@181753Z, P0000@181853Z, P0000@181946Z, P0000@182053Z, P0001@182153Z, P0002@182253Z, P0001@182353Z, P0001@190045Z, P0000@190153Z, P0002@190248Z, P000…",
-    "observed_at": "2026-11-19T20:47:00Z"
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-11-18T20%3A31%3A29Z",
+    "fetched_at": "2026-11-20T21:31:37.151558Z",
+    "quote": "KTVL: 41 routine METARs with AO2 from 182153Z to 202053Z; precipitation groups: P0001@182153Z, P0002@182253Z, P0001@182353Z, P0001@190045Z, P0000@190153Z, P0002@190248Z, P0001@190353Z, P0008@190445Z, P0005@190551Z, P0008@190653Z, P0007@190750Z, P0000@190859Z, P0004@190953Z, P000…",
+    "observed_at": "2026-11-20T20:53:00Z"
    }
   ],
-  "missing": [],
+  "context": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 5,387–8,054 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   }
+  ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS This Afternoon: Snow, high 29°F.",
+   "statement": "NWS This Afternoon: Chance Light Snow, high 25°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/35,78/forecast",
-   "fetched_at": "2026-11-19T21:47:20.131442Z",
-   "quote": "This Afternoon: Snow, high 29°F",
-   "observed_at": "2026-11-19T12:00:00-08:00"
+   "fetched_at": "2026-11-20T21:31:33.257373Z",
+   "quote": "This Afternoon: Chance Light Snow, high 25°F",
+   "observed_at": "2026-11-20T13:00:00-08:00"
   }
  },
  {
   "trail_id": "van-sickle-bi-state-park",
   "trail_name": "Van Sickle Trail (Van Sickle Bi-State Park to TRT)",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "snow",
   "claims": [
-   {
-    "kind": "snow",
-    "statement": "Snow likely above ~6,060 ft (trail tops out at 7,792 ft): Spratt Creek SNOTEL (6,060 ft, 33 km away) reported 7 in of snow on Nov 18.",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "778:CA:SNTL 2026-11-18 SNWD=7 in, WTEQ=1.1 in",
-    "observed_at": null
-   },
    {
     "kind": "conditions",
     "statement": "Tahoe Rim Trail Association, KBNtoKBS (updated Nov 17): “All Trail Segments are covered in snow, please prepare accordingly!”",
     "source_name": "Tahoe Rim Trail Association",
     "source_url": "https://tahoerimtrail.org/current-trail-conditions/",
-    "fetched_at": "2026-11-19T21:47:30.255899Z",
+    "fetched_at": "2026-11-20T21:31:42.640450Z",
     "quote": "All Trail Segments are covered in snow, please prepare accordingly!",
     "observed_at": null
    }
@@ -426,55 +306,46 @@
   "context": [
    {
     "kind": "precip",
-    "statement": "Likely muddy: 0.80 in of precipitation on Nov 17–18 at Heavenly Valley (SNOTEL, 4 km away).",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "518:CA:SNTL PRCP 2026-11-17=0 in, 2026-11-18=0.8 in",
-    "observed_at": "2026-11-19T00:00:00-08:00"
-   },
-   {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.83 in of precipitation in the 48 h to 12:47pm Nov 19 at South Lake Tahoe, Lake Tahoe Airport (NWS, 8 km away).",
+    "statement": "Likely muddy: 0.83 in of precipitation in the 48 h to 12:53pm Nov 20 at South Lake Tahoe, Lake Tahoe Airport (NWS, 8 km away).",
     "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-11-17T20%3A47%3A14Z",
-    "fetched_at": "2026-11-19T21:47:25.630563Z",
-    "quote": "KTVL: 43 routine METARs with AO2 from 172153Z to 192047Z; precipitation groups: P0000@181449Z, P0000@181553Z, P0000@181647Z, P0000@181753Z, P0000@181853Z, P0000@181946Z, P0000@182053Z, P0001@182153Z, P0002@182253Z, P0001@182353Z, P0001@190045Z, P0000@190153Z, P0002@190248Z, P000…",
-    "observed_at": "2026-11-19T20:47:00Z"
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-11-18T20%3A31%3A29Z",
+    "fetched_at": "2026-11-20T21:31:37.151558Z",
+    "quote": "KTVL: 41 routine METARs with AO2 from 182153Z to 202053Z; precipitation groups: P0001@182153Z, P0002@182253Z, P0001@182353Z, P0001@190045Z, P0000@190153Z, P0002@190248Z, P0001@190353Z, P0008@190445Z, P0005@190551Z, P0008@190653Z, P0007@190750Z, P0000@190859Z, P0004@190953Z, P000…",
+    "observed_at": "2026-11-20T20:53:00Z"
    }
   ],
-  "missing": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 5,438–8,792 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   },
+   {
+    "what": "Nevada State Parks alert banner not found (layout changed?)",
+    "tried_url": "https://parks.nv.gov/parks/lake-tahoe-nevada-state-park"
+   }
+  ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS This Afternoon: Snow, high 27°F.",
+   "statement": "NWS This Afternoon: Chance Light Snow, high 22°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/37,81/forecast",
-   "fetched_at": "2026-11-19T21:47:20.981941Z",
-   "quote": "This Afternoon: Snow, high 27°F",
-   "observed_at": "2026-11-19T13:00:00-08:00"
+   "fetched_at": "2026-11-20T21:31:33.655149Z",
+   "quote": "This Afternoon: Chance Light Snow, high 22°F",
+   "observed_at": "2026-11-20T13:00:00-08:00"
   }
  },
  {
   "trail_id": "mount-rose-summit",
   "trail_name": "Mount Rose Summit Trail",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "snow",
   "claims": [
-   {
-    "kind": "snow",
-    "statement": "Snow likely above ~8,010 ft (trail tops out at 10,785 ft): Palisades Tahoe SNOTEL (8,010 ft, 34 km away) reported 29 in of snow on Nov 18.",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "784:CA:SNTL 2026-11-18 SNWD=29 in, WTEQ=5.3 in",
-    "observed_at": null
-   },
    {
     "kind": "conditions",
     "statement": "Tahoe Rim Trail Association, BrockwaytoRose (updated Nov 17): “All Trail Segments are covered in snow, please prepare accordingly! Mt. Rose Ski Area SNOTEL data is available here .”",
     "source_name": "Tahoe Rim Trail Association",
     "source_url": "https://tahoerimtrail.org/current-trail-conditions/",
-    "fetched_at": "2026-11-19T21:47:30.255899Z",
+    "fetched_at": "2026-11-20T21:31:42.640450Z",
     "quote": "All Trail Segments are covered in snow, please prepare accordingly! Mt. Rose Ski Area SNOTEL data is available here .",
     "observed_at": null
    }
@@ -482,149 +353,116 @@
   "context": [
    {
     "kind": "precip",
-    "statement": "Likely muddy: 3.40 in of precipitation on Nov 17–18 at Mt Rose Ski Area (SNOTEL, 0 km away).",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "652:NV:SNTL PRCP 2026-11-17=0 in, 2026-11-18=3.4 in",
-    "observed_at": "2026-11-19T00:00:00-08:00"
-   },
-   {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.31 in of precipitation in the 48 h to 12:50pm Nov 19 at Carson City Airport (NWS, 20 km away).",
+    "statement": "Likely muddy: 0.31 in of precipitation in the 48 h to 12:50pm Nov 20 at Carson City Airport (NWS, 20 km away).",
     "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KCXP/observations?start=2026-11-17T20%3A47%3A14Z",
-    "fetched_at": "2026-11-19T21:47:24.518088Z",
-    "quote": "KCXP: 42 routine METARs with AO2 from 172150Z to 192050Z; precipitation groups: P0001@182355Z, P0004@190055Z, P0004@190155Z, P0008@190255Z, P0003@190355Z, P0006@190455Z, P0005@190555Z",
-    "observed_at": "2026-11-19T20:50:00Z"
+    "source_url": "https://api.weather.gov/stations/KCXP/observations?start=2026-11-18T20%3A31%3A29Z",
+    "fetched_at": "2026-11-20T21:31:36.459383Z",
+    "quote": "KCXP: 39 routine METARs with AO2 from 182155Z to 202050Z; precipitation groups: P0001@182355Z, P0004@190055Z, P0004@190155Z, P0008@190255Z, P0003@190355Z, P0006@190455Z, P0005@190555Z",
+    "observed_at": "2026-11-20T20:50:00Z"
    }
   ],
-  "missing": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 7,913–11,785 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   }
+  ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS This Afternoon: Snow, high 24°F.",
+   "statement": "NWS This Afternoon: Sunny, high 19°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/40,99/forecast",
-   "fetched_at": "2026-11-19T21:47:21.734968Z",
-   "quote": "This Afternoon: Snow, high 24°F",
-   "observed_at": "2026-11-19T13:00:00-08:00"
+   "fetched_at": "2026-11-20T21:31:34.114208Z",
+   "quote": "This Afternoon: Sunny, high 19°F",
+   "observed_at": "2026-11-20T13:00:00-08:00"
   }
  },
  {
   "trail_id": "flume-trail",
   "trail_name": "Flume Trail (Spooner Lake to Tunnel Creek)",
-  "date": "2026-11-19",
-  "status": "snow",
+  "date": "2026-11-20",
+  "status": "muddy",
   "claims": [
    {
-    "kind": "snow",
-    "statement": "Snow likely above ~6,250 ft (trail tops out at 8,143 ft): Fallen Leaf SNOTEL (6,250 ft, 23 km away) reported 7 in of snow on Nov 18.",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "473:CA:SNTL 2026-11-18 SNWD=7 in, WTEQ=1.6 in",
-    "observed_at": null
+    "kind": "precip",
+    "statement": "Likely muddy: 0.31 in of precipitation in the 48 h to 12:50pm Nov 20 at Carson City Airport (NWS, 15 km away).",
+    "source_name": "NWS observations",
+    "source_url": "https://api.weather.gov/stations/KCXP/observations?start=2026-11-18T20%3A31%3A29Z",
+    "fetched_at": "2026-11-20T21:31:36.459383Z",
+    "quote": "KCXP: 39 routine METARs with AO2 from 182155Z to 202050Z; precipitation groups: P0001@182355Z, P0004@190055Z, P0004@190155Z, P0008@190255Z, P0003@190355Z, P0006@190455Z, P0005@190555Z",
+    "observed_at": "2026-11-20T20:50:00Z"
    }
   ],
-  "context": [
+  "context": [],
+  "missing": [
    {
-    "kind": "precip",
-    "statement": "Likely muddy: 1.10 in of precipitation on Nov 17–18 at Marlette Lake (SNOTEL, 1 km away).",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "615:NV:SNTL PRCP 2026-11-17=0 in, 2026-11-18=1.1 in",
-    "observed_at": "2026-11-19T00:00:00-08:00"
+    "what": "No SNOTEL station within 40 km and 5,311–9,143 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
    },
    {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.31 in of precipitation in the 48 h to 12:50pm Nov 19 at Carson City Airport (NWS, 15 km away).",
-    "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KCXP/observations?start=2026-11-17T20%3A47%3A14Z",
-    "fetched_at": "2026-11-19T21:47:24.518088Z",
-    "quote": "KCXP: 42 routine METARs with AO2 from 172150Z to 192050Z; precipitation groups: P0001@182355Z, P0004@190055Z, P0004@190155Z, P0008@190255Z, P0003@190355Z, P0006@190455Z, P0005@190555Z",
-    "observed_at": "2026-11-19T20:50:00Z"
+    "what": "Nevada State Parks alert banner not found (layout changed?)",
+    "tried_url": "https://parks.nv.gov/parks/lake-tahoe-nevada-state-park"
    }
   ],
-  "missing": [],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS This Afternoon: Snow Likely, high 27°F.",
+   "statement": "NWS This Afternoon: Slight Chance Light Snow, high 24°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/39,90/forecast",
-   "fetched_at": "2026-11-19T21:47:21.355097Z",
-   "quote": "This Afternoon: Snow Likely, high 27°F",
-   "observed_at": "2026-11-19T13:00:00-08:00"
+   "fetched_at": "2026-11-20T21:31:33.877073Z",
+   "quote": "This Afternoon: Slight Chance Light Snow, high 24°F",
+   "observed_at": "2026-11-20T13:00:00-08:00"
   }
  },
  {
   "trail_id": "marlette-lake",
   "trail_name": "Marlette Lake via North Canyon (Spooner)",
-  "date": "2026-11-19",
-  "status": "snow",
+  "date": "2026-11-20",
+  "status": "muddy",
   "claims": [
    {
-    "kind": "snow",
-    "statement": "Snow likely above ~6,250 ft (trail tops out at 8,168 ft): Fallen Leaf SNOTEL (6,250 ft, 23 km away) reported 7 in of snow on Nov 18.",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "473:CA:SNTL 2026-11-18 SNWD=7 in, WTEQ=1.6 in",
-    "observed_at": null
+    "kind": "precip",
+    "statement": "Likely muddy: 0.31 in of precipitation in the 48 h to 12:50pm Nov 20 at Carson City Airport (NWS, 15 km away).",
+    "source_name": "NWS observations",
+    "source_url": "https://api.weather.gov/stations/KCXP/observations?start=2026-11-18T20%3A31%3A29Z",
+    "fetched_at": "2026-11-20T21:31:36.459383Z",
+    "quote": "KCXP: 39 routine METARs with AO2 from 182155Z to 202050Z; precipitation groups: P0001@182355Z, P0004@190055Z, P0004@190155Z, P0008@190255Z, P0003@190355Z, P0006@190455Z, P0005@190555Z",
+    "observed_at": "2026-11-20T20:50:00Z"
    }
   ],
-  "context": [
+  "context": [],
+  "missing": [
    {
-    "kind": "precip",
-    "statement": "Likely muddy: 1.10 in of precipitation on Nov 17–18 at Marlette Lake (SNOTEL, 1 km away).",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "615:NV:SNTL PRCP 2026-11-17=0 in, 2026-11-18=1.1 in",
-    "observed_at": "2026-11-19T00:00:00-08:00"
+    "what": "No SNOTEL station within 40 km and 5,953–9,168 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
    },
    {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.31 in of precipitation in the 48 h to 12:50pm Nov 19 at Carson City Airport (NWS, 15 km away).",
-    "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KCXP/observations?start=2026-11-17T20%3A47%3A14Z",
-    "fetched_at": "2026-11-19T21:47:24.518088Z",
-    "quote": "KCXP: 42 routine METARs with AO2 from 172150Z to 192050Z; precipitation groups: P0001@182355Z, P0004@190055Z, P0004@190155Z, P0008@190255Z, P0003@190355Z, P0006@190455Z, P0005@190555Z",
-    "observed_at": "2026-11-19T20:50:00Z"
+    "what": "Nevada State Parks alert banner not found (layout changed?)",
+    "tried_url": "https://parks.nv.gov/parks/lake-tahoe-nevada-state-park"
    }
   ],
-  "missing": [],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS This Afternoon: Snow Likely, high 27°F.",
+   "statement": "NWS This Afternoon: Slight Chance Light Snow, high 24°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/39,90/forecast",
-   "fetched_at": "2026-11-19T21:47:21.355097Z",
-   "quote": "This Afternoon: Snow Likely, high 27°F",
-   "observed_at": "2026-11-19T13:00:00-08:00"
+   "fetched_at": "2026-11-20T21:31:33.877073Z",
+   "quote": "This Afternoon: Slight Chance Light Snow, high 24°F",
+   "observed_at": "2026-11-20T13:00:00-08:00"
   }
  },
  {
   "trail_id": "page-meadows",
   "trail_name": "Page Meadows (TRT from Ward Creek)",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "snow",
   "claims": [
-   {
-    "kind": "snow",
-    "statement": "Snow likely above ~6,250 ft (trail tops out at 7,002 ft): Fallen Leaf SNOTEL (6,250 ft, 26 km away) reported 7 in of snow on Nov 18.",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "473:CA:SNTL 2026-11-18 SNWD=7 in, WTEQ=1.6 in",
-    "observed_at": null
-   },
    {
     "kind": "conditions",
     "statement": "Tahoe Rim Trail Association, BPtoTC (updated Nov 17): “All Trail Segments are covered in snow, please prepare accordingly! Ward Creek SNOTEL data is available here.”",
     "source_name": "Tahoe Rim Trail Association",
     "source_url": "https://tahoerimtrail.org/current-trail-conditions/",
-    "fetched_at": "2026-11-19T21:47:30.255899Z",
+    "fetched_at": "2026-11-20T21:31:42.640450Z",
     "quote": "All Trail Segments are covered in snow, please prepare accordingly! Ward Creek SNOTEL data is available here.",
     "observed_at": null
    }
@@ -632,185 +470,133 @@
   "context": [
    {
     "kind": "precip",
-    "statement": "Likely muddy: 1.50 in of precipitation on Nov 17–18 at Tahoe City Cross (SNOTEL, 3 km away).",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "809:CA:SNTL PRCP 2026-11-17=0 in, 2026-11-18=1.5 in",
-    "observed_at": "2026-11-19T00:00:00-08:00"
-   },
-   {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.83 in of precipitation in the 48 h to 12:47pm Nov 19 at South Lake Tahoe, Lake Tahoe Airport (NWS, 32 km away).",
+    "statement": "Likely muddy: 0.83 in of precipitation in the 48 h to 12:53pm Nov 20 at South Lake Tahoe, Lake Tahoe Airport (NWS, 32 km away).",
     "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-11-17T20%3A47%3A14Z",
-    "fetched_at": "2026-11-19T21:47:25.630563Z",
-    "quote": "KTVL: 43 routine METARs with AO2 from 172153Z to 192047Z; precipitation groups: P0000@181449Z, P0000@181553Z, P0000@181647Z, P0000@181753Z, P0000@181853Z, P0000@181946Z, P0000@182053Z, P0001@182153Z, P0002@182253Z, P0001@182353Z, P0001@190045Z, P0000@190153Z, P0002@190248Z, P000…",
-    "observed_at": "2026-11-19T20:47:00Z"
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-11-18T20%3A31%3A29Z",
+    "fetched_at": "2026-11-20T21:31:37.151558Z",
+    "quote": "KTVL: 41 routine METARs with AO2 from 182153Z to 202053Z; precipitation groups: P0001@182153Z, P0002@182253Z, P0001@182353Z, P0001@190045Z, P0000@190153Z, P0002@190248Z, P0001@190353Z, P0008@190445Z, P0005@190551Z, P0008@190653Z, P0007@190750Z, P0000@190859Z, P0004@190953Z, P000…",
+    "observed_at": "2026-11-20T20:53:00Z"
    }
   ],
-  "missing": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 5,532–8,002 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   }
+  ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS This Afternoon: Snow, high 32°F.",
+   "statement": "NWS This Afternoon: Sunny, high 29°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/29,92/forecast",
-   "fetched_at": "2026-11-19T21:47:18.131629Z",
-   "quote": "This Afternoon: Snow, high 32°F",
-   "observed_at": "2026-11-19T13:00:00-08:00"
+   "fetched_at": "2026-11-20T21:31:31.239285Z",
+   "quote": "This Afternoon: Sunny, high 29°F",
+   "observed_at": "2026-11-20T13:00:00-08:00"
   }
  },
  {
   "trail_id": "five-lakes",
   "trail_name": "Five Lakes Trail (Alpine Meadows)",
-  "date": "2026-11-19",
-  "status": "snow",
+  "date": "2026-11-20",
+  "status": "muddy",
   "claims": [
    {
-    "kind": "snow",
-    "statement": "Snow likely above ~6,250 ft (trail tops out at 7,579 ft): Fallen Leaf SNOTEL (6,250 ft, 31 km away) reported 7 in of snow on Nov 18.",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "473:CA:SNTL 2026-11-18 SNWD=7 in, WTEQ=1.6 in",
-    "observed_at": null
-   }
-  ],
-  "context": [
-   {
     "kind": "precip",
-    "statement": "Likely muddy: 1.30 in of precipitation on Nov 17–18 at Palisades Tahoe (SNOTEL, 2 km away).",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "784:CA:SNTL PRCP 2026-11-17=0.1 in, 2026-11-18=1.2 in",
-    "observed_at": "2026-11-19T00:00:00-08:00"
-   },
-   {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.83 in of precipitation in the 48 h to 12:47pm Nov 19 at South Lake Tahoe, Lake Tahoe Airport (NWS, 37 km away).",
+    "statement": "Likely muddy: 0.83 in of precipitation in the 48 h to 12:53pm Nov 20 at South Lake Tahoe, Lake Tahoe Airport (NWS, 37 km away).",
     "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-11-17T20%3A47%3A14Z",
-    "fetched_at": "2026-11-19T21:47:25.630563Z",
-    "quote": "KTVL: 43 routine METARs with AO2 from 172153Z to 192047Z; precipitation groups: P0000@181449Z, P0000@181553Z, P0000@181647Z, P0000@181753Z, P0000@181853Z, P0000@181946Z, P0000@182053Z, P0001@182153Z, P0002@182253Z, P0001@182353Z, P0001@190045Z, P0000@190153Z, P0002@190248Z, P000…",
-    "observed_at": "2026-11-19T20:47:00Z"
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-11-18T20%3A31%3A29Z",
+    "fetched_at": "2026-11-20T21:31:37.151558Z",
+    "quote": "KTVL: 41 routine METARs with AO2 from 182153Z to 202053Z; precipitation groups: P0001@182153Z, P0002@182253Z, P0001@182353Z, P0001@190045Z, P0000@190153Z, P0002@190248Z, P0001@190353Z, P0008@190445Z, P0005@190551Z, P0008@190653Z, P0007@190750Z, P0000@190859Z, P0004@190953Z, P000…",
+    "observed_at": "2026-11-20T20:53:00Z"
    }
   ],
-  "missing": [],
+  "context": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 5,542–8,579 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   }
+  ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS This Afternoon: Snow, high 31°F.",
+   "statement": "NWS This Afternoon: Widespread Frost, high 25°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/STO/89,86/forecast",
-   "fetched_at": "2026-11-19T21:47:23.028599Z",
-   "quote": "This Afternoon: Snow, high 31°F",
-   "observed_at": "2026-11-19T13:00:00-08:00"
+   "fetched_at": "2026-11-20T21:31:35.194046Z",
+   "quote": "This Afternoon: Widespread Frost, high 25°F",
+   "observed_at": "2026-11-20T13:00:00-08:00"
   }
  },
  {
   "trail_id": "castle-peak",
   "trail_name": "Castle Peak (Donner Summit)",
-  "date": "2026-11-19",
-  "status": "snow",
-  "claims": [
+  "date": "2026-11-20",
+  "status": "unknown",
+  "claims": [],
+  "context": [],
+  "missing": [
    {
-    "kind": "snow",
-    "statement": "Snow likely above ~6,440 ft (trail tops out at 9,109 ft): Independence Creek SNOTEL (6,440 ft, 15 km away) reported 12 in of snow on Nov 18.",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "540:CA:SNTL 2026-11-18 SNWD=12 in, WTEQ=1.6 in",
-    "observed_at": null
+    "what": "No SNOTEL station within 40 km and 6,274–10,109 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   },
+   {
+    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
+    "tried_url": "https://api.weather.gov/"
    }
   ],
-  "context": [
-   {
-    "kind": "precip",
-    "statement": "Likely muddy: 2.10 in of precipitation on Nov 17–18 at Css Lab (SNOTEL, 2 km away).",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "428:CA:SNTL PRCP 2026-11-17=0 in, 2026-11-18=2.1 in",
-    "observed_at": "2026-11-19T00:00:00-08:00"
-   }
-  ],
-  "missing": [],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS This Afternoon: Snow, high 26°F.",
+   "statement": "NWS This Afternoon: Widespread Frost, high 26°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/STO/87,95/forecast",
-   "fetched_at": "2026-11-19T21:47:22.053239Z",
-   "quote": "This Afternoon: Snow, high 26°F",
-   "observed_at": "2026-11-19T13:00:00-08:00"
+   "fetched_at": "2026-11-20T21:31:34.524133Z",
+   "quote": "This Afternoon: Widespread Frost, high 26°F",
+   "observed_at": "2026-11-20T13:00:00-08:00"
   }
  },
  {
   "trail_id": "mount-judah-loop",
   "trail_name": "Mount Judah Loop (PCT, Donner Summit)",
-  "date": "2026-11-19",
-  "status": "snow",
-  "claims": [
+  "date": "2026-11-20",
+  "status": "unknown",
+  "claims": [],
+  "context": [],
+  "missing": [
    {
-    "kind": "snow",
-    "statement": "Snow likely above ~6,440 ft (trail tops out at 8,243 ft): Independence Creek SNOTEL (6,440 ft, 20 km away) reported 12 in of snow on Nov 18.",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "540:CA:SNTL 2026-11-18 SNWD=12 in, WTEQ=1.6 in",
-    "observed_at": null
+    "what": "No SNOTEL station within 40 km and 6,061–9,243 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   },
+   {
+    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
+    "tried_url": "https://api.weather.gov/"
    }
   ],
-  "context": [
-   {
-    "kind": "precip",
-    "statement": "Likely muddy: 2.10 in of precipitation on Nov 17–18 at Css Lab (SNOTEL, 4 km away).",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "428:CA:SNTL PRCP 2026-11-17=0 in, 2026-11-18=2.1 in",
-    "observed_at": "2026-11-19T00:00:00-08:00"
-   }
-  ],
-  "missing": [],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS This Afternoon: Snow, high 30°F.",
+   "statement": "NWS This Afternoon: Widespread Frost, high 29°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/STO/88,92/forecast",
-   "fetched_at": "2026-11-19T21:47:22.795961Z",
-   "quote": "This Afternoon: Snow, high 30°F",
-   "observed_at": "2026-11-19T13:00:00-08:00"
+   "fetched_at": "2026-11-20T21:31:34.921004Z",
+   "quote": "This Afternoon: Widespread Frost, high 29°F",
+   "observed_at": "2026-11-20T13:00:00-08:00"
   }
  },
  {
   "trail_id": "donner-lake-rim-trail",
   "trail_name": "Donner Lake Rim Trail",
-  "date": "2026-11-19",
-  "status": "snow",
-  "claims": [
-   {
-    "kind": "snow",
-    "statement": "Snow likely above ~6,440 ft (trail tops out at 7,689 ft): Independence Creek SNOTEL (6,440 ft, 16 km away) reported 12 in of snow on Nov 18.",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "540:CA:SNTL 2026-11-18 SNWD=12 in, WTEQ=1.6 in",
-    "observed_at": null
-   }
-  ],
-  "context": [
-   {
-    "kind": "precip",
-    "statement": "Likely muddy: 1.50 in of precipitation on Nov 17–18 at Truckee #2 (SNOTEL, 5 km away).",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "834:CA:SNTL PRCP 2026-11-17=0 in, 2026-11-18=1.5 in",
-    "observed_at": "2026-11-19T00:00:00-08:00"
-   }
-  ],
+  "date": "2026-11-20",
+  "status": "unknown",
+  "claims": [],
+  "context": [],
   "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 5,356–8,689 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   },
+   {
+    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
+    "tried_url": "https://api.weather.gov/"
+   },
    {
     "what": "No official closure source dryline can read for Truckee Donner Land Trust",
     "tried_url": "https://www.truckeedonnerlandtrust.org/donner-lake-rim-trail"
@@ -818,73 +604,53 @@
   ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS This Afternoon: Snow, high 31°F.",
+   "statement": "NWS This Afternoon: Sunny, high 29°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/27,101/forecast",
-   "fetched_at": "2026-11-19T21:47:16.888610Z",
-   "quote": "This Afternoon: Snow, high 31°F",
-   "observed_at": "2026-11-19T13:00:00-08:00"
+   "fetched_at": "2026-11-20T21:31:30.024754Z",
+   "quote": "This Afternoon: Sunny, high 29°F",
+   "observed_at": "2026-11-20T13:00:00-08:00"
   }
  },
  {
   "trail_id": "sawtooth-trail",
   "trail_name": "Sawtooth Trail (Truckee)",
-  "date": "2026-11-19",
-  "status": "snow",
-  "claims": [
+  "date": "2026-11-20",
+  "status": "unknown",
+  "claims": [],
+  "context": [],
+  "missing": [
    {
-    "kind": "snow",
-    "statement": "Snow likely above ~6,440 ft (trail tops out at 6,469 ft): Independence Creek SNOTEL (6,440 ft, 21 km away) reported 12 in of snow on Nov 18.",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "540:CA:SNTL 2026-11-18 SNWD=12 in, WTEQ=1.6 in",
-    "observed_at": null
+    "what": "No SNOTEL station within 40 km and 5,208–7,469 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   },
+   {
+    "what": "No gauge within 40 km had complete, recent precipitation data (SNOTEL daily within 30 h, ASOS hourly within 6 h)",
+    "tried_url": "https://api.weather.gov/"
    }
   ],
-  "context": [
-   {
-    "kind": "precip",
-    "statement": "Likely muddy: 1.50 in of precipitation on Nov 17–18 at Truckee #2 (SNOTEL, 1 km away).",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "834:CA:SNTL PRCP 2026-11-17=0 in, 2026-11-18=1.5 in",
-    "observed_at": "2026-11-19T00:00:00-08:00"
-   }
-  ],
-  "missing": [],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS This Afternoon: Snow, high 34°F.",
+   "statement": "NWS This Afternoon: Patchy Fog, high 31°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/30,98/forecast",
-   "fetched_at": "2026-11-19T21:47:18.975575Z",
-   "quote": "This Afternoon: Snow, high 34°F",
-   "observed_at": "2026-11-19T13:00:00-08:00"
+   "fetched_at": "2026-11-20T21:31:32.276039Z",
+   "quote": "This Afternoon: Patchy Fog, high 31°F",
+   "observed_at": "2026-11-20T13:00:00-08:00"
   }
  },
  {
   "trail_id": "trt-brockway-to-martis-peak",
   "trail_name": "Tahoe Rim Trail: Brockway Summit to Martis Peak",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "snow",
   "claims": [
-   {
-    "kind": "snow",
-    "statement": "Snow likely above ~6,250 ft (trail tops out at 8,736 ft): Fallen Leaf SNOTEL (6,250 ft, 36 km away) reported 7 in of snow on Nov 18.",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "473:CA:SNTL 2026-11-18 SNWD=7 in, WTEQ=1.6 in",
-    "observed_at": null
-   },
    {
     "kind": "conditions",
     "statement": "Tahoe Rim Trail Association, BrockwaytoRose (updated Nov 17): “All Trail Segments are covered in snow, please prepare accordingly! Mt. Rose Ski Area SNOTEL data is available here .”",
     "source_name": "Tahoe Rim Trail Association",
     "source_url": "https://tahoerimtrail.org/current-trail-conditions/",
-    "fetched_at": "2026-11-19T21:47:30.255899Z",
+    "fetched_at": "2026-11-20T21:31:42.640450Z",
     "quote": "All Trail Segments are covered in snow, please prepare accordingly! Mt. Rose Ski Area SNOTEL data is available here .",
     "observed_at": null
    }
@@ -892,55 +658,42 @@
   "context": [
    {
     "kind": "precip",
-    "statement": "Likely muddy: 1.50 in of precipitation on Nov 17–18 at Truckee #2 (SNOTEL, 11 km away).",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "834:CA:SNTL PRCP 2026-11-17=0 in, 2026-11-18=1.5 in",
-    "observed_at": "2026-11-19T00:00:00-08:00"
-   },
-   {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.31 in of precipitation in the 48 h to 12:50pm Nov 19 at Carson City Airport (NWS, 28 km away).",
+    "statement": "Likely muddy: 0.31 in of precipitation in the 48 h to 12:50pm Nov 20 at Carson City Airport (NWS, 28 km away).",
     "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KCXP/observations?start=2026-11-17T20%3A47%3A14Z",
-    "fetched_at": "2026-11-19T21:47:24.518088Z",
-    "quote": "KCXP: 42 routine METARs with AO2 from 172150Z to 192050Z; precipitation groups: P0001@182355Z, P0004@190055Z, P0004@190155Z, P0008@190255Z, P0003@190355Z, P0006@190455Z, P0005@190555Z",
-    "observed_at": "2026-11-19T20:50:00Z"
+    "source_url": "https://api.weather.gov/stations/KCXP/observations?start=2026-11-18T20%3A31%3A29Z",
+    "fetched_at": "2026-11-20T21:31:36.459383Z",
+    "quote": "KCXP: 39 routine METARs with AO2 from 182155Z to 202050Z; precipitation groups: P0001@182355Z, P0004@190055Z, P0004@190155Z, P0008@190255Z, P0003@190355Z, P0006@190455Z, P0005@190555Z",
+    "observed_at": "2026-11-20T20:50:00Z"
    }
   ],
-  "missing": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 6,046–9,736 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   }
+  ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS This Afternoon: Snow, high 29°F.",
+   "statement": "NWS This Afternoon: Slight Chance Light Snow, high 26°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/REV/35,97/forecast",
-   "fetched_at": "2026-11-19T21:47:20.702830Z",
-   "quote": "This Afternoon: Snow, high 29°F",
-   "observed_at": "2026-11-19T13:00:00-08:00"
+   "fetched_at": "2026-11-20T21:31:33.453505Z",
+   "quote": "This Afternoon: Slight Chance Light Snow, high 26°F",
+   "observed_at": "2026-11-20T13:00:00-08:00"
   }
  },
  {
   "trail_id": "big-meadow-to-round-lake",
   "trail_name": "Big Meadow to Round Lake (TRT)",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "snow",
   "claims": [
-   {
-    "kind": "snow",
-    "statement": "Snow likely above ~6,250 ft (trail tops out at 8,117 ft): Fallen Leaf SNOTEL (6,250 ft, 17 km away) reported 7 in of snow on Nov 18.",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "473:CA:SNTL 2026-11-18 SNWD=7 in, WTEQ=1.6 in",
-    "observed_at": null
-   },
    {
     "kind": "conditions",
     "statement": "Tahoe Rim Trail Association, BMtoEcho (updated Nov 17): “All Trail Segments are covered in snow, please prepare accordingly! Expect below freezing nighttime temperatures with thin ice on alpine lakes. Carson Pass SNO…”",
     "source_name": "Tahoe Rim Trail Association",
     "source_url": "https://tahoerimtrail.org/current-trail-conditions/",
-    "fetched_at": "2026-11-19T21:47:30.255899Z",
+    "fetched_at": "2026-11-20T21:31:42.640450Z",
     "quote": "All Trail Segments are covered in snow, please prepare accordingly! Expect below freezing nighttime temperatures with thin ice on alpine lakes. Carson Pass SNOTEL data is available here",
     "observed_at": null
    }
@@ -948,32 +701,28 @@
   "context": [
    {
     "kind": "precip",
-    "statement": "Likely muddy: 2.40 in of precipitation on Nov 17–18 at Carson Pass (SNOTEL, 6 km away).",
-    "source_name": "NRCS SNOTEL",
-    "source_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=540%3ACA%3ASNTL%2C340%3ANV%3ASNTL%2C539%3ACA%3ASNTL%2C541%3ACA%3ASNTL%2C428%3ACA%3ASNTL%2C652%3ANV%3ASNTL%2C834%3ACA%3ASNTL%2C1242%3ANV%3ASNTL%2C784%3ACA%3ASNTL%2C809%3ACA%3ASNTL%2C615%3ANV%3ASNTL%2C848%3ACA%3ASNTL%2C724%3ACA%3ASNTL%2C473%3ACA%3ASNTL%2C518%3ACA%3ASNTL%2C508%3ACA%3ASNTL%2C463%3ACA%3ASNTL%2C1050%3ACA%3ASNTL%2C1051%3ACA%3ASNTL%2C1067%3ACA%3ASNTL%2C1049%3ACA%3ASNTL%2C778%3ACA%3ASNTL%2C1331%3ACA%3ASNTL%2C356%3ACA%3ASNTL&elements=SNWD%2CWTEQ%2CPRCP&duration=DAILY&beginDate=2026-11-12&endDate=2026-11-19",
-    "fetched_at": "2026-11-19T21:47:14.697003Z",
-    "quote": "1067:CA:SNTL PRCP 2026-11-17=0 in, 2026-11-18=2.4 in",
-    "observed_at": "2026-11-19T00:00:00-08:00"
-   },
-   {
-    "kind": "precip",
-    "statement": "Likely muddy: 0.83 in of precipitation in the 48 h to 12:47pm Nov 19 at South Lake Tahoe, Lake Tahoe Airport (NWS, 12 km away).",
+    "statement": "Likely muddy: 0.83 in of precipitation in the 48 h to 12:53pm Nov 20 at South Lake Tahoe, Lake Tahoe Airport (NWS, 12 km away).",
     "source_name": "NWS observations",
-    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-11-17T20%3A47%3A14Z",
-    "fetched_at": "2026-11-19T21:47:25.630563Z",
-    "quote": "KTVL: 43 routine METARs with AO2 from 172153Z to 192047Z; precipitation groups: P0000@181449Z, P0000@181553Z, P0000@181647Z, P0000@181753Z, P0000@181853Z, P0000@181946Z, P0000@182053Z, P0001@182153Z, P0002@182253Z, P0001@182353Z, P0001@190045Z, P0000@190153Z, P0002@190248Z, P000…",
-    "observed_at": "2026-11-19T20:47:00Z"
+    "source_url": "https://api.weather.gov/stations/KTVL/observations?start=2026-11-18T20%3A31%3A29Z",
+    "fetched_at": "2026-11-20T21:31:37.151558Z",
+    "quote": "KTVL: 41 routine METARs with AO2 from 182153Z to 202053Z; precipitation groups: P0001@182153Z, P0002@182253Z, P0001@182353Z, P0001@190045Z, P0000@190153Z, P0002@190248Z, P0001@190353Z, P0008@190445Z, P0005@190551Z, P0008@190653Z, P0007@190750Z, P0000@190859Z, P0004@190953Z, P000…",
+    "observed_at": "2026-11-20T20:53:00Z"
    }
   ],
-  "missing": [],
+  "missing": [
+   {
+    "what": "No SNOTEL station within 40 km and 6,243–9,117 ft reported snow depth in the last 2 days",
+    "tried_url": "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data"
+   }
+  ],
   "forecast": {
    "kind": "forecast",
-   "statement": "NWS This Afternoon: Snow, high 29°F.",
+   "statement": "NWS This Afternoon: Chance Light Snow, high 26°F.",
    "source_name": "NWS forecast",
    "source_url": "https://api.weather.gov/gridpoints/STO/94,66/forecast",
-   "fetched_at": "2026-11-19T21:47:23.872448Z",
-   "quote": "This Afternoon: Snow, high 29°F",
-   "observed_at": "2026-11-19T13:00:00-08:00"
+   "fetched_at": "2026-11-20T21:31:35.960060Z",
+   "quote": "This Afternoon: Chance Light Snow, high 26°F",
+   "observed_at": "2026-11-20T13:00:00-08:00"
   }
  }
 ]
