@@ -1,0 +1,1462 @@
+{
+ "date": "2026-11-26",
+ "trails": [
+  {
+   "trail_id": "mount-tallac",
+   "issued": "2026-11-26",
+   "days": [
+    {
+     "date": "2026-11-26",
+     "status": "snow",
+     "weather": "Partly Sunny, 48°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-11-27",
+     "status": "snow",
+     "weather": "Partly Sunny, 50°F",
+     "swe_in": 8.23,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-28",
+     "status": "snow",
+     "weather": "Partly Sunny, 49°F",
+     "swe_in": 7.78,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-29",
+     "status": "snow",
+     "weather": "Light Snow Likely, 43°F",
+     "swe_in": 7.38,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-30",
+     "status": "snow",
+     "weather": "Rain And Snow, 42°F",
+     "swe_in": 7.4,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-01",
+     "status": "snow",
+     "weather": "Rain And Snow, 39°F",
+     "swe_in": 8.19,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-02",
+     "status": "snow",
+     "weather": "Slight Chance Light Snow then Mostly Sunny, 36°F",
+     "swe_in": 9.33,
+     "water_in": 0.6
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": "2026-12-02",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (8,848 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/30,80/forecast",
+     "fetched_at": "2026-11-26T22:34:13.407041Z",
+     "quote": "Thanksgiving Day: Partly sunny, with a high near 45. West wind 0 to 5 mph.",
+     "observed_at": "2026-11-26T14:00:00-08:00"
+    }
+   ],
+   "basis": "Not enough warm days in the forecast to melt it out.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "eagle-lake-desolation",
+   "issued": "2026-11-26",
+   "days": [
+    {
+     "date": "2026-11-26",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 49°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-11-27",
+     "status": "snow",
+     "weather": "Partly Sunny, 50°F",
+     "swe_in": 2.81,
+     "water_in": 0.53
+    },
+    {
+     "date": "2026-11-28",
+     "status": "snow",
+     "weather": "Partly Sunny, 49°F",
+     "swe_in": 2.31,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-29",
+     "status": "snow",
+     "weather": "Light Snow Likely, 42°F",
+     "swe_in": 1.84,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-30",
+     "status": "snow",
+     "weather": "Rain And Snow, 40°F",
+     "swe_in": 1.71,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-01",
+     "status": "snow",
+     "weather": "Heavy Snow, 36°F",
+     "swe_in": 1.61,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-02",
+     "status": "snow",
+     "weather": "Slight Chance Light Snow then Mostly Sunny, 37°F",
+     "swe_in": 2.72,
+     "water_in": 0.6
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": "2026-12-02",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (7,799 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/29,82/forecast",
+     "fetched_at": "2026-11-26T22:34:12.954747Z",
+     "quote": "Thanksgiving Day: Mostly cloudy, with a high near 45. West wind around 0 mph.",
+     "observed_at": "2026-11-26T14:00:00-08:00"
+    }
+   ],
+   "basis": "Not enough warm days in the forecast to melt it out. Faces northwest, so it dries slower.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "rubicon-trail-dl-bliss",
+   "issued": "2026-11-26",
+   "days": [
+    {
+     "date": "2026-11-26",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 48°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-11-27",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 49°F",
+     "swe_in": 4.41,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-28",
+     "status": "snow",
+     "weather": "Partly Sunny, 48°F",
+     "swe_in": 3.99,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-29",
+     "status": "snow",
+     "weather": "Light Rain, 40°F",
+     "swe_in": 3.4,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-30",
+     "status": "snow",
+     "weather": "Light Rain, 37°F",
+     "swe_in": 3.29,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-01",
+     "status": "snow",
+     "weather": "Rain And Snow, 33°F",
+     "swe_in": 3.45,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-02",
+     "status": "snow",
+     "weather": "Slight Chance Light Snow then Mostly Sunny, 33°F",
+     "swe_in": 3.79,
+     "water_in": 0.6
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": "2026-12-02",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (6,230 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/31,84/forecast",
+     "fetched_at": "2026-11-26T22:34:14.330906Z",
+     "quote": "Thanksgiving Day: Mostly cloudy. High near 49, with temperatures falling to around 39 in the afternoon. Northwest wind around 0 mph.",
+     "observed_at": "2026-11-26T14:00:00-08:00"
+    }
+   ],
+   "basis": "Not enough warm days in the forecast to melt it out.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "cascade-falls",
+   "issued": "2026-11-26",
+   "days": [
+    {
+     "date": "2026-11-26",
+     "status": "snow",
+     "weather": "Partly Sunny, 49°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-11-27",
+     "status": "snow",
+     "weather": "Partly Sunny, 50°F",
+     "swe_in": 2.28,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-28",
+     "status": "snow",
+     "weather": "Partly Sunny, 50°F",
+     "swe_in": 1.63,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-29",
+     "status": "snow",
+     "weather": "Rain And Snow, 43°F",
+     "swe_in": 0.98,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-30",
+     "status": "snow",
+     "weather": "Light Rain then Rain And Snow Likely, 41°F",
+     "swe_in": 0.82,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-01",
+     "status": "snow",
+     "weather": "Rain And Snow, 37°F",
+     "swe_in": 0.69,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-02",
+     "status": "snow",
+     "weather": "Slight Chance Light Snow then Mostly Sunny, 38°F",
+     "swe_in": 1.18,
+     "water_in": 0.6
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": "2026-12-02",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (7,041 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/30,82/forecast",
+     "fetched_at": "2026-11-26T22:34:13.608596Z",
+     "quote": "Thanksgiving Day: Partly sunny, with a high near 48. West wind around 0 mph.",
+     "observed_at": "2026-11-26T14:00:00-08:00"
+    }
+   ],
+   "basis": "Not enough warm days in the forecast to melt it out.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "echo-lakes-to-lake-aloha",
+   "issued": "2026-11-26",
+   "days": [
+    {
+     "date": "2026-11-26",
+     "status": "snow",
+     "weather": "Partly Sunny, 46°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-11-27",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 47°F",
+     "swe_in": 6.57,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-28",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 47°F",
+     "swe_in": 6.16,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-29",
+     "status": "snow",
+     "weather": "Light Snow, 38°F",
+     "swe_in": 5.75,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-30",
+     "status": "snow",
+     "weather": "Light Snow, 36°F",
+     "swe_in": 5.98,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-01",
+     "status": "snow",
+     "weather": "Heavy Snow, 33°F",
+     "swe_in": 7.25,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-02",
+     "status": "snow",
+     "weather": "Slight Chance Light Snow then Mostly Sunny, 33°F",
+     "swe_in": 8.7,
+     "water_in": 0.6
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": "2026-12-02",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (8,399 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/29,78/forecast",
+     "fetched_at": "2026-11-26T22:34:12.599764Z",
+     "quote": "Thanksgiving Day: Partly sunny. High near 44, with temperatures falling to around 36 in the afternoon. West wind around 3 mph.",
+     "observed_at": "2026-11-26T14:00:00-08:00"
+    }
+   ],
+   "basis": "Not enough warm days in the forecast to melt it out. South-facing, so it dries fast.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "ellis-peak",
+   "issued": "2026-11-26",
+   "days": [
+    {
+     "date": "2026-11-26",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 42°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-11-27",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 44°F",
+     "swe_in": 6.48,
+     "water_in": 0.46
+    },
+    {
+     "date": "2026-11-28",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 43°F",
+     "swe_in": 6.22,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-29",
+     "status": "snow",
+     "weather": "Light Snow Likely, 36°F",
+     "swe_in": 5.97,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-30",
+     "status": "snow",
+     "weather": "Rain And Snow, 35°F",
+     "swe_in": 6.08,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-01",
+     "status": "snow",
+     "weather": "Rain And Snow, 32°F",
+     "swe_in": 6.81,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-02",
+     "status": "snow",
+     "weather": "Slight Chance Light Snow then Mostly Sunny, 32°F",
+     "swe_in": 7.56,
+     "water_in": 0.6
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": "2026-12-02",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (8,350 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/28,88/forecast",
+     "fetched_at": "2026-11-26T22:34:12.556445Z",
+     "quote": "Thanksgiving Day: Mostly cloudy. High near 42, with temperatures falling to around 34 in the afternoon. West wind around 0 mph.",
+     "observed_at": "2026-11-26T13:00:00-08:00"
+    }
+   ],
+   "basis": "Not enough warm days in the forecast to melt it out.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "mr-toads-wild-ride",
+   "issued": "2026-11-26",
+   "days": [
+    {
+     "date": "2026-11-26",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 50°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-11-27",
+     "status": "snow",
+     "weather": "Partly Sunny, 51°F",
+     "swe_in": 8.26,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-28",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 50°F",
+     "swe_in": 7.72,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-29",
+     "status": "snow",
+     "weather": "Light Snow, 42°F",
+     "swe_in": 7.38,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-30",
+     "status": "snow",
+     "weather": "Rain And Snow Likely, 41°F",
+     "swe_in": 7.49,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-01",
+     "status": "snow",
+     "weather": "Heavy Snow, 37°F",
+     "swe_in": 8.38,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-02",
+     "status": "snow",
+     "weather": "Slight Chance Light Snow then Mostly Sunny, 37°F",
+     "swe_in": 9.62,
+     "water_in": 0.6
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": "2026-12-02",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (9,111 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/34,75/forecast",
+     "fetched_at": "2026-11-26T22:34:14.795634Z",
+     "quote": "Thanksgiving Day: Mostly cloudy. High near 45, with temperatures falling to around 37 in the afternoon. Northwest wind around 5 mph.",
+     "observed_at": "2026-11-26T14:00:00-08:00"
+    }
+   ],
+   "basis": "Not enough warm days in the forecast to melt it out.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "corral-trail",
+   "issued": "2026-11-26",
+   "days": [
+    {
+     "date": "2026-11-26",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 51°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-11-27",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 52°F",
+     "swe_in": 2.75,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-28",
+     "status": "snow",
+     "weather": "Partly Sunny, 51°F",
+     "swe_in": 2.27,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-29",
+     "status": "snow",
+     "weather": "Chance Light Snow, 44°F",
+     "swe_in": 1.59,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-30",
+     "status": "snow",
+     "weather": "Light Snow Likely, 42°F",
+     "swe_in": 1.43,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-01",
+     "status": "snow",
+     "weather": "Snow, 37°F",
+     "swe_in": 1.29,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-02",
+     "status": "snow",
+     "weather": "Slight Chance Light Snow then Mostly Sunny, 38°F",
+     "swe_in": 2.28,
+     "water_in": 0.6
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": "2026-12-02",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (7,930 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/35,78/forecast",
+     "fetched_at": "2026-11-26T22:34:15.184574Z",
+     "quote": "Thanksgiving Day: Mostly cloudy. High near 47, with temperatures falling to around 38 in the afternoon. Southwest wind around 0 mph.",
+     "observed_at": "2026-11-26T14:00:00-08:00"
+    }
+   ],
+   "basis": "Not enough warm days in the forecast to melt it out.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "van-sickle-bi-state-park",
+   "issued": "2026-11-26",
+   "days": [
+    {
+     "date": "2026-11-26",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 49°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-11-27",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 50°F",
+     "swe_in": 3.7,
+     "water_in": 0.55
+    },
+    {
+     "date": "2026-11-28",
+     "status": "snow",
+     "weather": "Partly Sunny, 48°F",
+     "swe_in": 3.38,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-29",
+     "status": "snow",
+     "weather": "Chance Light Snow, 44°F",
+     "swe_in": 2.96,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-30",
+     "status": "snow",
+     "weather": "Rain And Snow Likely, 42°F",
+     "swe_in": 2.82,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-01",
+     "status": "snow",
+     "weather": "Rain And Snow, 38°F",
+     "swe_in": 2.7,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-02",
+     "status": "snow",
+     "weather": "Slight Chance Light Snow then Mostly Sunny, 37°F",
+     "swe_in": 3.39,
+     "water_in": 0.6
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": "2026-12-02",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (9,203 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/37,81/forecast",
+     "fetched_at": "2026-11-26T22:34:15.838675Z",
+     "quote": "Thanksgiving Day: Mostly cloudy, with a high near 42. West wind 0 to 5 mph.",
+     "observed_at": "2026-11-26T11:00:00-08:00"
+    }
+   ],
+   "basis": "Not enough warm days in the forecast to melt it out. Faces northwest, so it dries slower.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "mount-rose-summit",
+   "issued": "2026-11-26",
+   "days": [
+    {
+     "date": "2026-11-26",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 40°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-11-27",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 42°F",
+     "swe_in": 8.19,
+     "water_in": 0.29
+    },
+    {
+     "date": "2026-11-28",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 40°F",
+     "swe_in": 8.04,
+     "water_in": 0.53
+    },
+    {
+     "date": "2026-11-29",
+     "status": "snow",
+     "weather": "Slight Chance Light Snow, 36°F",
+     "swe_in": 7.93,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-30",
+     "status": "snow",
+     "weather": "Chance Rain And Snow, 34°F",
+     "swe_in": 8.13,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-01",
+     "status": "snow",
+     "weather": "Heavy Snow, 29°F",
+     "swe_in": 8.95,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-02",
+     "status": "snow",
+     "weather": "Mostly Sunny, 30°F",
+     "swe_in": 10.2,
+     "water_in": 0.6
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": "2026-12-02",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (9,718 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/40,99/forecast",
+     "fetched_at": "2026-11-26T22:34:16.036853Z",
+     "quote": "Thanksgiving Day: Mostly cloudy. High near 40, with temperatures falling to around 32 in the afternoon. West wind 0 to 5 mph.",
+     "observed_at": "2026-11-26T11:00:00-08:00"
+    }
+   ],
+   "basis": "Not enough warm days in the forecast to melt it out.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "flume-trail",
+   "issued": "2026-11-26",
+   "days": [
+    {
+     "date": "2026-11-26",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 48°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-11-27",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 49°F",
+     "swe_in": 5.18,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-28",
+     "status": "snow",
+     "weather": "Partly Sunny, 47°F",
+     "swe_in": 4.82,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-29",
+     "status": "snow",
+     "weather": "Light Snow, 43°F",
+     "swe_in": 4.37,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-30",
+     "status": "snow",
+     "weather": "Chance Light Snow, 41°F",
+     "swe_in": 4.24,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-01",
+     "status": "snow",
+     "weather": "Snow, 36°F",
+     "swe_in": 4.15,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-02",
+     "status": "snow",
+     "weather": "Partly Sunny, 37°F",
+     "swe_in": 4.98,
+     "water_in": 0.6
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": "2026-12-02",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (8,215 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/39,90/forecast",
+     "fetched_at": "2026-11-26T22:34:15.861752Z",
+     "quote": "Thanksgiving Day: Mostly cloudy. High near 45, with temperatures falling to around 37 in the afternoon. West wind around 5 mph.",
+     "observed_at": "2026-11-26T14:00:00-08:00"
+    }
+   ],
+   "basis": "Not enough warm days in the forecast to melt it out.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "marlette-lake",
+   "issued": "2026-11-26",
+   "days": [
+    {
+     "date": "2026-11-26",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 47°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-11-27",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 48°F",
+     "swe_in": 4.92,
+     "water_in": 0.58
+    },
+    {
+     "date": "2026-11-28",
+     "status": "snow",
+     "weather": "Partly Sunny, 46°F",
+     "swe_in": 4.57,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-29",
+     "status": "snow",
+     "weather": "Light Snow, 42°F",
+     "swe_in": 4.11,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-30",
+     "status": "snow",
+     "weather": "Chance Light Snow, 40°F",
+     "swe_in": 3.99,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-01",
+     "status": "snow",
+     "weather": "Snow, 35°F",
+     "swe_in": 3.9,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-02",
+     "status": "snow",
+     "weather": "Partly Sunny, 36°F",
+     "swe_in": 4.73,
+     "water_in": 0.6
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": "2026-12-02",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (8,215 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/39,90/forecast",
+     "fetched_at": "2026-11-26T22:34:15.861752Z",
+     "quote": "Thanksgiving Day: Mostly cloudy. High near 45, with temperatures falling to around 37 in the afternoon. West wind around 5 mph.",
+     "observed_at": "2026-11-26T14:00:00-08:00"
+    }
+   ],
+   "basis": "Not enough warm days in the forecast to melt it out.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "page-meadows",
+   "issued": "2026-11-26",
+   "days": [
+    {
+     "date": "2026-11-26",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 50°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-11-27",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 52°F",
+     "swe_in": 2.36,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-28",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 51°F",
+     "swe_in": 1.76,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-29",
+     "status": "snow",
+     "weather": "Rain And Snow, 44°F",
+     "swe_in": 1.2,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-30",
+     "status": "snow",
+     "weather": "Light Rain, 41°F",
+     "swe_in": 1.03,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-01",
+     "status": "snow",
+     "weather": "Rain And Snow, 38°F",
+     "swe_in": 0.91,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-02",
+     "status": "snow",
+     "weather": "Slight Chance Light Snow then Mostly Sunny, 39°F",
+     "swe_in": 1.06,
+     "water_in": 0.6
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": "2026-12-02",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (6,988 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/29,92/forecast",
+     "fetched_at": "2026-11-26T22:34:13.254273Z",
+     "quote": "Thanksgiving Day: Mostly cloudy. High near 49, with temperatures falling to around 41 in the afternoon. Wind around 0 mph.",
+     "observed_at": "2026-11-26T14:00:00-08:00"
+    }
+   ],
+   "basis": "Not enough warm days in the forecast to melt it out. South-facing, so it dries fast.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "five-lakes",
+   "issued": "2026-11-26",
+   "days": [
+    {
+     "date": "2026-11-26",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 48°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-11-27",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 49°F",
+     "swe_in": 4.27,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-28",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 48°F",
+     "swe_in": 3.82,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-29",
+     "status": "snow",
+     "weather": "Light Snow Likely, 40°F",
+     "swe_in": 3.4,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-30",
+     "status": "snow",
+     "weather": "Rain And Snow, 39°F",
+     "swe_in": 3.3,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-01",
+     "status": "snow",
+     "weather": "Rain And Snow, 35°F",
+     "swe_in": 3.7,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-02",
+     "status": "snow",
+     "weather": "Slight Chance Light Snow then Mostly Sunny, 36°F",
+     "swe_in": 4.47,
+     "water_in": 0.6
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": "2026-12-02",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (7,772 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/STO/89,86/forecast",
+     "fetched_at": "2026-11-26T22:34:16.443314Z",
+     "quote": "Thanksgiving Day: Mostly cloudy. High near 46, with temperatures falling to around 40 in the afternoon. West northwest wind around 1 mph.",
+     "observed_at": "2026-11-26T14:00:00-08:00"
+    }
+   ],
+   "basis": "Not enough warm days in the forecast to melt it out. Faces southeast and gets morning sun.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "castle-peak",
+   "issued": "2026-11-26",
+   "days": [
+    {
+     "date": "2026-11-26",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 44°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-11-27",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 45°F",
+     "swe_in": 8.09,
+     "water_in": 0.39
+    },
+    {
+     "date": "2026-11-28",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 44°F",
+     "swe_in": 7.85,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-29",
+     "status": "snow",
+     "weather": "Light Snow Likely, 35°F",
+     "swe_in": 7.64,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-30",
+     "status": "snow",
+     "weather": "Rain And Snow, 32°F",
+     "swe_in": 7.64,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-01",
+     "status": "snow",
+     "weather": "Snow, 30°F",
+     "swe_in": 8.42,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-02",
+     "status": "snow",
+     "weather": "Slight Chance Light Snow then Mostly Sunny, 32°F",
+     "swe_in": 9.37,
+     "water_in": 0.6
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": "2026-12-02",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (7,510 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/STO/87,95/forecast",
+     "fetched_at": "2026-11-26T22:34:16.257146Z",
+     "quote": "Thanksgiving Day: Mostly cloudy. High near 46, with temperatures falling to around 39 in the afternoon. West wind around 3 mph.",
+     "observed_at": "2026-11-26T14:00:00-08:00"
+    }
+   ],
+   "basis": "Not enough warm days in the forecast to melt it out.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "mount-judah-loop",
+   "issued": "2026-11-26",
+   "days": [
+    {
+     "date": "2026-11-26",
+     "status": "snow",
+     "weather": "Partly Sunny, 49°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-11-27",
+     "status": "snow",
+     "weather": "Areas Of Frost then Mostly Cloudy, 50°F",
+     "swe_in": 4.13,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-28",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 48°F",
+     "swe_in": 3.81,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-29",
+     "status": "snow",
+     "weather": "Rain And Snow, 40°F",
+     "swe_in": 3.54,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-30",
+     "status": "snow",
+     "weather": "Rain And Snow, 38°F",
+     "swe_in": 3.45,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-01",
+     "status": "snow",
+     "weather": "Rain And Snow, 35°F",
+     "swe_in": 3.78,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-02",
+     "status": "snow",
+     "weather": "Slight Chance Light Snow then Mostly Sunny, 37°F",
+     "swe_in": 4.22,
+     "water_in": 0.6
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": "2026-12-02",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (7,316 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/STO/88,92/forecast",
+     "fetched_at": "2026-11-26T22:34:16.415253Z",
+     "quote": "Thanksgiving Day: Partly sunny. High near 50, with temperatures falling to around 42 in the afternoon. West southwest wind around 2 mph.",
+     "observed_at": "2026-11-26T14:00:00-08:00"
+    }
+   ],
+   "basis": "Not enough warm days in the forecast to melt it out. Faces northwest, so it dries slower.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "donner-lake-rim-trail",
+   "issued": "2026-11-26",
+   "days": [
+    {
+     "date": "2026-11-26",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 48°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-11-27",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 50°F",
+     "swe_in": 4.53,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-28",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 49°F",
+     "swe_in": 4.05,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-29",
+     "status": "snow",
+     "weather": "Rain And Snow, 41°F",
+     "swe_in": 3.59,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-30",
+     "status": "snow",
+     "weather": "Rain And Snow, 39°F",
+     "swe_in": 3.49,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-01",
+     "status": "snow",
+     "weather": "Rain And Snow, 36°F",
+     "swe_in": 3.8,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-02",
+     "status": "snow",
+     "weather": "Slight Chance Light Snow then Mostly Sunny, 38°F",
+     "swe_in": 4.32,
+     "water_in": 0.6
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": "2026-12-02",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (6,998 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/27,101/forecast",
+     "fetched_at": "2026-11-26T22:34:12.309477Z",
+     "quote": "Thanksgiving Day: Mostly cloudy. High near 48, with temperatures falling to around 38 in the afternoon. West wind 0 to 5 mph.",
+     "observed_at": "2026-11-26T14:00:00-08:00"
+    }
+   ],
+   "basis": "Not enough warm days in the forecast to melt it out. South-facing, so it dries fast.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "sawtooth-trail",
+   "issued": "2026-11-26",
+   "days": [
+    {
+     "date": "2026-11-26",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 53°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-11-27",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 55°F",
+     "swe_in": 2.09,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-28",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 53°F",
+     "swe_in": 1.54,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-29",
+     "status": "snow",
+     "weather": "Light Rain, 46°F",
+     "swe_in": 1.04,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-30",
+     "status": "snow",
+     "weather": "Light Rain, 43°F",
+     "swe_in": 0.84,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-01",
+     "status": "snow",
+     "weather": "Rain And Snow, 40°F",
+     "swe_in": 0.69,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-02",
+     "status": "snow",
+     "weather": "Mostly Sunny, 41°F",
+     "swe_in": 0.58,
+     "water_in": 0.52
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": "2026-12-02",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (6,483 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/30,98/forecast",
+     "fetched_at": "2026-11-26T22:34:13.795243Z",
+     "quote": "Thanksgiving Day: Mostly cloudy. High near 52, with temperatures falling to around 42 in the afternoon. Southwest wind around 0 mph.",
+     "observed_at": "2026-11-26T14:00:00-08:00"
+    }
+   ],
+   "basis": "Not enough warm days in the forecast to melt it out.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "trt-brockway-to-martis-peak",
+   "issued": "2026-11-26",
+   "days": [
+    {
+     "date": "2026-11-26",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 47°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-11-27",
+     "status": "snow",
+     "weather": "Partly Sunny, 49°F",
+     "swe_in": 6.63,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-28",
+     "status": "snow",
+     "weather": "Mostly Cloudy, 47°F",
+     "swe_in": 5.97,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-29",
+     "status": "snow",
+     "weather": "Chance Light Snow, 40°F",
+     "swe_in": 5.59,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-30",
+     "status": "snow",
+     "weather": "Rain And Snow Likely, 38°F",
+     "swe_in": 5.51,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-01",
+     "status": "snow",
+     "weather": "Rain And Snow, 33°F",
+     "swe_in": 5.95,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-02",
+     "status": "snow",
+     "weather": "Mostly Sunny, 35°F",
+     "swe_in": 6.6,
+     "water_in": 0.6
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": "2026-12-02",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (7,910 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/REV/35,97/forecast",
+     "fetched_at": "2026-11-26T22:34:15.686912Z",
+     "quote": "Thanksgiving Day: Mostly cloudy. High near 47, with temperatures falling to around 39 in the afternoon. West wind around 0 mph.",
+     "observed_at": "2026-11-26T14:00:00-08:00"
+    }
+   ],
+   "basis": "Not enough warm days in the forecast to melt it out. South-facing, so it dries fast.",
+   "why_none": ""
+  },
+  {
+   "trail_id": "big-meadow-to-round-lake",
+   "issued": "2026-11-26",
+   "days": [
+    {
+     "date": "2026-11-26",
+     "status": "snow",
+     "weather": "Partly Sunny, 52°F",
+     "swe_in": 0.0,
+     "water_in": 0.0
+    },
+    {
+     "date": "2026-11-27",
+     "status": "snow",
+     "weather": "Partly Sunny, 51°F",
+     "swe_in": 4.86,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-28",
+     "status": "snow",
+     "weather": "Partly Sunny, 51°F",
+     "swe_in": 4.34,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-29",
+     "status": "snow",
+     "weather": "Light Snow Likely, 41°F",
+     "swe_in": 3.83,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-11-30",
+     "status": "snow",
+     "weather": "Rain And Snow, 39°F",
+     "swe_in": 3.72,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-01",
+     "status": "snow",
+     "weather": "Heavy Snow, 36°F",
+     "swe_in": 4.49,
+     "water_in": 0.6
+    },
+    {
+     "date": "2026-12-02",
+     "status": "snow",
+     "weather": "Slight Chance Light Snow then Mostly Sunny, 37°F",
+     "swe_in": 5.81,
+     "water_in": 0.6
+    }
+   ],
+   "dry_by": null,
+   "wet_from": null,
+   "horizon": "2026-12-02",
+   "sources": [
+    {
+     "kind": "forecast",
+     "statement": "NWS forecast for this trail's gridpoint (8,153 ft), 14 periods.",
+     "source_name": "NWS forecast",
+     "source_url": "https://api.weather.gov/gridpoints/STO/94,66/forecast",
+     "fetched_at": "2026-11-26T22:34:16.501060Z",
+     "quote": "Thanksgiving Day: Partly sunny. High near 50, with temperatures falling to around 42 in the afternoon. West wind around 2 mph.",
+     "observed_at": "2026-11-26T14:00:00-08:00"
+    }
+   ],
+   "basis": "Not enough warm days in the forecast to melt it out. Faces northwest, so it dries slower.",
+   "why_none": ""
+  }
+ ],
+ "snow_lines": [
+  {
+   "date": "2026-11-26",
+   "snow_line_ft": 5950,
+   "kind": "today"
+  },
+  {
+   "date": "2026-11-27",
+   "snow_line_ft": 6000,
+   "kind": "forecast"
+  },
+  {
+   "date": "2026-11-28",
+   "snow_line_ft": 6000,
+   "kind": "forecast"
+  },
+  {
+   "date": "2026-11-29",
+   "snow_line_ft": 6300,
+   "kind": "forecast"
+  },
+  {
+   "date": "2026-11-30",
+   "snow_line_ft": 6400,
+   "kind": "forecast"
+  },
+  {
+   "date": "2026-12-01",
+   "snow_line_ft": 6400,
+   "kind": "forecast"
+  },
+  {
+   "date": "2026-12-02",
+   "snow_line_ft": 6500,
+   "kind": "forecast"
+  }
+ ]
+}
